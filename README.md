@@ -50,9 +50,10 @@ Connect at 115200 8N1 and the prompt `letter:/$` should appear.
 ```text
 .
 ├── docs/
+│   ├── FormattExample.pdf         Xilinx PG021 reference (format example)
 │   ├── OpenColink-horizontal.png  Logo used on the cover page
-│   ├── FormattExample.docx        Document formatting example (Word source)
-│   └── traindoc_formatted.pdf     Design documentation (PDF)
+│   ├── traindoc.docx              Training documentation (Word source)
+│   └── 购买参考/                   Purchase reference images
 ├── LabTrain/                      Lab / training projects
 │   └── test/                      Vivado project
 │       ├── test.xpr               Vivado project file
