@@ -1,0 +1,17 @@
+Led_Driver testbench result (Vivado Simulator 2018.3)
+
+  ------------------------------------------------------------
+  PASS : mode0 high clocks = 0
+  PASS : mode1 blink high = 49
+  PASS : mode1 blink low = 50
+  PASS : mode2 blink high = 99
+  PASS : mode2 blink low = 100
+  PASS : mode3 duty /100 = 33
+  PASS : mode4 duty /100 = 66
+  PASS : mode5 duty /100 = 100
+  PASS : mode6 high clocks = 0
+  SIMULATION PASSED
+  ------------------------------------------------------------
+
+Command:
+  scripts\run_sim.cmd
