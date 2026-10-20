@@ -49,41 +49,43 @@ Connect at 115200 8N1 and the prompt `letter:/$` should appear.
 
 ```text
 .
-├── 17L-PKX/                       Maintainer: training docs + Zynq LED/shell project
-│   ├── docs/
-│   │   ├── FormattExample.pdf     Xilinx PG021 reference (format example)
-│   │   ├── OpenColink-horizontal.png
-│   │   ├── traindoc.docx          Training documentation (Word source)
-│   │   └── 购买参考/               Purchase reference images
-│   ├── LabTrain/
-│   │   └── test/                  Vivado project (LED control + letter-shell)
-│   │       ├── test.xpr
-│   │       ├── test.srcs/
-│   │       └── test.sdk/
-│   └── RaspberryPi_example/       AHT20 sensor demo (Python)
-├── Qwerty114514217/
-│   ├── project_4/                 Vivado project - basic logic / generate
-│   ├── project_6/                 Vivado project - UART
-│   ├── project_6.xpr
-│   └── IP.7z                      Packaged blk_mem_gen IP project (archive)
-├── wyh/
-│   └── led_shell/                 LED + shell state-machine implementation
-│       ├── Led_Shell.xpr
-│       ├── Led_Shell.srcs/
-│       ├── Led_Shell.sdk/
-│       ├── src/  tb/  scripts/  docs/
-│       └── README.md
-├── billion605/
-│   └── JL-0100/                   STM32 practice projects (Keil)
-├── ZardFan334/
-│   └── 2work.cpp                  Small C exercise
+├── Training/                      Standardized training projects
+│   ├── 17L-PKX/
+│   │   └── LabTrain/
+│   │       └── test/              Zynq LED + letter-shell project
+│   ├── Qwerty114514217/
+│   │   ├── project_4/
+│   │   ├── project_6/
+│   │   ├── project_6.xpr
+│   │   └── IP.7z
+│   ├── wyh/
+│   │   └── led_shell/
+│   └── docs/                      Shared training documentation
+│       ├── FormattExample.pdf
+│       ├── OpenColink-horizontal.png
+│       ├── traindoc.docx
+│       └── 购买参考/
+├── RaspberryPi/                   Raspberry Pi projects
+│   └── 17L-PKX/
+│       └── RaspberryPi_example/
+├── STM32/                         STM32 projects
+│   └── billion605/
+│       └── JL-0100/
+├── C++/                           C++ projects
+│   └── ZardFan334/
+│       └── 2work.cpp
+├── Python/                        Python projects
+│   └── 114514gyh1111/
+│       ├── 九九乘法倒叙版.py
+│       └── 会员充值系统.py
 ├── dsh-agent/
 │   └── Zard-Fan2/
 └── .gitignore
 ```
 
-**Each top-level folder is named after the contributor who submitted it.**
-`17L-PKX/` also holds the shared training documentation under `docs/`.
+**Projects are grouped by technology (`Training/`, `RaspberryPi/`, `STM32/`, `C++/`, `Python/`),
+and inside each group by contributor name.** The shared training documentation lives in
+`Training/docs/` and is not attributed to any single contributor.
 
 ---
 
