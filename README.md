@@ -49,36 +49,39 @@ Connect at 115200 8N1 and the prompt `letter:/$` should appear.
 
 ```text
 .
-├── docs/
-│   ├── FormattExample.pdf         Xilinx PG021 reference (format example)
-│   ├── OpenColink-horizontal.png  Logo used on the cover page
-│   ├── traindoc.docx              Training documentation (Word source)
-│   └── 购买参考/                   Purchase reference images
-├── LabTrain/                      Lab / training projects
-│   └── test/                      Vivado project
-│       ├── test.xpr               Vivado project file
-│       ├── test.srcs/
-│       │   ├── sources_1/
-│       │   │   ├── new/
-│       │   │   │   └── led_ctl.v  * PL — LED control module (PWM + blink)
-│       │   │   └── bd/design01/
-│       │   │       └── design01.bd * Block Design (PS + AXI GPIO + led_ctl)
-│       │   └── constrs_1/new/
-│       │       └── led_ctl.xdc    Pin constraint: led_red -> W14
-│       └── test.sdk/
-│           └── shell/             Xilinx SDK application project
-│               └── src/
-│                   ├── helloworld.c * PS — shell main program + led command
-│                   ├── lscript.ld   Linker script (contains the shellCommand section)
-│                   ├── shell.c/.h   letter-shell 3.2.4 library
-│                   ├── shell_cfg.h  Library configuration (bare-metal mode)
-│                   ├── shell_ext.*  Library extension (parameter parsing)
-│                   └── platform.c/.h Xilinx template
-└── .gitignore                     Excludes Vivado / SDK build artefacts
+├── 17L-PKX/                       Maintainer: training docs + Zynq LED/shell project
+│   ├── docs/
+│   │   ├── FormattExample.pdf     Xilinx PG021 reference (format example)
+│   │   ├── OpenColink-horizontal.png
+│   │   ├── traindoc.docx          Training documentation (Word source)
+│   │   └── 购买参考/               Purchase reference images
+│   ├── LabTrain/
+│   │   └── test/                  Vivado project (LED control + letter-shell)
+│   │       ├── test.xpr
+│   │       ├── test.srcs/
+│   │       └── test.sdk/
+│   └── RaspberryPi_example/       AHT20 sensor demo (Python)
+├── Qwerty114514217/
+│   ├── project_4/                 Vivado project - basic logic / generate
+│   ├── project_6/                 Vivado project - UART
+│   ├── project_6.xpr
+│   └── IP.7z                      Packaged blk_mem_gen IP project (archive)
+├── wyh/
+│   └── led_shell/                 LED + shell state-machine implementation
+│       ├── Led_Shell.xpr
+│       ├── Led_Shell.srcs/
+│       ├── Led_Shell.sdk/
+│       ├── src/  tb/  scripts/  docs/
+│       └── README.md
+├── ZardFan334/
+│   └── 2work.cpp                  Small C exercise
+├── dsh-agent/
+│   └── Zard-Fan2/
+└── .gitignore
 ```
 
-**The four files marked `*` are the ones written for this project**; everything
-else is Xilinx-generated or third-party code.
+**Each top-level folder is named after the contributor who submitted it.**
+`17L-PKX/` also holds the shared training documentation under `docs/`.
 
 ---
 
