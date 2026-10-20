@@ -1,0 +1,6 @@
+PySide6_Essentials==6.11.2
+PySide6_Addons==6.11.2
+httpx==0.28.1
+mutagen==1.47.0
+pycryptodome==3.23.0
+keyring==25.7.0

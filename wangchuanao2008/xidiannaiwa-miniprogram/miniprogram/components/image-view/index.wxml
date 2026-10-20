@@ -1,0 +1,4 @@
+<view class="frame">
+  <image wx:if="{{src && !failed && !retrying}}" class="image" src="{{src}}" mode="{{mode}}" lazy-load="{{lazy}}" binderror="onError" aria-label="{{alt}}" />
+  <view wx:else class="unavailable"><text>图片暂不可用</text><button catchtap="retry" class="retry">重新加载</button></view>
+</view>

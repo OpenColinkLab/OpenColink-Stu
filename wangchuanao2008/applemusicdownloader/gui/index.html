@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>amdl 音乐下载</title>
+<style>
+  :root {
+    --bg: #101418; --card: #181e25; --card2: #1f2630; --line: #2a333f;
+    --text: #e6ebf1; --dim: #8b97a5; --accent: #4c8dff; --ok: #34c77b; --bad: #ff6b6b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.6 system-ui, -apple-system, "PingFang SC", sans-serif;
+    padding: 24px 16px 60px;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0; display: flex; align-items: center; gap: 10px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-top: 16px; }
+  .card h2 { font-size: 15px; margin: 0 0 12px; color: var(--dim); font-weight: 600; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; }
+  input[type=text] {
+    flex: 1 1 320px; background: var(--card2); border: 1px solid var(--line);
+    border-radius: 8px; color: var(--text); padding: 10px 12px; font-size: 14px;
+  }
+  input[type=text]:focus { outline: none; border-color: var(--accent); }
+  button {
+    background: var(--accent); color: #fff; border: 0; border-radius: 8px;
+    padding: 10px 18px; font-size: 14px; cursor: pointer; white-space: nowrap;
+  }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button.ghost { background: var(--card2); border: 1px solid var(--line); color: var(--text); }
+  button.mini { padding: 4px 10px; font-size: 12px; }
+  .hint { color: var(--dim); font-size: 12.5px; margin-top: 8px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--bad); display: inline-block; }
+  .dot.on { background: var(--ok); }
+  .status-line { font-size: 13px; color: var(--dim); }
+  .track { background: var(--card2); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-top: 10px; }
+  .track .tname { font-weight: 600; font-size: 14px; margin-bottom: 6px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font-size: 12px; border-radius: 999px; padding: 3px 10px; background: #23303f; color: #b9cfe8; }
+  .chip.no { background: #232830; color: #67717d; text-decoration: line-through; }
+  .tiers { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+  .tier { display: flex; align-items: center; gap: 10px; background: var(--card2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; cursor: pointer; }
+  .tier.off { opacity: .4; cursor: not-allowed; }
+  .tier.sel { border-color: var(--accent); }
+  .tier input { accent-color: var(--accent); }
+  .tier .sub { color: var(--dim); font-size: 12px; margin-left: auto; text-align: right; }
+  pre {
+    background: #0b0e12; border: 1px solid var(--line); border-radius: 8px;
+    padding: 12px; font-size: 12px; line-height: 1.5; overflow: auto;
+    max-height: 260px; white-space: pre-wrap; word-break: break-all; color: #a8b6c4;
+  }
+  .file { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 13px; }
+  .file .fp { color: var(--dim); font-size: 12px; word-break: break-all; }
+  .file .fb { margin-left: auto; }
+  .banner { font-size: 13px; color: var(--dim); margin-bottom: 8px; }
+  .banner b { color: var(--text); }
+  .err { color: var(--bad); font-size: 13px; margin-top: 6px; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>amdl 音乐下载 <span class="status-line"><span id="dot" class="dot"></span> <span id="regions">后端检测中…</span></span></h1>
+
+  <div class="card">
+    <h2>查询可用音质</h2>
+    <div class="row">
+      <input type="text" id="url" placeholder="粘贴 music.apple.com 的歌曲或专辑链接">
+      <button id="btnQuery" onclick="query()">查询音质</button>
+    </div>
+    <div class="hint">查询只读取 Apple 服务器上的档位信息，不会下载任何文件。</div>
+    <div id="queryErr" class="err hidden"></div>
+  </div>
+
+  <div class="card">
+    <h2>下载目录</h2>
+    <div class="row">
+      <input type="text" id="dlDir" placeholder="留空 = 默认（本工具目录下的 AM-Lossless / AM-Atmos / AM-AAC / AM-MV）">
+      <button class="ghost" id="btnBrowse" onclick="browseDir()">浏览…</button>
+      <button id="btnSaveDir" onclick="saveDir()">保存</button>
+    </div>
+    <div class="hint">填绝对路径（支持 ~ 开头）。自定义后，界面下载的音频文件（m4a）直接存到该目录，不建任何子文件夹；独立封面图片不再保存（封面仅内嵌在音频文件中）。注意：不同专辑的同名曲目会互相覆盖，同一首歌重复下载会跳过。只对图形界面生效，不改 config.yaml、不影响命令行。</div>
+    <div id="dirMsg" class="hint hidden"></div>
+  </div>
+
+  <div class="card hidden" id="resultCard">
+    <h2>选择音质下载</h2>
+    <div id="singleNote" class="hint hidden" style="margin-bottom:8px"></div>
+    <div class="tiers" id="tiers"></div>
+    <div class="row" style="margin-top:12px">
+      <button id="btnDownload" onclick="download()">下载所选音质</button>
+    </div>
+    <div id="dlErr" class="err hidden"></div>
+    <h2 style="margin-top:16px">曲目音质明细</h2>
+    <div id="tracks"></div>
+  </div>
+
+  <div class="card hidden" id="jobCard">
+    <h2>任务</h2>
+    <div class="banner" id="banner"></div>
+    <div class="row" style="margin-bottom:10px">
+      <button class="ghost mini" id="btnStop" onclick="stopJob()">停止当前任务</button>
+    </div>
+    <pre id="log"></pre>
+    <div id="files"></div>
+  </div>
+</main>
+
+<script>
+const TIERS = [
+  { id: "lossless-192000", label: "Hi-Res 无损（最高 192 kHz）", key: "Hi-Res Lossless" },
+  { id: "lossless-96000",  label: "Hi-Res 无损（上限 96 kHz）",  key: "Hi-Res Lossless" },
+  { id: "lossless-44100",  label: "无损 ALAC（上限 44.1 kHz）",  key: "Lossless" },
+  { id: "aac",             label: "AAC 有损（256 kbps）",        key: "AAC" },
+  { id: "atmos",           label: "杜比全景声",                  key: "Dolby Atmos" },
+];
+const FORMAT_KEYS = ["AAC", "Lossless", "Hi-Res Lossless", "Dolby Atmos"];
+let tracks = [];
+let selected = null;
+let job = null;
+let singleInfo = null;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// 直接以文件方式打开（file://）时没有后端服务可连，给出明确指引而不是"后端未运行"
+const WRONG_OPEN = location.protocol === "file:";
+if (WRONG_OPEN) {
+  document.querySelector("main").insertAdjacentHTML("afterbegin", `
+    <div class="card" style="border-color: var(--bad)">
+      <h2 style="color: var(--bad)">不能直接打开 HTML 文件</h2>
+      <div>这个页面是本地服务的界面，需要服务端提供数据。请：<br>
+      1. 在终端进入工具目录运行 <code>./start-gui.sh</code>（保持窗口开启）<br>
+      2. 在浏览器地址栏访问 <a href="http://127.0.0.1:8890" style="color: var(--accent)"><b>http://127.0.0.1:8890</b></a></div>
+    </div>`);
+}
+
+async function post(path, data) {
+  const r = await fetch(path, { method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(data || {}) });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error || ("HTTP " + r.status));
+  return j;
+}
+
+async function pollStatus() {
+  try {
+    const s = await (await fetch("/api/status")).json();
+    $("dot").classList.toggle("on", s.running);
+    $("regions").textContent = s.running
+      ? "后端就绪（地区: " + (s.regions.join(", ") || "-") + "）"
+      : "后端未运行 — 请先在终端执行 ./start-wrapper.sh";
+  } catch { $("dot").classList.remove("on"); $("regions").textContent = "后端未运行 — 请先在终端执行 ./start-wrapper.sh"; }
+}
+
+function tierState(tier) {
+  const n = tracks.filter(t => {
+    const v = t.formats[tier.key];
+    return v && v !== "Not Available";
+  }).length;
+  if (n === 0) return { ok: false, note: "该曲库不含此档" };
+  if (n === tracks.length) return { ok: true, note: "可用" };
+  return { ok: true, note: `部分曲目可用（${n}/${tracks.length}）` };
+}
+
+function renderTiers() {
+  const box = $("tiers");
+  if (!selected) {
+    for (const t of TIERS) if (tierState(t).ok) { selected = t.id; break; }
+  }
+  box.innerHTML = "";
+  for (const t of TIERS) {
+    const st = tierState(t);
+    const div = document.createElement("label");
+    div.className = "tier" + (st.ok ? "" : " off") + (selected === t.id ? " sel" : "");
+    div.innerHTML = `<input type="radio" name="tier" ${selected === t.id ? "checked" : ""} ${st.ok ? "" : "disabled"}>
+      <span>${esc(t.label)}</span><span class="sub">${esc(st.note)}</span>`;
+    if (st.ok) div.querySelector("input").onchange = () => { selected = t.id; renderTiers(); };
+    box.appendChild(div);
+  }
+}
+
+function renderSingle() {
+  const el = $("singleNote");
+  if (!singleInfo) { el.classList.add("hidden"); return; }
+  const total = singleInfo.total > 1 ? `（所在专辑共 ${singleInfo.total} 首）` : "";
+  el.innerHTML = `单曲模式：链接含 <code>?i=</code> 参数，仅展示该曲目音质，下载也只会下载这一首 — <b>${esc(singleInfo.name)}</b>${esc(total)}`;
+  el.classList.remove("hidden");
+}
+
+function renderTracks() {
+  $("tracks").innerHTML = tracks.map((t, i) => {
+    const chips = FORMAT_KEYS.map(k => {
+      const v = t.formats[k];
+      const ok = v && v !== "Not Available";
+      return `<span class="chip ${ok ? "" : "no"}">${esc(k)}${ok ? " · " + esc(v) : " 不可用"}</span>`;
+    }).join("");
+    return `<div class="track"><div class="tname">${esc(t.name || ("曲目 " + (i + 1)))}</div><div class="chips">${chips}</div></div>`;
+  }).join("");
+}
+
+function renderJob() {
+  if (!job) { $("jobCard").classList.add("hidden"); return; }
+  $("jobCard").classList.remove("hidden");
+  const state = job.running
+    ? (job.kind === "query" ? "<b>查询中…</b>" : "<b>下载中…</b>")
+    : (job.error ? "<b>任务异常</b>" : `<b>已完成</b>（退出码 ${job.returncode ?? "-"}）`);
+  $("banner").innerHTML = `${state} · ${job.kind === "query" ? "查询" : "下载"}`;
+  $("btnStop").disabled = !job.running;
+  const pre = $("log");
+  const text = job.lines.join("\n");
+  if (pre.textContent !== text) {
+    pre.textContent = text;
+    pre.scrollTop = pre.scrollHeight;
+  }
+  $("files").innerHTML = (job.files || []).map(f =>
+    `<div class="file"><div><div>${esc(f.song || f.path)} <span class="fp">— ${esc(f.artist || "")}《${esc(f.album || "")}》</span></div>
+     <div class="fp">${esc(f.abs || f.path)}</div></div>
+     <span class="fb"><button class="ghost mini" onclick="reveal('${esc((f.abs || f.path).replace(/'/g, "\\'"))}')">在 Finder 中显示</button></span></div>`
+  ).join("");
+}
+
+async function refreshJob() {
+  try {
+    const j = (await (await fetch("/api/job")).json()).job;
+    const wasRunning = job && job.running;
+    job = j;
+    renderJob();
+    const busy = j && j.running;
+    $("btnQuery").disabled = busy;
+    $("btnDownload").disabled = busy;
+    if (j && !j.running && j.kind === "query" && j.tracks && j.tracks.length
+        && JSON.stringify(j.tracks) !== JSON.stringify(tracks)) {
+      tracks = j.tracks;
+      singleInfo = j.single || null;
+      if (!$("url").value.trim() && j.url) $("url").value = j.url;
+      renderTiers();
+      renderTracks();
+      renderSingle();
+    }
+    $("resultCard").classList.toggle("hidden", tracks.length === 0);
+  } catch {}
+}
+
+async function query() {
+  const err = $("queryErr"); err.classList.add("hidden");
+  try {
+    await post("/api/query", { url: $("url").value.trim() });
+    refreshJob();
+  } catch (e) { err.textContent = e.message; err.classList.remove("hidden"); }
+}
+
+async function download() {
+  const err = $("dlErr"); err.classList.add("hidden");
+  try {
+    await post("/api/download", { url: $("url").value.trim(), quality: selected });
+    refreshJob();
+  } catch (e) { err.textContent = e.message; err.classList.remove("hidden"); }
+}
+
+async function stopJob() { try { await post("/api/stop"); } catch {} }
+async function reveal(path) { try { await post("/api/reveal", { path }); } catch {} }
+
+async function browseDir() {
+  const btn = $("btnBrowse");
+  btn.disabled = true; btn.textContent = "等待选择…";
+  try {
+    const r = await post("/api/browse", {});
+    if (r.ok && r.path) {
+      $("dlDir").value = r.path;
+      await saveDir();
+    } else if (r.error) {
+      const m = $("dirMsg");
+      m.classList.remove("hidden");
+      m.textContent = r.error;
+    }
+  } catch (e) {
+    const m = $("dirMsg");
+    m.classList.remove("hidden");
+    m.textContent = e.message;
+  } finally { btn.disabled = false; btn.textContent = "浏览…"; }
+}
+
+async function loadSettings() {
+  try {
+    const s = await (await fetch("/api/settings")).json();
+    $("dlDir").value = s.download_dir || "";
+  } catch {}
+}
+
+async function saveDir() {
+  const msg = $("dirMsg");
+  msg.classList.remove("hidden");
+  try {
+    const r = await post("/api/settings", { download_dir: $("dlDir").value.trim() });
+    $("dlDir").value = r.download_dir || "";
+    msg.textContent = r.download_dir
+      ? `✓ 已保存，之后的下载将直接存到 ${r.download_dir}`
+      : "✓ 已恢复默认目录";
+  } catch (e) { msg.textContent = e.message; return; }
+}
+
+if (!WRONG_OPEN) {
+  pollStatus();
+  setInterval(pollStatus, 5000);
+  setInterval(refreshJob, 800);
+  refreshJob();
+  loadSettings();
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) { pollStatus(); refreshJob(); }
+  });
+}
+</script>
+</body>
+</html>

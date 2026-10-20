@@ -1,0 +1,142 @@
+- document:
+  - banner:
+    - button "奶蛙鉴定所"
+    - button "打开更新日志"
+    - button "打开我的身份"
+    - link "奶蛙博物馆首页":
+      - /url: "#top"
+      - strong: MILK FROG
+      - text: 奶 蛙
+  - main:
+    - region "奶蛙博物馆首页影像":
+      - text: THE MILK FROG
+      - heading "跨越艺术史的 静默凝视" [level=1]
+      - link "探索典藏":
+        - /url: "#collection"
+      - button "参观中国馆"
+      - button "暂停背景音乐"
+  - text: Curatorial Statement
+  - paragraph:
+    - text: 穿越三万年的凝视，
+    - emphasis: 奶蛙
+    - text: 栖身于人类最伟大的画布之中。 从洞窟的火光到印象派的午后， 一个圆润而沉静的身影，
+    - emphasis: 始终在场
+    - text: 。
+  - text: — 奶蛙馆长
+  - button "上一首"
+  - img "木质黑胶唱片机"
+  - button "下一首"
+  - text: MFM · SOUND ARCHIVE
+  - strong: Nocturne No. 2 in E Flat Major, Op. 9, No. 2
+  - text: 馆内背景音乐 · 01 / 02 The Permanent Collection
+  - heading "典藏系列" [level=2]
+  - group "展示顺序":
+    - button "按入馆"
+    - text: /
+    - button "按年代"
+    - text: /
+    - button "按流派"
+  - button "全部"
+  - button "近一个月"
+  - button "近一年"
+  - button "查看作品：巨石阵黎明奶蛙":
+    - img "巨石阵黎明奶蛙"
+    - text: View Work
+    - heading "巨石阵黎明奶蛙" [level=3]
+    - text: Neolithic Builders 约公元前2500年
+  - button "查看作品：吕根岛白垩崖奶蛙":
+    - img "吕根岛白垩崖奶蛙"
+    - text: View Work
+    - heading "吕根岛白垩崖奶蛙" [level=3]
+    - text: Caspar David Friedrich 约1818
+  - button "查看作品：吉萨的狮身人面像奶蛙":
+    - img "吉萨的狮身人面像奶蛙"
+    - text: View Work
+    - heading "吉萨的狮身人面像奶蛙" [level=3]
+    - text: David Roberts 1839
+  - button "查看作品：卢浮宫废墟的想象图奶蛙":
+    - img "卢浮宫废墟的想象图奶蛙"
+    - text: View Work
+    - heading "卢浮宫废墟的想象图奶蛙" [level=3]
+    - text: Hubert Robert 1796
+  - button "查看作品：纳尔尼桥奶蛙":
+    - img "纳尔尼桥奶蛙"
+    - text: View Work
+    - heading "纳尔尼桥奶蛙" [level=3]
+    - text: Jean-Baptiste-Camille Corot 1827
+  - button "查看作品：荷拉斯兄弟之誓奶蛙":
+    - img "荷拉斯兄弟之誓奶蛙"
+    - text: View Work
+    - heading "荷拉斯兄弟之誓奶蛙" [level=3]
+    - text: Jacques-Louis David 1784
+  - navigation "作品分页":
+    - button "上一页": ‹
+    - button "第1页": "1"
+    - button "第2页": "2"
+    - button "第3页": "3"
+    - button "第4页": "4"
+    - button "第5页": "5"
+    - button "第6页": "6"
+    - button "第7页": "7"
+    - button "第8页": "8"
+    - button "第9页": "9"
+    - button "第10页": "10"
+    - button "第11页": "11"
+    - button "第12页": "12"
+    - button "第13页": "13"
+    - button "第14页": "14"
+    - button "第15页": "15"
+    - button "第16页": "16"
+    - button "第17页": "17"
+    - button "第18页": "18"
+    - button "第19页": "19"
+    - button "下一页": ›
+  - text: Nieta Art · Other Rooms
+  - heading "分馆" [level=2]
+  - link "01 3D 展馆 走进可漫游的首展馆":
+    - /url: https://neta.art/w/6f97ac11-95f5-451f-b4c6-214c3f02668a
+  - link "02 奶蛙小镇 奶白广场":
+    - /url: https://neta.art/w/337d4274-ff22-43c7-9e3c-7f03e58766e8
+  - link "03 奶蛙尖塔 The Soft Ascent":
+    - /url: https://neta.art/w/c659fde8-8117-4fc4-82ed-751c781308c4
+  - link "04 制造所 捏一只自己的奶蛙":
+    - /url: https://neta.art/w/8a36fbe6-51f2-4ad9-9f28-46f933f756b1
+  - link "05 奶龙幸存者 割草":
+    - /url: https://neta.art/w/68438093-6659-4747-87b7-4d8e47dc093b
+  - contentinfo:
+    - text: 请勿再发布丑化、恶搞奶蛙的非官方表情包，奶蛙的形象需要大家共同守护，建议分享正版素材。请大家遵守一起维护积极愉快的氛围，感谢配合。 奶蛙
+    - emphasis: 博物馆
+    - text: Where the sublime meets the serene.
+    - heading "参观" [level=4]
+    - text: 周二 — 周日 10:00 — 18:00 周一闭馆
+    - heading "展馆" [level=4]
+    - link "常设典藏":
+      - /url: "#collection"
+    - link "年代长廊":
+      - /url: "#collection"
+    - link "策展序言":
+      - /url: "#intro"
+    - heading "联系" [level=4]
+    - text: 奶蛙馆长 1610636536@qq.com +00 000 0000 © MMXXV Musée du Milk Frog · All Works Transformative Parody
+  - text: ×
+  - button "查看作品故事":
+    - text: 轻触查看作品故事 作品轶事 关于这件作品的相关逸事仍在博物馆资料中持续核对。 ORIGINAL ARTWORK
+    - img "仿 巨石阵黎明全景参考图"
+    - text: 轻触返回
+  - text: 史前 MFM · PRE-06
+  - heading "巨石阵黎明奶蛙" [level=3]
+  - text: Stonehenge at Dawn Milk Frog 原作 仿 巨石阵黎明全景 艺术家 Neolithic Builders 年代 约公元前2500年 作品介绍 巨石阵约建于公元前2500年，其主轴对准夏至日出与冬至日落，兼具仪式与天文功能。 作品鉴赏 巨石的重复排列把自然地景转化为方向性的仪式空间：重量、间距与天体运行之间形成跨越千年的对应。建造者如何搬运数十吨的巨石至今成谜，黎明时分的巨石阵仍是人类时间感的最大物证。
+  - button "收藏这件馆藏": 收藏馆藏
+  - button "喜欢这件馆藏":
+    - text: 喜欢
+    - emphasis: "0"
+  - region "作品评论":
+    - text: 观众评论
+    - emphasis: "0"
+    - text: 还没有观众留下评论。
+    - textbox "评论内容":
+      - /placeholder: 完成奶蛙身份证后留下你的看法……
+    - text: 登录 Studio 后可评论
+    - button "发表评论"
+  - text: ×
+  - heading [level=2]

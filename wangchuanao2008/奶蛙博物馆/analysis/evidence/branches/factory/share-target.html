@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <!--
+      interactive-widget=resizes-content: Android Chrome shrinks the layout
+      viewport when the soft keyboard opens instead of panning the visual
+      viewport. Panning can leave the shell offset after the keyboard closes,
+      exposing the root canvas below the composer. iOS ignores this key.
+    -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <title>Cohub</title>
+    <meta name="application-name" content="Cohub" />
+    <meta name="apple-mobile-web-app-title" content="Cohub" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="color-scheme" content="light dark" />
+    <!-- Favicons are set per-route (Work pages use Work icons; others use shell defaults). -->
+    <script>
+      (() => {
+        var segments = location.pathname.split('/').filter(Boolean);
+        var isPublicWorkUrl = segments.length === 4 && segments[2] === 'w';
+        var href = isPublicWorkUrl
+          ? `/app.webmanifest?start_url=${encodeURIComponent(location.pathname)}`
+          : '/manifest.webmanifest';
+        document.write(`<link rel="manifest" href="${href}" />`);
+      })();
+    </script>
+    <meta name="theme-color" content="#FFFFFF" />
+    <script>
+      // Prevent FOUC — resolve theme before first paint
+      (() => {
+        function readStoredValue(key) {
+          try {
+            return localStorage.getItem(key);
+          } catch (_error) {
+            return null;
+          }
+        }
+        function resolveUiLocale(preference, languages) {
+          var languageIndex;
+          var primaryLanguage;
+          if (preference === 'en' || preference === 'zh-CN') return preference;
+          for (languageIndex = 0; languageIndex < languages.length; languageIndex++) {
+            primaryLanguage = (languages[languageIndex] || '').split('-')[0].toLowerCase();
+            if (primaryLanguage === 'en') return 'en';
+            if (primaryLanguage === 'zh') return 'zh-CN';
+          }
+          return 'en';
+        }
+
+        // Resolve the UI language before paint. The reactive locale store takes
+        // over after hydration and keeps this attribute in sync.
+        var pathForLocale = location.pathname;
+        function isPublicLangPath(path) {
+          if (path === '/' || path === '') return true;
+          if (path.indexOf('/docs') === 0 || path.indexOf('/pricing') === 0 || path.indexOf('/changelog') === 0 || path.indexOf('/trending') === 0) return true;
+          if (path.indexOf('/invite') === 0 || path.indexOf('/referrals') === 0 || path.indexOf('/app-auth') === 0 || path === '/callback') return true;
+          var seg = path.split('/').filter(Boolean);
+          if (seg.length === 4 && (seg[2] === 'w' || seg[2] === 'join')) return true;
+          if (seg[0] === 'zh') return true;
+          return false;
+        }
+        var localePreference = readStoredValue('cohub-locale') || 'system';
+        var pubSeg = pathForLocale.split('/').filter(Boolean);
+        // Public pages derive lang from the URL (set by SSR); the app shell
+        // uses the persisted / browser preference.
+        var locale = isPublicLangPath(pathForLocale)
+          ? (pubSeg[0] === 'zh' ? 'zh-CN' : 'en')
+          : resolveUiLocale(localePreference, navigator.languages || [navigator.language]);
+        document.documentElement.lang = locale;
+
+        // Mirrors --bg-primary of each theme (theme-registry.ts) so browser
+        // chrome and the root canvas share one color before hydration.
+        var themeColors = {
+          dark: '#101213',
+          light: '#FFFFFF',
+          'solarized-dark': '#011415',
+          'solarized-light': '#FFFADE',
+          'neta-studio': '#050605'
+        };
+        var stored = readStoredValue('cohub-theme');
+        var resolved;
+        var path = location.pathname;
+        // Marketing home renders light so product captures only need one theme;
+        // other public pages follow the visitor theme.
+        var isHome = path === '/' || path === '';
+        if (isHome) {
+          resolved = 'light';
+        } else if (Object.hasOwn(themeColors, stored)) {
+          resolved = stored;
+        } else if (stored === 'system' || !stored) {
+          resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        } else {
+          resolved = 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', resolved);
+        document.querySelector('meta[name="theme-color"]')?.setAttribute(
+          'content',
+          themeColors[resolved]
+        );
+
+        // Home: if a session may exist, hide marketing before paint (SEO HTML still in DOM).
+        var homeHint = false;
+        var homeToken = '';
+        var homeLogto = false;
+        var logtoApps = ['vpikk7sl9zwvefiptowtn', '16ai0wao2mud3xqkbzqo0'];
+        var i = 0;
+        if (path === '/' || path === '') {
+          try {
+            homeHint = readStoredValue('cohub:session-hint') === '1';
+            homeToken = (readStoredValue('cohub_token') || '').trim();
+            // Official Logto app ids (dev + prod) — residue means a prior session.
+            for (i = 0; i < logtoApps.length; i++) {
+              if (
+                readStoredValue(`logto:${logtoApps[i]}:refreshToken`) ||
+                readStoredValue(`logto:${logtoApps[i]}:idToken`)
+              ) {
+                homeLogto = true;
+                break;
+              }
+            }
+            if (homeHint || homeToken || homeLogto) {
+              document.documentElement.setAttribute('data-home-redirect', '1');
+            }
+          } catch (_error) {}
+        }
+      })();
+    </script>
+    <!--1l0quee--><!--[-1--><!--]--><!----><!--qkm5ci--><!--[0--><meta name="cohub-app-lang" content="zh-CN"/><!--]--> <meta name="description" content="捏奶蛙、做表情、和朋友配一对，把喜欢的东西戴在身上。"/> <meta name="robots" content="index,follow"/> <link rel="canonical" href="https://cohub.live/atou/milkfrog/w/milkfrog"/> <!--[0--><link rel="preconnect" href="https://works.cohub.live" crossorigin="anonymous"/><!--]--> <link rel="icon" href="https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/favicon.png"/> <link rel="apple-touch-icon" href="https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/favicon.png"/> <meta name="application-name" content="奶蛙制造所 · 捏一只自己的奶蛙"/> <meta name="apple-mobile-web-app-title" content="奶蛙制造所 · 捏一只自己的奶蛙"/> <!--[0--><meta name="theme-color" content="#edf0ee"/><!--]--> <meta property="og:type" content="website"/> <meta property="og:site_name" content="奶蛙制造所 · 捏一只自己的奶蛙"/> <meta property="og:title" content="奶蛙制造所 · 捏一只自己的奶蛙"/> <meta property="og:description" content="捏奶蛙、做表情、和朋友配一对，把喜欢的东西戴在身上。"/> <meta property="og:url" content="https://cohub.live/atou/milkfrog/w/milkfrog"/> <!--[0--><meta property="og:locale" content="zh_CN"/><!--]--> <!--[0--><meta property="og:image" content="https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/favicon.png"/> <meta property="og:image:alt" content="奶蛙制造所 · 捏一只自己的奶蛙"/><!--]--> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title" content="奶蛙制造所 · 捏一只自己的奶蛙"/> <meta name="twitter:description" content="捏奶蛙、做表情、和朋友配一对，把喜欢的东西戴在身上。"/> <!--[0--><meta name="twitter:image" content="https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/favicon.png"/><!--]--> <!----><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"奶蛙制造所 · 捏一只自己的奶蛙","description":"捏奶蛙、做表情、和朋友配一对，把喜欢的东西戴在身上。","url":"https://cohub.live/atou/milkfrog/w/milkfrog","applicationCategory":"WebApplication","operatingSystem":"Any","inLanguage":"zh-CN","image":"https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/favicon.png","author":{"@type":"Person","name":"ATou","url":"https://cohub.live/atou"},"isPartOf":{"@type":"WebSite","name":"奶蛙制造所 · 捏一只自己的奶蛙","url":"https://cohub.live"},"datePublished":"2026-09-10T15:08:58.341Z","dateModified":"2026-09-21T06:33:29.870Z"}]}</script><!----><!----><title>奶蛙制造所 · 捏一只自己的奶蛙</title>
+		<link href="../../../_app/immutable/assets/app.HRy7Uirw.css" rel="stylesheet">
+		<link href="../../../_app/immutable/assets/composer-insert.Dc9neHGc.css" rel="stylesheet">
+		<link href="../../../_app/immutable/assets/bridge-host.Ys-YO7eN.css" rel="stylesheet">
+		<link href="../../../_app/immutable/assets/time.CCBzS7sU.css" rel="stylesheet">
+		<link href="../../../_app/immutable/assets/BoardPanel.CyWdy64s.css" rel="stylesheet">
+		<link href="../../../_app/immutable/assets/CodeEditor.DBpr7OC-.css" rel="stylesheet">
+		<link href="../../../_app/immutable/assets/PdfPreview.CyxaeBAs.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><!--[0--><!--[--><!--[0--><div class="safe-area-top h-full overflow-hidden bg-bg-primary text-text-primary"><!--[0--><!--[--><!--[0--><!--[--><!--[--><!----> <!--[1--><div class="h-full bg-bg-primary" aria-hidden="true"></div><!--]--><!--]--><!----><!--]--><!--]--><!----><!--]--><!--]--><!----></div><!--]--><!--]--><!--]--><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1gvun2v = {
+						base: new URL("../../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../../_app/immutable/entry/start.C3WBiwef.js"),
+						import("../../../_app/immutable/entry/app.HWB5kL1s.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 7, 8, 9, 42],
+							data: [null,null,null,null,(function(a){a.id="8a36fbe6-51f2-4ad9-9f28-46f933f756b1";a.spaceId="5990ff16-a7fb-4bcf-91fe-66eb8206d499";a.userUuid="dec89612d5074605aeeb101a2918379a";a.slug="milkfrog";a.status="published";a.visibility="public";a.targetType="directory";a.targetRef=".";a.assetKey="w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/index.html";a.currentVersionId="69a42f3a-a6dd-4d61-9421-3c5f935987a9";a.latestVersion=42;a.publishedAt="2026-09-10T15:08:58.341Z";a.allowedViewerScopes=[];a.meta={icon:"https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/favicon.png",lang:"zh-CN",title:"奶蛙制造所 · 捏一只自己的奶蛙",runtime:{source:{ref:"app-sources/dec89612d5074605aeeb101a2918379a/860a8af1-8f98-4b72-a597-5c0e42d6d692/39fe1f9a-1167-4d07-b8bc-77d9a230f993",type:"upload"}},extracted:{icon:"https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/favicon.png",lang:"zh-CN",image:null,title:"奶蛙制造所 · 捏一只自己的奶蛙",surface:null,sourcePath:"index.html",themeColor:"#edf0ee",description:"捏奶蛙、做表情、和朋友配一对，把喜欢的东西戴在身上。",extractedAt:"2026-09-21T06:33:29.869Z"},themeColor:"#edf0ee",description:"捏奶蛙、做表情、和朋友配一对，把喜欢的东西戴在身上。",presentation:{hideCohubBar:true}};a.createdAt="2026-09-10T15:09:01.245Z";a.updatedAt="2026-09-21T06:33:29.870Z";a.appScopes=[];return {type:"data",data:{mode:"ready",app:a,work:a,space:{id:"5990ff16-a7fb-4bcf-91fe-66eb8206d499",slug:"milkfrog",name:"奶蛙化头像 App",userUuid:"dec89612d5074605aeeb101a2918379a",publicProfile:{avatarUrl:null}},owner:{userUuid:"dec89612d5074605aeeb101a2918379a",username:"atou",displayName:"ATou",avatarUrl:"https://oss.talesofai.cn/picture/87236332-8f60-44dd-9feb-3293fe91556a.webp?x-oss-process=image/resize,w_1280,m_lfit"},publisher:{userUuid:"dec89612d5074605aeeb101a2918379a",username:"atou",displayName:"ATou",avatarUrl:"https://oss.talesofai.cn/picture/87236332-8f60-44dd-9feb-3293fe91556a.webp?x-oss-process=image/resize,w_1280,m_lfit"},content:{kind:"web",url:"https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/index.html",targetType:"directory",path:".",download:{manifestUrl:"https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/meta/manifest.json",manifestSha256:"4478f2674353379b13ce42be5d42b795a7e4dd65643f5046645553b2b764a6b1"}},publicUrl:"https://cohub.live/atou/milkfrog/w/milkfrog",totalViews:1050,version:{id:"69a42f3a-a6dd-4d61-9421-3c5f935987a9",version:42,contentKind:"web",source:null,createdAt:"2026-09-21T06:33:29.870Z"},requestedVersion:null,pathname:"/atou/milkfrog/w/milkfrog",origin:"https://cohub.live"},uses:{search_params:["cohub_v"],params:["username","spaceSlug","appSlug"],url:1}}}({}))],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

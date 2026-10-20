@@ -1,0 +1,31 @@
+- document:
+  - main:
+    - main:
+      - link "返回 Studio":
+        - /url: /
+        - img "NETA.ART"
+      - text: 奶蛙博物馆
+      - button "登录"
+      - button "隐藏操作栏"
+      - article:
+        - iframe
+  - region "Notifications alt+T"
+  - alert
+  - dialog "带着你的世界继续出发。":
+    - button "关闭登录"
+    - text: Neta
+    - heading "带着你的世界继续出发。" [level=2]
+    - paragraph: 登录后即可创建、续写并探索你在 Neta 中创造的一切。
+    - button "使用邮箱继续"
+    - text: 或
+    - button "Google"
+    - button "Apple"
+    - button "Facebook"
+    - paragraph:
+      - text: 继续即表示你同意我们的
+      - link "服务条款":
+        - /url: /legal/terms-of-service
+      - text: 和
+      - link "隐私政策":
+        - /url: /legal/privacy-policy
+      - text: 。

@@ -1,0 +1,107 @@
+- document:
+  - banner:
+    - button "打开菜单"
+    - button "奶蛙鉴定所"
+    - button "打开更新日志"
+    - button "打开我的身份"
+    - link "奶蛙博物馆首页":
+      - /url: "#top"
+      - strong: MILK FROG
+      - text: 奶 蛙
+    - button "参观中国馆"
+  - main:
+    - button "返回西方馆"
+    - text: MFM · CN 中国奶蛙典藏系列
+    - heading "中国馆" [level=2]
+    - group "展示顺序":
+      - button "按入馆"
+      - text: /
+      - button "按年代"
+      - text: /
+      - button "按流派"
+    - button "推荐"
+    - button "全部"
+    - button "史前与先秦"
+    - button "秦汉"
+    - button "魏晋南北朝"
+    - button "隋唐"
+    - button "五代两宋"
+    - button "元明清"
+    - button "近现代"
+    - button "查看作品：女史箴图奶蛙（工笔）":
+      - img "女史箴图奶蛙（工笔）"
+      - text: View Work 魏晋南北朝 MFM · WJN-04
+      - heading "女史箴图奶蛙（工笔）" [level=3]
+      - text: Admonitions of the Instructress to the Court Ladies Milk Frog 仿 女史箴图 · Gu Kaizhi 约4世纪
+    - button "查看作品：唐三彩骆驼载乐俑奶蛙":
+      - img "唐三彩骆驼载乐俑奶蛙"
+      - text: View Work 隋唐 MFM · SUT-01
+      - heading "唐三彩骆驼载乐俑奶蛙" [level=3]
+      - text: Tang Sancai Camel Musicians Milk Frog 仿 唐三彩骆驼载乐俑 · Unknown 约8世纪
+    - button "查看作品：游春图奶蛙":
+      - img "游春图奶蛙"
+      - text: View Work 隋唐 MFM · SUT-02
+      - heading "游春图奶蛙" [level=3]
+      - text: Spring Outing Milk Frog 仿 游春图 · Zhan Ziqian 约7世纪
+    - button "查看作品：簪花仕女图奶蛙":
+      - img "簪花仕女图奶蛙"
+      - text: View Work 隋唐 MFM · SUT-03
+      - heading "簪花仕女图奶蛙" [level=3]
+      - text: Ladies with Flowers Milk Frog 仿 簪花仕女图 · Zhou Fang 约8世纪
+    - button "查看作品：捣练图奶蛙（红衣小孩转化版）":
+      - img "捣练图奶蛙（红衣小孩转化版）"
+      - text: View Work 隋唐 MFM · SUT-04
+      - heading "捣练图奶蛙（红衣小孩转化版）" [level=3]
+      - text: Court Ladies Preparing Silk Milk Frog 仿 捣练图 · Zhang Xuan 约8世纪
+    - button "查看作品：照夜白图奶蛙（骑马版）":
+      - img "照夜白图奶蛙（骑马版）"
+      - text: View Work 隋唐 MFM · SUT-05
+      - heading "照夜白图奶蛙（骑马版）" [level=3]
+      - text: Night-Shining White Milk Frog 仿 照夜白图 · Han Gan 约8世纪
+    - navigation "中国馆作品分页":
+      - button "上一页": ‹
+      - button "第1页": "1"
+      - button "第2页": "2"
+      - button "第3页": "3"
+      - button "第4页": "4"
+      - button "第5页": "5"
+      - button "第6页": "6"
+      - button "下一页": ›
+  - text: Nieta Art · Other Rooms
+  - heading "分馆" [level=2]
+  - link "01 3D 展馆 走进可漫游的首展馆":
+    - /url: https://neta.art/w/6f97ac11-95f5-451f-b4c6-214c3f02668a
+  - link "02 奶蛙小镇 奶白广场":
+    - /url: https://neta.art/w/337d4274-ff22-43c7-9e3c-7f03e58766e8
+  - link "03 奶蛙尖塔 The Soft Ascent":
+    - /url: https://neta.art/w/c659fde8-8117-4fc4-82ed-751c781308c4
+  - link "04 制造所 捏一只自己的奶蛙":
+    - /url: https://neta.art/w/8a36fbe6-51f2-4ad9-9f28-46f933f756b1
+  - link "05 奶龙幸存者 割草":
+    - /url: https://neta.art/w/68438093-6659-4747-87b7-4d8e47dc093b
+  - text: ×
+  - button "查看作品故事":
+    - text: 双击查看作品故事 作品轶事 达·芬奇采用干壁画实验来保留修改空间，代价是作品很早就开始出现剥落。 ORIGINAL ARTWORK
+    - img "仿 最后的晚餐参考图"
+    - text: 双击返回
+  - text: 文艺复兴 MFM · REN-01
+  - heading "最后的晚餐奶蛙" [level=3]
+  - text: The Frog Supper 原作 仿 最后的晚餐
+  - button "查看艺术家资料：Leonardo da Vinci": 艺术家 Leonardo da Vinci
+  - text: 年代 1495–1498 作品介绍 《最后的晚餐》表现耶稣宣布门徒中有人将背叛自己的瞬间。达·芬奇以透视线、手势和人物分组控制叙事节奏，使餐桌成为一场集中爆发的心理剧场。 作品鉴赏 达·芬奇以中央透视线汇聚人物关系，将一句预言造成的瞬间反应分配给十二个不同姿态。戏剧性来自手势、视线与沉默之间的连续叙事。
+  - button "收藏这件馆藏": 收藏馆藏
+  - button "喜欢这件馆藏":
+    - text: 喜欢
+    - emphasis: "0"
+  - region "作品评论":
+    - text: 观众评论
+    - emphasis: "0"
+    - text: 还没有观众留下评论。
+    - textbox "评论内容":
+      - /placeholder: 完成奶蛙身份证后留下你的看法……
+    - text: 登录 Studio 后可评论
+    - button "发表评论"
+  - text: ×
+  - img "列奥纳多·达·芬奇"
+  - heading "列奥纳多·达·芬奇" [level=2]
+  - text: 1452–1519 达·芬奇既画画，也研究解剖、飞行、机械、水流和植物。他习惯用镜像文字记笔记，留下数千页手稿，却经常开新项目而不完成旧项目。 为了《最后的晚餐》获得更丰富细节，他不用可靠的湿壁画法，而在干墙上实验油性颜料。结果作品很快开始剥落，却也成为艺术史上最著名的技术冒险之一。

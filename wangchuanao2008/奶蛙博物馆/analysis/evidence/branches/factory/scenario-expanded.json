@@ -1,0 +1,108 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/Users/wangchuanao/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  },
+  "start_url": {
+    "url": "https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/index.html?_reload=0"
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "actions": [
+    {
+      "step_id": "factory-1",
+      "action": "wait_for",
+      "locator": {
+        "kind": "css",
+        "selector": "#avatar"
+      },
+      "timeout_ms": 15000,
+      "state": "visible"
+    },
+    {
+      "step_id": "factory-2",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-mode=\"tune\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "factory-3",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-mode=\"stickers\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "factory-4",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-workspace=\"generate\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "mode-emotions",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-generation-mode=\"emotions\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "mode-pairs",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-generation-mode=\"pairs\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "mode-wear",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-generation-mode=\"wear\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "factory-6",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-workspace=\"stickers\"]"
+      },
+      "timeout_ms": 15000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "dom",
+      "accessibility",
+      "url",
+      "screenshot"
+    ],
+    "at_end": [
+      "url"
+    ],
+    "events": [
+      "network",
+      "page-errors",
+      "console"
+    ]
+  }
+}

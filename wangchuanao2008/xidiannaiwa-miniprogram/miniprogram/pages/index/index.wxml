@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="brand"><image class="brand-image" src="/assets/logo.png" mode="aspectFit" aria-label="奶蛙电子科技大学" /></view>
+  <swiper class="banner" autoplay circular interval="4500" duration="500" indicator-dots indicator-color="rgba(255,255,255,.4)" indicator-active-color="#ffffff">
+    <swiper-item wx:for="{{banners}}" wx:key="src"><image class="banner-image" src="{{item.src}}" mode="aspectFit" aria-label="{{item.title}}" /></swiper-item>
+  </swiper>
+  <view class="news">
+    <view class="news-title"><text>要闻速递</text><view class="title-line" /></view><text class="news-subtitle">校园新鲜事，与你一起见证</text>
+    <view class="card" bindtap="openEmblem" role="link" aria-label="阅读奶蛙电子科技大学发布校徽">
+      <view class="card-art emblem-art"><image src="/assets/logo.png" mode="aspectFit" /></view>
+      <view class="card-body"><text class="card-title">奶蛙电子科技大学发布校徽</text><text class="card-description">以眼神观测宇宙，以肚量容纳万物。奶蛙的伟大思考，正式凝固为一枚校徽。</text><view class="card-meta"><text>奶蛙电子科技大学</text><text>查看发布 →</text></view></view>
+    </view>
+    <view class="card" bindtap="openMuseum" role="link" aria-label="参观奶蛙博物馆">
+      <view class="card-art"><image src="/assets/museum-cover.jpg" mode="aspectFill" /></view>
+      <view class="card-body"><text class="card-title">奶蛙电子科技大学
+奶蛙博物馆开放</text><text class="card-description">149 件馆藏，22 个主题展厅。走进常设典藏与中国馆，开启一场校园艺术漫游。</text><view class="card-meta"><text>奶蛙电子科技大学 · 奶蛙博物馆</text><text>进入展馆 →</text></view></view>
+    </view>
+  </view>
+</view>

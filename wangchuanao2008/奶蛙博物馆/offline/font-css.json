@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;500&display=swap",
+    "rooms": [
+      "main"
+    ]
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Serif+SC:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap",
+    "rooms": [
+      "gallery"
+    ]
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap",
+    "rooms": [
+      "tower"
+    ]
+  }
+]

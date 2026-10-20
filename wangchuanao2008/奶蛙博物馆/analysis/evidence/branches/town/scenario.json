@@ -1,0 +1,90 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/Users/wangchuanao/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  },
+  "start_url": {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/index.html?_reload=0"
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "actions": [
+    {
+      "step_id": "town-1",
+      "action": "wait_for",
+      "locator": {
+        "kind": "css",
+        "selector": "#stage"
+      },
+      "timeout_ms": 15000,
+      "state": "visible"
+    },
+    {
+      "step_id": "town-2",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-tab=\"stats\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "town-3",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-tab=\"bag\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "town-4",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-tab=\"album\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "town-5",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-tab=\"journal\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "town-6",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#travel"
+      },
+      "timeout_ms": 15000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "dom",
+      "accessibility",
+      "url",
+      "screenshot"
+    ],
+    "at_end": [
+      "url"
+    ],
+    "events": [
+      "network",
+      "page-errors",
+      "console"
+    ]
+  }
+}

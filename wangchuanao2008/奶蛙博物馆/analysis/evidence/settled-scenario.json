@@ -1,0 +1,115 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/Users/wangchuanao/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  },
+  "start_url": {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/index.html?_reload=0"
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai",
+    "reduced_motion": "no-preference"
+  },
+  "actions": [
+    {
+      "step_id": "china-open",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#chinaVisit"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "china-visible",
+      "action": "wait_for_timeout",
+      "duration_ms": 1500
+    },
+    {
+      "step_id": "china-back",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#chinaBack"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "quiz-open",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#giftToggle"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "quiz-start",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizPrimary"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "q0",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizOpts button:first-child"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "q1",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizOpts button:first-child"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "q2",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizOpts button:first-child"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "q3",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizOpts button:first-child"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "result-settle",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "screenshot",
+      "dom",
+      "url"
+    ],
+    "at_end": [
+      "url"
+    ],
+    "events": [
+      "page-errors"
+    ]
+  }
+}

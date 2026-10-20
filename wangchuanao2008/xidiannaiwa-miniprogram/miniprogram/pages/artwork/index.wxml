@@ -1,0 +1,19 @@
+<view class="page">
+  <button class="back" bindtap="back">‹ 返回展馆</button>
+  <view wx:if="{{missing}}" class="empty">这件作品暂未收录。<button class="outline-button missing-back" bindtap="back">浏览其他馆藏</button></view>
+  <block wx:if="{{work}}">
+    <view class="art-stage" bindtap="previewImage" aria-label="点击查看{{work.name}}高清图">
+      <image wx:if="{{!imageLoaded}}" class="art-thumbnail" src="{{thumbnail}}" mode="aspectFit" />
+      <image wx:if="{{fullImage}}" class="art-original {{imageLoaded ? 'loaded' : ''}}" src="{{fullImage}}" mode="aspectFit" data-id="{{work.id}}" bindload="imageReady" binderror="imageError" />
+      <text wx:if="{{!imageLoaded && !imageFailed}}" class="image-status">正在加载高清作品…</text>
+      <button wx:if="{{imageFailed}}" class="image-status retry" catchtap="retryImage">高清图暂未加载，点击重试</button>
+    </view>
+    <view class="art-info">
+      <text class="school">奶蛙电子科技大学 · 数字艺术典藏</text><text class="heading art-title">{{work.name}}</text><text wx:if="{{work.name_en}}" class="english">{{work.name_en}}</text><text class="preview-hint">点击作品可放大欣赏</text>
+      <view class="metadata"><view><text class="label">展厅</text><text>{{work.era_name}}</text></view><view><text class="label">年代</text><text>{{work.year || '—'}}</text></view><view><text class="label">原作艺术家</text><text>{{work.artist || '—'}}</text></view></view>
+      <text class="section-title">作品介绍</text><text class="paragraph">{{work.intro}}</text>
+      <block wx:if="{{work.curatorial}}"><text class="section-title">观展提示</text><text class="paragraph">{{work.curatorial}}</text></block>
+      <view class="steps"><button class="outline-button" data-offset="-1" bindtap="changeWork" disabled="{{total <= 1}}">上一件</button><text>{{position}} / {{total}}</text><button class="outline-button" data-offset="1" bindtap="changeWork" disabled="{{total <= 1}}">下一件</button></view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/index.html?_reload=0",
+    "state": "captured",
+    "runtime_sha256": "76231a12c399dc7c6abcae2f05d5124e96cab3fe39dbfdf8a13bc015fddf0f9a",
+    "local_sha256": "6e94d0942038647a2fcee12f972dec28295f76aee90dc622180757c0f2d84499"
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/style.css?v=20260924-rococo10",
+    "state": "captured",
+    "runtime_sha256": "479c6a6da776ebb6e62b9bc8cb128506d5dcc95c6bb513b49521ff13473da6f7",
+    "local_sha256": "479c6a6da776ebb6e62b9bc8cb128506d5dcc95c6bb513b49521ff13473da6f7"
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/identity-runtime.bundle.js?v=20260920-text-audit",
+    "state": "captured",
+    "runtime_sha256": "8e83ed3311c47102e26a27e73dcf83a73a9424d0492ed0a29556503df1870a81",
+    "local_sha256": "8e83ed3311c47102e26a27e73dcf83a73a9424d0492ed0a29556503df1870a81"
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/app.js?v=20260924-rococo10",
+    "state": "captured",
+    "runtime_sha256": "2bcf35db1930b9687e93934093e88dd2c623eeaa72bffec8b33dcc3305936279",
+    "local_sha256": "2bcf35db1930b9687e93934093e88dd2c623eeaa72bffec8b33dcc3305936279"
+  }
+]

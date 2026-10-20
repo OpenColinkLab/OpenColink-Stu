@@ -1,0 +1,1097 @@
+<!DOCTYPE html><html lang="zh"><head><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-FR6ZHM6RKB&amp;gtg_health=1"></script><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
+(window,'G-FR6ZHM6RKB','google_tags_first_party');</script><script async="" src="/analytics/"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('set', 'developer_id.dYzg1YT', true);
+				gtag('config', 'G-FR6ZHM6RKB');
+			</script>
+			
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>奶蛙博物馆 · Musée du Milk Frog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&amp;family=Jost:wght@300;400;500&amp;family=Noto+Serif+SC:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20260924-rococo10">
+<script data-cohub-runtime="prod" data-cfasync="false" src="https://works.cohub.live/__cohub/runtime.js" defer=""></script></head>
+<body style="overflow: hidden;">
+
+<div class="mobile-entry" id="mobileEntry" aria-hidden="true">
+  <video id="mobileEntryVideo" src="https://router-files.neta.art/files/0925fcc6-7aa7-4d02-afd4-9ae5e0f8bdb9/a6b2894c-b60c-4940-9a70-76382871dfa8.mp4" poster="https://router-files.neta.art/files/0925fcc6-7aa7-4d02-afd4-9ae5e0f8bdb9/d619be9d-519f-49f1-b0f3-d6471c7ebdf8.webp" autoplay="" muted="" loop="" playsinline="" preload="auto"></video>
+  <div class="mobile-entry-wash"></div>
+  <div class="mobile-entry-content">
+    <span>THE MILK FROG</span>
+    <h1>跨越艺术史的<br>静默凝视</h1>
+    <button id="mobileEnter" type="button" aria-label="进入奶蛙博物馆" title="进入博物馆">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13"></path><path d="m13 6 6 6-6 6"></path></svg>
+    </button>
+  </div>
+</div>
+
+<header id="hdr">
+  <button class="menu-trigger" id="menuToggle" type="button" aria-label="打开菜单" title="菜单"><span></span><span></span></button>
+  <div class="header-word">菜单</div>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换夜间模式" title="夜间模式">
+    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><g stroke-linecap="round"><line x1="12" y1="2.5" x2="12" y2="5"></line><line x1="12" y1="19" x2="12" y2="21.5"></line><line x1="2.5" y1="12" x2="5" y2="12"></line><line x1="19" y1="12" x2="21.5" y2="12"></line><line x1="4.9" y1="4.9" x2="6.7" y2="6.7"></line><line x1="17.3" y1="17.3" x2="19.1" y2="19.1"></line><line x1="4.9" y1="19.1" x2="6.7" y2="17.3"></line><line x1="17.3" y1="6.7" x2="19.1" y2="4.9"></line></g></svg>
+  </button>
+  <button class="gift-toggle" id="giftToggle" type="button" aria-label="奶蛙鉴定所" title="奶蛙鉴定所">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12v8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-8"></path><path d="M2.5 8.5h19v3a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z"></path><line x1="12" y1="8.5" x2="12" y2="21"></line><path d="M12 8.5S10.8 4 8.3 4a2.3 2.3 0 0 0 0 4.5z"></path><path d="M12 8.5S13.2 4 15.7 4a2.3 2.3 0 0 1 0 4.5z"></path></svg>
+  </button>
+  <button class="lang-toggle" id="langToggle" type="button" aria-label="切换英文" title="切换英文">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-5.4-3.3-9S9.8 5.4 12 3z"></path></svg>
+  </button>
+  <button class="log-toggle" id="logToggle" type="button" aria-label="打开更新日志" title="更新日志">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 22h4"></path><path d="M8.5 14.5a5.5 5.5 0 1 1 7 0c-.9.7-1.5 1.5-1.5 2.5h-4c0-1-.6-1.8-1.5-2.5Z"></path><path d="M12 2v1M4.9 4.9l.7.7M2 12h1M19.1 4.9l-.7.7M21 12h-1"></path></svg>
+  </button>
+  <button class="feedback-top-toggle" id="feedbackTopToggle" type="button" aria-label="打开意见箱" title="意见箱">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H8l-4 3z"></path><path d="M8 9h8M8 12.5h5"></path></svg>
+  </button>
+  <button class="profile-toggle" id="profileToggle" type="button" aria-label="打开我的身份" title="我的身份">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.5 20c.7-4.1 2.9-6.2 6.5-6.2s5.8 2.1 6.5 6.2"></path></svg>
+  </button>
+  <a class="brand-lockup" href="#top" aria-label="奶蛙博物馆首页">
+    <strong>MILK FROG</strong><span>奶　　蛙</span>
+  </a>
+  <nav aria-label="分馆导航" hidden="">
+    <a href="https://neta.art/w/6f97ac11-95f5-451f-b4c6-214c3f02668a">3D 展馆</a>
+    <a href="https://neta.art/w/337d4274-ff22-43c7-9e3c-7f03e58766e8">奶蛙小镇</a>
+    <a href="https://neta.art/w/8a36fbe6-51f2-4ad9-9f28-46f933f756b1">制造所</a>
+  </nav>
+  <button class="visit-btn" id="chinaVisit" type="button">参观中国馆</button>
+</header>
+
+<aside class="menu-drawer" id="menuDrawer" aria-hidden="true">
+  <div class="drawer-head"><div><span>MUSÉE DU MILK FROG</span><h2>菜单</h2></div><button class="drawer-close" id="menuClose" type="button" aria-label="关闭菜单"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+  <div class="drawer-rule"></div>
+  <nav class="drawer-nav" aria-label="菜单功能">
+    <button type="button" data-drawer-action="worlds"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1"></rect></svg></span><b>分馆导航</b><small>去往其它奶蛙世界</small></button>
+    <button type="button" data-drawer-action="theme"><span class="drawer-icon"><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><g stroke-linecap="round"><line x1="12" y1="2.5" x2="12" y2="5"></line><line x1="12" y1="19" x2="12" y2="21.5"></line><line x1="2.5" y1="12" x2="5" y2="12"></line><line x1="19" y1="12" x2="21.5" y2="12"></line><line x1="4.9" y1="4.9" x2="6.7" y2="6.7"></line><line x1="17.3" y1="17.3" x2="19.1" y2="19.1"></line><line x1="4.9" y1="19.1" x2="6.7" y2="17.3"></line><line x1="17.3" y1="6.7" x2="19.1" y2="4.9"></line></g></svg></span><b>夜间模式</b><small>切换界面明暗</small></button>
+    <button type="button" data-drawer-action="language"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-9-3.3-9S9.8 5.4 12 3z"></path></svg></span><b>切换语言</b><small>中文 / English</small></button>
+    <button type="button" data-drawer-action="feedback"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H8l-4 3z"></path><path d="M8 9h8M8 12.5h5"></path></svg></span><b>意见箱</b><small>向馆长投递建议</small></button>
+    <button type="button" data-drawer-action="china"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5l7-3 7 3v16"></path><path d="M9 21v-8h6v8"></path><path d="M12 8v.01"></path></svg></span><b id="chinaDrawerLabel">参观中国馆</b><small id="chinaDrawerHint">进入史前与先秦第一厅</small></button>
+    <button type="button" data-drawer-action="quiz"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12v8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-8"></path><path d="M2.5 8.5h19v3a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z"></path><line x1="12" y1="8.5" x2="12" y2="21"></line><path d="M12 8.5S10.8 4 8.3 4a2.3 2.3 0 0 0 0 4.5z"></path><path d="M12 8.5S13.2 4 15.7 4a2.3 2.3 0 0 1 0 4.5z"></path></svg></span><b>奶蛙鉴定所</b><small>开始一场身份鉴定</small></button>
+    <button type="button" data-drawer-action="profile"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.5 20c.7-4.1 2.9-6.2 6.5-6.2s5.8 2.1 6.5 6.2"></path></svg></span><b>我的身份</b><small>身份证与个人馆藏</small></button>
+    <button class="drawer-text-item" type="button" data-drawer-action="archive"><span class="drawer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4.5h8l4 4v11H6z"></path><path d="M14 4.5v4h4M9 13h6M9 16.5h4"></path></svg></span><b>奶蛙档案</b><small>官方形象与延展素材</small></button>
+    <button type="button" data-drawer-action="log"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 22h4"></path><path d="M8.5 14.5a5.5 5.5 0 1 1 7 0c-.9.7-1.5 1.5-1.5 2.5h-4c0-1-.6-1.8-1.5-2.5Z"></path><path d="M12 2v1M4.9 4.9l.7.7M2 12h1M19.1 4.9l-.7.7M21 12h1"></path></svg></span><b>更新日志</b><small>查看博物馆更新记录</small></button>
+  </nav>
+  <div class="drawer-foot">MFM · VISITOR SERVICES</div>
+</aside>
+<div class="drawer-scrim" id="drawerScrim"></div>
+
+<aside class="update-log" id="updateLog" aria-hidden="true">
+  <div class="drawer-head"><div><span>MUSÉE DU MILK FROG</span><h2>更新日志</h2></div><div class="drawer-head-actions"><button class="feedback-toggle" id="feedbackToggle" type="button" aria-label="打开意见箱" title="意见箱"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H8l-4 3z"></path><path d="M8 9h8M8 12.5h5"></path></svg></button><button class="drawer-close" id="logClose" type="button" aria-label="关闭更新日志"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div></div>
+  <div class="drawer-rule"></div>
+  <!-- Public log policy: record only new features and newly added collection works. -->
+  <div class="log-banner">
+    <time datetime="2026-09-15">2026.09.15</time>
+    <h3>奶蛙身份证与个人页上线</h3>
+    <p>首次入馆完成鉴定并自选头像后即可签发身份证，个人页同步展示 Studio ID 与收藏馆藏。</p>
+  </div>
+  <div class="log-list">
+    <article class="log-entry"><time datetime="2026-09-23">2026.09.23</time><h3>洛可可厅十件满员</h3><p>新增五件馆藏：华托《梅兹坦》、格勒兹《破壶》、夏尔丹《肥皂泡》、弗拉戈纳尔《门闩》、朗克雷《跳舞的卡玛戈》奶蛙改编（锚点形象配方），洛可可厅凑满十件，全馆一百二十三件。</p></article>
+  <article class="log-entry"><time datetime="2026-09-23">2026.09.23</time><h3>《白垩崖奶蛙》撤展</h3><p>经核对，本件与《吕根岛白垩崖奶蛙》（MFM·ROM-03）同取材于弗里德里希《吕根岛的白垩崖》，属重复入藏，即日起撤下；浪漫主义馆调整为十四件。</p></article>
+<article class="log-entry"><time datetime="2026-09-21">2026.09.21</time><h3>洛可可厅开厅</h3><p>新增四件馆藏：弗拉戈纳尔《秋千》《读书少女》、维热·勒布伦《画家与她的女儿》、华托《小丑吉尔》奶蛙改编；夏尔丹《拿陀螺的男孩》幼态入馆；多轮未过审候选淘汰归档。</p></article>
+  <article class="log-entry"><time datetime="2026-09-20">2026.09.20</time><h3>新古典主义厅开厅扩充</h3><p>新古典主义厅扩容：新增七件馆藏——大卫《雷卡米埃夫人》《翻越阿尔卑斯山》《苏格拉底之死》《贝利撒留受施》《马拉之死》、安格尔《贝尔坦先生肖像》、格罗《视察雅法疫病院》；卡诺瓦雕塑两件、《大宫女》候选审订后淘汰归档。</p></article>
+<article class="log-entry"><time datetime="2026-09-15">2026.09.15</time><h3>奶蛙身份证与个人页上线</h3><p>新增首次入馆鉴定、头像选择、身份证、个人页与馆藏收藏功能。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>宏伟特展开馆</h3><p>《吕根岛白垩崖奶蛙》《吉萨的狮身人面像奶蛙》《卢浮宫废墟的想象图奶蛙》入馆，宏伟特展区开放；《巴别塔奶蛙》《兵马俑军阵奶蛙》因形象污染撤回。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>巴拉克拉瓦奶蛙入藏</h3><p>《巴拉克拉瓦奶蛙》经多轮嘴部与面部精修后通过审核入馆，战争馆增至五件。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>战争馆三件新入藏</h3><p>《荷拉斯兄弟之誓奶蛙》《前线的俘虏奶蛙》《罗利的童年奶蛙》通过审核入馆，战争馆增至四件。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>战争馆开馆，首件馆藏入藏</h3><p>《吹笛少年奶蛙》通过审核入馆，为战争题材首件正式馆藏；本馆同期新增“战争”展区。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>浪漫主义馆再添一件馆藏</h3><p>《墓园孤儿奶蛙》通过审核，以幼态正式加入浪漫主义馆；《萨达纳帕勒之死奶蛙》《冰海奶蛙》和《忿怒的大日奶蛙》本轮淘汰。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>浪漫主义馆新增四件作品</h3><p>《雾海上的旅人奶蛙》《但丁之舟奶蛙》《梦魇奶蛙》（重画修正蹲伏动作后通过）和《干草车奶蛙》正式加入浪漫主义馆；《被拖去解体的无畏号奶蛙》馆长直接淘汰。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>古典馆新增五件作品</h3><p>《萨莫色雷斯的胜利女神奶蛙》《休息的拳击手奶蛙》《拉奥孔群像奶蛙》《汉谟拉比法典石碑奶蛙》和《第一门的奥古斯都奶蛙》通过审核，分别以大理石、青铜和玄武岩材质正式加入古典馆；其中前两件经过动作修正重画。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>中国馆正式馆藏补齐</h3><p>中国馆 35 件正式馆藏已全部接入网页，隋唐、五代两宋与元明清的最新作品同步显示。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>后印象派馆藏审核完成</h3><p>《玩纸牌的奶蛙》《大碗岛的星期天下午奶蛙》和重画修正后的《罗纳河上的星夜奶蛙》通过审核，正式加入后印象派馆；《简·艾薇儿在巴黎花园奶蛙》直接淘汰，《阿尼埃尔的浴场奶蛙》因点彩媒介融合失败撤回。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>印象派馆藏新增四件作品</h3><p>《包厢奶蛙》《布吉瓦尔之舞奶蛙》《伞奶蛙》和《蓝色扶手椅上的小女孩奶蛙》正式加入印象派馆。</p></article>
+    <article class="log-entry"><time datetime="2026.09.01">2026.09.01</time><h3>浮世绘馆藏新增两件作品</h3><p>《泷夜叉姬与骷髅妖怪奶蛙》和《金太郎捕鲤鱼奶蛙》正式加入浮世绘馆。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>浮世绘馆藏新增三件作品</h3><p>《甲州石班泽奶蛙》《大桥安宅骤雨奶蛙》和《三代目大谷鬼次奶蛙》正式加入浮世绘馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>现实主义馆藏新增五件作品</h3><p>《石工奶蛙》《伏尔加河上的纤夫奶蛙》《三等车厢奶蛙》《晚钟奶蛙》和《抢球奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>中世纪馆藏再扩充</h3><p>《乔托逃往埃及奶蛙》《杜乔进入耶路撒冷奶蛙》和《圣乔治屠龙奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>中世纪馆首批新增</h3><p>《乔托哀悼基督奶蛙》和《契马布埃圣三位一体圣母子奶蛙》正式加入中世纪馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>拉斐尔前派馆藏再扩充</h3><p>《夏洛特夫人奶蛙》《奥菲莉亚奶蛙》《普罗塞耳皮娜奶蛙》和《金色阶梯奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>上架新馆藏《圣巴塞洛缪节前夕的胡格诺派奶蛙》</h3><p>《圣巴塞洛缪节前夕的胡格诺派奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>上架新馆藏《玫瑰之魂奶蛙》</h3><p>《玫瑰之魂奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>上架新馆藏《圣西塞莉亚奶蛙》</h3><p>《圣西塞莉亚奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-28">2026.08.28</time><h3>上架新馆藏《看哪，主的婢女奶蛙》</h3><p>《看哪，主的婢女奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-28">2026.08.28</time><h3>上架新馆藏《水晶球奶蛙》</h3><p>《水晶球奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-28">2026.08.28</time><h3>上架新馆藏《贝娅塔·贝亚特丽克斯奶蛙》</h3><p>《贝娅塔·贝亚特丽克斯奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>意见箱上线</h3><p>新增外置意见箱，支持提交意见并上传图片或文件，收件地址为馆长邮箱。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>移动端全屏入场上线</h3><p>移动端新增全屏首屏影片与动态入场，进入后可自由浏览博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>上架新馆藏《绘画的艺术奶蛙》《布商同业公会理事奶蛙》</h3><p>《绘画的艺术奶蛙》和《布商同业公会理事奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>上架新馆藏《新石器彩陶纹样奶蛙》《神人兽面纹玉琮奶蛙》《四羊方尊奶蛙》</h3><p>史前与先秦首批三件中国馆藏正式入厅。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>上架新馆藏《纳芙蒂蒂头像奶蛙》《德尔斐御者奶蛙》</h3><p>《纳芙蒂蒂头像奶蛙》和《德尔斐御者奶蛙》，补充原作参考图、作品介绍、艺术鉴赏与创作轶事。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>上架新馆藏《夜游者奶蛙》《雪中猎人奶蛙》《阿黛尔的肖像奶蛙》《大使们奶蛙》</h3><p>《夜游者奶蛙》《雪中猎人奶蛙》《阿黛尔的肖像奶蛙》和《大使们奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-25">2026.08.25</time><h3>奶蛙鉴定所上线</h3><p>新增身份测试、随机鉴定结果与可保存的奶蛙鉴定卡片。</p></article>
+    <article class="log-entry"><time datetime="2026-08-24">2026.08.24</time><h3>夜间模式与双语界面</h3><p>新增夜间模式与中文 / English 切换，参观偏好会自动保留。</p></article>
+
+  </div>
+</aside>
+<div class="log-scrim" id="logScrim"></div>
+
+<aside class="feedback-panel" id="feedbackPanel" aria-hidden="true">
+  <div class="drawer-head"><div><span>MUSÉE DU MILK FROG</span><h2>意见箱</h2></div><button class="drawer-close" id="feedbackClose" type="button" aria-label="关闭意见箱"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+  <div class="drawer-rule"></div>
+  <p class="feedback-lead" id="feedbackLead">告诉馆长你希望下一次看到什么。</p>
+  <form id="feedbackForm" action="https://formsubmit.co/1610636536@qq.com" method="POST" enctype="multipart/form-data" target="feedbackSubmitFrame">
+    <input type="hidden" name="_subject" value="奶蛙博物馆意见箱" style="">
+    <input type="hidden" name="_captcha" value="false" style="">
+    <input type="hidden" name="_template" value="table" style="">
+    <textarea id="feedbackText" name="message" rows="7" placeholder="写下你的意见……" aria-label="意见内容" style=""></textarea>
+    <label class="feedback-file-label" for="feedbackFiles"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21.4 11.6-8.9 8.9a6 6 0 0 1-8.5-8.5l9.3-9.3a4 4 0 0 1 5.7 5.7l-9.3 9.3a2 2 0 0 1-2.8-2.8l8.7-8.7"></path></svg><span id="feedbackFileLabel">添加图片或文件</span><input id="feedbackFiles" name="attachment" type="file" multiple="" accept="image/*,.pdf,.doc,.docx,.txt,.zip" style=""></label>
+    <div class="feedback-files" id="feedbackFilesList" aria-live="polite"></div>
+    <button class="feedback-submit" id="feedbackSubmit" type="submit">投递意见</button>
+  </form>
+  <iframe class="feedback-submit-frame" name="feedbackSubmitFrame" id="feedbackSubmitFrame" title="意见提交状态"></iframe>
+  <p class="feedback-status" id="feedbackStatus" aria-live="polite"></p>
+</aside>
+<div class="feedback-scrim" id="feedbackScrim"></div>
+
+<aside class="archive-panel" id="archivePanel" aria-hidden="true">
+  <div class="drawer-head"><div><span>MUSÉE DU MILK FROG</span><h2>奶蛙档案</h2></div><button class="drawer-close" id="archiveClose" type="button" aria-label="关闭奶蛙档案"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+  <div class="drawer-rule"></div>
+  <span class="archive-kicker">MILK FROG · OFFICIAL IDENTITY</span>
+  <p class="archive-lead">奶蛙官方形象资料库，记录标准身份、版本差异与可用于后续创作的视觉依据。</p>
+  <div class="archive-facts"><div><span>STATUS</span><b>OFFICIAL</b></div><div><span>VERSIONS</span><b>成熟版 / 幼态版</b></div><div><span>VARIANTS</span><b>另册收录</b></div></div>
+  <div class="archive-section"><h3>01 · 身份基准</h3><p>奶蛙是温暖黄色的圆钝梨形角色，头部与躯干自然连成一体，没有独立脖颈；成熟版具有浅奶油色腹部、粗短四肢和橄榄棕色手脚。</p></div>
+  <div class="archive-section"><h3>02 · 面部识别</h3><p>脸部由两枚浅绿色眼环、居中的圆润黑瞳和一条极短水平嘴线构成。黑瞳保持在眼环中心，不随姿态向两侧漂移。</p></div>
+  <div class="archive-section archive-visual"><h3>03 · 成熟版 / 标准视图</h3><p>采用馆长确认的正面、侧面、背面资料图，用于确认成年奶蛙的固定比例与体型轮廓。特殊动作不并入标准视图定义。</p><img src="assets/archive-references/mature-official-front-side-back.webp" alt="成熟版奶蛙正侧背标准视图"></div>
+  <div class="archive-action-group"><div class="archive-action-head"><span>POSE ARCHIVE</span><h4>成熟版 · 特殊动作</h4></div><div class="archive-action-card"><img src="assets/archive-references/mature-special-wave.webp" alt="成熟版奶蛙屈腿挥手动作"><div><b>屈腿挥手</b><p>重心下沉、双腿外展，右手抬起挥手；眼环、黑瞳、腹部和手脚色保持成熟版身份不变。</p></div></div></div>
+  <div class="archive-section archive-expression"><h3>03B · 表情档案</h3><p>记录奶蛙在特殊情绪和叙事场景中的面部延展；张嘴、闭眼等变化只属于表情素材，不改写标准脸部基准。</p><div class="archive-expression-grid"><figure><img src="assets/archive-references/expression-laugh-open.webp" alt="奶蛙张嘴大笑表情"><figcaption>张嘴大笑</figcaption></figure><figure><img src="assets/archive-references/expression-laugh-head.webp" alt="奶蛙抱头大笑表情"><figcaption>抱头大笑</figcaption></figure><figure><img src="assets/archive-references/expression-downcast.webp" alt="奶蛙低头表情"><figcaption>低头沉思</figcaption></figure></div></div>
+  <div class="archive-section archive-visual"><h3>04 · 幼态版 / 标准视图</h3><p>根据幼态奶蛙的标准比例制作正面、侧面、背面资料图。特殊动作与表情延展单独归档。</p><img src="https://router-files.neta.art/files/4d30b704-b34c-4c0f-8b9b-e58ca104aee4/6149122f-4762-4226-bc21-8aa7ae9462f8.png" alt="幼态版奶蛙正侧背标准视图"></div>
+  <div class="archive-action-group"><div class="archive-action-head"><span>POSE ARCHIVE</span><h4>幼态版 · 特殊动作</h4></div><div class="archive-action-card"><img src="assets/archive-references/juvenile-special-actions-latest.webp" alt="幼态版奶蛙特殊动作参考"><div><b>动作延展</b><p>收录幼态奶蛙的挥手、比耶与站姿变化；动作素材不定义标准体型和标准面部。</p></div></div></div>
+  <div class="archive-section archive-visual archive-variants"><h3>06 · 形象变体 / 另册</h3><p>不同动物、姿势与造型仅作为延展参考，不改变成熟版和幼态版的标准身份。</p><img src="assets/archive-references/variants.webp" alt="奶蛙形象变体参考"></div>
+  <div class="archive-section archive-visual archive-rainbow"><h3>07 · 七彩奶蛙 / 色彩变体</h3><p>保持同一成熟版体型与面部识别，仅改变身体主色；作为色彩延展参考，不作为新的标准身份。</p><img src="https://router-files.neta.art/files/8c6492b6-a8ac-414b-b8ad-234ed9a1bae8/fa01604a-50d4-4a2a-a999-56120fe2eb5c.png" alt="七种颜色的奶蛙变体展示"></div>
+  <div class="archive-section archive-visual"><h3>08 · 扩展色谱 / 新增颜色</h3><p>第二组成熟奶蛙色彩参考，新增粉、珊瑚、薄荷、青绿、天蓝、靛蓝、薰衣草紫、酒红与瓷白等颜色。</p><img src="https://router-files.neta.art/files/5372773d-d8b3-4fb2-871a-509ecf6008eb/d79c0cb8-53c9-4916-a511-1134b81959c1.png" alt="十种新增颜色的奶蛙变体展示"></div>
+  <div class="archive-section archive-coming"><h3>09 · 待归档素材</h3><p>透明底图、头像、表情、动作和展览使用素材将在确认后逐步加入。</p></div>
+</aside>
+<div class="archive-scrim" id="archiveScrim"></div>
+
+<main class="profile-page" id="profilePage" hidden="">
+  <div class="profile-page-top"><button class="profile-back" id="profileBack" type="button" aria-label="返回展厅"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span>返回展厅</span></button><span class="profile-page-code">MFM · ID</span></div>
+  <div class="profile-hero">
+    <span class="profile-hero-avatar" id="profileHeroAvatar" role="img"></span>
+    <div class="profile-hero-info">
+      <span class="profile-hero-kicker">MILK FROG IDENTITY CARD</span>
+      <h2 id="profileHeroName"></h2>
+      <div class="profile-hero-meta" id="profileHeroMeta"></div>
+      <div class="profile-hero-actions"><button type="button" id="profileRetestBtn">重新鉴定</button><button type="button" id="profileRenameBtn">修改昵称</button></div>
+    </div>
+    <div class="profile-hero-stats">
+      <div><span>STUDIO ID</span><b id="profileStudioId"></b></div>
+      <div><span>COLLECTION</span><b id="profileCollectionCount"></b></div>
+      <div><span>STATUS</span><b>OFFICIAL VISITOR</b></div>
+    </div>
+  </div>
+  <div class="profile-body">
+    <section class="profile-block profile-spec-block">
+      <h3>鉴定卡</h3>
+      <div id="profileSpecCard" class="profile-spec-card"></div>
+    </section>
+    <section class="profile-block">
+      <h3>我的馆藏 <span id="profileFavCount"></span></h3>
+      <div id="profileCollection" class="profile-collection"></div>
+    </section>
+  </div>
+  <section class="profile-activity-block">
+    <h3>我的互动 <span id="profileActivityCount"></span></h3>
+    <div id="profileActivity" class="profile-activity"></div>
+  </section>
+  <div class="profile-session-exit">
+    <button type="button" id="profileLogoutBtn">退出当前奶蛙身份</button>
+    <small>仅清除本设备的身份证与收藏，不影响 Studio 账号</small>
+  </div>
+  <div class="profile-spec-modal" id="profileSpecModal" hidden="" aria-hidden="true">
+    <div class="profile-spec-modal-panel" role="dialog" aria-modal="true" aria-labelledby="profileSpecModalTitle">
+      <div class="profile-spec-modal-head"><span id="profileSpecModalTitle">鉴定卡</span><button type="button" id="profileSpecClose" aria-label="关闭鉴定卡">×</button></div>
+      <div class="profile-spec-modal-content" id="profileSpecModalContent"></div>
+    </div>
+  </div>
+</main>
+
+<!-- HERO -->
+<main class="china-page" id="chinaPage" hidden="">
+  <div class="china-page-top"><button class="china-back" id="chinaBack" type="button" aria-label="返回西方馆"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span id="chinaBackLabel">返回西方馆</span></button><span class="china-page-code">MFM · CN</span></div>
+  <div class="collection-head china-collection-head"><div class="sub" id="chinaCollectionSub">中国奶蛙典藏系列</div><h2 id="chinaCollectionTitle">中国馆</h2></div>
+  <div class="sort-toggle china-sort-toggle" id="chinaSortToggle" role="group" aria-label="展示顺序">
+    <button type="button" data-sort="entry" class="">按入馆</button>
+    <span class="sort-sep">/</span>
+    <button type="button" data-sort="era" class="active">按年代</button>
+    <span class="sort-sep">/</span>
+    <button type="button" data-sort="movement">按流派</button>
+  </div>
+  <div class="filters china-filters" id="chinaFilters"><button data-filter="recent" class="active">推荐</button><button data-filter="all">全部</button><button data-filter="china-pre-qin">史前与先秦</button><button data-filter="china-qin-han">秦汉</button><button data-filter="china-wei-jin">魏晋南北朝</button><button data-filter="china-sui-tang">隋唐</button><button data-filter="china-song">五代两宋</button><button data-filter="china-ming-qing">元明清</button><button data-filter="china-modern">近现代</button></div>
+  <div class="gallery china-gallery" id="chinaGallery"><article class="card" data-era="china-pre-qin" data-work-name="新石器彩陶纹样奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：新石器彩陶纹样奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/b3e222e7-dd16-445d-9604-74b9aebc3190/854b518d-e017-485c-a6f4-b28870548667.jpg" alt="新石器彩陶纹样奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>史前与先秦</span><span class="card-acc">MFM · CNQ-01</span></div>
+      <h3>新石器彩陶纹样奶蛙</h3><div class="en">Neolithic Painted Pottery Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>新石器时代</span></div>
+      <div class="orig"><span>仿 新石器彩陶纹样 · Unknown</span><span class="yr">新石器时代</span></div></div></article><article class="card" data-era="china-pre-qin" data-work-name="神人兽面纹玉琮奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：神人兽面纹玉琮奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/62af469f-4e2b-46be-af15-8e3c6a650002/55e0b5ca-3207-49b4-bee4-74bcf4332d67.png" alt="神人兽面纹玉琮奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>史前与先秦</span><span class="card-acc">MFM · CNQ-02</span></div>
+      <h3>神人兽面纹玉琮奶蛙</h3><div class="en">Liangzhu Jade Cong Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约公元前3300—2300年</span></div>
+      <div class="orig"><span>仿 神人兽面纹玉琮 · Unknown</span><span class="yr">约公元前3300—2300年</span></div></div></article><article class="card" data-era="china-pre-qin" data-work-name="四羊方尊奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：四羊方尊奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/5db69cf4-49a6-443e-8600-c5045de0f16a/120426e0-a5ee-462d-9924-5087513223e1.png" alt="四羊方尊奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>史前与先秦</span><span class="card-acc">MFM · CNQ-03</span></div>
+      <h3>四羊方尊奶蛙</h3><div class="en">Four-Ram Fangzun Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约公元前13世纪</span></div>
+      <div class="orig"><span>仿 四羊方尊 · Unknown</span><span class="yr">约公元前13世纪</span></div></div></article><article class="card" data-era="china-qin-han" data-work-name="秦始皇陵跪射俑奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：秦始皇陵跪射俑奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/ff211f78-2ab9-46aa-95bc-2be3e89893af/a5bf9d3a-3b31-46d1-b439-f63f42ee4cc5.png" alt="秦始皇陵跪射俑奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>秦汉</span><span class="card-acc">MFM · QH-01</span></div>
+      <h3>秦始皇陵跪射俑奶蛙</h3><div class="en">Qin Kneeling Archer Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约公元前210年</span></div>
+      <div class="orig"><span>仿 秦始皇陵跪射俑 · Unknown</span><span class="yr">约公元前210年</span></div></div></article><article class="card" data-era="china-qin-han" data-work-name="长信宫灯奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：长信宫灯奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/8fa5c7ab-89c8-4d1e-a924-830c426e6bd8/938681e1-ed72-43b3-8875-b558309427d3.png" alt="长信宫灯奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>秦汉</span><span class="card-acc">MFM · QH-02</span></div>
+      <h3>长信宫灯奶蛙</h3><div class="en">Changxin Palace Lamp Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约公元前2世纪</span></div>
+      <div class="orig"><span>仿 长信宫灯 · Unknown</span><span class="yr">约公元前2世纪</span></div></div></article><article class="card" data-era="china-qin-han" data-work-name="击鼓说唱俑奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：击鼓说唱俑奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/685c4490-89df-42ae-90a4-b0c96892ccb0/bc765551-38c1-4587-81e7-80fbdf14b9bd.png" alt="击鼓说唱俑奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>秦汉</span><span class="card-acc">MFM · QH-03</span></div>
+      <h3>击鼓说唱俑奶蛙</h3><div class="en">Eastern Han Storyteller Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约公元2世纪</span></div>
+      <div class="orig"><span>仿 击鼓说唱俑 · Unknown</span><span class="yr">约公元2世纪</span></div></div></article><article class="card" data-era="china-wei-jin" data-work-name="洛神赋图奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：洛神赋图奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/81a91836-6881-4f79-9de2-241707c61d16/6a04de9a-0edd-45ac-8277-1011bff5e844.png" alt="洛神赋图奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>魏晋南北朝</span><span class="card-acc">MFM · WJN-01</span></div>
+      <h3>洛神赋图奶蛙</h3><div class="en">Milk Frog in the Nymph of the Luo River</div><div class="card-submeta"><span>Gu Kaizhi</span><span>约4世纪</span></div>
+      <div class="orig"><span>仿 洛神赋图 · Gu Kaizhi</span><span class="yr">约4世纪</span></div></div></article><article class="card" data-era="china-wei-jin" data-work-name="云冈石窟北魏佛像奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：云冈石窟北魏佛像奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/ada3f2b3-e01e-4c19-b146-ab41c71987f5/89ad5644-a88f-4233-b5a0-7b1dc5e1c447.png" alt="云冈石窟北魏佛像奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>魏晋南北朝</span><span class="card-acc">MFM · WJN-02</span></div>
+      <h3>云冈石窟北魏佛像奶蛙</h3><div class="en">Northern Wei Yungang Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约5世纪</span></div>
+      <div class="orig"><span>仿 云冈石窟北魏佛像 · Unknown</span><span class="yr">约5世纪</span></div></div></article><article class="card" data-era="china-wei-jin" data-work-name="竹林七贤与荣启期砖画奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：竹林七贤与荣启期砖画奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/a2f5ed49-5538-4e64-828b-9889ef667b93/aa985133-fbb3-48bd-99ac-bf394800021e.png" alt="竹林七贤与荣启期砖画奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>魏晋南北朝</span><span class="card-acc">MFM · WJN-03</span></div>
+      <h3>竹林七贤与荣启期砖画奶蛙</h3><div class="en">Seven Sages and Rong Qiqi Brick Relief Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约6世纪</span></div>
+      <div class="orig"><span>仿 竹林七贤与荣启期砖画 · Unknown</span><span class="yr">约6世纪</span></div></div></article><article class="card" data-era="china-wei-jin" data-work-name="女史箴图奶蛙（工笔）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：女史箴图奶蛙（工笔）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/fe561cc4-be0c-45f7-afe6-1b8fb930320a/3af151cc-8f21-471e-95bb-5a3375e829ba.png" alt="女史箴图奶蛙（工笔）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>魏晋南北朝</span><span class="card-acc">MFM · WJN-04</span></div>
+      <h3>女史箴图奶蛙（工笔）</h3><div class="en">Admonitions of the Instructress to the Court Ladies Milk Frog</div><div class="card-submeta"><span>Gu Kaizhi</span><span>约4世纪</span></div>
+      <div class="orig"><span>仿 女史箴图 · Gu Kaizhi</span><span class="yr">约4世纪</span></div></div></article><article class="card" data-era="china-sui-tang" data-work-name="唐三彩骆驼载乐俑奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：唐三彩骆驼载乐俑奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/66f939ae-2d60-4bd2-803f-bd8442a76678/85d3d313-e2a3-4b97-9200-8df0bb754346.png" alt="唐三彩骆驼载乐俑奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>隋唐</span><span class="card-acc">MFM · SUT-01</span></div>
+      <h3>唐三彩骆驼载乐俑奶蛙</h3><div class="en">Tang Sancai Camel Musicians Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约8世纪</span></div>
+      <div class="orig"><span>仿 唐三彩骆驼载乐俑 · Unknown</span><span class="yr">约8世纪</span></div></div></article><article class="card" data-era="china-sui-tang" data-work-name="游春图奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：游春图奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/87ec9cb3-d3c0-4dd2-9a8c-f497eaa27d19/ebc9f639-cdad-4385-94aa-afeb08463b46.png" alt="游春图奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>隋唐</span><span class="card-acc">MFM · SUT-02</span></div>
+      <h3>游春图奶蛙</h3><div class="en">Spring Outing Milk Frog</div><div class="card-submeta"><span>Zhan Ziqian</span><span>约7世纪</span></div>
+      <div class="orig"><span>仿 游春图 · Zhan Ziqian</span><span class="yr">约7世纪</span></div></div></article><article class="card" data-era="china-sui-tang" data-work-name="簪花仕女图奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：簪花仕女图奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/d1383bb8-24d2-4937-9ab0-7bb655aa6030/28cb7ba9-d698-40e6-8a20-7ca0c107718a.png" alt="簪花仕女图奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>隋唐</span><span class="card-acc">MFM · SUT-03</span></div>
+      <h3>簪花仕女图奶蛙</h3><div class="en">Ladies with Flowers Milk Frog</div><div class="card-submeta"><span>Zhou Fang</span><span>约8世纪</span></div>
+      <div class="orig"><span>仿 簪花仕女图 · Zhou Fang</span><span class="yr">约8世纪</span></div></div></article><article class="card" data-era="china-sui-tang" data-work-name="捣练图奶蛙（红衣小孩转化版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：捣练图奶蛙（红衣小孩转化版）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/4e47e7be-e57f-4ef0-9466-d6ff6537f5df/b5326b41-1ec0-42a0-a2af-e9c97381c5e7.png" alt="捣练图奶蛙（红衣小孩转化版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>隋唐</span><span class="card-acc">MFM · SUT-04</span></div>
+      <h3>捣练图奶蛙（红衣小孩转化版）</h3><div class="en">Court Ladies Preparing Silk Milk Frog</div><div class="card-submeta"><span>Zhang Xuan</span><span>约8世纪</span></div>
+      <div class="orig"><span>仿 捣练图 · Zhang Xuan</span><span class="yr">约8世纪</span></div></div></article><article class="card" data-era="china-sui-tang" data-work-name="照夜白图奶蛙（骑马版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：照夜白图奶蛙（骑马版）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/7dbe4c76-9926-48ba-ad19-72add0009029/2115cc65-e40b-4cbe-8ddd-4d1855c953c0.png" alt="照夜白图奶蛙（骑马版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>隋唐</span><span class="card-acc">MFM · SUT-05</span></div>
+      <h3>照夜白图奶蛙（骑马版）</h3><div class="en">Night-Shining White Milk Frog</div><div class="card-submeta"><span>Han Gan</span><span>约8世纪</span></div>
+      <div class="orig"><span>仿 照夜白图 · Han Gan</span><span class="yr">约8世纪</span></div></div></article><article class="card" data-era="china-sui-tang" data-work-name="虢国夫人游春图奶蛙（骑行者转化工笔版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：虢国夫人游春图奶蛙（骑行者转化工笔版）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/7d5b44cf-941e-4913-be8f-623459185d63/4edf13a3-7761-4fe0-81f4-eca20b0b532b.png" alt="虢国夫人游春图奶蛙（骑行者转化工笔版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>隋唐</span><span class="card-acc">MFM · SUT-06</span></div>
+      <h3>虢国夫人游春图奶蛙（骑行者转化工笔版）</h3><div class="en">The Spring Outing of the Guo State Lady Milk Frog</div><div class="card-submeta"><span>Zhang Xuan</span><span>约8世纪</span></div>
+      <div class="orig"><span>仿 虢国夫人游春图 · Zhang Xuan</span><span class="yr">约8世纪</span></div></div></article><article class="card" data-era="china-sui-tang" data-work-name="步辇图奶蛙（红衣人物转化工笔版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：步辇图奶蛙（红衣人物转化工笔版）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/d69b4820-3bb1-444f-b971-2f5715cf6061/69a1bfbb-d676-4368-860e-c09145e6c4d9.png" alt="步辇图奶蛙（红衣人物转化工笔版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>隋唐</span><span class="card-acc">MFM · SUT-07</span></div>
+      <h3>步辇图奶蛙（红衣人物转化工笔版）</h3><div class="en">Emperor Taizong Receiving the Tibetan Envoy Milk Frog</div><div class="card-submeta"><span>Yan Liben</span><span>约7世纪</span></div>
+      <div class="orig"><span>仿 步辇图 · Yan Liben</span><span class="yr">约7世纪</span></div></div></article><article class="card" data-era="china-song" data-work-name="韩熙载夜宴图奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：韩熙载夜宴图奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/bf59dc99-f6c4-4570-96de-e63df95223a1/1281f3db-6bd2-4cee-a292-521972387c8e.png" alt="韩熙载夜宴图奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>五代两宋</span><span class="card-acc">MFM · SNG-01</span></div>
+      <h3>韩熙载夜宴图奶蛙</h3><div class="en">Han Xizai’s Night Revels Milk Frog</div><div class="card-submeta"><span>Gu Hongzhong</span><span>约10世纪</span></div>
+      <div class="orig"><span>仿 韩熙载夜宴图 · Gu Hongzhong</span><span class="yr">约10世纪</span></div></div></article><article class="card" data-era="china-song" data-work-name="定窑白釉孩儿枕奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：定窑白釉孩儿枕奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/2bc215b6-f2b2-405d-aabf-b0205f22ba64/5243bbbc-60eb-4a9c-ba9c-26b3d421e3f5.png" alt="定窑白釉孩儿枕奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>五代两宋</span><span class="card-acc">MFM · SNG-02</span></div>
+      <h3>定窑白釉孩儿枕奶蛙</h3><div class="en">Ding Ware Child Pillow Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约11—12世纪</span></div>
+      <div class="orig"><span>仿 定窑白釉孩儿枕 · Unknown</span><span class="yr">约11—12世纪</span></div></div></article><article class="card" data-era="china-song" data-work-name="清明上河图奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：清明上河图奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/f99fba78-6f8f-4d66-9d6c-6a6968a65283/b01aed42-2c07-4269-9d8b-152f1094fb6a.png" alt="清明上河图奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>五代两宋</span><span class="card-acc">MFM · SNG-03</span></div>
+      <h3>清明上河图奶蛙</h3><div class="en">Along the River During the Qingming Festival Milk Frog</div><div class="card-submeta"><span>Zhang Zeduan</span><span>约12世纪</span></div>
+      <div class="orig"><span>仿 清明上河图 · Zhang Zeduan</span><span class="yr">约12世纪</span></div></div></article><article class="card" data-era="china-song" data-work-name="寒江独钓图奶蛙（写意）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：寒江独钓图奶蛙（写意）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/a4c43351-dc82-4ac3-b80d-c5f5984c179b/f6f97740-aad8-4ee5-8d54-06850d71709a.png" alt="寒江独钓图奶蛙（写意）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>五代两宋</span><span class="card-acc">MFM · SNG-04</span></div>
+      <h3>寒江独钓图奶蛙（写意）</h3><div class="en">Fishing Alone on a Cold River Milk Frog</div><div class="card-submeta"><span>Ma Yuan</span><span>约13世纪</span></div>
+      <div class="orig"><span>仿 寒江独钓图 · Ma Yuan</span><span class="yr">约13世纪</span></div></div></article><article class="card" data-era="china-song" data-work-name="芙蓉锦鸡图奶蛙（枝条角落版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：芙蓉锦鸡图奶蛙（枝条角落版）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/f36c72b0-05c0-4ce1-83e2-ce41a4f6c55a/e434dedc-0a2a-4fbd-8534-39f17c8b80c2.jpg" alt="芙蓉锦鸡图奶蛙（枝条角落版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>五代两宋</span><span class="card-acc">MFM · SNG-05</span></div>
+      <h3>芙蓉锦鸡图奶蛙（枝条角落版）</h3><div class="en">Hibiscus and Golden Pheasant Milk Frog</div><div class="card-submeta"><span>Zhao Ji</span><span>约12世纪</span></div>
+      <div class="orig"><span>仿 芙蓉锦鸡图 · Zhao Ji</span><span class="yr">约12世纪</span></div></div></article><article class="card" data-era="china-song" data-work-name="早春图奶蛙（山石笔墨融合版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：早春图奶蛙（山石笔墨融合版）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/5d10743c-a578-461c-bb41-30054b11b531/3d255614-fadd-4564-9908-b31eabc60558.png" alt="早春图奶蛙（山石笔墨融合版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>五代两宋</span><span class="card-acc">MFM · SNG-06</span></div>
+      <h3>早春图奶蛙（山石笔墨融合版）</h3><div class="en">Early Spring Milk Frog</div><div class="card-submeta"><span>Guo Xi</span><span>约11世纪</span></div>
+      <div class="orig"><span>仿 早春图 · Guo Xi</span><span class="yr">约11世纪</span></div></div></article><article class="card" data-era="china-song" data-work-name="万壑松风图奶蛙（山石笔墨版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：万壑松风图奶蛙（山石笔墨版）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/41e77b57-c4f7-4720-97ab-531f7c1aa81a/000da1cf-489b-418c-8baf-22192bc2df6d.png" alt="万壑松风图奶蛙（山石笔墨版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>五代两宋</span><span class="card-acc">MFM · SNG-07</span></div>
+      <h3>万壑松风图奶蛙（山石笔墨版）</h3><div class="en">Wind in Pines Among a Myriad Valleys Milk Frog</div><div class="card-submeta"><span>Li Tang</span><span>约12世纪</span></div>
+      <div class="orig"><span>仿 万壑松风图 · Li Tang</span><span class="yr">约12世纪</span></div></div></article><article class="card" data-era="china-ming-qing" data-work-name="富春山居图奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：富春山居图奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/62a83f2e-037e-4ccb-8b58-4e7d10378735/237526d5-58ac-4281-b803-75756afaecdc.png" alt="富春山居图奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>元明清</span><span class="card-acc">MFM · MQR-01</span></div>
+      <h3>富春山居图奶蛙</h3><div class="en">Dwelling in the Fuchun Mountains Milk Frog</div><div class="card-submeta"><span>Huang Gongwang</span><span>约14世纪</span></div>
+      <div class="orig"><span>仿 富春山居图 · Huang Gongwang</span><span class="yr">约14世纪</span></div></div></article><article class="card" data-era="china-ming-qing" data-work-name="百骏图奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：百骏图奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/76da33f6-abba-4950-95d5-34885510c009/eca3b348-0b55-49fb-ad35-9daeade30b5d.png" alt="百骏图奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>元明清</span><span class="card-acc">MFM · MQR-02</span></div>
+      <h3>百骏图奶蛙</h3><div class="en">One Hundred Horses Milk Frog</div><div class="card-submeta"><span>Giuseppe Castiglione</span><span>约18世纪</span></div>
+      <div class="orig"><span>仿 百骏图 · Giuseppe Castiglione</span><span class="yr">约18世纪</span></div></div></article><article class="card" data-era="china-ming-qing" data-work-name="荷花与鸭奶蛙（写意）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：荷花与鸭奶蛙（写意）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/5102aa99-45d8-4168-9f22-5d68d7193e63/0985951e-85b0-43ca-85c6-d30105f4841a.png" alt="荷花与鸭奶蛙（写意）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>元明清</span><span class="card-acc">MFM · MQR-03</span></div>
+      <h3>荷花与鸭奶蛙（写意）</h3><div class="en">Lotus and Ducks Milk Frog</div><div class="card-submeta"><span>Bada Shanren</span><span>约17世纪</span></div>
+      <div class="orig"><span>仿 荷花与鸭 · Bada Shanren</span><span class="yr">约17世纪</span></div></div></article><article class="card" data-era="china-ming-qing" data-work-name="梅花图奶蛙（写意梅枝版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：梅花图奶蛙（写意梅枝版）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/cc17032d-30d7-455a-9139-45150860bd51/46fff7a1-2f99-462b-832b-88105b9375ef.png" alt="梅花图奶蛙（写意梅枝版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>元明清</span><span class="card-acc">MFM · MQR-04</span></div>
+      <h3>梅花图奶蛙（写意梅枝版）</h3><div class="en">Plum Blossom Milk Frog</div><div class="card-submeta"><span>Jin Nong</span><span>约18世纪</span></div>
+      <div class="orig"><span>仿 梅花图 · Jin Nong</span><span class="yr">约18世纪</span></div></div></article><article class="card" data-era="china-ming-qing" data-work-name="桃源仙境图奶蛙（人物转化工笔版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：桃源仙境图奶蛙（人物转化工笔版）">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/467608bc-b920-49f7-904d-f5495b110947/e5563dad-b6ea-4aa2-92f4-af27eeceb3e9.png" alt="桃源仙境图奶蛙（人物转化工笔版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>元明清</span><span class="card-acc">MFM · MQR-05</span></div>
+      <h3>桃源仙境图奶蛙（人物转化工笔版）</h3><div class="en">The Peach Blossom Spring Milk Frog</div><div class="card-submeta"><span>Qiu Ying</span><span>约16世纪</span></div>
+      <div class="orig"><span>仿 桃源仙境图 · Qiu Ying</span><span class="yr">约16世纪</span></div></div></article><article class="card" data-era="china-modern" data-work-name="奔马奶蛙（变体形态版）" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：奔马奶蛙（变体形态版）">
+    <div class="card-frame"><img loading="lazy" src="https://public.cohub.run/s/157e937b-95da-4c17-add4-f916e37c3574/neta-studio-upload/image_01M1B0SGM225NWZ1RES7G16153.webp" alt="奔马奶蛙（变体形态版）"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>近现代</span><span class="card-acc">MFM · CNM-01</span></div>
+      <h3>奔马奶蛙（变体形态版）</h3><div class="en">Galloping Horse Milk Frog</div><div class="card-submeta"><span>Xu Beihong</span><span>20世纪</span></div>
+      <div class="orig"><span>仿 奔马 · Xu Beihong</span><span class="yr">20世纪</span></div></div></article><article class="card" data-era="china-modern" data-work-name="虾趣奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：虾趣奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/f929c484-6176-4e7b-8a78-404c09eb01a4/68c4a1be-ce86-48d7-8d35-528e323d06b4.png" alt="虾趣奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>近现代</span><span class="card-acc">MFM · CNM-02</span></div>
+      <h3>虾趣奶蛙</h3><div class="en">Shrimp Frolic Milk Frog</div><div class="card-submeta"><span>Qi Baishi</span><span>20世纪</span></div>
+      <div class="orig"><span>仿 虾 · Qi Baishi</span><span class="yr">20世纪</span></div></div></article><article class="card" data-era="china-modern" data-work-name="蛙声十里出山泉奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：蛙声十里出山泉奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/eaa5098d-584d-4d69-8c78-b7c1f16ff411/994c3dab-fa31-492c-aeec-a97bee54dd8c.png" alt="蛙声十里出山泉奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>近现代</span><span class="card-acc">MFM · CNM-03</span></div>
+      <h3>蛙声十里出山泉奶蛙</h3><div class="en">Ten Miles of Frog Calls from Mountain Springs Milk Frog</div><div class="card-submeta"><span>Qi Baishi</span><span>20世纪</span></div>
+      <div class="orig"><span>仿 蛙声十里出山泉 · Qi Baishi</span><span class="yr">20世纪</span></div></div></article><article class="card" data-era="china-modern" data-work-name="万山红遍奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：万山红遍奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/3648678d-6358-4082-afe5-9c7ae405ce5d/de875283-523e-40fb-a31d-44033caaa145.png" alt="万山红遍奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>近现代</span><span class="card-acc">MFM · CNM-04</span></div>
+      <h3>万山红遍奶蛙</h3><div class="en">Red in All the Mountains Milk Frog</div><div class="card-submeta"><span>Li Keran</span><span>20世纪</span></div>
+      <div class="orig"><span>仿 万山红遍 · Li Keran</span><span class="yr">20世纪</span></div></div></article><article class="card" data-era="china-modern" data-work-name="江山如此多娇奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：江山如此多娇奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/7fbf91ba-0967-4b96-b173-ffca45f3a177/3e49bf66-2a18-4b3a-81ed-faaad8fb2d7f.png" alt="江山如此多娇奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>近现代</span><span class="card-acc">MFM · CNM-05</span></div>
+      <h3>江山如此多娇奶蛙</h3><div class="en">So Many Beauties, Mountains and Rivers Milk Frog</div><div class="card-submeta"><span>Fu Baoshi &amp; Guan Shanyue</span><span>1959</span></div>
+      <div class="orig"><span>仿 江山如此多娇 · Fu Baoshi &amp; Guan Shanyue</span><span class="yr">1959</span></div></div></article><article class="card" data-era="china-modern" data-work-name="鹰石山花奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：鹰石山花奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/6715d3cc-611b-4d2b-900c-3d4cec5ef569/3fe72e84-9d88-4f37-9db0-1685b3938e1d.png" alt="鹰石山花奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>近现代</span><span class="card-acc">MFM · CNM-06</span></div>
+      <h3>鹰石山花奶蛙</h3><div class="en">Eagle, Rock and Mountain Flowers Milk Frog</div><div class="card-submeta"><span>Pan Tianshou</span><span>20世纪</span></div>
+      <div class="orig"><span>仿 鹰石山花图 · Pan Tianshou</span><span class="yr">20世纪</span></div></div></article></div>
+  <nav class="pagination china-pagination" id="chinaPagination" aria-label="中国馆作品分页"></nav>
+</main>
+
+<main id="top">
+<section class="hero" aria-label="奶蛙博物馆首页影像">
+  <div class="hero-media">
+    <video id="heroVideo" src="assets/hero.mp4" data-mobile-src="https://router-files.neta.art/files/0925fcc6-7aa7-4d02-afd4-9ae5e0f8bdb9/a6b2894c-b60c-4940-9a70-76382871dfa8.mp4" data-mobile-poster="https://router-files.neta.art/files/0925fcc6-7aa7-4d02-afd4-9ae5e0f8bdb9/d619be9d-519f-49f1-b0f3-d6471c7ebdf8.webp" poster="assets/hero-placeholder.png" autoplay="" muted="" loop="" playsinline="" preload="auto"></video>
+    <div class="hero-wash"></div>
+  </div>
+  <div class="hero-caption">
+    <span>THE MILK FROG</span>
+    <h1>跨越艺术史的<br>静默凝视</h1>
+    <a href="#collection">探索典藏</a>
+    <button class="china-mobile-entry" id="chinaMobileVisit" type="button">参观中国馆</button>
+  </div>
+  <button class="media-control" id="bgmToggle" type="button" aria-label="暂停背景音乐" data-state="on"><span></span></button>
+</section>
+</main>
+
+<!-- INTRO -->
+<section class="intro" id="intro">
+  <div class="intro-copy">
+    <div class="rule"></div>
+    <div class="label">Curatorial Statement</div>
+    <p><span class="intro-line">穿越三万年的凝视，</span><span class="intro-line"><em>奶蛙</em>栖身于人类最伟大的画布之中。</span><span class="intro-line">从洞窟的火光到印象派的午后，</span><span class="intro-line">一个圆润而沉静的身影，<em>始终在场</em>。</span></p>
+    <div class="sig">— 奶蛙馆长</div>
+  </div>
+  <div class="music-box" id="musicBox">
+    <div class="music-stage">
+      <button class="music-arrow music-arrow-prev" id="musicPrev" type="button" aria-label="上一首" title="上一首">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"></path></svg>
+      </button>
+      <div class="music-display" aria-label="博物馆背景音乐唱片机">
+        <img src="assets/turntable.webp" alt="木质黑胶唱片机">
+        <div class="record-spin" aria-hidden="true"></div>
+      </div>
+      <button class="music-arrow music-arrow-next" id="musicNext" type="button" aria-label="下一首" title="下一首">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+      </button>
+    </div>
+    <div class="music-caption">
+      <span class="music-kicker">MFM · SOUND ARCHIVE</span>
+      <strong id="trackTitle">Nocturne No. 2 in E Flat Major, Op. 9, No. 2</strong>
+      <span id="trackMeta">馆内背景音乐 · 01 / 02</span>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section id="collection">
+  <div class="collection-head">
+    <div class="sub">The Permanent Collection</div>
+    <h2>典藏系列</h2>
+  </div>
+  <div class="sort-toggle" id="sortToggle" role="group" aria-label="展示顺序">
+    <button type="button" data-sort="entry" class="">按入馆</button>
+    <span class="sort-sep">/</span>
+    <button type="button" data-sort="era" class="active">按年代</button>
+    <span class="sort-sep">/</span>
+    <button type="button" data-sort="movement">按流派</button>
+  </div>
+  <div class="filters" id="filters"><button data-filter="recent" class="">推荐</button><button data-filter="all">全部</button><button data-filter="prehistoric">史前</button><button data-filter="ancient">古典</button><button data-filter="medieval">中世纪</button><button data-filter="gothic">哥特</button><button data-filter="renaissance" class="active">文艺复兴</button><button data-filter="baroque">巴洛克</button><button data-filter="18c">18–19世纪</button><button data-filter="modern">现代</button></div>
+  <div class="gallery" id="gallery"><article class="card hide" data-era="gothic" data-work-name="哥特奶蛙圣母院" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：哥特奶蛙圣母院">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/8de94e33-a81f-46af-9403-df18104a50cc/7c53c1de-fee5-4174-b1f7-76c3f5208994.jpg" alt="哥特奶蛙圣母院"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>undefined</span><span class="card-acc">MFM · GEN-01</span></div>
+      <h3>哥特奶蛙圣母院</h3><div class="en">Notre-Dame in Frog Gothic</div><div class="card-submeta"><span>Gothic Architecture</span><span>c. 1345</span></div>
+      <div class="orig"><span>仿 巴黎圣母院 · Gothic Architecture</span><span class="yr">c. 1345</span></div></div></article><article class="card hide" data-era="prehistoric" data-work-name="阿尔塔米拉的奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：阿尔塔米拉的奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/4ccf7852-16e9-4169-914f-2436c6e23138/2b87318a-7b74-432d-8649-fbf810c572e0.jpg" alt="阿尔塔米拉的奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>史前</span><span class="card-acc">MFM · PRE-01</span></div>
+      <h3>阿尔塔米拉的奶蛙</h3><div class="en">Milk Frogs of Altamira</div><div class="card-submeta"><span>Unknown</span><span>c. 36,000 BCE</span></div>
+      <div class="orig"><span>仿 阿尔塔米拉洞窟壁画 · Unknown</span><span class="yr">c. 36,000 BCE</span></div></div></article><article class="card hide" data-era="prehistoric" data-work-name="岩画手印奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：岩画手印奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/28f1cb22-97f8-48a2-92dc-d69f915577cb/9322c6a5-d83f-4ef8-8d3e-d42d3029bb76.jpg" alt="岩画手印奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>史前</span><span class="card-acc">MFM · PRE-02</span></div>
+      <h3>岩画手印奶蛙</h3><div class="en">Milk Frog of Cueva de las Manos</div><div class="card-submeta"><span>Unknown</span><span>c. 7,300 BCE</span></div>
+      <div class="orig"><span>仿 手印洞岩画 · Unknown</span><span class="yr">c. 7,300 BCE</span></div></div></article><article class="card hide" data-era="prehistoric" data-work-name="塞拉山奔跑奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：塞拉山奔跑奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/22623f6e-254a-4748-ae5e-d52a19d352e8/0907b219-d92b-4e7d-8911-bb541dc825af.jpg" alt="塞拉山奔跑奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>史前</span><span class="card-acc">MFM · PRE-03</span></div>
+      <h3>塞拉山奔跑奶蛙</h3><div class="en">Running Milk Frog of Sierra</div><div class="card-submeta"><span>Unknown</span><span>c. 5,500 BCE</span></div>
+      <div class="orig"><span>仿 塞拉山岩画 · Unknown</span><span class="yr">c. 5,500 BCE</span></div></div></article><article class="card hide" data-era="prehistoric" data-work-name="石阵仪式奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：石阵仪式奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/d7c1eed0-e37e-4cff-a1af-7766bc96538f/54558fe5-13cd-42e0-98cb-bcef367f2871.png" alt="石阵仪式奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>史前</span><span class="card-acc">MFM · PRE-04</span></div>
+      <h3>石阵仪式奶蛙</h3><div class="en">Ritual Milk Frog at Stonehenge</div><div class="card-submeta"><span>Unknown</span><span>c. 2,500 BCE</span></div>
+      <div class="orig"><span>仿 巨石阵冬至仪式 · Unknown</span><span class="yr">c. 2,500 BCE</span></div></div></article><article class="card hide" data-era="prehistoric" data-work-name="岩刻游行奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：岩刻游行奶蛙" style="transition-delay: 0ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/95aabdf0-0282-44bb-ba29-496fad66afd4/dc8680f1-7e98-4e43-b0a4-971664253de7.png" alt="岩刻游行奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>史前</span><span class="card-acc">MFM · PRE-05</span></div>
+      <h3>岩刻游行奶蛙</h3><div class="en">Procession Milk Frog of Valcamonica</div><div class="card-submeta"><span>Unknown</span><span>c. 1,000 BCE</span></div>
+      <div class="orig"><span>仿 卡莫尼卡岩刻 · Unknown</span><span class="yr">c. 1,000 BCE</span></div></div></article><article class="card hide" data-era="prehistoric" data-work-name="巨石阵黎明奶蛙" data-entry-date="2026-09-07" tabindex="0" role="button" aria-label="查看作品：巨石阵黎明奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/7ea133c8-984f-44f2-b91c-0559ba2fa10c/5a53a699-1962-4773-ae44-fd186353fe92.png" alt="巨石阵黎明奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>史前</span><span class="card-acc">MFM · PRE-06</span></div>
+      <h3>巨石阵黎明奶蛙</h3><div class="en">Stonehenge at Dawn Milk Frog</div><div class="card-submeta"><span>Neolithic Builders</span><span>约公元前2500年</span></div>
+      <div class="orig"><span>仿 巨石阵黎明全景 · Neolithic Builders</span><span class="yr">约公元前2500年</span></div></div></article><article class="card hide" data-era="ancient" data-work-name="米洛斯的奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：米洛斯的奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/dfcc7219-5912-4a4b-8692-4e1a7c285632/8cbfffda-c93c-4e34-924d-5a1f8468936b.jpg" alt="米洛斯的奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>古典</span><span class="card-acc">MFM · ANT-01</span></div>
+      <h3>米洛斯的奶蛙</h3><div class="en">Venus de Milo Frog</div><div class="card-submeta"><span>Alexandros of Antioch</span><span>c. 130 BCE</span></div>
+      <div class="orig"><span>仿 米洛斯的维纳斯 · Alexandros of Antioch</span><span class="yr">c. 130 BCE</span></div></div></article><article class="card hide" data-era="ancient" data-work-name="纳芙蒂蒂头像奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：纳芙蒂蒂头像奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/41aaf56d-8e89-4762-8151-d00141af79fb/97dc3435-ceaa-4acb-87a5-8c914fa088a6.jpg" alt="纳芙蒂蒂头像奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>古典</span><span class="card-acc">MFM · ANT-02</span></div>
+      <h3>纳芙蒂蒂头像奶蛙</h3><div class="en">Nefertiti Bust Milk Frog</div><div class="card-submeta"><span>Thutmose</span><span>c. 1345 BCE</span></div>
+      <div class="orig"><span>仿 纳芙蒂蒂头像 · Thutmose</span><span class="yr">c. 1345 BCE</span></div></div></article><article class="card hide" data-era="ancient" data-work-name="德尔斐御者奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：德尔斐御者奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/e44f438f-b213-4540-9246-ac803d681a7a/122576ea-6ce1-4b8b-89b0-685b91de59f5.jpg" alt="德尔斐御者奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>古典</span><span class="card-acc">MFM · ANT-03</span></div>
+      <h3>德尔斐御者奶蛙</h3><div class="en">Charioteer of Delphi Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>c. 478 BCE</span></div>
+      <div class="orig"><span>仿 德尔斐御者 · Unknown</span><span class="yr">c. 478 BCE</span></div></div></article><article class="card hide" data-era="ancient" data-work-name="萨莫色雷斯的胜利女神奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：萨莫色雷斯的胜利女神奶蛙" style="transition-delay: 90ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/a221b832-0cfb-4b79-91c5-789d51789548/19714d1c-e3f8-482e-b224-0ac2f7a47334.png" alt="萨莫色雷斯的胜利女神奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>古典</span><span class="card-acc">MFM · ANT-04</span></div>
+      <h3>萨莫色雷斯的胜利女神奶蛙</h3><div class="en">Nike of Samothrace Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约公元前190年</span></div>
+      <div class="orig"><span>仿 萨莫色雷斯的胜利女神 · Unknown</span><span class="yr">约公元前190年</span></div></div></article><article class="card hide" data-era="ancient" data-work-name="休息的拳击手奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：休息的拳击手奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/a11598f5-8d09-415b-913c-0347de693f78/30fb05bf-7c37-47d4-9cec-c6b998cce152.png" alt="休息的拳击手奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>古典</span><span class="card-acc">MFM · ANT-05</span></div>
+      <h3>休息的拳击手奶蛙</h3><div class="en">Boxer at Rest Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约公元前330–50年</span></div>
+      <div class="orig"><span>仿 休息的拳击手 · Unknown</span><span class="yr">约公元前330–50年</span></div></div></article><article class="card hide" data-era="ancient" data-work-name="拉奥孔群像奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：拉奥孔群像奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/0797cdc4-6cbd-45f6-93e2-27582b36e5cc/3a5e8bc2-5089-48ba-b66b-aff8045ec786.png" alt="拉奥孔群像奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>古典</span><span class="card-acc">MFM · ANT-06</span></div>
+      <h3>拉奥孔群像奶蛙</h3><div class="en">Laocoon and His Sons Milk Frog</div><div class="card-submeta"><span>Agesander, Athenodoros and Polydorus</span><span>约公元前40–30年</span></div>
+      <div class="orig"><span>仿 拉奥孔群像 · Agesander, Athenodoros and Polydorus</span><span class="yr">约公元前40–30年</span></div></div></article><article class="card hide" data-era="ancient" data-work-name="汉谟拉比法典石碑奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：汉谟拉比法典石碑奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/58cdb6fa-bf78-4391-bbe3-19e6807ca4cf/81d2a752-d711-4180-8f6f-642b2c2c10c9.png" alt="汉谟拉比法典石碑奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>古典</span><span class="card-acc">MFM · ANT-07</span></div>
+      <h3>汉谟拉比法典石碑奶蛙</h3><div class="en">Code of Hammurabi Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约公元前1754年</span></div>
+      <div class="orig"><span>仿 汉谟拉比法典石碑 · Unknown</span><span class="yr">约公元前1754年</span></div></div></article><article class="card hide" data-era="ancient" data-work-name="第一门的奥古斯都奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：第一门的奥古斯都奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/27c9bdfd-6d85-4ac3-8dab-de94b07f8ff2/94648243-2d9d-4c04-9649-9b3a67ba12b5.png" alt="第一门的奥古斯都奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>古典</span><span class="card-acc">MFM · ANT-08</span></div>
+      <h3>第一门的奥古斯都奶蛙</h3><div class="en">Augustus of Prima Porta Milk Frog</div><div class="card-submeta"><span>Unknown</span><span>约公元前20年</span></div>
+      <div class="orig"><span>仿 第一门的奥古斯都 · Unknown</span><span class="yr">约公元前20年</span></div></div></article><article class="card hide" data-era="medieval" data-work-name="圣母子与奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：圣母子与奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/1ecba054-2183-4b7f-96a1-ae9c95090b79/772af387-8105-412b-a662-2349b4eb5b70.jpg" alt="圣母子与奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>中世纪</span><span class="card-acc">MFM · MED-01</span></div>
+      <h3>圣母子与奶蛙</h3><div class="en">Madonna and Frog Child</div><div class="card-submeta"><span>Cimabue</span><span>c. 1280</span></div>
+      <div class="orig"><span>仿 宝座圣母像 · Cimabue</span><span class="yr">c. 1280</span></div></div></article><article class="card hide" data-era="medieval" data-work-name="乔托哀悼基督奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：乔托哀悼基督奶蛙" style="transition-delay: 180ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/2d2d0cc1-f40e-4bb8-a59e-d741ddc668ea/1fa523b8-65d8-4b78-8808-2bf7bcfebbf7.jpg" alt="乔托哀悼基督奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>中世纪</span><span class="card-acc">MFM · MED-02</span></div>
+      <h3>乔托哀悼基督奶蛙</h3><div class="en">Giotto Lamentation Milk Frog</div><div class="card-submeta"><span>Giotto</span><span>约1305</span></div>
+      <div class="orig"><span>仿 哀悼基督 · Giotto</span><span class="yr">约1305</span></div></div></article><article class="card hide" data-era="medieval" data-work-name="契马布埃圣三位一体圣母子奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：契马布埃圣三位一体圣母子奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/07ffa754-b809-462b-ae5e-d4571f788cc7/4e360ca0-c36a-4cdf-8853-1ef154ce27ec.jpg" alt="契马布埃圣三位一体圣母子奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>中世纪</span><span class="card-acc">MFM · MED-03</span></div>
+      <h3>契马布埃圣三位一体圣母子奶蛙</h3><div class="en">Cimabue Santa Trinita Maesta Milk Frog</div><div class="card-submeta"><span>Cimabue</span><span>约1280–1290</span></div>
+      <div class="orig"><span>仿 圣三位一体圣母子 · Cimabue</span><span class="yr">约1280–1290</span></div></div></article><article class="card hide" data-era="medieval" data-work-name="乔托逃往埃及奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：乔托逃往埃及奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/2cada310-cb05-4d15-9492-f3d4eecccdb6/dd782a43-f032-4ae4-82b1-08939648846c.jpg" alt="乔托逃往埃及奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>中世纪</span><span class="card-acc">MFM · MED-04</span></div>
+      <h3>乔托逃往埃及奶蛙</h3><div class="en">Giotto Flight into Egypt Milk Frog</div><div class="card-submeta"><span>Giotto</span><span>约1304–1306</span></div>
+      <div class="orig"><span>仿 逃往埃及 · Giotto</span><span class="yr">约1304–1306</span></div></div></article><article class="card hide" data-era="medieval" data-work-name="杜乔进入耶路撒冷奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：杜乔进入耶路撒冷奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/49ba8665-a482-447c-bc2a-bacc3ea64ee3/aa20b49e-c8d8-4b85-ab83-58fb29853685.jpg" alt="杜乔进入耶路撒冷奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>中世纪</span><span class="card-acc">MFM · MED-05</span></div>
+      <h3>杜乔进入耶路撒冷奶蛙</h3><div class="en">Duccio Entry into Jerusalem Milk Frog</div><div class="card-submeta"><span>Duccio</span><span>约1308–1311</span></div>
+      <div class="orig"><span>仿 进入耶路撒冷 · Duccio</span><span class="yr">约1308–1311</span></div></div></article><article class="card hide" data-era="medieval" data-work-name="圣乔治屠龙奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：圣乔治屠龙奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/3d69d6cf-d63d-4e3e-86d3-0ab2a4dff614/ce721f75-fe73-4f48-87e4-bbec42b50718.jpg" alt="圣乔治屠龙奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>中世纪</span><span class="card-acc">MFM · MED-06</span></div>
+      <h3>圣乔治屠龙奶蛙</h3><div class="en">Saint George and the Dragon Milk Frog</div><div class="card-submeta"><span>Medieval tradition</span><span>中世纪传统</span></div>
+      <div class="orig"><span>仿 圣乔治屠龙 · Medieval tradition</span><span class="yr">中世纪传统</span></div></div></article><article class="card in" data-era="renaissance" data-work-name="最后的晚餐奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：最后的晚餐奶蛙" style="transition-delay: 0ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/8c3bd824-68fd-44bc-93a3-cca3f85d2bb7/167088ba-ccfe-4cfd-b4a9-a4d320689e2e.jpg" alt="最后的晚餐奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>文艺复兴</span><span class="card-acc">MFM · REN-01</span></div>
+      <h3>最后的晚餐奶蛙</h3><div class="en">The Frog Supper</div><div class="card-submeta"><span>Leonardo da Vinci</span><span>1495–1498</span></div>
+      <div class="orig"><span>仿 最后的晚餐 · Leonardo da Vinci</span><span class="yr">1495–1498</span></div></div></article><article class="card in" data-era="renaissance" data-work-name="创造奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：创造奶蛙" style="transition-delay: 90ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/2dd3d1aa-eeb1-4bcf-88c5-7791631bb2ab/1f031e8f-e028-43e1-a890-0aa1c2cc2ed0.jpg" alt="创造奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>文艺复兴</span><span class="card-acc">MFM · REN-02</span></div>
+      <h3>创造奶蛙</h3><div class="en">The Creation of Frog</div><div class="card-submeta"><span>Michelangelo</span><span>1508–1512</span></div>
+      <div class="orig"><span>仿 创造亚当 · Michelangelo</span><span class="yr">1508–1512</span></div></div></article><article class="card in" data-era="renaissance" data-work-name="雅典学院的核心奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：雅典学院的核心奶蛙" style="transition-delay: 180ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/5bb77e8c-9218-4a3c-b03a-121524a020db/1e8697ae-7f52-44b3-938e-c62186512dd6.jpg" alt="雅典学院的核心奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>文艺复兴</span><span class="card-acc">MFM · REN-03</span></div>
+      <h3>雅典学院的核心奶蛙</h3><div class="en">Frog at the School of Athens</div><div class="card-submeta"><span>Raphael</span><span>1509–1511</span></div>
+      <div class="orig"><span>仿 雅典学院（中央） · Raphael</span><span class="yr">1509–1511</span></div></div></article><article class="card" data-era="renaissance" data-work-name="雪中猎人奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：雪中猎人奶蛙" style="transition-delay: 0ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/4978473f-db66-483a-b13d-10804e00405a/eecacb66-1966-4783-82d3-34b9b767ba02.png" alt="雪中猎人奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>文艺复兴</span><span class="card-acc">MFM · REN-04</span></div>
+      <h3>雪中猎人奶蛙</h3><div class="en">Milk Frog Hunters in the Snow</div><div class="card-submeta"><span>Pieter Bruegel the Elder</span><span>1565</span></div>
+      <div class="orig"><span>仿 雪中猎人 · Pieter Bruegel the Elder</span><span class="yr">1565</span></div></div></article><article class="card" data-era="renaissance" data-work-name="大使们奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：大使们奶蛙" style="transition-delay: 90ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/0094507e-c768-415d-ac73-c0a594472f2d/520a49e4-f385-48b7-8212-7774996a8b69.png" alt="大使们奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>文艺复兴</span><span class="card-acc">MFM · REN-05</span></div>
+      <h3>大使们奶蛙</h3><div class="en">Milk Frog Ambassadors</div><div class="card-submeta"><span>Hans Holbein the Younger</span><span>1533</span></div>
+      <div class="orig"><span>仿 大使们 · Hans Holbein the Younger</span><span class="yr">1533</span></div></div></article><article class="card hide" data-era="baroque" data-work-name="浪子回头奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：浪子回头奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/98a0475c-52fe-4fb5-b90e-6dd0d2c599d1/57d39942-8604-4a24-a1e2-a55f042fdeaa.png" alt="浪子回头奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>巴洛克</span><span class="card-acc">MFM · BAR-01</span></div>
+      <h3>浪子回头奶蛙</h3><div class="en">The Return of the Milk Frog</div><div class="card-submeta"><span>Rembrandt</span><span>c. 1669</span></div>
+      <div class="orig"><span>仿 浪子回头 · Rembrandt</span><span class="yr">c. 1669</span></div></div></article><article class="card hide" data-era="baroque" data-work-name="以马忤斯的晚餐奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：以马忤斯的晚餐奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/123ab25a-fdf5-46f6-93f1-e5ee4b05fa58/7c054faa-166b-40fe-9bd3-004b0af43748.png" alt="以马忤斯的晚餐奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>巴洛克</span><span class="card-acc">MFM · BAR-02</span></div>
+      <h3>以马忤斯的晚餐奶蛙</h3><div class="en">Milk Frog Supper at Emmaus</div><div class="card-submeta"><span>Caravaggio</span><span>1601</span></div>
+      <div class="orig"><span>仿 以马忤斯的晚餐 · Caravaggio</span><span class="yr">1601</span></div></div></article><article class="card hide" data-era="baroque" data-work-name="绘画的艺术奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：绘画的艺术奶蛙" style="transition-delay: 90ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/bc43ffa7-d266-4b29-a9ea-c982699318a4/713861a5-f99f-4357-b118-a7e583931f69.png" alt="绘画的艺术奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>巴洛克</span><span class="card-acc">MFM · BAR-03</span></div>
+      <h3>绘画的艺术奶蛙</h3><div class="en">Milk Frog in The Art of Painting</div><div class="card-submeta"><span>Johannes Vermeer</span><span>c. 1666–1668</span></div>
+      <div class="orig"><span>仿 绘画的艺术 · Johannes Vermeer</span><span class="yr">c. 1666–1668</span></div></div></article><article class="card hide" data-era="baroque" data-work-name="布商同业公会理事奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：布商同业公会理事奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/18dd2d09-d1cd-4195-b67f-3b63e7f3d41c/9977d7e0-258e-4b48-a7ff-2120aedabb6b.png" alt="布商同业公会理事奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>巴洛克</span><span class="card-acc">MFM · BAR-04</span></div>
+      <h3>布商同业公会理事奶蛙</h3><div class="en">Milk Frog Syndics</div><div class="card-submeta"><span>Rembrandt</span><span>1662</span></div>
+      <div class="orig"><span>仿 布商同业公会理事 · Rembrandt</span><span class="yr">1662</span></div></div></article><article class="card hide" data-era="baroque" data-work-name="绘画寓意的自画像奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：绘画寓意的自画像奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/7f3bb123-ecf3-496f-84e6-39e13e8010da/b9fa594c-02e1-4eca-a855-593f339b48bd.png" alt="绘画寓意的自画像奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>巴洛克</span><span class="card-acc">MFM · BAR-05</span></div>
+      <h3>绘画寓意的自画像奶蛙</h3><div class="en">Milk Frog as the Allegory of Painting</div><div class="card-submeta"><span>Artemisia Gentileschi</span><span>c. 1638–1639</span></div>
+      <div class="orig"><span>仿 作为绘画寓意的自画像 · Artemisia Gentileschi</span><span class="yr">c. 1638–1639</span></div></div></article><article class="card hide" data-era="baroque" data-work-name="油灯前的抹大拉奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：油灯前的抹大拉奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/e223eacb-d5f6-4881-a804-9ec10c30ffaf/e31233f8-4852-4eb7-9861-336c8d515a5e.png" alt="油灯前的抹大拉奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>巴洛克</span><span class="card-acc">MFM · BAR-06</span></div>
+      <h3>油灯前的抹大拉奶蛙</h3><div class="en">Milk Frog with the Smoking Flame</div><div class="card-submeta"><span>Georges de La Tour</span><span>c. 1635–1640</span></div>
+      <div class="orig"><span>仿 油灯前的抹大拉 · Georges de La Tour</span><span class="yr">c. 1635–1640</span></div></div></article><article class="card hide" data-era="neoclassicism" data-work-name="荷拉斯兄弟之誓奶蛙" data-entry-date="2026-09-04" tabindex="0" role="button" aria-label="查看作品：荷拉斯兄弟之誓奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/cec6832d-c600-4446-89f3-2aaeefbce09d/5a764b55-c8ef-449f-853b-e495b351b65f.png" alt="荷拉斯兄弟之誓奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>新古典主义</span><span class="card-acc">MFM · NEO-01</span></div>
+      <h3>荷拉斯兄弟之誓奶蛙</h3><div class="en">Oath of the Horatii Milk Frog</div><div class="card-submeta"><span>Jacques-Louis David</span><span>1784</span></div>
+      <div class="orig"><span>仿 荷拉斯兄弟之誓 · Jacques-Louis David</span><span class="yr">1784</span></div></div></article><article class="card hide" data-era="neoclassicism" data-work-name="雷卡米埃夫人奶蛙" data-entry-date="2026-09-20" tabindex="0" role="button" aria-label="查看作品：雷卡米埃夫人奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/f78f56d9-3c71-4ae9-954d-603ef6be7482/ce281fcc-dea5-47c5-b33b-919e483fdf30.png" alt="雷卡米埃夫人奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>新古典主义</span><span class="card-acc">MFM · NEO-02</span></div>
+      <h3>雷卡米埃夫人奶蛙</h3><div class="en">Madame Récamier Milk Frog</div><div class="card-submeta"><span>Jacques-Louis David</span><span>1800</span></div>
+      <div class="orig"><span>仿 雷卡米埃夫人 · Jacques-Louis David</span><span class="yr">1800</span></div></div></article><article class="card hide" data-era="neoclassicism" data-work-name="翻越阿尔卑斯奶蛙" data-entry-date="2026-09-20" tabindex="0" role="button" aria-label="查看作品：翻越阿尔卑斯奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/8617b973-4155-4b64-83cd-cd3f35b809c6/9314be59-d603-47ba-bf85-10567179b60f.png" alt="翻越阿尔卑斯奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>新古典主义</span><span class="card-acc">MFM · NEO-03</span></div>
+      <h3>翻越阿尔卑斯奶蛙</h3><div class="en">Napoleon Crossing the Alps Milk Frog</div><div class="card-submeta"><span>Jacques-Louis David</span><span>1801</span></div>
+      <div class="orig"><span>仿 翻越阿尔卑斯 · Jacques-Louis David</span><span class="yr">1801</span></div></div></article><article class="card hide" data-era="neoclassicism" data-work-name="苏格拉底之死奶蛙" data-entry-date="2026-09-20" tabindex="0" role="button" aria-label="查看作品：苏格拉底之死奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/bc3adffd-6389-4ae2-a7b8-8f751f7e6be1/79773946-e353-41ba-b9a8-2b83ba4492e4.png" alt="苏格拉底之死奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>新古典主义</span><span class="card-acc">MFM · NEO-04</span></div>
+      <h3>苏格拉底之死奶蛙</h3><div class="en">The Death of Socrates Milk Frog</div><div class="card-submeta"><span>Jacques-Louis David</span><span>1787</span></div>
+      <div class="orig"><span>仿 苏格拉底之死 · Jacques-Louis David</span><span class="yr">1787</span></div></div></article><article class="card hide" data-era="neoclassicism" data-work-name="贝尔坦先生奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：贝尔坦先生奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/90755386-e87b-4bc7-a7ec-d94f4a2bf296/2ca24563-5a14-459e-a83e-6081eecae3cd.png" alt="贝尔坦先生奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>新古典主义</span><span class="card-acc">MFM · NEO-05</span></div>
+      <h3>贝尔坦先生奶蛙</h3><div class="en">Portrait of Monsieur Bertin Milk Frog</div><div class="card-submeta"><span>Jean-Auguste-Dominique Ingres</span><span>1832</span></div>
+      <div class="orig"><span>仿 贝尔坦先生肖像 · Jean-Auguste-Dominique Ingres</span><span class="yr">1832</span></div></div></article><article class="card hide" data-era="neoclassicism" data-work-name="视察雅法疫病院奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：视察雅法疫病院奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/7749027e-4cc0-48cb-90a2-b7894ec06c0f/3f255dcb-1799-4da8-a9c4-e3f8fbd1a761.png" alt="视察雅法疫病院奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>新古典主义</span><span class="card-acc">MFM · NEO-06</span></div>
+      <h3>视察雅法疫病院奶蛙</h3><div class="en">Bonaparte Visiting the Plague Victims of Jaffa Milk Frog</div><div class="card-submeta"><span>Antoine-Jean Gros</span><span>1804</span></div>
+      <div class="orig"><span>仿 拿破仑视察雅法疫病院 · Antoine-Jean Gros</span><span class="yr">1804</span></div></div></article><article class="card hide" data-era="neoclassicism" data-work-name="贝利撒留受施奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：贝利撒留受施奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/932790b8-9bf5-403b-89f5-e558e3fbf2cd/8925e77e-244c-432c-860a-8331983e137a.png" alt="贝利撒留受施奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>新古典主义</span><span class="card-acc">MFM · NEO-07</span></div>
+      <h3>贝利撒留受施奶蛙</h3><div class="en">Belisarius Receiving Alms Milk Frog</div><div class="card-submeta"><span>Jacques-Louis David</span><span>1781</span></div>
+      <div class="orig"><span>仿 贝利撒留受施 · Jacques-Louis David</span><span class="yr">1781</span></div></div></article><article class="card hide" data-era="neoclassicism" data-work-name="马拉之死奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：马拉之死奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/30ddd6c0-a225-4dc2-a78c-235a9fb6ed3b/a8584880-b32e-42d3-b5f9-93e39d8a517d.png" alt="马拉之死奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>新古典主义</span><span class="card-acc">MFM · NEO-08</span></div>
+      <h3>马拉之死奶蛙</h3><div class="en">The Death of Marat Milk Frog</div><div class="card-submeta"><span>Jacques-Louis David</span><span>1793</span></div>
+      <div class="orig"><span>仿 马拉之死 · Jacques-Louis David</span><span class="yr">1793</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="秋千奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：秋千奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/07884dd1-0f6e-4c8e-a70f-9cc8c76aad66/aee062cd-54c0-4490-beb5-81cab1347159.png" alt="秋千奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-01</span></div>
+      <h3>秋千奶蛙</h3><div class="en">The Swing Milk Frog</div><div class="card-submeta"><span>Jean-Honoré Fragonard</span><span>1767</span></div>
+      <div class="orig"><span>仿 秋千 · Jean-Honoré Fragonard</span><span class="yr">1767</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="画家与她的女儿奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：画家与她的女儿奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/2c4b8e03-f216-49d3-be2e-4507149930b1/75077c62-8216-4872-8787-ea0aea10661d.png" alt="画家与她的女儿奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-02</span></div>
+      <h3>画家与她的女儿奶蛙</h3><div class="en">Self-Portrait with Her Daughter Milk Frog</div><div class="card-submeta"><span>Élisabeth Vigée Le Brun</span><span>1786</span></div>
+      <div class="orig"><span>仿 画家与她的女儿 · Élisabeth Vigée Le Brun</span><span class="yr">1786</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="读书少女奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：读书少女奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/8bdc5d39-4345-49ab-baf2-d02c25120ba9/92c2165f-8388-40eb-878c-24bb624c287d.png" alt="读书少女奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-03</span></div>
+      <h3>读书少女奶蛙</h3><div class="en">A Young Girl Reading Milk Frog</div><div class="card-submeta"><span>Jean-Honoré Fragonard</span><span>约1769</span></div>
+      <div class="orig"><span>仿 读书少女 · Jean-Honoré Fragonard</span><span class="yr">约1769</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="拿陀螺的男孩奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：拿陀螺的男孩奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/25133efd-701e-4b59-876c-1ad0eccc3578/e0f57016-327f-4e06-88e1-eaa8af8f0de3.png" alt="拿陀螺的男孩奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-04</span></div>
+      <h3>拿陀螺的男孩奶蛙</h3><div class="en">Boy with a Top Milk Frog</div><div class="card-submeta"><span>Jean-Baptiste-Siméon Chardin</span><span>1738</span></div>
+      <div class="orig"><span>仿 拿陀螺的男孩 · Jean-Baptiste-Siméon Chardin</span><span class="yr">1738</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="小丑吉尔奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：小丑吉尔奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/c07a503c-8938-49fc-b28a-eacc74ad98c8/eebd88c7-b401-4543-bdd6-0353f6a0d0ea.png" alt="小丑吉尔奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-05</span></div>
+      <h3>小丑吉尔奶蛙</h3><div class="en">Pierrot (Gilles) Milk Frog</div><div class="card-submeta"><span>Antoine Watteau</span><span>约1718–1719</span></div>
+      <div class="orig"><span>仿 小丑吉尔（皮埃罗） · Antoine Watteau</span><span class="yr">约1718–1719</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="梅兹坦奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：梅兹坦奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/253fea17-ef05-4b92-ac20-22e1f4bfaf9d/1db24f5f-99ad-4b95-ad2c-edb395913aac.png" alt="梅兹坦奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-06</span></div>
+      <h3>梅兹坦奶蛙</h3><div class="en">Mezzetin Milk Frog</div><div class="card-submeta"><span>Antoine Watteau</span><span>约1718–1720</span></div>
+      <div class="orig"><span>仿 梅兹坦 · Antoine Watteau</span><span class="yr">约1718–1720</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="破壶奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：破壶奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/9e8b552f-b298-4e8a-b160-b3141868d4ec/8b042d1e-d63b-41b8-b6aa-2879e72bcabb.png" alt="破壶奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-07</span></div>
+      <h3>破壶奶蛙</h3><div class="en">The Broken Pitcher Milk Frog</div><div class="card-submeta"><span>Jean-Baptiste Greuze</span><span>1773</span></div>
+      <div class="orig"><span>仿 破壶 · Jean-Baptiste Greuze</span><span class="yr">1773</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="肥皂泡奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：肥皂泡奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/9c3d8408-090b-4e68-acc1-f437aab8d057/b7026ae9-2b57-4428-b42f-e4f3ca548135.png" alt="肥皂泡奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-08</span></div>
+      <h3>肥皂泡奶蛙</h3><div class="en">Soap Bubbles Milk Frog</div><div class="card-submeta"><span>Jean-Baptiste-Siméon Chardin</span><span>约1733–1734</span></div>
+      <div class="orig"><span>仿 肥皂泡 · Jean-Baptiste-Siméon Chardin</span><span class="yr">约1733–1734</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="门闩奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：门闩奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/b6b6abe5-62e9-4e0d-ad2e-1532788ad77e/319a8bac-3858-4cf8-9ed1-ab550b6bcabd.png" alt="门闩奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-09</span></div>
+      <h3>门闩奶蛙</h3><div class="en">The Lock Milk Frog</div><div class="card-submeta"><span>Jean-Honoré Fragonard</span><span>约1777</span></div>
+      <div class="orig"><span>仿 门闩 · Jean-Honoré Fragonard</span><span class="yr">约1777</span></div></div></article><article class="card hide" data-era="rococo" data-work-name="跳舞的卡玛戈奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：跳舞的卡玛戈奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/b61e93fc-405c-4729-a7fc-ca73ec3ab0ba/69209bbc-dab3-4649-99fe-e2413f908731.png" alt="跳舞的卡玛戈奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>洛可可</span><span class="card-acc">MFM · ROC-10</span></div>
+      <h3>跳舞的卡玛戈奶蛙</h3><div class="en">La Camargo Dancing Milk Frog</div><div class="card-submeta"><span>Nicolas Lancret</span><span>约1730</span></div>
+      <div class="orig"><span>仿 跳舞的卡玛戈 · Nicolas Lancret</span><span class="yr">约1730</span></div></div></article><article class="card hide" data-era="realism" data-work-name="拾穗者奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：拾穗者奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/4bc87e21-aac8-4cf6-9e07-92914e9d894b/2c000d1b-076c-4b80-9821-2637cc525a6b.png" alt="拾穗者奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现实主义</span><span class="card-acc">MFM · REA-01</span></div>
+      <h3>拾穗者奶蛙</h3><div class="en">Milk Frog Gleaners</div><div class="card-submeta"><span>Jean-François Millet</span><span>1857</span></div>
+      <div class="orig"><span>仿 拾穗者 · Jean-François Millet</span><span class="yr">1857</span></div></div></article><article class="card hide" data-era="realism" data-work-name="吹笛少年奶蛙" data-entry-date="2026-09-04" tabindex="0" role="button" aria-label="查看作品：吹笛少年奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/7d162de6-02c8-414c-9494-b8848c14f1e2/e0b4482f-1b7e-44fa-b24b-f7742e32a1fe.png" alt="吹笛少年奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现实主义</span><span class="card-acc">MFM · REA-02</span></div>
+      <h3>吹笛少年奶蛙</h3><div class="en">The Fifer Milk Frog</div><div class="card-submeta"><span>Édouard Manet</span><span>1866</span></div>
+      <div class="orig"><span>仿 吹笛少年 · Édouard Manet</span><span class="yr">1866</span></div></div></article><article class="card hide" data-era="realism" data-work-name="前线的俘虏奶蛙" data-entry-date="2026-09-04" tabindex="0" role="button" aria-label="查看作品：前线的俘虏奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/24164368-847f-40ec-b8b7-80c35d3f2316/9764057e-e4c3-499f-8465-c717319e53cf.png" alt="前线的俘虏奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现实主义</span><span class="card-acc">MFM · REA-03</span></div>
+      <h3>前线的俘虏奶蛙</h3><div class="en">Prisoners from the Front Milk Frog</div><div class="card-submeta"><span>Winslow Homer</span><span>1866</span></div>
+      <div class="orig"><span>仿 前线的俘虏 · Winslow Homer</span><span class="yr">1866</span></div></div></article><article class="card hide" data-era="realism" data-work-name="巴拉克拉瓦奶蛙" data-entry-date="2026-09-04" tabindex="0" role="button" aria-label="查看作品：巴拉克拉瓦奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/a78d619e-7bfe-4705-a3cc-3999f70cb5bc/22e2fe21-d724-42fe-82ea-829683d83b2d.png" alt="巴拉克拉瓦奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现实主义</span><span class="card-acc">MFM · REA-04</span></div>
+      <h3>巴拉克拉瓦奶蛙</h3><div class="en">Balaclava Milk Frog</div><div class="card-submeta"><span>Elizabeth Thompson</span><span>1876</span></div>
+      <div class="orig"><span>仿 巴拉克拉瓦 · Elizabeth Thompson</span><span class="yr">1876</span></div></div></article><article class="card hide" data-era="realism" data-work-name="石工奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：石工奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/12efdc37-a59b-4346-9a1a-07d293c3b135/9fe237ab-e884-4f45-9b96-9f4dcb76cabc.png" alt="石工奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现实主义</span><span class="card-acc">MFM · REA-05</span></div>
+      <h3>石工奶蛙</h3><div class="en">The Stone Breakers Milk Frog</div><div class="card-submeta"><span>Gustave Courbet</span><span>1849–1850</span></div>
+      <div class="orig"><span>仿 石工 · Gustave Courbet</span><span class="yr">1849–1850</span></div></div></article><article class="card hide" data-era="realism" data-work-name="伏尔加河上的纤夫奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：伏尔加河上的纤夫奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/c61aba4b-57ad-45db-b5db-6e7c8cb61a24/14e875f5-9102-4c66-ad25-ba5ba0bb3eaa.png" alt="伏尔加河上的纤夫奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现实主义</span><span class="card-acc">MFM · REA-06</span></div>
+      <h3>伏尔加河上的纤夫奶蛙</h3><div class="en">Barge Haulers on the Volga Milk Frog</div><div class="card-submeta"><span>Ilya Repin</span><span>1870–1873</span></div>
+      <div class="orig"><span>仿 伏尔加河上的纤夫 · Ilya Repin</span><span class="yr">1870–1873</span></div></div></article><article class="card hide" data-era="realism" data-work-name="三等车厢奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：三等车厢奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/b8d8b0b4-f6be-497d-922b-ce2c3ee0df07/7b0f49a8-930e-4889-ae5d-0682dcff937f.png" alt="三等车厢奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现实主义</span><span class="card-acc">MFM · REA-07</span></div>
+      <h3>三等车厢奶蛙</h3><div class="en">The Third-Class Carriage Milk Frog</div><div class="card-submeta"><span>Honoré Daumier</span><span>约1862–1864</span></div>
+      <div class="orig"><span>仿 三等车厢 · Honoré Daumier</span><span class="yr">约1862–1864</span></div></div></article><article class="card hide" data-era="realism" data-work-name="晚钟奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：晚钟奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/8e7e7335-7ef8-4f22-8246-5daaa34d49ac/0d35703a-bb8c-4551-b742-2d09cebd13ca.png" alt="晚钟奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现实主义</span><span class="card-acc">MFM · REA-08</span></div>
+      <h3>晚钟奶蛙</h3><div class="en">The Angelus Milk Frog</div><div class="card-submeta"><span>Jean-François Millet</span><span>1857–1859</span></div>
+      <div class="orig"><span>仿 晚钟 · Jean-François Millet</span><span class="yr">1857–1859</span></div></div></article><article class="card hide" data-era="realism" data-work-name="抢球奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：抢球奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/f2b39b40-ecb1-4ff7-af43-a634370ceaae/e0bf7540-ec94-4ba1-ba3e-c856a42f68c1.png" alt="抢球奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现实主义</span><span class="card-acc">MFM · REA-09</span></div>
+      <h3>抢球奶蛙</h3><div class="en">Snap the Whip Milk Frog</div><div class="card-submeta"><span>Winslow Homer</span><span>1872</span></div>
+      <div class="orig"><span>仿 抢球 · Winslow Homer</span><span class="yr">1872</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="梅杜萨之筏奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：梅杜萨之筏奶蛙" style="transition-delay: 180ms;">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/9c018a9a-42bf-42a8-b44f-ea6db6aaf5c6/678faed6-daf6-41c1-8b11-d652952bbd4b.png" alt="梅杜萨之筏奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-01</span></div>
+      <h3>梅杜萨之筏奶蛙</h3><div class="en">Milk Frog Raft of the Medusa</div><div class="card-submeta"><span>Théodore Géricault</span><span>1819</span></div>
+      <div class="orig"><span>仿 梅杜萨之筏 · Théodore Géricault</span><span class="yr">1819</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="1808年5月3日奶蛙" data-entry-date="2026-09-18" tabindex="0" role="button" aria-label="查看作品：1808年5月3日奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/590e4c58-560f-4454-b36c-9997f2ab1ade/ed0856cd-f09c-45f8-8cac-e6c1fd070216.png" alt="1808年5月3日奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-02</span></div>
+      <h3>1808年5月3日奶蛙</h3><div class="en">The Third of May Milk Frog</div><div class="card-submeta"><span>Francisco Goya</span><span>1814</span></div>
+      <div class="orig"><span>仿 1808年5月3日 · Francisco Goya</span><span class="yr">1814</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="吕根岛白垩崖奶蛙" data-entry-date="2026-09-07" tabindex="0" role="button" aria-label="查看作品：吕根岛白垩崖奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/7c25518d-45a1-4aad-a184-a1f41047747a/18c013d4-4e62-429c-9e35-f7e44cedf3f0.png" alt="吕根岛白垩崖奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-03</span></div>
+      <h3>吕根岛白垩崖奶蛙</h3><div class="en">Chalk Cliffs on Rügen Milk Frog</div><div class="card-submeta"><span>Caspar David Friedrich</span><span>约1818</span></div>
+      <div class="orig"><span>仿 吕根岛的白垩崖 · Caspar David Friedrich</span><span class="yr">约1818</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="望月的两人奶蛙" data-entry-date="2026-09-18" tabindex="0" role="button" aria-label="查看作品：望月的两人奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/b58902a1-290a-4af4-9a63-a0e4535c2839/2fe08b28-d399-4672-a21b-f9981fdab82a.png" alt="望月的两人奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-04</span></div>
+      <h3>望月的两人奶蛙</h3><div class="en">Two Men Contemplating the Moon Milk Frog</div><div class="card-submeta"><span>Caspar David Friedrich</span><span>约1825–1830</span></div>
+      <div class="orig"><span>仿 望月的两人 · Caspar David Friedrich</span><span class="yr">约1825–1830</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="吉萨的狮身人面像奶蛙" data-entry-date="2026-09-07" tabindex="0" role="button" aria-label="查看作品：吉萨的狮身人面像奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/d2c55cd0-0d81-4f57-bb0e-9fb6cbfb4bfa/06ed4b9d-d96e-40c6-95fb-ff1e36389677.png" alt="吉萨的狮身人面像奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-05</span></div>
+      <h3>吉萨的狮身人面像奶蛙</h3><div class="en">The Great Sphinx of Gizeh Milk Frog</div><div class="card-submeta"><span>David Roberts</span><span>1839</span></div>
+      <div class="orig"><span>仿 吉萨的狮身人面像与金字塔 · David Roberts</span><span class="yr">1839</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="卢浮宫废墟的想象图奶蛙" data-entry-date="2026-09-07" tabindex="0" role="button" aria-label="查看作品：卢浮宫废墟的想象图奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/217acfa5-aee3-4c5d-84ba-81ecb4a04341/a890a32a-67b8-4028-8ac0-bbaa85e0d4f5.png" alt="卢浮宫废墟的想象图奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-06</span></div>
+      <h3>卢浮宫废墟的想象图奶蛙</h3><div class="en">Imaginary View of the Grande Galerie in Ruins Milk Frog</div><div class="card-submeta"><span>Hubert Robert</span><span>1796</span></div>
+      <div class="orig"><span>仿 卢浮宫大画廊废墟想象图 · Hubert Robert</span><span class="yr">1796</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="纳尔尼桥奶蛙" data-entry-date="2026-09-07" tabindex="0" role="button" aria-label="查看作品：纳尔尼桥奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/8b4ae25f-4e8d-4a3d-9f4c-2945b5fcfb84/0de82fe6-a53e-4750-9898-412fe3ce0894.png" alt="纳尔尼桥奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-07</span></div>
+      <h3>纳尔尼桥奶蛙</h3><div class="en">The Bridge at Narni Milk Frog</div><div class="card-submeta"><span>Jean-Baptiste-Camille Corot</span><span>1827</span></div>
+      <div class="orig"><span>仿 纳尔尼桥 · Jean-Baptiste-Camille Corot</span><span class="yr">1827</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="海洋边的僧侣奶蛙" data-entry-date="2026-09-08" tabindex="0" role="button" aria-label="查看作品：海洋边的僧侣奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/78c5a2bd-16ca-4d20-a8ff-3b086863627d/3b037c65-b605-44f7-84e5-7bb631c9f825.png" alt="海洋边的僧侣奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-08</span></div>
+      <h3>海洋边的僧侣奶蛙</h3><div class="en">Monk by the Sea Milk Frog</div><div class="card-submeta"><span>Caspar David Friedrich</span><span>1808–1810</span></div>
+      <div class="orig"><span>仿 海洋边的僧侣 · Caspar David Friedrich</span><span class="yr">1808–1810</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="自由引导人民奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：自由引导人民奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/208810ca-c16b-4885-8ff9-31ec2dabfc9e/a3c063d3-8845-4788-8a1a-c66158f002a9.png" alt="自由引导人民奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-09</span></div>
+      <h3>自由引导人民奶蛙</h3><div class="en">Milk Frog Leading the People</div><div class="card-submeta"><span>Eugène Delacroix</span><span>1830</span></div>
+      <div class="orig"><span>仿 自由引导人民 · Eugène Delacroix</span><span class="yr">1830</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="雾海上的旅人奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：雾海上的旅人奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/3cc36334-dcdc-4ef3-921d-718906fc5376/f0111305-bb86-4fc8-b027-bb5543135abd.png" alt="雾海上的旅人奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-10</span></div>
+      <h3>雾海上的旅人奶蛙</h3><div class="en">Wanderer above the Sea of Fog Milk Frog</div><div class="card-submeta"><span>Caspar David Friedrich</span><span>1818</span></div>
+      <div class="orig"><span>仿 雾海上的旅人 · Caspar David Friedrich</span><span class="yr">1818</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="但丁之舟奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：但丁之舟奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/b81a9ce9-8734-42c6-b9a0-9b9bf35ce02f/e5666b2e-3956-4816-93c1-de56662a991a.png" alt="但丁之舟奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-11</span></div>
+      <h3>但丁之舟奶蛙</h3><div class="en">The Barque of Dante Milk Frog</div><div class="card-submeta"><span>Eugène Delacroix</span><span>1822</span></div>
+      <div class="orig"><span>仿 但丁之舟 · Eugène Delacroix</span><span class="yr">1822</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="梦魇奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：梦魇奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/23bdc975-3c6c-4e42-b57b-05d8f9384b24/b3ea7a51-049e-4edc-ad2e-3df1f7c65e74.png" alt="梦魇奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-12</span></div>
+      <h3>梦魇奶蛙</h3><div class="en">The Nightmare Milk Frog</div><div class="card-submeta"><span>Henry Fuseli</span><span>1781</span></div>
+      <div class="orig"><span>仿 梦魇 · Henry Fuseli</span><span class="yr">1781</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="干草车奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：干草车奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/a9229e70-2de1-4e30-99dc-91d3412069bc/6440c3f5-c02e-4b39-9a0e-191fd1677205.png" alt="干草车奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-13</span></div>
+      <h3>干草车奶蛙</h3><div class="en">The Hay Wain Milk Frog</div><div class="card-submeta"><span>John Constable</span><span>1821</span></div>
+      <div class="orig"><span>仿 干草车 · John Constable</span><span class="yr">1821</span></div></div></article><article class="card hide" data-era="romanticism" data-work-name="墓园孤儿奶蛙" data-entry-date="2026-09-04" tabindex="0" role="button" aria-label="查看作品：墓园孤儿奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/11b9786b-2e37-4fd9-8c27-51165cf17aa2/4922794f-064a-4a13-ae64-aaf182f058e0.png" alt="墓园孤儿奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浪漫主义</span><span class="card-acc">MFM · ROM-14</span></div>
+      <h3>墓园孤儿奶蛙</h3><div class="en">Orphan Girl at the Cemetery Milk Frog</div><div class="card-submeta"><span>Eugène Delacroix</span><span>约1824</span></div>
+      <div class="orig"><span>仿 墓园孤儿 · Eugène Delacroix</span><span class="yr">约1824</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="奥菲莉亚奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：奥菲莉亚奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/0d891dd3-9455-4f35-b250-ce142e223e8f/80e8c443-002b-47f8-a048-22fcf06e8350.png" alt="奥菲莉亚奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-01</span></div>
+      <h3>奥菲莉亚奶蛙</h3><div class="en">Ophelia Milk Frog</div><div class="card-submeta"><span>John Everett Millais</span><span>1851–1852</span></div>
+      <div class="orig"><span>仿 奥菲莉亚 · John Everett Millais</span><span class="yr">1851–1852</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="罗利的童年奶蛙" data-entry-date="2026-09-04" tabindex="0" role="button" aria-label="查看作品：罗利的童年奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/03ccf517-7088-45dc-a377-1a7967ed7666/9bd18c81-23fc-46ad-9aa6-1bb60800c50a.png" alt="罗利的童年奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-02</span></div>
+      <h3>罗利的童年奶蛙</h3><div class="en">The Boyhood of Raleigh Milk Frog</div><div class="card-submeta"><span>John Everett Millais</span><span>1870</span></div>
+      <div class="orig"><span>仿 罗利的童年 · John Everett Millais</span><span class="yr">1870</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="贝娅塔·贝亚特丽克斯奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：贝娅塔·贝亚特丽克斯奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/b146251c-37df-4038-b120-1a0523fed0af/0b28761f-70bb-43a9-aa92-28fa821763e7.png" alt="贝娅塔·贝亚特丽克斯奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-03</span></div>
+      <h3>贝娅塔·贝亚特丽克斯奶蛙</h3><div class="en">Beata Beatrix Milk Frog</div><div class="card-submeta"><span>Dante Gabriel Rossetti</span><span>约1870–1872</span></div>
+      <div class="orig"><span>仿 贝娅塔·贝亚特丽克斯 · Dante Gabriel Rossetti</span><span class="yr">约1870–1872</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="水晶球奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：水晶球奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/8c9221bb-b38c-4d10-89f8-6655ba8353b8/3ef4514f-fd5a-44e4-b5d5-f9fab483ba25.png" alt="水晶球奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-04</span></div>
+      <h3>水晶球奶蛙</h3><div class="en">The Crystal Ball Milk Frog</div><div class="card-submeta"><span>John William Waterhouse</span><span>约1902</span></div>
+      <div class="orig"><span>仿 水晶球 · John William Waterhouse</span><span class="yr">约1902</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="看哪，主的婢女奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：看哪，主的婢女奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/9a0072a0-3bf1-4551-97bc-8b4941ea94f7/911eb0e1-ca21-45f9-9f7e-2ab47da76308.png" alt="看哪，主的婢女奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-05</span></div>
+      <h3>看哪，主的婢女奶蛙</h3><div class="en">Ecce Ancilla Domini! Milk Frog</div><div class="card-submeta"><span>Dante Gabriel Rossetti</span><span>1849–1850</span></div>
+      <div class="orig"><span>仿 Ecce Ancilla Domini! · Dante Gabriel Rossetti</span><span class="yr">1849–1850</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="圣西塞莉亚奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：圣西塞莉亚奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/0bf4baf3-4bf5-47ea-968f-5ded4fac7fb9/65970063-52dd-428f-8ad2-549219b4b5d5.png" alt="圣西塞莉亚奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-06</span></div>
+      <h3>圣西塞莉亚奶蛙</h3><div class="en">Saint Cecilia Milk Frog</div><div class="card-submeta"><span>John William Waterhouse</span><span>1895</span></div>
+      <div class="orig"><span>仿 圣西塞莉亚 · John William Waterhouse</span><span class="yr">1895</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="玫瑰之魂奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：玫瑰之魂奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/db4b2d59-4e86-4ca5-a747-f52a000ba43f/22a57801-8785-430b-9b43-60d158ec207f.png" alt="玫瑰之魂奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-07</span></div>
+      <h3>玫瑰之魂奶蛙</h3><div class="en">The Soul of the Rose Milk Frog</div><div class="card-submeta"><span>John William Waterhouse</span><span>1903</span></div>
+      <div class="orig"><span>仿 玫瑰之魂 · John William Waterhouse</span><span class="yr">1903</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="圣巴塞洛缪节前夕的胡格诺派奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：圣巴塞洛缪节前夕的胡格诺派奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/e420786a-40c3-46d0-88f9-911fb48880ac/6c0cd509-72e6-41c8-b135-0c15787e503f.png" alt="圣巴塞洛缪节前夕的胡格诺派奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-08</span></div>
+      <h3>圣巴塞洛缪节前夕的胡格诺派奶蛙</h3><div class="en">A Huguenot Milk Frog</div><div class="card-submeta"><span>John Everett Millais</span><span>1851–1852</span></div>
+      <div class="orig"><span>仿 圣巴塞洛缪节前夕的胡格诺派 · John Everett Millais</span><span class="yr">1851–1852</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="废墟中的爱奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：废墟中的爱奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/81b6f437-fe24-412d-b35b-8685ce53a6dc/5be28f9c-9430-471a-ad97-f813d97bbbab.png" alt="废墟中的爱奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-09</span></div>
+      <h3>废墟中的爱奶蛙</h3><div class="en">Love Among the Ruins Milk Frog</div><div class="card-submeta"><span>Edward Burne-Jones</span><span>1873</span></div>
+      <div class="orig"><span>仿 废墟中的爱 · Edward Burne-Jones</span><span class="yr">1873</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="释放令，1746奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：释放令，1746奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/f25a4241-1970-49fe-bea4-f99eb3b8b0d4/18503372-ef23-462d-a6bd-14ba2b6bc507.png" alt="释放令，1746奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-10</span></div>
+      <h3>释放令，1746奶蛙</h3><div class="en">The Order of Release, 1746 Milk Frog</div><div class="card-submeta"><span>John Everett Millais</span><span>1853</span></div>
+      <div class="orig"><span>仿 释放令，1746 · John Everett Millais</span><span class="yr">1853</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="蓝色凉亭奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：蓝色凉亭奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/3966f4a7-59a2-47e3-89a3-799da73256d9/239c5f25-c7fe-4229-93ab-a922b1f64bd0.png" alt="蓝色凉亭奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-11</span></div>
+      <h3>蓝色凉亭奶蛙</h3><div class="en">The Blue Bower Milk Frog</div><div class="card-submeta"><span>Dante Gabriel Rossetti</span><span>1865</span></div>
+      <div class="orig"><span>仿 蓝色凉亭 · Dante Gabriel Rossetti</span><span class="yr">1865</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="夏洛特夫人奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：夏洛特夫人奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/1d1ee455-b6a1-4578-924c-7eb2da3fd94e/8d31d808-7a4a-4f13-9908-8e2034343589.jpg" alt="夏洛特夫人奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-12</span></div>
+      <h3>夏洛特夫人奶蛙</h3><div class="en">The Lady of Shalott Milk Frog</div><div class="card-submeta"><span>John William Waterhouse</span><span>1888</span></div>
+      <div class="orig"><span>仿 夏洛特夫人 · John William Waterhouse</span><span class="yr">1888</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="普罗塞耳皮娜奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：普罗塞耳皮娜奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/cece2d08-88a9-4648-b108-814634425530/c544d29d-6408-48f3-84ef-1df56850884a.jpg" alt="普罗塞耳皮娜奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-13</span></div>
+      <h3>普罗塞耳皮娜奶蛙</h3><div class="en">Proserpine Milk Frog</div><div class="card-submeta"><span>Dante Gabriel Rossetti</span><span>1874</span></div>
+      <div class="orig"><span>仿 普罗塞耳皮娜 · Dante Gabriel Rossetti</span><span class="yr">1874</span></div></div></article><article class="card hide" data-era="pre-raphaelite" data-work-name="金色阶梯奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：金色阶梯奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/141cbf80-0ff0-47b5-890e-a30d6a1f006a/31e96d7a-c54e-45aa-9bc6-9ca2be61de1a.jpg" alt="金色阶梯奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>拉斐尔前派</span><span class="card-acc">MFM · PRA-14</span></div>
+      <h3>金色阶梯奶蛙</h3><div class="en">The Golden Stairs Milk Frog</div><div class="card-submeta"><span>Edward Burne-Jones</span><span>1880–1890</span></div>
+      <div class="orig"><span>仿 金色阶梯 · Edward Burne-Jones</span><span class="yr">1880–1890</span></div></div></article><article class="card hide" data-era="ukiyoe" data-work-name="神奈川冲浪奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：神奈川冲浪奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/5612bc3c-f088-4894-bdc6-6ec84056287d/faae9e15-0297-45aa-90fc-97ca152db9bf.jpg" alt="神奈川冲浪奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浮世绘</span><span class="card-acc">MFM · UKI-01</span></div>
+      <h3>神奈川冲浪奶蛙</h3><div class="en">The Great Wave Frog</div><div class="card-submeta"><span>Katsushika Hokusai</span><span>c. 1831</span></div>
+      <div class="orig"><span>仿 神奈川冲浪里 · Katsushika Hokusai</span><span class="yr">c. 1831</span></div></div></article><article class="card hide" data-era="ukiyoe" data-work-name="雪中桥奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：雪中桥奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/a8e6d0a1-de6c-424b-8cb1-02e8f6e7cf5b/b4ffea37-78d5-4d08-aec4-a75953d3f5ea.png" alt="雪中桥奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浮世绘</span><span class="card-acc">MFM · UKI-02</span></div>
+      <h3>雪中桥奶蛙</h3><div class="en">Milk Frog on a Snow Bridge</div><div class="card-submeta"><span>Utagawa Hiroshige</span><span>c. 1857</span></div>
+      <div class="orig"><span>仿 广重雪中桥 · Utagawa Hiroshige</span><span class="yr">c. 1857</span></div></div></article><article class="card hide" data-era="ukiyoe" data-work-name="甲州石班泽奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：甲州石班泽奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/6e2ca851-23b4-4db2-b2f5-a20a314c1ee8/fa8ec236-3605-4d1f-8f6a-f6eb9db8b4d3.png" alt="甲州石班泽奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浮世绘</span><span class="card-acc">MFM · UKI-03</span></div>
+      <h3>甲州石班泽奶蛙</h3><div class="en">Kajikazawa in Kai Province Milk Frog</div><div class="card-submeta"><span>Katsushika Hokusai</span><span>c. 1831</span></div>
+      <div class="orig"><span>仿 甲州石班泽 · Katsushika Hokusai</span><span class="yr">c. 1831</span></div></div></article><article class="card hide" data-era="ukiyoe" data-work-name="大桥安宅骤雨奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：大桥安宅骤雨奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/876a9d08-c248-4451-8c5a-d9b4ff1ab2dc/e4c8a1b5-af38-4672-87da-071b8c785c3b.png" alt="大桥安宅骤雨奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浮世绘</span><span class="card-acc">MFM · UKI-04</span></div>
+      <h3>大桥安宅骤雨奶蛙</h3><div class="en">Sudden Shower over Shin-Ohashi Bridge Milk Frog</div><div class="card-submeta"><span>Utagawa Hiroshige</span><span>1857</span></div>
+      <div class="orig"><span>仿 大桥安宅骤雨 · Utagawa Hiroshige</span><span class="yr">1857</span></div></div></article><article class="card hide" data-era="ukiyoe" data-work-name="三代目大谷鬼次奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：三代目大谷鬼次奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/f91abb2a-0b9a-4e6f-aebe-ff57e91dc6d8/0fa15b3e-b036-4557-a73a-42ca86990de5.png" alt="三代目大谷鬼次奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浮世绘</span><span class="card-acc">MFM · UKI-05</span></div>
+      <h3>三代目大谷鬼次奶蛙</h3><div class="en">Otani Oniji III Milk Frog</div><div class="card-submeta"><span>Toshusai Sharaku</span><span>1794</span></div>
+      <div class="orig"><span>仿 三代目大谷鬼次之奴江户兵卫 · Toshusai Sharaku</span><span class="yr">1794</span></div></div></article><article class="card hide" data-era="ukiyoe" data-work-name="泷夜叉姬与骷髅妖怪奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：泷夜叉姬与骷髅妖怪奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/1090068f-09df-4cc5-85e5-f8b658636c68/f1a013a0-5632-4a0c-9f4a-d7c5f534080d.png" alt="泷夜叉姬与骷髅妖怪奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浮世绘</span><span class="card-acc">MFM · UKI-06</span></div>
+      <h3>泷夜叉姬与骷髅妖怪奶蛙</h3><div class="en">Takiyasha the Witch and the Skeleton Spectre Milk Frog</div><div class="card-submeta"><span>Utagawa Kuniyoshi</span><span>c. 1844–1846</span></div>
+      <div class="orig"><span>仿 泷夜叉姬与骷髅妖怪 · Utagawa Kuniyoshi</span><span class="yr">c. 1844–1846</span></div></div></article><article class="card hide" data-era="ukiyoe" data-work-name="金太郎捕鲤鱼奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：金太郎捕鲤鱼奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/dc725658-12ea-4b5a-8767-2aea05f8c077/e3c4edaf-3b0a-41dd-81c9-d3e27f476308.png" alt="金太郎捕鲤鱼奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>浮世绘</span><span class="card-acc">MFM · UKI-07</span></div>
+      <h3>金太郎捕鲤鱼奶蛙</h3><div class="en">Kintaro Captures the Carp Milk Frog</div><div class="card-submeta"><span>Tsukioka Yoshitoshi</span><span>1885</span></div>
+      <div class="orig"><span>仿 金太郎捕鲤鱼 · Tsukioka Yoshitoshi</span><span class="yr">1885</span></div></div></article><article class="card hide" data-era="impressionism" data-work-name="睡莲中的奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：睡莲中的奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/db494077-952f-4da5-b8dd-7686eb7941d4/50058f95-82e4-4dcf-89c1-409a92af27b1.jpg" alt="睡莲中的奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>印象派</span><span class="card-acc">MFM · IMP-01</span></div>
+      <h3>睡莲中的奶蛙</h3><div class="en">Frog Among Water Lilies</div><div class="card-submeta"><span>Claude Monet</span><span>1916</span></div>
+      <div class="orig"><span>仿 睡莲 · Claude Monet</span><span class="yr">1916</span></div></div></article><article class="card hide" data-era="impressionism" data-work-name="撑阳伞的奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：撑阳伞的奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/b0147313-53a0-423f-924a-1db5d0c19621/1b2e1bc4-75c1-4632-80f9-c8cca5c3ae57.jpg" alt="撑阳伞的奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>印象派</span><span class="card-acc">MFM · IMP-02</span></div>
+      <h3>撑阳伞的奶蛙</h3><div class="en">Frog with a Parasol</div><div class="card-submeta"><span>Claude Monet</span><span>1875</span></div>
+      <div class="orig"><span>仿 撑阳伞的女人 · Claude Monet</span><span class="yr">1875</span></div></div></article><article class="card hide" data-era="impressionism" data-work-name="干草堆奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：干草堆奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/bdaa075e-65aa-4414-be4b-63ffaa2d5b14/52ac175f-35f1-4c97-bcbb-4815f2c2ade9.png" alt="干草堆奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>印象派</span><span class="card-acc">MFM · IMP-03</span></div>
+      <h3>干草堆奶蛙</h3><div class="en">Milk Frog Haystacks</div><div class="card-submeta"><span>Claude Monet</span><span>1890–1891</span></div>
+      <div class="orig"><span>仿 干草堆 · Claude Monet</span><span class="yr">1890–1891</span></div></div></article><article class="card hide" data-era="impressionism" data-work-name="雨天的巴黎街道奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：雨天的巴黎街道奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/d2c5a4a3-1eb6-48e0-88da-7024b831324c/14c6323c-4be5-4054-b2f9-375c01dbec98.png" alt="雨天的巴黎街道奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>印象派</span><span class="card-acc">MFM · IMP-04</span></div>
+      <h3>雨天的巴黎街道奶蛙</h3><div class="en">Milk Frog Paris Street; Rainy Day</div><div class="card-submeta"><span>Gustave Caillebotte</span><span>1877</span></div>
+      <div class="orig"><span>仿 雨天的巴黎街道 · Gustave Caillebotte</span><span class="yr">1877</span></div></div></article><article class="card hide" data-era="impressionism" data-work-name="包厢奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：包厢奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/c87c1cae-9242-47f7-89eb-b010456e3dc7/56ce19e5-162c-406b-9cc4-a779b849cbc9.png" alt="包厢奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>印象派</span><span class="card-acc">MFM · IMP-05</span></div>
+      <h3>包厢奶蛙</h3><div class="en">The Theatre Box Milk Frog</div><div class="card-submeta"><span>Pierre-Auguste Renoir</span><span>1874</span></div>
+      <div class="orig"><span>仿 包厢 · Pierre-Auguste Renoir</span><span class="yr">1874</span></div></div></article><article class="card hide" data-era="impressionism" data-work-name="布吉瓦尔之舞奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：布吉瓦尔之舞奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/dbe03078-c8e2-49cd-95e0-51d73e99140e/91c9ee23-6bfb-49e6-9dc5-32031926f722.png" alt="布吉瓦尔之舞奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>印象派</span><span class="card-acc">MFM · IMP-06</span></div>
+      <h3>布吉瓦尔之舞奶蛙</h3><div class="en">Dance at Bougival Milk Frog</div><div class="card-submeta"><span>Pierre-Auguste Renoir</span><span>1883</span></div>
+      <div class="orig"><span>仿 布吉瓦尔之舞 · Pierre-Auguste Renoir</span><span class="yr">1883</span></div></div></article><article class="card hide" data-era="impressionism" data-work-name="伞奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：伞奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/3366ece5-6e48-43d5-9a29-51e74db0a485/ac5b153c-4d16-476f-b76c-47f7574bf8cd.png" alt="伞奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>印象派</span><span class="card-acc">MFM · IMP-07</span></div>
+      <h3>伞奶蛙</h3><div class="en">The Umbrellas Milk Frog</div><div class="card-submeta"><span>Pierre-Auguste Renoir</span><span>约1881–1886</span></div>
+      <div class="orig"><span>仿 伞 · Pierre-Auguste Renoir</span><span class="yr">约1881–1886</span></div></div></article><article class="card hide" data-era="impressionism" data-work-name="蓝色扶手椅上的小女孩奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：蓝色扶手椅上的小女孩奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/f7822141-09a8-4bef-a032-134e0978b363/d70d431f-a1a9-4952-a3d5-23dcfd8406fc.png" alt="蓝色扶手椅上的小女孩奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>印象派</span><span class="card-acc">MFM · IMP-08</span></div>
+      <h3>蓝色扶手椅上的小女孩奶蛙</h3><div class="en">Little Girl in a Blue Armchair Milk Frog</div><div class="card-submeta"><span>Mary Cassatt</span><span>1878</span></div>
+      <div class="orig"><span>仿 蓝色扶手椅上的小女孩 · Mary Cassatt</span><span class="yr">1878</span></div></div></article><article class="card hide" data-era="postimpressionism" data-work-name="星月奶蛙夜" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：星月奶蛙夜">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/441e3c6c-0790-4f67-af81-81ce3e5288ee/3e95ae62-0fcf-4701-990f-8680f0337980.jpg" alt="星月奶蛙夜"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>后印象派</span><span class="card-acc">MFM · PIM-01</span></div>
+      <h3>星月奶蛙夜</h3><div class="en">The Starry Frog Night</div><div class="card-submeta"><span>Vincent van Gogh</span><span>1889</span></div>
+      <div class="orig"><span>仿 星月夜 · Vincent van Gogh</span><span class="yr">1889</span></div></div></article><article class="card hide" data-era="postimpressionism" data-work-name="向日葵奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：向日葵奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/6d7132e0-c7d0-443f-a28d-1e241a22c661/d8f91af4-7158-47f4-b861-f071f474be5d.png" alt="向日葵奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>后印象派</span><span class="card-acc">MFM · PIM-02</span></div>
+      <h3>向日葵奶蛙</h3><div class="en">Sunflower Milk Frog</div><div class="card-submeta"><span>Vincent van Gogh</span><span>1888</span></div>
+      <div class="orig"><span>仿 向日葵 · Vincent van Gogh</span><span class="yr">1888</span></div></div></article><article class="card hide" data-era="postimpressionism" data-work-name="圣维克多山奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：圣维克多山奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/44a6dbdf-af67-4b14-a74b-18a00aeeb217/0c5e0f75-faa7-40e3-869c-51e1f66e51f2.png" alt="圣维克多山奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>后印象派</span><span class="card-acc">MFM · PIM-03</span></div>
+      <h3>圣维克多山奶蛙</h3><div class="en">Milk Frog and Mont Sainte-Victoire</div><div class="card-submeta"><span>Paul Cézanne</span><span>c. 1904–1906</span></div>
+      <div class="orig"><span>仿 圣维克多山 · Paul Cézanne</span><span class="yr">c. 1904–1906</span></div></div></article><article class="card hide" data-era="postimpressionism" data-work-name="玩纸牌的奶蛙" data-entry-date="2026-08-25" tabindex="0" role="button" aria-label="查看作品：玩纸牌的奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/435168b9-a213-4025-841e-a2fd2059b2e9/fc0abcad-d5a2-499f-b574-41da57ec3715.png" alt="玩纸牌的奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>后印象派</span><span class="card-acc">MFM · PIM-04</span></div>
+      <h3>玩纸牌的奶蛙</h3><div class="en">The Card Players Milk Frog</div><div class="card-submeta"><span>Paul Cézanne</span><span>约1892–1895</span></div>
+      <div class="orig"><span>仿 玩纸牌者 · Paul Cézanne</span><span class="yr">约1892–1895</span></div></div></article><article class="card hide" data-era="postimpressionism" data-work-name="大碗岛的星期天下午奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：大碗岛的星期天下午奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/a76226fa-5bf3-46ea-aa6e-4ae8f1d996d7/4c323aa2-d0ec-4f53-873f-dc0361f0af3c.png" alt="大碗岛的星期天下午奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>后印象派</span><span class="card-acc">MFM · PIM-05</span></div>
+      <h3>大碗岛的星期天下午奶蛙</h3><div class="en">A Sunday on La Grande Jatte Milk Frog</div><div class="card-submeta"><span>Georges Seurat</span><span>1884–1886</span></div>
+      <div class="orig"><span>仿 大碗岛的星期天下午 · Georges Seurat</span><span class="yr">1884–1886</span></div></div></article><article class="card hide" data-era="postimpressionism" data-work-name="罗纳河上的星夜奶蛙" data-entry-date="2026-09-01" tabindex="0" role="button" aria-label="查看作品：罗纳河上的星夜奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/df01a366-9524-4ad4-a7ca-d76cfa2a8a1f/a5a97fb9-c0db-46d0-9a53-73b9b744d25c.png" alt="罗纳河上的星夜奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>后印象派</span><span class="card-acc">MFM · PIM-06</span></div>
+      <h3>罗纳河上的星夜奶蛙</h3><div class="en">Starry Night Over the Rhône Milk Frog</div><div class="card-submeta"><span>Vincent van Gogh</span><span>1888</span></div>
+      <div class="orig"><span>仿 罗纳河上的星夜 · Vincent van Gogh</span><span class="yr">1888</span></div></div></article><article class="card hide" data-era="modern" data-work-name="构成八号奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：构成八号奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/20a862e1-d8ae-4ac7-b705-01f2bb26a64a/d1ff0fbd-6c4b-4a5e-8a26-46ea51687613.jpg" alt="构成八号奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现代</span><span class="card-acc">MFM · MOD-01</span></div>
+      <h3>构成八号奶蛙</h3><div class="en">Composition VIII Milk Frog</div><div class="card-submeta"><span>Wassily Kandinsky</span><span>1923</span></div>
+      <div class="orig"><span>仿 构成 VIII · Wassily Kandinsky</span><span class="yr">1923</span></div></div></article><article class="card hide" data-era="modern" data-work-name="三个音乐家奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：三个音乐家奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://public.cohub.run/s/157e937b-95da-4c17-add4-f916e37c3574/neta-studio-upload/image_01KZGVXAQDTAQF3BQ6R1DSPQCV.jpg" alt="三个音乐家奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现代</span><span class="card-acc">MFM · MOD-02</span></div>
+      <h3>三个音乐家奶蛙</h3><div class="en">The Milk Frog Musicians</div><div class="card-submeta"><span>Pablo Picasso</span><span>1921</span></div>
+      <div class="orig"><span>仿 三个音乐家 · Pablo Picasso</span><span class="yr">1921</span></div></div></article><article class="card hide" data-era="modern" data-work-name="呐喊的奶蛙" data-entry-date="2026-08-08" tabindex="0" role="button" aria-label="查看作品：呐喊的奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/b7c6d734-f6d7-4076-a246-adb65223d459/d97df347-d862-4b3d-b283-455439db1e10.jpg" alt="呐喊的奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现代</span><span class="card-acc">MFM · MOD-03</span></div>
+      <h3>呐喊的奶蛙</h3><div class="en">The Frog Scream</div><div class="card-submeta"><span>Edvard Munch</span><span>1893</span></div>
+      <div class="orig"><span>仿 呐喊 · Edvard Munch</span><span class="yr">1893</span></div></div></article><article class="card hide" data-era="modern" data-work-name="沉睡的吉普赛人奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：沉睡的吉普赛人奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/93c7e76a-b709-45a6-accc-ec47e55d0e9b/5f9da0d4-06c8-416e-912f-5acb65f0fdd0.png" alt="沉睡的吉普赛人奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现代</span><span class="card-acc">MFM · MOD-04</span></div>
+      <h3>沉睡的吉普赛人奶蛙</h3><div class="en">The Sleeping Milk Frog</div><div class="card-submeta"><span>Henri Rousseau</span><span>1897</span></div>
+      <div class="orig"><span>仿 沉睡的吉普赛人 · Henri Rousseau</span><span class="yr">1897</span></div></div></article><article class="card hide" data-era="modern" data-work-name="夜游者奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：夜游者奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/e8e97a28-a0fd-4fe2-88f2-73ce3674ca8d/312270ba-8a5f-44b5-963b-234dd83355c5.png" alt="夜游者奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现代</span><span class="card-acc">MFM · MOD-05</span></div>
+      <h3>夜游者奶蛙</h3><div class="en">Milk Frog Nighthawks</div><div class="card-submeta"><span>Edward Hopper</span><span>1942</span></div>
+      <div class="orig"><span>仿 夜游者 · Edward Hopper</span><span class="yr">1942</span></div></div></article><article class="card hide" data-era="modern" data-work-name="阿黛尔的肖像奶蛙" data-entry-date="2026-08-31" tabindex="0" role="button" aria-label="查看作品：阿黛尔的肖像奶蛙">
+    <div class="card-frame"><img loading="lazy" src="https://router-files.neta.art/files/027d8905-384d-4ddf-9bf1-09dcf44999fd/5eb502df-ee30-4f91-85aa-497187e2560e.png" alt="阿黛尔的肖像奶蛙"><span class="card-view">View Work</span></div>
+    <div class="card-meta"><div class="card-era"><span>现代</span><span class="card-acc">MFM · MOD-06</span></div>
+      <h3>阿黛尔的肖像奶蛙</h3><div class="en">Milk Frog Portrait of Adele</div><div class="card-submeta"><span>Gustav Klimt</span><span>1907–1908</span></div>
+      <div class="orig"><span>仿 阿黛尔·布洛赫-鲍尔肖像一号 · Gustav Klimt</span><span class="yr">1907–1908</span></div></div></article></div>
+  <nav class="pagination" id="pagination" aria-label="作品分页" hidden=""></nav>
+</section>
+
+<!-- WORLDS -->
+<section class="worlds" id="worlds">
+  <div class="worlds-head">
+    <div class="sub">Nieta Art · Other Rooms</div>
+    <h2>分馆</h2>
+  </div>
+  <div class="worlds-grid">
+    <a class="world-card" href="https://neta.art/w/6f97ac11-95f5-451f-b4c6-214c3f02668a">
+      <span>01</span><b>3D 展馆</b><small>走进可漫游的首展馆</small>
+    </a>
+    <a class="world-card" href="https://neta.art/w/337d4274-ff22-43c7-9e3c-7f03e58766e8">
+      <span>02</span><b>奶蛙小镇</b><small>奶白广场</small>
+    </a>
+    <a class="world-card" href="https://neta.art/w/c659fde8-8117-4fc4-82ed-751c781308c4">
+      <span>03</span><b>奶蛙尖塔</b><small>The Soft Ascent</small>
+    </a>
+    <a class="world-card" href="https://neta.art/w/8a36fbe6-51f2-4ad9-9f28-46f933f756b1">
+      <span>04</span><b>制造所</b><small>捏一只自己的奶蛙</small>
+    </a>
+    <a class="world-card" href="https://neta.art/w/68438093-6659-4747-87b7-4d8e47dc093b">
+      <span>05</span><b>奶龙幸存者</b><small>割草</small>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="frog-trail" id="frogTrail" aria-hidden="true"></div>
+  <div class="easter-note" tabindex="0">
+    <span>请勿再发布丑化、恶搞奶蛙的非官方表情包，奶蛙的形象需要大家共同守护，建议分享正版素材。请大家遵守一起维护积极愉快的氛围，感谢配合。</span>
+  </div>
+  <div class="footer-content">
+  <div class="fbrand">奶蛙<em>博物馆</em></div>
+  <div class="frule"></div>
+  <div class="ftag">Where the sublime meets the serene.</div>
+  <div class="fcols">
+    <div class="fcol">
+      <h4>参观</h4>
+      <span>周二 — 周日</span>
+      <span>10:00 — 18:00</span>
+      <span>周一闭馆</span>
+    </div>
+    <div class="fcol">
+      <h4>展馆</h4>
+      <a href="#collection">常设典藏</a>
+      <a href="#collection">年代长廊</a>
+      <a href="#intro">策展序言</a>
+    </div>
+    <div class="fcol">
+      <h4>联系</h4>
+      <span>奶蛙馆长</span>
+      <span>1610636536@qq.com</span>
+      <span>+00 000 0000</span>
+    </div>
+  </div>
+  <div class="fcopy">© MMXXV Musée du Milk Frog · All Works Transformative Parody</div>
+  </div>
+</footer>
+
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox open" id="lightbox">
+  <span class="lb-close" id="lbClose">×</span>
+  <div class="lb-inner">
+    <div class="lb-img" style="width: 760px; height: 510px;">
+      <div class="lb-img-flipper flipped" id="lbFlip" tabindex="0" role="button" aria-label="查看作品故事">
+        <div class="lb-img-front">
+          <img id="lbImg" src="https://router-files.neta.art/files/8c3bd824-68fd-44bc-93a3-cca3f85d2bb7/167088ba-ccfe-4cfd-b4a9-a4d320689e2e.jpg" alt="">
+          <div class="flip-hint">双击查看作品故事</div>
+        </div>
+        <div class="lb-img-back">
+          <div class="back-kicker" id="lbBackKicker">作品轶事</div>
+          <div class="back-story" id="lbBackStory">达·芬奇采用干壁画实验来保留修改空间，代价是作品很早就开始出现剥落。</div>
+          <div class="original-image-wrap visible" id="lbOriginalImageWrap"><img id="lbOriginalImage" src="assets/context/works/w15.jpg" alt="仿 最后的晚餐参考图"></div>
+          <div class="flip-hint">双击返回</div>
+        </div>
+      </div>
+    </div>
+    <div class="lb-text">
+      <div class="era" id="lbEra">文艺复兴</div>
+      <div class="lb-acc" id="lbAcc">MFM · REN-01</div>
+      <h3 id="lbZh">最后的晚餐奶蛙</h3>
+      <div class="en" id="lbEn">The Frog Supper</div>
+      <div class="row"><span>原作</span><span id="lbOrig">仿 最后的晚餐</span></div>
+      <div class="row artist-row" id="artistRow" role="button" tabindex="0" aria-label="查看艺术家资料：Leonardo da Vinci"><span>艺术家</span><span id="lbArtist" style="cursor: pointer; text-decoration-line: underline; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: var(--gold-soft);">Leonardo da Vinci</span></div>
+      <div class="row"><span>年代</span><span id="lbYear">1495–1498</span></div>
+      <div class="lb-story-label">作品介绍</div>
+       <div class="lb-intro" id="lbIntro" style="display: block;">《最后的晚餐》表现耶稣宣布门徒中有人将背叛自己的瞬间。达·芬奇以透视线、手势和人物分组控制叙事节奏，使餐桌成为一场集中爆发的心理剧场。</div>
+       <div class="lb-story-label">作品鉴赏</div>
+       <div class="lb-story work-editorial" id="lbStory" style="display: block;">达·芬奇以中央透视线汇聚人物关系，将一句预言造成的瞬间反应分配给十二个不同姿态。戏剧性来自手势、视线与沉默之间的连续叙事。</div>
+       <div class="lb-engagement" aria-label="馆藏互动">
+         <button type="button" class="lb-favorite" id="lbFavorite" data-state="off" aria-label="收藏这件馆藏" data-work-name="最后的晚餐奶蛙" data-work-url="https://router-files.neta.art/files/8c3bd824-68fd-44bc-93a3-cca3f85d2bb7/167088ba-ccfe-4cfd-b4a9-a4d320689e2e.jpg"><span aria-hidden="true"><svg class="ico-star" viewBox="0 0 24 24"><path d="M12 3.6l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"></path></svg></span><b>收藏馆藏</b></button>
+         <button type="button" class="lb-like" id="lbLike" data-state="off" aria-label="喜欢这件馆藏"><span aria-hidden="true"><svg class="ico-heart" viewBox="0 0 24 24"><path d="M12 20.3s-7.6-4.9-9.7-9.5C.8 7.9 2.6 4.5 5.9 4.5c2 0 3.4 1.1 4.1 2.4h4c.7-1.3 2.1-2.4 4.1-2.4 3.3 0 5.1 3.4 3.6 6.3-2.1 4.6-9.7 9.5-9.7 9.5z"></path></svg></span><b>喜欢</b><em id="lbLikeCount">0</em></button>
+       </div>
+       <div class="lb-auth-notice" id="lbAuthNotice" role="status" hidden=""><span>正在唤起 Neta Studio 登录……</span><button type="button" id="lbAuthAction" hidden="">去领取</button></div>
+       <section class="lb-comments" id="lbComments" aria-label="作品评论">
+         <div class="lb-comments-head"><span>观众评论</span><em id="lbCommentCount">0</em></div>
+         <div class="lb-comment-list" id="lbCommentList"><div class="lb-comment-empty">还没有观众留下评论。</div></div>
+         <div class="lb-auth-notice lb-comment-auth" id="lbCommentAuth" role="status" hidden=""><span></span><button type="button" id="lbCommentAuthAction" hidden="">去领取</button></div>
+         <div class="lb-comment-status" id="lbCommentStatus" aria-live="polite">请从 Studio 页面打开，查看公开评论和点赞。</div>
+         <form class="lb-comment-form" id="lbCommentForm">
+           <textarea id="lbCommentInput" maxlength="240" rows="2" placeholder="完成奶蛙身份证后留下你的看法……" aria-label="评论内容" style=""></textarea>
+           <div class="lb-comment-form-foot"><small>登录 Studio 后可评论</small><button type="submit">发表评论</button></div>
+         </form>
+       </section>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ : 奶蛙鉴定所 -->
+<div class="quiz" id="quiz" aria-hidden="true">
+  <div class="quiz-panel">
+    <button class="quiz-close" id="quizClose" type="button" aria-label="关闭">×</button>
+
+    <!-- intro -->
+    <div class="quiz-stage quiz-intro" data-stage="intro">
+      <div class="quiz-kicker">MILK FROG IDENTIFICATION LAB</div>
+      <h3>奶蛙鉴定所</h3>
+      <p class="quiz-lead">回答 4 道题，馆长会在 30 秒内把你鉴定成一只奶蛙。<br>那只奶蛙是你。</p>
+    </div>
+
+    <!-- questions -->
+    <div class="quiz-stage quiz-questions" data-stage="questions" hidden="">
+      <div class="quiz-progress"><span id="quizStep">1</span> / 4</div>
+      <div class="quiz-bar"><i id="quizBar"></i></div>
+      <h4 class="quiz-q" id="quizQ"></h4>
+      <div class="quiz-opts" id="quizOpts"></div>
+    </div>
+
+    <!-- analysing -->
+    <div class="quiz-stage quiz-loading" data-stage="loading" hidden="">
+      <div class="quiz-spinner" aria-hidden="true"></div>
+      <p class="quiz-analyse" id="quizAnalyse">鉴定中……</p>
+    </div>
+
+    <!-- result -->
+    <div class="quiz-stage quiz-result" data-stage="result" hidden="">
+      <div class="quiz-result-scroll">
+        <div class="spec-card" id="specCard">
+          <div class="spec-badge">鉴定完成</div>
+          <div class="spec-img-wrap"><img id="specImg" src="" alt=""></div>
+          <div class="spec-body">
+            <div class="spec-you">你是——</div>
+            <h3 class="spec-name" id="specName"></h3>
+            <div class="spec-rows">
+              <div><span>馆藏编号</span><b id="specNo"></b></div>
+              <div><span>稀有度</span><b id="specRare"></b></div>
+              <div><span>出没地点</span><b id="specHabitat"></b></div>
+            </div>
+            <div class="spec-note">
+              <div class="spec-note-title">馆长评语</div>
+              <div id="specComment"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="result-identity">
+        <div class="identity-step">IDENTITY · 02 / 02</div>
+        <h2>领取奶蛙身份证</h2>
+        <p>本次鉴定结果将作为卡片收纳在个人页。昵称默认与 Studio 账号一致，也可以自行修改。</p>
+        <div class="result-field">
+          <label for="identityNameInput">昵称</label>
+          <div class="result-input-row">
+            <input type="text" id="identityNameInput" maxlength="24" placeholder="登录 Studio 后自动填入" autocomplete="off" style="">
+          </div>
+          <small>默认使用 Studio 昵称，可修改，最多 24 字</small>
+        </div>
+        <div class="result-field result-avatar-field">
+          <label>选择头像</label>
+          <div class="avatar-grid" id="avatarGrid" aria-label="奶蛙头像选择"></div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- persistent footer: 开始鉴定 → 保存卡片 / 重新鉴定 -->
+    <div class="quiz-actions" id="quizActions">
+      <button class="quiz-primary" id="quizPrimary" type="button">
+        <svg class="ico-save" viewBox="0 0 24 24" aria-hidden="true" hidden=""><path d="M12 3v12"></path><path d="M7 11l5 5 5-5"></path><path d="M4 20h16"></path></svg>
+        <span id="quizPrimaryLabel">开始鉴定</span>
+      </button>
+      <button class="quiz-again" id="quizAgain" type="button" hidden="">重新鉴定</button>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ARTIST BIO MODAL -->
+<div class="artist-modal" id="artistModal">
+  <div class="artist-modal-inner">
+    <span class="artist-modal-close" id="artistClose">×</span>
+    <div class="artist-modal-content has-portrait">
+      <div class="artist-portrait visible" id="artistPortraitWrap"><img id="artistPortrait" src="assets/context/artists/Leonardo_da_Vinci.jpg" alt="列奥纳多·达·芬奇"></div>
+      <div class="artist-copy">
+        <h2 id="artistName">列奥纳多·达·芬奇</h2>
+        <div class="artist-life" id="artistLife">1452–1519</div>
+        <div class="artist-story" id="artistStory">达·芬奇既画画，也研究解剖、飞行、机械、水流和植物。他习惯用镜像文字记笔记，留下数千页手稿，却经常开新项目而不完成旧项目。<br><br>为了《最后的晚餐》获得更丰富细节，他不用可靠的湿壁画法，而在干墙上实验油性颜料。结果作品很快开始剥落，却也成为艺术史上最著名的技术冒险之一。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js?v=20260924-rococo10"></script>
+<script type="module" src="identity-runtime.bundle.js?v=20260920-text-audit"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;326c43f2fdcb482da980ae7dfa77db73&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>

@@ -1,0 +1,8 @@
+[Unit]
+Description=Renew Naiwa IP HTTPS certificate
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/naiwa-certbot/bin/certbot renew --quiet --deploy-hook /usr/local/sbin/naiwa-certbot-deploy-hook

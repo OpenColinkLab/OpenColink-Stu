@@ -1,0 +1,15 @@
+.banner { width: 100%; height: 422rpx; background: #ae182b; }
+.banner-image { display: block; width: 100%; height: 100%; }
+.news { padding: 46rpx 36rpx 0; }
+.news-title { display: flex; align-items: center; color: #9f1523; font-size: 40rpx; }
+.title-line { height: 2rpx; flex: 1; margin-left: 26rpx; background: #cbb996; }
+.news-subtitle { display: block; color: #9b8b73; font-size: 24rpx; margin: 12rpx 0 36rpx; }
+.card { margin-top: 34rpx; background: #fff; border-top: 4rpx solid #aa0018; box-shadow: 0 6rpx 30rpx #3020140b; overflow: hidden; }
+.card-art { height: 365rpx; background: #f6f0e4; }
+.card-art image { display: block; width: 100%; height: 100%; }
+.emblem-art { padding: 35rpx; }
+.card-body { padding: 34rpx; }
+.card-title { display: block; white-space: pre-line; font-size: 32rpx; line-height: 1.6; }
+.card-description { display: block; color: #777; font-size: 26rpx; line-height: 1.8; margin-top: 18rpx; }
+.card-meta { display: flex; align-items: center; justify-content: space-between; margin-top: 28rpx; color: #aa0018; font-size: 22rpx; }
+.card-meta text:first-child { flex: 1; padding-right: 16rpx; }

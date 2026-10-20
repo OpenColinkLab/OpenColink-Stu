@@ -1,0 +1,26 @@
+[
+  {
+    "name": "yt-dlp 2026.08.19",
+    "archive": "yt-dlp_macos.zip",
+    "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp_macos.zip",
+    "destination": "resources/bin/yt-dlp-runtime",
+    "executable": "resources/bin/yt-dlp-runtime/yt-dlp_macos",
+    "sha256": "07e54b0865303c864006925913bce2604f8ee8cc6f18699bac9c309f9328a6d8"
+  },
+  {
+    "name": "FFmpeg 9.0.2",
+    "archive": "ffmpeg.zip",
+    "url": "https://ffmpeg.martin-riedl.de/download/macos/arm64/1789931890_9.0.2/ffmpeg.zip",
+    "destination": "resources/bin",
+    "executable": "resources/bin/ffmpeg",
+    "sha256": "c8ed4c4e6978a03c485edbfe4e0a5dc2380f8a30bba5150531b31b094492d924"
+  },
+  {
+    "name": "FFprobe 9.0.2",
+    "archive": "ffprobe.zip",
+    "url": "https://ffmpeg.martin-riedl.de/download/macos/arm64/1789931890_9.0.2/ffprobe.zip",
+    "destination": "resources/bin",
+    "executable": "resources/bin/ffprobe",
+    "sha256": "fcbe839537485eaee7a7a8bc5cbc0f90d53617e80943e8a5b2e31cb851197ea6"
+  }
+]

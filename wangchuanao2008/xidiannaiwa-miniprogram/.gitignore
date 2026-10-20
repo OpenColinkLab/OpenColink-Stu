@@ -1,0 +1,11 @@
+# Local developer settings and secrets
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+/project.private.config.json
+/miniprogram/config/local.js
+/.migration-backup/
+/evidence/local/
+*.log

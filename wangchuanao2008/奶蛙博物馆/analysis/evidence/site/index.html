@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>奶蛙博物馆 · MUSÉE DU MILK FROG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20260924-rococo10">
+</head>
+<body>
+
+<div class="mobile-entry" id="mobileEntry" aria-hidden="false">
+  <video id="mobileEntryVideo" src="https://router-files.neta.art/files/0925fcc6-7aa7-4d02-afd4-9ae5e0f8bdb9/a6b2894c-b60c-4940-9a70-76382871dfa8.mp4" poster="https://router-files.neta.art/files/0925fcc6-7aa7-4d02-afd4-9ae5e0f8bdb9/d619be9d-519f-49f1-b0f3-d6471c7ebdf8.webp" autoplay muted loop playsinline preload="auto"></video>
+  <div class="mobile-entry-wash"></div>
+  <div class="mobile-entry-content">
+    <span>THE MILK FROG</span>
+    <h1>跨越艺术史的<br>静默凝视</h1>
+    <button id="mobileEnter" type="button" aria-label="进入奶蛙博物馆" title="进入博物馆">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13"/><path d="m13 6 6 6-6 6"/></svg>
+    </button>
+  </div>
+</div>
+
+<header id="hdr">
+  <button class="menu-trigger" id="menuToggle" type="button" aria-label="打开菜单" title="菜单"><span></span><span></span></button>
+  <div class="header-word">菜单</div>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换夜间模式" title="夜间模式">
+    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g stroke-linecap="round"><line x1="12" y1="2.5" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.5" y2="12"/><line x1="4.9" y1="4.9" x2="6.7" y2="6.7"/><line x1="17.3" y1="17.3" x2="19.1" y2="19.1"/><line x1="4.9" y1="19.1" x2="6.7" y2="17.3"/><line x1="17.3" y1="6.7" x2="19.1" y2="4.9"/></g></svg>
+  </button>
+  <button class="gift-toggle" id="giftToggle" type="button" aria-label="奶蛙鉴定所" title="奶蛙鉴定所">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12v8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-8"/><path d="M2.5 8.5h19v3a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z"/><line x1="12" y1="8.5" x2="12" y2="21"/><path d="M12 8.5S10.8 4 8.3 4a2.3 2.3 0 0 0 0 4.5z"/><path d="M12 8.5S13.2 4 15.7 4a2.3 2.3 0 0 1 0 4.5z"/></svg>
+  </button>
+  <button class="lang-toggle" id="langToggle" type="button" aria-label="切换英文" title="中文 / English">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-5.4-3.3-9S9.8 5.4 12 3z"/></svg>
+  </button>
+  <button class="log-toggle" id="logToggle" type="button" aria-label="打开更新日志" title="更新日志">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M8.5 14.5a5.5 5.5 0 1 1 7 0c-.9.7-1.5 1.5-1.5 2.5h-4c0-1-.6-1.8-1.5-2.5Z"/><path d="M12 2v1M4.9 4.9l.7.7M2 12h1M19.1 4.9l-.7.7M21 12h-1"/></svg>
+  </button>
+  <button class="feedback-top-toggle" id="feedbackTopToggle" type="button" aria-label="打开意见箱" title="意见箱">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H8l-4 3z"/><path d="M8 9h8M8 12.5h5"/></svg>
+  </button>
+  <button class="profile-toggle" id="profileToggle" type="button" aria-label="打开我的身份" title="我的身份">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c.7-4.1 2.9-6.2 6.5-6.2s5.8 2.1 6.5 6.2"/></svg>
+  </button>
+  <a class="brand-lockup" href="#top" aria-label="奶蛙博物馆首页">
+    <strong>MILK FROG</strong><span>奶　　蛙</span>
+  </a>
+  <nav aria-label="分馆导航" hidden>
+    <a href="https://neta.art/w/6f97ac11-95f5-451f-b4c6-214c3f02668a">3D 展馆</a>
+    <a href="https://neta.art/w/337d4274-ff22-43c7-9e3c-7f03e58766e8">奶蛙小镇</a>
+    <a href="https://neta.art/w/8a36fbe6-51f2-4ad9-9f28-46f933f756b1">制造所</a>
+  </nav>
+  <button class="visit-btn" id="chinaVisit" type="button">参观中国馆</button>
+</header>
+
+<aside class="menu-drawer" id="menuDrawer" aria-hidden="true">
+  <div class="drawer-head"><div><span>MUSÉE DU MILK FROG</span><h2>菜单</h2></div><button class="drawer-close" id="menuClose" type="button" aria-label="关闭菜单"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="drawer-rule"></div>
+  <nav class="drawer-nav" aria-label="菜单功能">
+    <button type="button" data-drawer-action="worlds"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/></svg></span><b>分馆导航</b><small>去往其它奶蛙世界</small></button>
+    <button type="button" data-drawer-action="theme"><span class="drawer-icon"><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g stroke-linecap="round"><line x1="12" y1="2.5" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.5" y2="12"/><line x1="4.9" y1="4.9" x2="6.7" y2="6.7"/><line x1="17.3" y1="17.3" x2="19.1" y2="19.1"/><line x1="4.9" y1="19.1" x2="6.7" y2="17.3"/><line x1="17.3" y1="6.7" x2="19.1" y2="4.9"/></g></svg></span><b>夜间模式</b><small>切换界面明暗</small></button>
+    <button type="button" data-drawer-action="language"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-9-3.3-9S9.8 5.4 12 3z"/></svg></span><b>切换语言</b><small>中文 / English</small></button>
+    <button type="button" data-drawer-action="feedback"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H8l-4 3z"/><path d="M8 9h8M8 12.5h5"/></svg></span><b>意见箱</b><small>向馆长投递建议</small></button>
+    <button type="button" data-drawer-action="china"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5l7-3 7 3v16"/><path d="M9 21v-8h6v8"/><path d="M12 8v.01"/></svg></span><b id="chinaDrawerLabel">参观中国馆</b><small id="chinaDrawerHint">进入史前与先秦第一厅</small></button>
+    <button type="button" data-drawer-action="quiz"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12v8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-8"/><path d="M2.5 8.5h19v3a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z"/><line x1="12" y1="8.5" x2="12" y2="21"/><path d="M12 8.5S10.8 4 8.3 4a2.3 2.3 0 0 0 0 4.5z"/><path d="M12 8.5S13.2 4 15.7 4a2.3 2.3 0 0 1 0 4.5z"/></svg></span><b>奶蛙鉴定所</b><small>开始一场身份鉴定</small></button>
+    <button type="button" data-drawer-action="profile"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c.7-4.1 2.9-6.2 6.5-6.2s5.8 2.1 6.5 6.2"/></svg></span><b>我的身份</b><small>身份证与个人馆藏</small></button>
+    <button class="drawer-text-item" type="button" data-drawer-action="archive"><span class="drawer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4.5h8l4 4v11H6z"/><path d="M14 4.5v4h4M9 13h6M9 16.5h4"/></svg></span><b>奶蛙档案</b><small>官方形象与延展素材</small></button>
+    <button type="button" data-drawer-action="log"><span class="drawer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M8.5 14.5a5.5 5.5 0 1 1 7 0c-.9.7-1.5 1.5-1.5 2.5h-4c0-1-.6-1.8-1.5-2.5Z"/><path d="M12 2v1M4.9 4.9l.7.7M2 12h1M19.1 4.9l-.7.7M21 12h1"/></svg></span><b>更新日志</b><small>查看博物馆更新记录</small></button>
+  </nav>
+  <div class="drawer-foot">MFM · VISITOR SERVICES</div>
+</aside>
+<div class="drawer-scrim" id="drawerScrim"></div>
+
+<aside class="update-log" id="updateLog" aria-hidden="true">
+  <div class="drawer-head"><div><span>MUSÉE DU MILK FROG</span><h2>更新日志</h2></div><div class="drawer-head-actions"><button class="feedback-toggle" id="feedbackToggle" type="button" aria-label="打开意见箱" title="意见箱"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H8l-4 3z"/><path d="M8 9h8M8 12.5h5"/></svg></button><button class="drawer-close" id="logClose" type="button" aria-label="关闭更新日志"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div></div>
+  <div class="drawer-rule"></div>
+  <!-- Public log policy: record only new features and newly added collection works. -->
+  <div class="log-banner">
+    <time datetime="2026-09-15">2026.09.15</time>
+    <h3>奶蛙身份证与个人页上线</h3>
+    <p>首次入馆完成鉴定并自选头像后即可签发身份证，个人页同步展示 Studio ID 与收藏馆藏。</p>
+  </div>
+  <div class="log-list">
+    <article class="log-entry"><time datetime="2026-09-23">2026.09.23</time><h3>洛可可厅十件满员</h3><p>新增五件馆藏：华托《梅兹坦》、格勒兹《破壶》、夏尔丹《肥皂泡》、弗拉戈纳尔《门闩》、朗克雷《跳舞的卡玛戈》奶蛙改编（锚点形象配方），洛可可厅凑满十件，全馆一百二十三件。</p></article>
+  <article class="log-entry"><time datetime="2026-09-23">2026.09.23</time><h3>《白垩崖奶蛙》撤展</h3><p>经核对，本件与《吕根岛白垩崖奶蛙》（MFM·ROM-03）同取材于弗里德里希《吕根岛的白垩崖》，属重复入藏，即日起撤下；浪漫主义馆调整为十四件。</p></article>
+<article class="log-entry"><time datetime="2026-09-21">2026.09.21</time><h3>洛可可厅开厅</h3><p>新增四件馆藏：弗拉戈纳尔《秋千》《读书少女》、维热·勒布伦《画家与她的女儿》、华托《小丑吉尔》奶蛙改编；夏尔丹《拿陀螺的男孩》幼态入馆；多轮未过审候选淘汰归档。</p></article>
+  <article class="log-entry"><time datetime="2026-09-20">2026.09.20</time><h3>新古典主义厅开厅扩充</h3><p>新古典主义厅扩容：新增七件馆藏——大卫《雷卡米埃夫人》《翻越阿尔卑斯山》《苏格拉底之死》《贝利撒留受施》《马拉之死》、安格尔《贝尔坦先生肖像》、格罗《视察雅法疫病院》；卡诺瓦雕塑两件、《大宫女》候选审订后淘汰归档。</p></article>
+<article class="log-entry"><time datetime="2026-09-15">2026.09.15</time><h3>奶蛙身份证与个人页上线</h3><p>新增首次入馆鉴定、头像选择、身份证、个人页与馆藏收藏功能。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>宏伟特展开馆</h3><p>《吕根岛白垩崖奶蛙》《吉萨的狮身人面像奶蛙》《卢浮宫废墟的想象图奶蛙》入馆，宏伟特展区开放；《巴别塔奶蛙》《兵马俑军阵奶蛙》因形象污染撤回。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>巴拉克拉瓦奶蛙入藏</h3><p>《巴拉克拉瓦奶蛙》经多轮嘴部与面部精修后通过审核入馆，战争馆增至五件。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>战争馆三件新入藏</h3><p>《荷拉斯兄弟之誓奶蛙》《前线的俘虏奶蛙》《罗利的童年奶蛙》通过审核入馆，战争馆增至四件。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>战争馆开馆，首件馆藏入藏</h3><p>《吹笛少年奶蛙》通过审核入馆，为战争题材首件正式馆藏；本馆同期新增“战争”展区。</p></article>
+    <article class="log-entry"><time datetime="2026-09-04">2026.09.04</time><h3>浪漫主义馆再添一件馆藏</h3><p>《墓园孤儿奶蛙》通过审核，以幼态正式加入浪漫主义馆；《萨达纳帕勒之死奶蛙》《冰海奶蛙》和《忿怒的大日奶蛙》本轮淘汰。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>浪漫主义馆新增四件作品</h3><p>《雾海上的旅人奶蛙》《但丁之舟奶蛙》《梦魇奶蛙》（重画修正蹲伏动作后通过）和《干草车奶蛙》正式加入浪漫主义馆；《被拖去解体的无畏号奶蛙》馆长直接淘汰。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>古典馆新增五件作品</h3><p>《萨莫色雷斯的胜利女神奶蛙》《休息的拳击手奶蛙》《拉奥孔群像奶蛙》《汉谟拉比法典石碑奶蛙》和《第一门的奥古斯都奶蛙》通过审核，分别以大理石、青铜和玄武岩材质正式加入古典馆；其中前两件经过动作修正重画。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>中国馆正式馆藏补齐</h3><p>中国馆 35 件正式馆藏已全部接入网页，隋唐、五代两宋与元明清的最新作品同步显示。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>后印象派馆藏审核完成</h3><p>《玩纸牌的奶蛙》《大碗岛的星期天下午奶蛙》和重画修正后的《罗纳河上的星夜奶蛙》通过审核，正式加入后印象派馆；《简·艾薇儿在巴黎花园奶蛙》直接淘汰，《阿尼埃尔的浴场奶蛙》因点彩媒介融合失败撤回。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>印象派馆藏新增四件作品</h3><p>《包厢奶蛙》《布吉瓦尔之舞奶蛙》《伞奶蛙》和《蓝色扶手椅上的小女孩奶蛙》正式加入印象派馆。</p></article>
+    <article class="log-entry"><time datetime="2026.09.01">2026.09.01</time><h3>浮世绘馆藏新增两件作品</h3><p>《泷夜叉姬与骷髅妖怪奶蛙》和《金太郎捕鲤鱼奶蛙》正式加入浮世绘馆。</p></article>
+    <article class="log-entry"><time datetime="2026-09-01">2026.09.01</time><h3>浮世绘馆藏新增三件作品</h3><p>《甲州石班泽奶蛙》《大桥安宅骤雨奶蛙》和《三代目大谷鬼次奶蛙》正式加入浮世绘馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>现实主义馆藏新增五件作品</h3><p>《石工奶蛙》《伏尔加河上的纤夫奶蛙》《三等车厢奶蛙》《晚钟奶蛙》和《抢球奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>中世纪馆藏再扩充</h3><p>《乔托逃往埃及奶蛙》《杜乔进入耶路撒冷奶蛙》和《圣乔治屠龙奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>中世纪馆首批新增</h3><p>《乔托哀悼基督奶蛙》和《契马布埃圣三位一体圣母子奶蛙》正式加入中世纪馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>拉斐尔前派馆藏再扩充</h3><p>《夏洛特夫人奶蛙》《奥菲莉亚奶蛙》《普罗塞耳皮娜奶蛙》和《金色阶梯奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>上架新馆藏《圣巴塞洛缪节前夕的胡格诺派奶蛙》</h3><p>《圣巴塞洛缪节前夕的胡格诺派奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>上架新馆藏《玫瑰之魂奶蛙》</h3><p>《玫瑰之魂奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-31">2026.08.31</time><h3>上架新馆藏《圣西塞莉亚奶蛙》</h3><p>《圣西塞莉亚奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-28">2026.08.28</time><h3>上架新馆藏《看哪，主的婢女奶蛙》</h3><p>《看哪，主的婢女奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-28">2026.08.28</time><h3>上架新馆藏《水晶球奶蛙》</h3><p>《水晶球奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-28">2026.08.28</time><h3>上架新馆藏《贝娅塔·贝亚特丽克斯奶蛙》</h3><p>《贝娅塔·贝亚特丽克斯奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>意见箱上线</h3><p>新增外置意见箱，支持提交意见并上传图片或文件，收件地址为馆长邮箱。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>移动端全屏入场上线</h3><p>移动端新增全屏首屏影片与动态入场，进入后可自由浏览博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>上架新馆藏《绘画的艺术奶蛙》《布商同业公会理事奶蛙》</h3><p>《绘画的艺术奶蛙》和《布商同业公会理事奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>上架新馆藏《新石器彩陶纹样奶蛙》《神人兽面纹玉琮奶蛙》《四羊方尊奶蛙》</h3><p>史前与先秦首批三件中国馆藏正式入厅。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>上架新馆藏《纳芙蒂蒂头像奶蛙》《德尔斐御者奶蛙》</h3><p>《纳芙蒂蒂头像奶蛙》和《德尔斐御者奶蛙》，补充原作参考图、作品介绍、艺术鉴赏与创作轶事。</p></article>
+    <article class="log-entry"><time datetime="2026-08-27">2026.08.27</time><h3>上架新馆藏《夜游者奶蛙》《雪中猎人奶蛙》《阿黛尔的肖像奶蛙》《大使们奶蛙》</h3><p>《夜游者奶蛙》《雪中猎人奶蛙》《阿黛尔的肖像奶蛙》和《大使们奶蛙》正式加入奶蛙博物馆。</p></article>
+    <article class="log-entry"><time datetime="2026-08-25">2026.08.25</time><h3>奶蛙鉴定所上线</h3><p>新增身份测试、随机鉴定结果与可保存的奶蛙鉴定卡片。</p></article>
+    <article class="log-entry"><time datetime="2026-08-24">2026.08.24</time><h3>夜间模式与双语界面</h3><p>新增夜间模式与中文 / English 切换，参观偏好会自动保留。</p></article>
+
+  </div>
+</aside>
+<div class="log-scrim" id="logScrim"></div>
+
+<aside class="feedback-panel" id="feedbackPanel" aria-hidden="true">
+  <div class="drawer-head"><div><span>MUSÉE DU MILK FROG</span><h2>意见箱</h2></div><button class="drawer-close" id="feedbackClose" type="button" aria-label="关闭意见箱"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="drawer-rule"></div>
+  <p class="feedback-lead" id="feedbackLead">告诉馆长你希望下一次看到什么。</p>
+  <form id="feedbackForm" action="https://formsubmit.co/1610636536@qq.com" method="POST" enctype="multipart/form-data" target="feedbackSubmitFrame">
+    <input type="hidden" name="_subject" value="奶蛙博物馆意见箱">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <textarea id="feedbackText" name="message" rows="7" placeholder="写下你的意见……" aria-label="意见内容"></textarea>
+    <label class="feedback-file-label" for="feedbackFiles"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21.4 11.6-8.9 8.9a6 6 0 0 1-8.5-8.5l9.3-9.3a4 4 0 0 1 5.7 5.7l-9.3 9.3a2 2 0 0 1-2.8-2.8l8.7-8.7"/></svg><span id="feedbackFileLabel">添加图片或文件</span><input id="feedbackFiles" name="attachment" type="file" multiple accept="image/*,.pdf,.doc,.docx,.txt,.zip"></label>
+    <div class="feedback-files" id="feedbackFilesList" aria-live="polite"></div>
+    <button class="feedback-submit" id="feedbackSubmit" type="submit">投递意见</button>
+  </form>
+  <iframe class="feedback-submit-frame" name="feedbackSubmitFrame" id="feedbackSubmitFrame" title="意见提交状态"></iframe>
+  <p class="feedback-status" id="feedbackStatus" aria-live="polite"></p>
+</aside>
+<div class="feedback-scrim" id="feedbackScrim"></div>
+
+<aside class="archive-panel" id="archivePanel" aria-hidden="true">
+  <div class="drawer-head"><div><span>MUSÉE DU MILK FROG</span><h2>奶蛙档案</h2></div><button class="drawer-close" id="archiveClose" type="button" aria-label="关闭奶蛙档案"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="drawer-rule"></div>
+  <span class="archive-kicker">MILK FROG · OFFICIAL IDENTITY</span>
+  <p class="archive-lead">奶蛙官方形象资料库，记录标准身份、版本差异与可用于后续创作的视觉依据。</p>
+  <div class="archive-facts"><div><span>STATUS</span><b>OFFICIAL</b></div><div><span>VERSIONS</span><b>成熟版 / 幼态版</b></div><div><span>VARIANTS</span><b>另册收录</b></div></div>
+  <div class="archive-section"><h3>01 · 身份基准</h3><p>奶蛙是温暖黄色的圆钝梨形角色，头部与躯干自然连成一体，没有独立脖颈；成熟版具有浅奶油色腹部、粗短四肢和橄榄棕色手脚。</p></div>
+  <div class="archive-section"><h3>02 · 面部识别</h3><p>脸部由两枚浅绿色眼环、居中的圆润黑瞳和一条极短水平嘴线构成。黑瞳保持在眼环中心，不随姿态向两侧漂移。</p></div>
+  <div class="archive-section archive-visual"><h3>03 · 成熟版 / 标准视图</h3><p>采用馆长确认的正面、侧面、背面资料图，用于确认成年奶蛙的固定比例与体型轮廓。特殊动作不并入标准视图定义。</p><img src="assets/archive-references/mature-official-front-side-back.webp" alt="成熟版奶蛙正侧背标准视图"></div>
+  <div class="archive-action-group"><div class="archive-action-head"><span>POSE ARCHIVE</span><h4>成熟版 · 特殊动作</h4></div><div class="archive-action-card"><img src="assets/archive-references/mature-special-wave.webp" alt="成熟版奶蛙屈腿挥手动作"><div><b>屈腿挥手</b><p>重心下沉、双腿外展，右手抬起挥手；眼环、黑瞳、腹部和手脚色保持成熟版身份不变。</p></div></div></div>
+  <div class="archive-section archive-expression"><h3>03B · 表情档案</h3><p>记录奶蛙在特殊情绪和叙事场景中的面部延展；张嘴、闭眼等变化只属于表情素材，不改写标准脸部基准。</p><div class="archive-expression-grid"><figure><img src="assets/archive-references/expression-laugh-open.webp" alt="奶蛙张嘴大笑表情"><figcaption>张嘴大笑</figcaption></figure><figure><img src="assets/archive-references/expression-laugh-head.webp" alt="奶蛙抱头大笑表情"><figcaption>抱头大笑</figcaption></figure><figure><img src="assets/archive-references/expression-downcast.webp" alt="奶蛙低头表情"><figcaption>低头沉思</figcaption></figure></div></div>
+  <div class="archive-section archive-visual"><h3>04 · 幼态版 / 标准视图</h3><p>根据幼态奶蛙的标准比例制作正面、侧面、背面资料图。特殊动作与表情延展单独归档。</p><img src="https://router-files.neta.art/files/4d30b704-b34c-4c0f-8b9b-e58ca104aee4/6149122f-4762-4226-bc21-8aa7ae9462f8.png" alt="幼态版奶蛙正侧背标准视图"></div>
+  <div class="archive-action-group"><div class="archive-action-head"><span>POSE ARCHIVE</span><h4>幼态版 · 特殊动作</h4></div><div class="archive-action-card"><img src="assets/archive-references/juvenile-special-actions-latest.webp" alt="幼态版奶蛙特殊动作参考"><div><b>动作延展</b><p>收录幼态奶蛙的挥手、比耶与站姿变化；动作素材不定义标准体型和标准面部。</p></div></div></div>
+  <div class="archive-section archive-visual archive-variants"><h3>06 · 形象变体 / 另册</h3><p>不同动物、姿势与造型仅作为延展参考，不改变成熟版和幼态版的标准身份。</p><img src="assets/archive-references/variants.webp" alt="奶蛙形象变体参考"></div>
+  <div class="archive-section archive-visual archive-rainbow"><h3>07 · 七彩奶蛙 / 色彩变体</h3><p>保持同一成熟版体型与面部识别，仅改变身体主色；作为色彩延展参考，不作为新的标准身份。</p><img src="https://router-files.neta.art/files/8c6492b6-a8ac-414b-b8ad-234ed9a1bae8/fa01604a-50d4-4a2a-a999-56120fe2eb5c.png" alt="七种颜色的奶蛙变体展示"></div>
+  <div class="archive-section archive-visual"><h3>08 · 扩展色谱 / 新增颜色</h3><p>第二组成熟奶蛙色彩参考，新增粉、珊瑚、薄荷、青绿、天蓝、靛蓝、薰衣草紫、酒红与瓷白等颜色。</p><img src="https://router-files.neta.art/files/5372773d-d8b3-4fb2-871a-509ecf6008eb/d79c0cb8-53c9-4916-a511-1134b81959c1.png" alt="十种新增颜色的奶蛙变体展示"></div>
+  <div class="archive-section archive-coming"><h3>09 · 待归档素材</h3><p>透明底图、头像、表情、动作和展览使用素材将在确认后逐步加入。</p></div>
+</aside>
+<div class="archive-scrim" id="archiveScrim"></div>
+
+<main class="profile-page" id="profilePage" hidden>
+  <div class="profile-page-top"><button class="profile-back" id="profileBack" type="button" aria-label="返回展厅"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>返回展厅</span></button><span class="profile-page-code">MFM · ID</span></div>
+  <div class="profile-hero">
+    <span class="profile-hero-avatar" id="profileHeroAvatar" role="img"></span>
+    <div class="profile-hero-info">
+      <span class="profile-hero-kicker">MILK FROG IDENTITY CARD</span>
+      <h2 id="profileHeroName"></h2>
+      <div class="profile-hero-meta" id="profileHeroMeta"></div>
+      <div class="profile-hero-actions"><button type="button" id="profileRetestBtn">重新鉴定</button><button type="button" id="profileRenameBtn">修改昵称</button></div>
+    </div>
+    <div class="profile-hero-stats">
+      <div><span>STUDIO ID</span><b id="profileStudioId"></b></div>
+      <div><span>COLLECTION</span><b id="profileCollectionCount"></b></div>
+      <div><span>STATUS</span><b>OFFICIAL VISITOR</b></div>
+    </div>
+  </div>
+  <div class="profile-body">
+    <section class="profile-block profile-spec-block">
+      <h3>鉴定卡</h3>
+      <div id="profileSpecCard" class="profile-spec-card"></div>
+    </section>
+    <section class="profile-block">
+      <h3>我的馆藏 <span id="profileFavCount"></span></h3>
+      <div id="profileCollection" class="profile-collection"></div>
+    </section>
+  </div>
+  <section class="profile-activity-block">
+    <h3>我的互动 <span id="profileActivityCount"></span></h3>
+    <div id="profileActivity" class="profile-activity"></div>
+  </section>
+  <div class="profile-session-exit">
+    <button type="button" id="profileLogoutBtn">退出当前奶蛙身份</button>
+    <small>仅清除本设备的身份证与收藏，不影响 Studio 账号</small>
+  </div>
+  <div class="profile-spec-modal" id="profileSpecModal" hidden aria-hidden="true">
+    <div class="profile-spec-modal-panel" role="dialog" aria-modal="true" aria-labelledby="profileSpecModalTitle">
+      <div class="profile-spec-modal-head"><span id="profileSpecModalTitle">鉴定卡</span><button type="button" id="profileSpecClose" aria-label="关闭鉴定卡">&times;</button></div>
+      <div class="profile-spec-modal-content" id="profileSpecModalContent"></div>
+    </div>
+  </div>
+</main>
+
+<!-- HERO -->
+<main class="china-page" id="chinaPage" hidden>
+  <div class="china-page-top"><button class="china-back" id="chinaBack" type="button" aria-label="返回西方馆"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span id="chinaBackLabel">返回西方馆</span></button><span class="china-page-code">MFM · CN</span></div>
+  <div class="collection-head china-collection-head"><div class="sub" id="chinaCollectionSub">The Chinese Milk Frog Collection</div><h2 id="chinaCollectionTitle">中国馆</h2></div>
+  <div class="sort-toggle china-sort-toggle" id="chinaSortToggle" role="group" aria-label="展示顺序">
+    <button type="button" data-sort="entry" class="active">按入馆</button>
+    <span class="sort-sep">/</span>
+    <button type="button" data-sort="era">按年代</button>
+    <span class="sort-sep">/</span>
+    <button type="button" data-sort="movement">按流派</button>
+  </div>
+  <div class="filters china-filters" id="chinaFilters"></div>
+  <div class="gallery china-gallery" id="chinaGallery"></div>
+  <nav class="pagination china-pagination" id="chinaPagination" aria-label="中国馆作品分页"></nav>
+</main>
+
+<main id="top">
+<section class="hero" aria-label="奶蛙博物馆首页影像">
+  <div class="hero-media">
+    <video id="heroVideo" src="assets/hero.mp4" data-mobile-src="https://router-files.neta.art/files/0925fcc6-7aa7-4d02-afd4-9ae5e0f8bdb9/a6b2894c-b60c-4940-9a70-76382871dfa8.mp4" data-mobile-poster="https://router-files.neta.art/files/0925fcc6-7aa7-4d02-afd4-9ae5e0f8bdb9/d619be9d-519f-49f1-b0f3-d6471c7ebdf8.webp" poster="assets/hero-placeholder.png" autoplay muted loop playsinline preload="auto"></video>
+    <div class="hero-wash"></div>
+  </div>
+  <div class="hero-caption">
+    <span>THE MILK FROG</span>
+    <h1>跨越艺术史的<br>静默凝视</h1>
+    <a href="#collection">探索典藏</a>
+    <button class="china-mobile-entry" id="chinaMobileVisit" type="button">参观中国馆</button>
+  </div>
+  <button class="media-control" id="bgmToggle" type="button" aria-label="暂停背景音乐" data-state="on"><span></span></button>
+</section>
+</main>
+
+<!-- INTRO -->
+<section class="intro" id="intro">
+  <div class="intro-copy">
+    <div class="rule"></div>
+    <div class="label">Curatorial Statement</div>
+    <p>
+      <span class="intro-line">穿越三万年的凝视，</span>
+      <span class="intro-line"><em>奶蛙</em>栖身于人类最伟大的画布之中。</span>
+      <span class="intro-line">从洞窟的火光到印象派的午后，</span>
+      <span class="intro-line">一个圆润而沉静的身影，<em>始终在场</em>。</span>
+    </p>
+    <div class="sig">— 奶蛙馆长</div>
+  </div>
+  <div class="music-box" id="musicBox">
+    <div class="music-stage">
+      <button class="music-arrow music-arrow-prev" id="musicPrev" type="button" aria-label="上一首" title="上一首">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+      </button>
+      <div class="music-display" aria-label="博物馆背景音乐唱片机">
+        <img src="assets/turntable.webp" alt="木质黑胶唱片机">
+        <div class="record-spin" aria-hidden="true"></div>
+      </div>
+      <button class="music-arrow music-arrow-next" id="musicNext" type="button" aria-label="下一首" title="下一首">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </button>
+    </div>
+    <div class="music-caption">
+      <span class="music-kicker">MFM · SOUND ARCHIVE</span>
+      <strong id="trackTitle">Nocturne No. 2 in E Flat Major, Op. 9, No. 2</strong>
+      <span id="trackMeta">馆内背景音乐 · 01 / 01</span>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section id="collection">
+  <div class="collection-head">
+    <div class="sub">The Permanent Collection</div>
+    <h2>典藏系列</h2>
+  </div>
+  <div class="sort-toggle" id="sortToggle" role="group" aria-label="展示顺序">
+    <button type="button" data-sort="entry" class="active">按入馆</button>
+    <span class="sort-sep">/</span>
+    <button type="button" data-sort="era">按年代</button>
+    <span class="sort-sep">/</span>
+    <button type="button" data-sort="movement">按流派</button>
+  </div>
+  <div class="filters" id="filters"></div>
+  <div class="gallery" id="gallery"></div>
+  <nav class="pagination" id="pagination" aria-label="作品分页"></nav>
+</section>
+
+<!-- WORLDS -->
+<section class="worlds" id="worlds">
+  <div class="worlds-head">
+    <div class="sub">Nieta Art · Other Rooms</div>
+    <h2>分馆</h2>
+  </div>
+  <div class="worlds-grid">
+    <a class="world-card" href="https://neta.art/w/6f97ac11-95f5-451f-b4c6-214c3f02668a">
+      <span>01</span><b>3D 展馆</b><small>走进可漫游的首展馆</small>
+    </a>
+    <a class="world-card" href="https://neta.art/w/337d4274-ff22-43c7-9e3c-7f03e58766e8">
+      <span>02</span><b>奶蛙小镇</b><small>奶白广场</small>
+    </a>
+    <a class="world-card" href="https://neta.art/w/c659fde8-8117-4fc4-82ed-751c781308c4">
+      <span>03</span><b>奶蛙尖塔</b><small>The Soft Ascent</small>
+    </a>
+    <a class="world-card" href="https://neta.art/w/8a36fbe6-51f2-4ad9-9f28-46f933f756b1">
+      <span>04</span><b>制造所</b><small>捏一只自己的奶蛙</small>
+    </a>
+    <a class="world-card" href="https://neta.art/w/68438093-6659-4747-87b7-4d8e47dc093b">
+      <span>05</span><b>奶龙幸存者</b><small>割草</small>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="frog-trail" id="frogTrail" aria-hidden="true"></div>
+  <div class="easter-note" tabindex="0">
+    <span>请勿再发布丑化、恶搞奶蛙的非官方表情包，奶蛙的形象需要大家共同守护，建议分享正版素材。请大家遵守一起维护积极愉快的氛围，感谢配合。</span>
+  </div>
+  <div class="footer-content">
+  <div class="fbrand">奶蛙<em>博物馆</em></div>
+  <div class="frule"></div>
+  <div class="ftag">Where the sublime meets the serene.</div>
+  <div class="fcols">
+    <div class="fcol">
+      <h4>参观</h4>
+      <span>周二 — 周日</span>
+      <span>10:00 — 18:00</span>
+      <span>周一闭馆</span>
+    </div>
+    <div class="fcol">
+      <h4>展馆</h4>
+      <a href="#collection">常设典藏</a>
+      <a href="#collection">年代长廊</a>
+      <a href="#intro">策展序言</a>
+    </div>
+    <div class="fcol">
+      <h4>联系</h4>
+      <span>奶蛙馆长</span>
+      <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="32030403020401040701047243431c515d5f">[email&#160;protected]</a></span>
+      <span>+00 000 0000</span>
+    </div>
+  </div>
+  <div class="fcopy">© MMXXV Musée du Milk Frog · All Works Transformative Parody</div>
+  </div>
+</footer>
+
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lb-close" id="lbClose">&times;</span>
+  <div class="lb-inner">
+    <div class="lb-img">
+      <div class="lb-img-flipper" id="lbFlip">
+        <div class="lb-img-front">
+          <img id="lbImg" src="" alt="">
+          <div class="flip-hint">双击查看作品故事</div>
+        </div>
+        <div class="lb-img-back">
+          <div class="back-kicker" id="lbBackKicker">ARTIST'S STUDIO NOTE</div>
+          <div class="back-story" id="lbBackStory"></div>
+          <div class="original-image-wrap" id="lbOriginalImageWrap"><img id="lbOriginalImage" src="" alt=""></div>
+          <div class="flip-hint">双击返回</div>
+        </div>
+      </div>
+    </div>
+    <div class="lb-text">
+      <div class="era" id="lbEra"></div>
+      <div class="lb-acc" id="lbAcc"></div>
+      <h3 id="lbZh"></h3>
+      <div class="en" id="lbEn"></div>
+      <div class="row"><span>Original</span><span id="lbOrig"></span></div>
+      <div class="row artist-row" id="artistRow"><span>Artist</span><span id="lbArtist"></span></div>
+      <div class="row"><span>Period</span><span id="lbYear"></span></div>
+      <div class="lb-story-label">作品介绍</div>
+       <div class="lb-intro" id="lbIntro"></div>
+       <div class="lb-story-label">作品鉴赏</div>
+       <div class="lb-story" id="lbStory"></div>
+       <div class="lb-engagement" aria-label="馆藏互动">
+         <button type="button" class="lb-favorite" id="lbFavorite" data-state="off" aria-label="收藏这件馆藏"><span aria-hidden="true"><svg class="ico-star" viewBox="0 0 24 24"><path d="M12 3.6l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg></span><b>收藏馆藏</b></button>
+         <button type="button" class="lb-like" id="lbLike" data-state="off" aria-label="喜欢这件馆藏"><span aria-hidden="true"><svg class="ico-heart" viewBox="0 0 24 24"><path d="M12 20.3s-7.6-4.9-9.7-9.5C.8 7.9 2.6 4.5 5.9 4.5c2 0 3.4 1.1 4.1 2.4h4c.7-1.3 2.1-2.4 4.1-2.4 3.3 0 5.1 3.4 3.6 6.3-2.1 4.6-9.7 9.5-9.7 9.5z"/></svg></span><b>喜欢</b><em id="lbLikeCount">0</em></button>
+       </div>
+       <div class="lb-auth-notice" id="lbAuthNotice" role="status" hidden><span>正在唤起 Neta Studio 登录……</span><button type="button" id="lbAuthAction" hidden>去领取</button></div>
+       <section class="lb-comments" id="lbComments" aria-label="作品评论">
+         <div class="lb-comments-head"><span>观众评论</span><em id="lbCommentCount">0</em></div>
+         <div class="lb-comment-list" id="lbCommentList"></div>
+         <div class="lb-auth-notice lb-comment-auth" id="lbCommentAuth" role="status" hidden><span></span><button type="button" id="lbCommentAuthAction" hidden>去领取</button></div>
+         <div class="lb-comment-status" id="lbCommentStatus" aria-live="polite"></div>
+         <form class="lb-comment-form" id="lbCommentForm">
+           <textarea id="lbCommentInput" maxlength="240" rows="2" placeholder="完成奶蛙身份证后留下你的看法……" aria-label="评论内容"></textarea>
+           <div class="lb-comment-form-foot"><small>登录 Studio 后可评论</small><button type="submit">发表评论</button></div>
+         </form>
+       </section>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ : 奶蛙鉴定所 -->
+<div class="quiz" id="quiz" aria-hidden="true">
+  <div class="quiz-panel">
+    <button class="quiz-close" id="quizClose" type="button" aria-label="关闭">&times;</button>
+
+    <!-- intro -->
+    <div class="quiz-stage quiz-intro" data-stage="intro">
+      <div class="quiz-kicker">MILK FROG IDENTIFICATION LAB</div>
+      <h3>奶蛙鉴定所</h3>
+      <p class="quiz-lead">回答 4 道题，馆长会在 30 秒内把你鉴定成一只奶蛙。<br>那只奶蛙是你。</p>
+    </div>
+
+    <!-- questions -->
+    <div class="quiz-stage quiz-questions" data-stage="questions" hidden>
+      <div class="quiz-progress"><span id="quizStep">1</span> / 4</div>
+      <div class="quiz-bar"><i id="quizBar"></i></div>
+      <h4 class="quiz-q" id="quizQ"></h4>
+      <div class="quiz-opts" id="quizOpts"></div>
+    </div>
+
+    <!-- analysing -->
+    <div class="quiz-stage quiz-loading" data-stage="loading" hidden>
+      <div class="quiz-spinner" aria-hidden="true"></div>
+      <p class="quiz-analyse" id="quizAnalyse">鉴定中……</p>
+    </div>
+
+    <!-- result -->
+    <div class="quiz-stage quiz-result" data-stage="result" hidden>
+      <div class="quiz-result-scroll">
+        <div class="spec-card" id="specCard">
+          <div class="spec-badge">鉴定完成</div>
+          <div class="spec-img-wrap"><img id="specImg" src="" alt=""></div>
+          <div class="spec-body">
+            <div class="spec-you">你是——</div>
+            <h3 class="spec-name" id="specName"></h3>
+            <div class="spec-rows">
+              <div><span>馆藏编号</span><b id="specNo"></b></div>
+              <div><span>稀有度</span><b id="specRare"></b></div>
+              <div><span>出没地点</span><b id="specHabitat"></b></div>
+            </div>
+            <div class="spec-note">
+              <div class="spec-note-title">馆长评语</div>
+              <div id="specComment"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="result-identity">
+        <div class="identity-step">IDENTITY · 02 / 02</div>
+        <h2>领取奶蛙身份证</h2>
+        <p>本次鉴定结果将作为卡片收纳在个人页。昵称默认与 Studio 账号一致，也可以自行修改。</p>
+        <div class="result-field">
+          <label for="identityNameInput">昵称</label>
+          <div class="result-input-row">
+            <input type="text" id="identityNameInput" maxlength="24" placeholder="登录 Studio 后自动填入" autocomplete="off">
+          </div>
+          <small>默认使用 Studio 昵称，可修改，最多 24 字</small>
+        </div>
+        <div class="result-field result-avatar-field">
+          <label>选择头像</label>
+          <div class="avatar-grid" id="avatarGrid" aria-label="奶蛙头像选择"></div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- persistent footer: 开始鉴定 → 保存卡片 / 重新鉴定 -->
+    <div class="quiz-actions" id="quizActions">
+      <button class="quiz-primary" id="quizPrimary" type="button">
+        <svg class="ico-save" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
+        <span id="quizPrimaryLabel">开始鉴定</span>
+      </button>
+      <button class="quiz-again" id="quizAgain" type="button" hidden>重新鉴定</button>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ARTIST BIO MODAL -->
+<div class="artist-modal" id="artistModal">
+  <div class="artist-modal-inner">
+    <span class="artist-modal-close" id="artistClose">&times;</span>
+    <div class="artist-modal-content">
+      <div class="artist-portrait" id="artistPortraitWrap"><img id="artistPortrait" src="" alt=""></div>
+      <div class="artist-copy">
+        <h2 id="artistName"></h2>
+        <div class="artist-life" id="artistLife"></div>
+        <div class="artist-story" id="artistStory"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="app.js?v=20260924-rococo10"></script>
+<script type="module" src="identity-runtime.bundle.js?v=20260920-text-audit"></script>
+</body>
+</html>

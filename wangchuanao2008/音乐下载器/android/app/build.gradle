@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application'
+}
+
+def sharedVersion = rootProject.file('../VERSION').text.trim()
+if (!(sharedVersion ==~ /\d+\.\d+\.\d+/)) throw new GradleException('Invalid VERSION')
+def parts = sharedVersion.tokenize('.').collect { it.toInteger() }
+
+
+
+android {
+    useLibrary 'android.test.runner'
+    useLibrary 'android.test.base'
+    namespace 'com.musicdown.netease'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.musicdown.netease'
+        minSdk 26
+        targetSdk 35
+        versionCode parts[0] * 10000 + parts[1] * 100 + parts[2]
+        versionName sharedVersion
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures { buildConfig true }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'dev.ffmpegkit-maintained:ffmpeg-kit-audio:8.1.7'
+    // This audio artifact's POM omits the FFmpegKit runtime exception helper.
+    implementation 'com.arthenica:smart-exception-java:0.2.1'
+    testImplementation 'junit:junit:4.13.2'
+}

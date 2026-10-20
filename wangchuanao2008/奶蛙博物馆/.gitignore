@@ -1,0 +1,46 @@
+# Large standalone deliverable is distributed through GitHub Releases.
+/奶蛙博物馆-完整版离线.html
+# Resource caches and deterministic optimization outputs are reproducible.
+/offline/cache/
+/offline/optimized/
+/offline/optimization.json
+/offline/build-summary.json
+/offline/package-summary.json
+/reconstruction/奶蛙博物馆.html
+# Full collection traces are local evidence; publish reports and compact proof instead.
+/analysis/evidence/*rea*.json
+/analysis/evidence/*rea*.log
+/analysis/evidence/branches/**/*rea*.json
+/analysis/evidence/branches/**/*rea*.log
+/analysis/evidence/branches/**/*.png
+/analysis/evidence/branches/**/*.dom.json
+/analysis/evidence/branches/**/assets/
+/reconstruction/qa/
+/offline/qa/*process-progress.log
+/offline/qa/verify-gif.mjs
+/offline/qa/gif-*
+/offline/qa/avatar-export.png
+/offline/qa/*.png
+/node_modules/
+/.publish/
+/.DS_Store
+**/.DS_Store
+__pycache__/
+*.pyc
+/analysis/evidence/*.png
+/analysis/evidence/*.dom.json
+/analysis/evidence/**/*.headers
+
+# Generated online snapshot and publish staging.
+/奶蛙博物馆.html
+/reconstruction/branches/survivor.html
+/milk-frog-museum-offline.zip
+
+# Local environment and generated caches
+.DS_Store
+node_modules/
+.venv/
+*.py[cod]
+.env
+.env.*
+!.env.example

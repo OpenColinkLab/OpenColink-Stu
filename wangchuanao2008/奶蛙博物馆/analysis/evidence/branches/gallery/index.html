@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11120f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23d2ab38'/%3E%3Ccircle cx='22' cy='26' r='8' fill='%23a8bd85'/%3E%3Ccircle cx='42' cy='26' r='8' fill='%23a8bd85'/%3E%3C/svg%3E">
+  <title>奶蛙博物馆 · 3D首展馆</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app" aria-label="奶蛙博物馆3D首展馆">
+    <canvas id="scene" aria-label="3D展馆"></canvas>
+
+    <div class="loading" id="loading" role="status" aria-live="polite">
+      <div class="loading-mark"><span></span><span></span></div>
+      <p>MUSÉE DU MILK FROG</p>
+      <div class="loading-track"><i id="loadingBar"></i></div>
+      <output id="loadingValue">0%</output>
+    </div>
+
+    <section class="entry" id="entry">
+      <div class="entry-copy">
+        <p class="kicker">MUSÉE DU MILK FROG · EXHIBITION 01</p>
+        <h1>奶蛙博物馆<br><em>3D首展馆</em></h1>
+        <p class="edition">1F 西方博物馆 · 2F 中国博物馆</p>
+      </div>
+      <button class="enter-button" id="enterButton" type="button">
+        <span>进入首展馆</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </button>
+      <div class="entry-index"><span>40</span><small>WORKS<br>ON VIEW</small></div>
+    </section>
+
+    <header class="museum-header" id="museumHeader" aria-hidden="true">
+      <button class="brand" id="homeButton" type="button" title="返回序厅" aria-label="返回序厅">
+        <strong>MILK FROG</strong><span>3D GALLERY</span>
+      </button>
+      <div class="current-floor" id="currentFloor">1F · 西方博物馆</div>
+      <div class="header-actions">
+        <button class="icon-button muted" id="soundButton" type="button" title="环境音乐" aria-label="播放环境音乐">
+          <svg class="sound-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9v6h4l5 4V5L9 9H5zM17 9a4 4 0 0 1 0 6M19.5 6.5a8 8 0 0 1 0 11"/></svg>
+          <svg class="sound-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9v6h4l5 4V5L9 9H5zM18 9l4 4M22 9l-4 4"/></svg>
+        </button>
+        <button class="icon-button" id="mapButton" type="button" title="展馆地图" aria-label="打开展馆地图">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3V6zM9 3v15M15 6v15"/></svg>
+        </button>
+        <button class="icon-button" id="clearPaintButton" type="button" title="清除全部涂鸦" aria-label="清除全部涂鸦">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <aside class="floor-switcher" id="floorSwitcher" aria-label="楼层切换" aria-hidden="true">
+      <button type="button" data-floor="west" class="active"><span>1F</span><b>西方博物馆</b><small>24件</small></button>
+      <button type="button" data-floor="china"><span>2F</span><b>中国博物馆</b><small>16件</small></button>
+    </aside>
+
+    <div class="reticle" id="reticle" aria-hidden="true"><i></i></div>
+    <button class="inspect-prompt" id="inspectPrompt" type="button" aria-hidden="true"><kbd>E</kbd><span>查看作品</span></button>
+    <div class="room-caption" id="roomCaption" aria-live="polite"><span>序厅</span><small>ENTRANCE HALL</small></div>
+    <div class="discovery-note" id="discoveryNote" aria-live="polite"><span id="discoveryText"></span><b id="discoveryCount">0 / 8</b></div>
+
+    <aside class="art-panel" id="artPanel" aria-hidden="true">
+      <button class="panel-close" id="panelClose" type="button" title="关闭" aria-label="关闭作品详情">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <figure><img id="panelImage" alt=""></figure>
+      <div class="panel-content">
+        <p class="panel-room" id="panelRoom"></p>
+        <h2 id="panelTitle"></h2>
+        <p class="panel-original" id="panelOriginal"></p>
+        <div class="panel-rule"></div>
+        <p class="panel-description" id="panelDescription"></p>
+        <p class="panel-number" id="panelNumber"></p>
+      </div>
+    </aside>
+
+    <aside class="map-panel" id="mapPanel" aria-hidden="true">
+      <div class="map-head">
+        <div><small>MUSEUM PLAN</small><h2>首展馆</h2></div>
+        <button class="panel-close" id="mapClose" type="button" title="关闭" aria-label="关闭展馆地图">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="museum-intro">
+        <p class="intro-lead">奶蛙博物馆把熟悉的艺术史改造成一条可以走进去的观看路径。两层展厅彼此独立，作品既是馆藏，也是彩蛋可以留下痕迹的现场。</p>
+        <div class="intro-facts"><span><b>40</b><small>件馆藏</small></span><span><b>2</b><small>个展馆</small></span><span><b>3D</b><small>漫游观看</small></span></div>
+      </div>
+      <div class="floor-plan museum-groups" aria-label="快速切换展馆">
+        <button type="button" class="map-floor-button" data-floor="china"><span>2F</span><div><b>中国博物馆</b><small>16件 · 从器物、墓室与长卷进入中国图像传统</small></div><strong>进入</strong></button>
+        <button type="button" class="map-floor-button" data-floor="west"><span>1F</span><div><b>西方博物馆</b><small>24件 · 从浪漫主义到战争记忆，观看奶蛙如何改写名作</small></div><strong>进入</strong></button>
+      </div>
+      <div class="museum-detail">
+        <p><b>1F · 西方博物馆 · 24件</b><br>以浪漫主义、现实主义、新古典主义、印象派、现代主义和战争绘画为主线。这里的观看重点是人物姿态、戏剧光线与历史叙事如何被奶蛙重新占据。</p>
+        <p><b>2F · 中国博物馆 · 16件</b><br>从新石器彩陶、商周礼器、秦汉造像延伸到魏晋长卷、唐代器物与中西现代图像。这里更适合观察纹样、材质、尺度和连续叙事。长廊最深处另设独立雕塑馆，四件器物统一陈列在玻璃展柜内。</p>
+        <p class="museum-note">参观时可以自由漫游，也可以向任意墙面、地面或画作投掷随机彩蛋。命中画中奶蛙时，它会笑一次。</p>
+      </div>
+    </aside>
+
+    <div class="scrim" id="scrim"></div>
+
+    <div class="mobile-controls" id="mobileControls" aria-hidden="true">
+      <div class="joystick" id="joystick"><i id="joystickKnob"></i></div>
+      <button class="mobile-inspect" id="mobileInspect" type="button" aria-label="查看作品">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4M11 8v6M8 11h6"/></svg>
+      </button>
+      <button class="mobile-throw" id="mobileThrow" type="button" aria-label="投掷彩蛋" title="投掷彩蛋"><i></i></button>
+    </div>
+
+    <div class="orientation-note" id="orientationNote">请横屏参观</div>
+    <div class="error-message" id="errorMessage" hidden>当前浏览器无法开启3D展馆。</div>
+  </main>
+
+  <audio id="ambientAudio" src="assets/museum-bgm.mp3" loop preload="none"></audio>
+  <audio id="frogLaughAudio" src="assets/frog-laugh.mp3" preload="auto"></audio>
+  <script src="vendor/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

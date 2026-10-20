@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "校徽发布",
+  "usingComponents": {
+    "image-view": "/components/image-view/index"
+  }
+}

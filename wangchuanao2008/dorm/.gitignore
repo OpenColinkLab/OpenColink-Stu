@@ -1,0 +1,17 @@
+node_modules/
+dist/
+reference/
+qa/
+.sites-runtime/
+.DS_Store
+宿舍3D.html
+
+# Local environment and generated caches
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+
+/.openai/

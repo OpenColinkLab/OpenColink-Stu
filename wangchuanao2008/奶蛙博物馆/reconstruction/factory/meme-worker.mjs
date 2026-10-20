@@ -1,0 +1,2 @@
+import {GIFEncoder,quantize,applyPalette} from './vendor/gifenc.mjs';
+self.onmessage=({data:{frames,side,colors,delay}})=>{try{const gif=GIFEncoder();for(const rgba of frames){const palette=quantize(rgba,colors),index=applyPalette(rgba,palette);gif.writeFrame(index,side,side,{palette,delay,repeat:0});}gif.finish();const bytes=gif.bytes();self.postMessage({bytes},[bytes.buffer]);}catch(error){self.postMessage({error:error.message});}};

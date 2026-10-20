@@ -1,0 +1,64 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/Users/wangchuanao/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  },
+  "start_url": {
+    "url": "https://works.cohub.live/w/c17ffb5a-2fc0-4986-bcd5-ff596020dc61/nailong-survivors/a0938fb1141a/content/index.html?_reload=0"
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "actions": [
+    {
+      "step_id": "survivor-menu",
+      "action": "wait_for",
+      "locator": {
+        "kind": "css",
+        "selector": "#startPanel"
+      },
+      "state": "visible",
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "survivor-sword",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-cls=\"sword\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "survivor-pause",
+      "action": "press",
+      "locator": {
+        "kind": "css",
+        "selector": "body"
+      },
+      "key": "Escape",
+      "timeout_ms": 5000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "dom",
+      "accessibility",
+      "url",
+      "screenshot"
+    ],
+    "at_end": [
+      "url"
+    ],
+    "events": [
+      "network",
+      "page-errors",
+      "console"
+    ]
+  }
+}

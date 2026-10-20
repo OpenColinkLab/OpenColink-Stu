@@ -1,0 +1,344 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/Users/wangchuanao/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  },
+  "start_url": {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/index.html?_reload=0"
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai",
+    "reduced_motion": "no-preference"
+  },
+  "actions": [
+    {
+      "step_id": "collection",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#top .hero-caption a"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "page-two",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#pagination button[aria-label=\"第2页\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "sort-era",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#sortToggle button[data-sort=\"era\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "filter-renaissance",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#filters button[data-filter=\"renaissance\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "work-detail",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#gallery .card:not(.hide) >> nth=0"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "flip-story",
+      "action": "press",
+      "locator": {
+        "kind": "css",
+        "selector": "#lbFlip"
+      },
+      "key": "Enter",
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "artist-bio",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#artistRow"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "artist-close",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#artistClose"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "work-close",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#lbClose"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "china",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#chinaVisit"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "china-page-two",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#chinaPagination button[aria-label=\"第2页\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "china-medium",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#chinaSortToggle button[data-sort=\"movement\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "china-ink",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#chinaFilters button[data-filter=\"xieyi\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "china-back",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#chinaBack"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "menu",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#menuToggle"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "archive",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-drawer-action=\"archive\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "archive-close",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#archiveClose"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "log",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#logToggle"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "log-close",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#logClose"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "menu-feedback",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#menuToggle"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "feedback",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-drawer-action=\"feedback\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "feedback-close",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#feedbackClose"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "quiz",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#giftToggle"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "quiz-start",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizPrimary"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "answer-1",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizOpts button:first-child"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "answer-2",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizOpts button:first-child"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "answer-3",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizOpts button:first-child"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "answer-4",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizOpts button:first-child"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "quiz-result",
+      "action": "wait_for",
+      "locator": {
+        "kind": "css",
+        "selector": ".quiz.showing-result"
+      },
+      "state": "visible",
+      "timeout_ms": 6000
+    },
+    {
+      "step_id": "quiz-close",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#quizClose"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "menu-theme",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#menuToggle"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "night",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-drawer-action=\"theme\"]"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "menu-language",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#menuToggle"
+      },
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "english",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-drawer-action=\"language\"]"
+      },
+      "timeout_ms": 5000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "dom",
+      "accessibility",
+      "url",
+      "screenshot"
+    ],
+    "at_end": [
+      "url"
+    ],
+    "events": [
+      "network",
+      "page-errors",
+      "console"
+    ]
+  }
+}

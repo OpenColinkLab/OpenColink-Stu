@@ -1,0 +1,397 @@
+{
+  "mode": "file://, fresh profile, network offline",
+  "rooms": {
+    "gallery": {
+      "title": "奶蛙博物馆 · 3D首展馆",
+      "text": "MILK FROG\n3D GALLERY\n1F · 西方博物馆\n1F\n西方博物馆\n24件\n2F\n中国博物馆\n16件\nE\n查看作品\n1F · 西方博物馆\nWESTERN MUSEUM · 24 WORKS\n0 / 8\nMUSEUM PLAN\n首展馆\n\n奶蛙博物馆把熟悉的艺术史改造成一条可以走进去的观看路径。两层展厅彼此独立，作品既是馆藏，也是彩蛋可以留下痕迹的现场。\n\n40\n件馆藏\n2\n个展馆\n3D\n漫游观看\n2F\n中国博物馆\n16件 · 从器物、墓室与长卷进入中国图像传统\n进入\n1F\n西方博物馆\n24件 · 从浪漫主义到战争记忆，观看奶蛙如何改写名作\n进入\n\n1F · 西方博物馆 · 24件\n以浪漫主义、现实主义、新古典主义、印象派、现代主义和战争绘画为主线。这里的观看重点是人物姿态、戏剧光线与历史叙事如何被奶蛙重新占据。\n\n2F · 中国博物馆 · 16件\n从新石器彩陶、商周礼器、秦汉造像延伸到魏晋长卷、唐代器物与中西现代图像。这里更适合观察纹样、材质、尺度和连续叙事。长廊最深处另设独立雕塑馆，四件器物统一陈列在玻璃展柜内。\n\n参观时可以自由漫游，也可以向任意墙面、地面或画作投掷随机彩蛋。命中画中奶蛙时，它会笑一次。",
+      "images": [],
+      "canvases": 1,
+      "missing": [],
+      "audio": [
+        {
+          "src": "blob:null/c7e88703-d376-42f0-892d-a08638d59f0c",
+          "ready": 4
+        },
+        {
+          "src": "blob:null/48f09dae-ae3d-41b7-9d16-7850aa80994a",
+          "ready": 4
+        }
+      ]
+    },
+    "town": {
+      "title": "奶蛙小镇 · 奶白广场",
+      "text": "奶蛙小镇\n\n奶白广场\n\n小镇营业中\n小镇手记\nNAIWA TOWN\n奶白广场\n\n早点铺 · 钟楼 · 花店 · 街角咖啡\n\n第 1 天 · 星期一 · 春 · 00:39\n深夜\n阿蒸\n灯仔\n多一格\n100%\n灯仔\n明天早点起。（睡觉）\n小镇手记\n记忆 0 条\n居民\n属性\n工坊\n相册\n手记\n工坊\n奶币 40\n穿戴\n\n选一只奶蛙，点下面「可以穿的」里的按钮给它穿上。\n\n头部：空着\n—\n颈部：空着\n—\n手持：空着\n—\n可以穿的\n还没有可以穿的东西。先在下面制作，或去小卖部买。\n制作\n草帽（魅力 +3）\n配方：树叶×2＋麻绳×1　持有 0\n制作\n围巾（魅力 +2　情绪 +3）\n配方：布料×2＋麻绳×1　持有 0\n制作\n珠子项链（情绪 +4）\n配方：贝壳×2＋麻绳×1　持有 0\n制作\n帆布包（力量 +3　技能熟练度 +1）\n配方：纸箱×1＋布料×2　持有 0\n制作\n木杖（体力 +4　技能熟练度 +2）\n配方：木片×3　持有 0\n制作\n沙沙铃（技能熟练度 +3　魅力 +1）\n配方：贝壳×2＋木片×1　持有 0\n制作\n小卖部\n贝壳 · 奶币 3\n买 1\n树叶 · 奶币 2\n买 1\n纸箱 · 奶币 3\n买 1\n麻绳 · 奶币 2\n买 1\n布料 · 奶币 4\n买 1\n木片 · 奶币 3\n买 1\n草帽 · 奶币 18\n魅力 +3\n买下\n沙沙铃 · 奶币 22\n技能熟练度 +3　魅力 +1\n买下\n材料\n贝壳 ×0\n树叶 ×2\n纸箱 ×0\n麻绳 ×1\n布料 ×1\n木片 ×0\n纪念品\n\n出门旅行会带回纪念品。\n\n背包是空的。\n广场上的东西\n广场上还没有摆放东西。\n对话 0 句\n本地模拟 · 非联网 AI\n暂停\n1×\n2×\n4×\n出门旅行\n3 位居民 · 相册 0 张 · 消息 0 条\n重置\n出门旅行\n✕\n\n阿蒸（经营型）要去哪里？可以顺手带点东西，也可以空手出门。\n\n顺路带点东西（最多 3 件，也可以不带）\n雨伞\n饭团\n相机\n海边\n带回贝壳　「海很大，口袋很小。」\n出发\n森林\n带回树叶　「带回一把不用充电的伞。」\n出发\n集市\n带回纸箱　「没买东西，但有了一个家。」\n出发",
+      "images": [
+        {
+          "src": "blob:null/e79b2acf-31b4-4b77-b65d-79ac65f90e7e",
+          "ok": true
+        },
+        {
+          "src": "blob:null/e79b2acf-31b4-4b77-b65d-79ac65f90e7e",
+          "ok": true
+        },
+        {
+          "src": "blob:null/e79b2acf-31b4-4b77-b65d-79ac65f90e7e",
+          "ok": true
+        },
+        {
+          "src": "blob:null/e79b2acf-31b4-4b77-b65d-79ac65f90e7e",
+          "ok": true
+        },
+        {
+          "src": "blob:null/e79b2acf-31b4-4b77-b65d-79ac65f90e7e",
+          "ok": true
+        },
+        {
+          "src": "blob:null/2d6d8540-aaac-496c-ae7a-647507a63887",
+          "ok": true
+        },
+        {
+          "src": "blob:null/e79b2acf-31b4-4b77-b65d-79ac65f90e7e",
+          "ok": true
+        },
+        {
+          "src": "blob:null/1ae5266d-462f-4b8b-bf88-61a086ab850c",
+          "ok": true
+        },
+        {
+          "src": "blob:null/8d36a54d-7fc9-46f8-ae31-61e96ed39c80",
+          "ok": true
+        },
+        {
+          "src": "blob:null/ca2d895c-984a-45f9-857e-8bc55a0a6bf8",
+          "ok": true
+        },
+        {
+          "src": "blob:null/2303209f-117f-4725-b58e-0904bbb3c82f",
+          "ok": true
+        },
+        {
+          "src": "blob:null/c96a1b6a-5f21-423d-bfbb-6ae10fef7973",
+          "ok": true
+        },
+        {
+          "src": "blob:null/ce0924a5-d19c-4e52-adda-ff4c0c95bfb5",
+          "ok": true
+        },
+        {
+          "src": "blob:null/13886a76-8a72-4805-839e-a0951652e13c",
+          "ok": true
+        },
+        {
+          "src": "blob:null/7c0199ec-65e6-48b8-b2ce-d3397c510a86",
+          "ok": true
+        },
+        {
+          "src": "blob:null/86c6dec3-4aa8-4c7d-a669-6feff499e636",
+          "ok": true
+        },
+        {
+          "src": "blob:null/5599aab3-ced5-4252-9bf9-4fa3147e43e8",
+          "ok": true
+        },
+        {
+          "src": "blob:null/4528a865-a6a1-4fb1-a4b3-a765828965eb",
+          "ok": true
+        },
+        {
+          "src": "blob:null/dbacb08e-b314-4ec7-a071-479e6f8bd1fa",
+          "ok": true
+        },
+        {
+          "src": "blob:null/1ae5266d-462f-4b8b-bf88-61a086ab850c",
+          "ok": true
+        },
+        {
+          "src": "blob:null/ce0924a5-d19c-4e52-adda-ff4c0c95bfb5",
+          "ok": true
+        },
+        {
+          "src": "blob:null/13886a76-8a72-4805-839e-a0951652e13c",
+          "ok": true
+        },
+        {
+          "src": "blob:null/7c0199ec-65e6-48b8-b2ce-d3397c510a86",
+          "ok": true
+        },
+        {
+          "src": "blob:null/86c6dec3-4aa8-4c7d-a669-6feff499e636",
+          "ok": true
+        },
+        {
+          "src": "blob:null/5599aab3-ced5-4252-9bf9-4fa3147e43e8",
+          "ok": true
+        },
+        {
+          "src": "blob:null/4528a865-a6a1-4fb1-a4b3-a765828965eb",
+          "ok": true
+        },
+        {
+          "src": "blob:null/dbacb08e-b314-4ec7-a071-479e6f8bd1fa",
+          "ok": true
+        }
+      ],
+      "canvases": 1,
+      "missing": [],
+      "audio": []
+    },
+    "tower": {
+      "title": "奶蛙尖塔 · The Soft Ascent",
+      "text": "奶蛙尖塔\n80\n/ 80\n99\n苔阶 · 0/9\n10\nACT 1 / THE ASCENT\n苔阶\n\n露水落在阶梯上。有什么在等你。\n\n战斗\n战斗\n战斗\n商店\n商店\n奇遇\n奇遇\n战斗\n奇遇\n遗物\n遗物\n遗物\n战斗\n战斗\n商店\n战斗\n精英\n战斗\n战斗\n战斗\n战斗\n营火\n营火\n营火\n守塔者\n守塔者\n守塔者\n起点\n战斗\n精英\n营火\n商店\n奇遇",
+      "images": [],
+      "canvases": 1,
+      "missing": [],
+      "audio": []
+    },
+    "factory": {
+      "title": "奶蛙制造所 · 捏一只自己的奶蛙",
+      "text": "奶蛙.\n奶蛙制造所\n捏奶蛙\n变成奶蛙\n表情包\n表情包工坊\n\n奶蛙制造所\n\n本地工坊已就绪\n精选灵感\n打工日常\n礼貌发疯\n高情商回复\n理直气壮\n快乐加倍\n电量不足\n角色与参考\n添加参考图\n图1\n角色外观\n表情动作\n梗与构图\n画风\n服饰物品\n背景\n整套表情\n仅第 1 张\n仅第 2 张\n仅第 3 张\n仅第 4 张\n这次想表达什么？\n单张\n2 × 2 · 四张\n3 × 3 · 九张\n透明背景\n本地合成表情包\n\n本地画布 · 本地合成 · 非 AI · 无需登录\n\nGIF 已就绪。\n\n任务 9c034562-a432-4724-b34c-3f2107552766\n\n我的表情\n微信 · 240 px\nQQ · 320 px\n整套下载\n01\n02\n03\n04\n让第 1 张动起来\n\n240 × 240 · 12 fps · 372 KB\n\n首尾同图，尝试自然循环\n合成 5 秒摇摆视频\n本地动画 · WebM · 768 px\n起点 / 秒\n终点 / 秒\n速度 \n0.5×\n1×\n1.5×\n2×\n往返循环\n制作 GIF\n下载 GIF\n有点不同，就是你。\n奶蛙制造所\n奶蛙友邻\n奶蛙博物馆\n3D 展馆\n奶蛙小镇\n奶蛙尖塔\n奶龙幸存者\n本地合成 · 非 AI · 无需登录",
+      "images": [
+        {
+          "src": "blob:null/7342cac9-49d5-4a8d-9d36-3448d72f98b4",
+          "ok": true
+        },
+        {
+          "src": "blob:null/5fe9dda7-d2f0-4685-9f06-ec3b8043f3b9",
+          "ok": true
+        },
+        {
+          "src": "blob:null/524b9b09-27f4-46ea-8030-3e76f76face5",
+          "ok": true
+        },
+        {
+          "src": "blob:null/a4576a4c-2ed1-4c73-9662-0bfba3b070aa",
+          "ok": true
+        },
+        {
+          "src": "blob:null/e8a863fd-6c5a-4ddc-81f0-d6c8a43aa6c3",
+          "ok": true
+        },
+        {
+          "src": "blob:null/ccbaf63a-92ad-4985-b9ea-4912d1ef4744",
+          "ok": true
+        },
+        {
+          "src": "blob:null/8385d0f5-5403-4150-814c-de5fb3b1a5d7",
+          "ok": true
+        },
+        {
+          "src": "blob:null/3169fa5d-1ddb-4cff-b631-487ab069549c",
+          "ok": true
+        },
+        {
+          "src": "blob:null/45896584-4367-48ff-89db-e9d37d2f2b09",
+          "ok": true
+        },
+        {
+          "src": "blob:null/190cf156-3a14-466e-a497-97b4d11949b9",
+          "ok": true
+        },
+        {
+          "src": "blob:null/376def4b-43cc-4d60-84d3-d718f67c1f31",
+          "ok": true
+        },
+        {
+          "src": "blob:null/1a0e341e-1b17-4d4f-b7e3-d811f14d4d5a",
+          "ok": true
+        },
+        {
+          "src": "blob:null/bb935ec8-038e-4541-a358-1791eaddb049",
+          "ok": true
+        },
+        {
+          "src": "blob:null/01c4180e-be3c-477b-8c52-bf46637882e8",
+          "ok": true
+        },
+        {
+          "src": "blob:null/b9b8a9ef-a0a9-482e-afba-a5c8fe1f3894",
+          "ok": true
+        },
+        {
+          "src": "blob:null/a61d4ced-23aa-490b-844a-5f833489ec80",
+          "ok": true
+        },
+        {
+          "src": "blob:null/d685eadb-0954-442e-95e8-17abeb8b383e",
+          "ok": true
+        },
+        {
+          "src": "blob:null/376def4b-43cc-4d60-84d3-d718f67c1f31",
+          "ok": true
+        },
+        {
+          "src": "blob:null/d873edbb-b5d5-4bfc-a365-e7114e0c5361",
+          "ok": true
+        },
+        {
+          "src": "blob:null/55c70809-9c42-40f5-930b-015f8dc60352",
+          "ok": true
+        },
+        {
+          "src": "blob:null/3dc36cb9-105a-413b-a6b4-e03bce38c97e",
+          "ok": true
+        },
+        {
+          "src": "blob:null/9300f8fa-a2de-4c0a-b639-e4f1a5bb7ff6",
+          "ok": true
+        },
+        {
+          "src": "blob:null/ca3a5a06-1f73-4355-b4f3-99cc9c108089",
+          "ok": true
+        },
+        {
+          "src": "blob:null/e01476a0-6b3c-49dd-8ad9-6ce2c7e63b1f",
+          "ok": true
+        }
+      ],
+      "canvases": 81,
+      "missing": [],
+      "audio": [
+        {
+          "src": "blob:null/485d0396-0b8b-4c32-bff7-438eac910c87",
+          "ready": 4
+        }
+      ]
+    },
+    "survivor": {
+      "title": "奶龙幸存者 · 割草",
+      "text": "Lv 1\n🎵\n音乐开\n00:00\n0 COMBO\n💀 击杀 0\n🐣 奶龙 0\n👑 巨龙 0\n100 / 100\nWASD 移动 · J / 鼠标左键 挥刀（三连斩） · 空格 跳跃（空中攻击 = 坠地重斩） · K / Shift 冲刺\n🐲 奶龙幸存者\n\n成千上万只奶龙正朝你涌来。选择你的角色：\n\n⚔️\n剑客\n• 三段连斩，第三段旋风斩\n• 空中按攻击：坠地重斩\n• 大幅击飞、打爆奶龙\n• 手感：爽快重击\n近战\n🔫\n加特林\n• 鼠标指哪打哪，持续扫射不用按键\n• 转速越快火力越猛，边跑边打\n• 弹幕推开敌群，爆裂弹连锁\n• 手感：无双弹雨\n远程\n\nWASD 移动 · J / 鼠标左键 攻击 · 空格 跳跃 · K / Shift 冲刺",
+      "images": [],
+      "canvases": 1,
+      "missing": [],
+      "audio": []
+    }
+  },
+  "errors": [],
+  "network": [],
+  "consoleErrors": [],
+  "main": {
+    "title": "奶蛙博物馆 · Musée du Milk Frog",
+    "cards": 149,
+    "images": [
+      {
+        "src": "blob:null/cc4c43db-d19d-413b-80a6-2cdec3148005",
+        "ok": true
+      },
+      {
+        "src": "blob:null/89e24302-7f47-4873-9976-ad3b347de090",
+        "ok": true
+      },
+      {
+        "src": "blob:null/055f2254-9139-4197-9ff8-945e40a5d04f",
+        "ok": true
+      },
+      {
+        "src": "blob:null/19ed8377-b6d6-4714-bdcd-e5df5d723d7d",
+        "ok": true
+      },
+      {
+        "src": "blob:null/8e6d2597-aad4-499f-8ac7-bd5e4d711136",
+        "ok": true
+      },
+      {
+        "src": "blob:null/2ba8d968-9e92-42b2-8b6b-cbf0bc0c34ba",
+        "ok": true
+      },
+      {
+        "src": "blob:null/fce10e52-093c-42cc-813d-bcfc25fa7bc0",
+        "ok": true
+      },
+      {
+        "src": "blob:null/a07abeb6-217e-4ef1-8a1b-acf257fa7284",
+        "ok": true
+      },
+      {
+        "src": "blob:null/9af20aff-26d7-4ecb-8224-ee7685dcbb00",
+        "ok": true
+      },
+      {
+        "src": "blob:null/e31695ee-5a02-4f42-a38e-9c12c5c8d9b9",
+        "ok": true
+      },
+      {
+        "src": "blob:null/082f4839-fbdc-431a-b0be-e8a7ad632aa8",
+        "ok": true
+      },
+      {
+        "src": "blob:null/305259a3-84d1-41c0-a712-9b7a363032e3",
+        "ok": true
+      },
+      {
+        "src": "blob:null/f2ee980b-dc4e-4284-b731-49957354f830",
+        "ok": true
+      },
+      {
+        "src": "blob:null/a8b3149a-0476-41cb-bea1-f064e75e396e",
+        "ok": true
+      },
+      {
+        "src": "blob:null/49d729f0-9b25-42f0-9c3c-b15a257cc159",
+        "ok": true
+      },
+      {
+        "src": "blob:null/96dd9d39-c10d-4c7f-b13e-6259a339f87a",
+        "ok": true
+      },
+      {
+        "src": "blob:null/2a7f4935-4a4d-4c51-bbec-834af5fa8df1",
+        "ok": true
+      }
+    ],
+    "missing": [],
+    "fontStatus": "loaded"
+  },
+  "social": {
+    "favorite": "on",
+    "comments": "奶蛙访客\n2026/10/13\n\n离线参观测试\n\n删除"
+  },
+  "chinaCards": 35,
+  "media": [
+    {
+      "url": "https://router-files.neta.art/files/0925fcc6-7aa7-4d02-afd4-9ae5e0f8bdb9/a6b2894c-b60c-4940-9a70-76382871dfa8.mp4",
+      "ok": true,
+      "duration": 15.041667
+    },
+    {
+      "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/audio/frog-hover.mp3",
+      "ok": true,
+      "duration": 14.329977
+    },
+    {
+      "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/museum-bgm.mp3",
+      "ok": true,
+      "duration": 247.685805
+    },
+    {
+      "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/audio/museum-bgm.mp3",
+      "ok": true,
+      "duration": 247.685805
+    },
+    {
+      "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/audio/waltz-no19.mp3",
+      "ok": true,
+      "duration": 150.115556
+    },
+    {
+      "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/hero.mp4",
+      "ok": true,
+      "duration": 15.041667
+    },
+    {
+      "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/%E7%99%BB%E5%A1%94.m4a",
+      "ok": true,
+      "duration": 96.773
+    },
+    {
+      "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/%E5%86%B3%E6%88%98.m4a",
+      "ok": true,
+      "duration": 108.813
+    }
+  ],
+  "avatarExport": {
+    "name": "milkfrog-avatar.png",
+    "bytes": 720717
+  },
+  "gif": "blob:null/e01476a0-6b3c-49dd-8ad9-6ce2c7e63b1f",
+  "finalMissing": []
+}

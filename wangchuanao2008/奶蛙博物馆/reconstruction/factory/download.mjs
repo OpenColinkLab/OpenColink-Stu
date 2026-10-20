@@ -1,0 +1,3 @@
+export async function getRuntime(){return{context:async()=>({app:{id:'8a36fbe6-51f2-4ad9-9f28-46f933f756b1'},viewer:{userUuid:'local-visitor'}})};}
+export async function authorizeDownload(){return 'local-visitor';}
+export async function downloadAvatar(button,makeFile,notify){if(button.disabled)return;button.disabled=true;try{const {blob,name}=await makeFile();const a=document.createElement('a');a.download=name;a.href=URL.createObjectURL(blob);document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),10000);notify('头像已导出。');}catch(e){notify(e.message||'导出失败。');}finally{button.disabled=false;}}

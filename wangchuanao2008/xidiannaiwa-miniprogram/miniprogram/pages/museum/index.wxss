@@ -1,0 +1,28 @@
+.hero { position: relative; overflow: hidden; padding: 56rpx 42rpx; background: linear-gradient(120deg,#80101d,#ae182b); color: #fff6df; }
+.hero-school { display: block; font-size: 22rpx; color: #e2c68e; letter-spacing: 3rpx; }
+.hero-title { display: block; font-size: 58rpx; letter-spacing: 6rpx; margin: 22rpx 0; }
+.hero-lead { display: block; font-size: 26rpx; line-height: 1.9; color: #f3dfca; }
+.stats { display: flex; margin-top: 36rpx; color: #e7d0b3; font-size: 24rpx; }
+.stats view { margin-right: 42rpx; }
+.stat-number { font-size: 48rpx; color: #fff6df; margin-right: 12rpx; }
+.browse { padding: 42rpx 34rpx 0; }
+.tabs { display: flex; border-bottom: 1rpx solid #dcd2bf; margin-bottom: 32rpx; }
+.tab { display: flex; align-items: center; padding: 0 0 22rpx; margin-right: 46rpx; color: #827765; background: transparent; border-bottom: 4rpx solid transparent; font-size: 30rpx; }
+.tab.selected { color: #9f1523; border-bottom-color: #9f1523; }
+.tab-count { color: #9a8b76; font-size: 21rpx; margin-left: 14rpx; }
+.controls { display: flex; align-items: stretch; }
+.search { display: flex; align-items: center; flex: 1; min-width: 0; background: #fff; border: 1rpx solid #ded5c6; padding: 15rpx 16rpx; }
+.search-symbol { color: #a08f75; font-size: 36rpx; margin-right: 10rpx; }
+.search input { flex: 1; min-width: 0; width: 0; font-size: 26rpx; }
+.clear { color: #91846f; background: transparent; padding: 0 4rpx 0 12rpx; font-size: 32rpx; }
+.era-picker { margin-left: 14rpx; max-width: 43%; background: #fff; border: 1rpx solid #ded5c6; }
+.picker-label { padding: 23rpx 15rpx; font-size: 23rpx; color: #5c5142; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.summary { color: #91846f; font-size: 23rpx; line-height: 1.6; margin: 30rpx 0; }
+.grid { display: flex; flex-wrap: wrap; margin: 0 -13rpx; }
+.work { width: 50%; min-width: 0; padding: 0 13rpx 38rpx; }
+.work-frame { height: 384rpx; padding: 15rpx; background: #eee8dc; border: 1rpx solid #e4dccd; }
+.work-era { display: block; font-size: 20rpx; color: #a58454; margin-top: 20rpx; }
+.work-title { display: block; font-size: 26rpx; line-height: 1.55; margin-top: 8rpx; }
+.work-year { display: block; font-size: 22rpx; color: #918675; margin-top: 8rpx; }
+.pagination { display: flex; align-items: center; justify-content: center; margin-top: 24rpx; color: #8d7b5e; font-size: 24rpx; }
+.pagination text { margin: 0 32rpx; }

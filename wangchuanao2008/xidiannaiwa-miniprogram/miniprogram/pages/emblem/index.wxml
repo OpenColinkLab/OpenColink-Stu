@@ -1,0 +1,10 @@
+<view class="page">
+  <button class="back" bindtap="back">‹ 返回首页</button>
+  <view class="content">
+    <text class="heading">奶蛙电子科技大学发布校徽</text><text class="release-meta">奶蛙电子科技大学 · 校园要闻</text>
+    <view class="emblem"><image src="/assets/logo.png" mode="aspectFit" aria-label="奶蛙电子科技大学校徽" /></view>
+    <text class="paragraph">校徽以“以肚量度量宇宙，以眼神连接万物”为核心理念。绿色双眼象征永不下线的求知欲：一只观察已知，另一只盯着暂时说不清楚的东西。黄色腹部是知识的容器，负责收纳学问、灵感，以及尚未被命名的那声“齁”。</text>
+    <text class="paragraph">展开的线条代表思想向外发射，环形纹样记录“想明白了”与“又没想明白”的循环。星辰指向尚未到来的伟大发现，红色则是奶蛙突然悟了之后，宇宙来不及冷却的余温。</text>
+    <text class="paragraph">奶蛙立于中央，凝视前方。它的神情被定格在一个重要时刻：答案即将出现，肚子已经准备好了。</text>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+const errors={
+  'Your prompt must be text of at most 2,000 characters.':'提示词最多 2,000 个字符。',
+  'Choose a supported pairing and style.':'请选择有效的搭档场景和风格。',
+  'Describe the interaction between the two Milkfrogs.':'请写下两只奶蛙之间的互动。',
+  'Choose a supported wearable.':'请选择一种装扮类型。',
+  'Choose a supported emotion set.':'请选择一组心情。',
+  'Describe the emotions or actions you want.':'请写下想要的情绪或动作。',
+  'Choose a supported style.':'请选择一种风格。',
+  'Use between 1 and 8 reference images.':'请添加 1 至 8 张参考图。',
+  'The generated image is not a usable square four-avatar sheet.':'返回的图片不是可切分的四宫格，原任务已保留。',
+  'Your saved avatar could not be read. It has not been overwritten.':'无法读取保存的头像，原记录未被覆盖。',
+  'Invalid avatar':'头像参数无效。',
+  'This avatar contains unknown parts.':'头像包含无法识别的部件。',
+  'This avatar link is not valid.':'头像链接无效。',
+  'This avatar link contains unknown parts.':'头像链接包含无法识别的部件。',
+  'Failed to fetch':'网络连接失败，请检查网络后重试。',
+  'The browser could not create your PNG. Please try again.':'浏览器无法导出 PNG，请重试。',
+  'Wait for your Milkfrog to finish loading.':'请等待奶蛙素材加载完成。',
+  'Your Milkfrog could not be exported.':'奶蛙导出失败，请重试。',
+};
+export function messageText(message){return errors[message]||message;}

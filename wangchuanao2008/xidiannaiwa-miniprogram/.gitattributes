@@ -1,0 +1,11 @@
+* text=auto
+*.js text eol=lf
+*.cjs text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.wxml text eol=lf
+*.wxss text eol=lf
+*.md text eol=lf
+*.png binary
+*.jpg binary
+*.webp binary

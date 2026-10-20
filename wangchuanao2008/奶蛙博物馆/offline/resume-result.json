@@ -1,0 +1,4230 @@
+[
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/add-notre-dame-milk-frog.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "206",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 232366,
+    "sha256": "2937162ad291bfb3639f2a4d43c09fb35eb3432bba167c986babd7a28bb8c8bc",
+    "path": "cache/3cfacef1f5a9cb68f31c1ee3e4198139fa003c7ac67fee6865fb047ea805b94d.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/add-ophelia.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "206",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 236578,
+    "sha256": "684a85c551431375fb499aeb58c534f8b6a0abd7c23aee88118a8b04a4fab73d",
+    "path": "cache/f197a125a0f4c9adc69fa785e8d98f5145fe840aeb3f38bf6c14ac5ee41c25bf.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/add-madonna-frog-child.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "206",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 326762,
+    "sha256": "8177bf829dfa4c0601612b200e976954c7d45a181770b52df713becf14c1a93b",
+    "path": "cache/71885a2b62a7bf6e94fb2b6c2eeddc728d3a5d911e9d7d707dc5cd28f3c1b5d2.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/library-v1/8c1001a623a0bff84ed9-face-13.webp",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 78492,
+    "sha256": "8c1001a623a0bff84ed9cb4f66d9655e1c84b192545842d1edaffe4475a651cd",
+    "path": "cache/896f52246673f5c9ff19f2f58e4d8d06c862fc04ddbae75916bdab913d35df4f.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/hair-v2/3b28d51c8bc9ae17026b-afro.webp",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 152022,
+    "sha256": "3b28d51c8bc9ae17026b663ef546475f050875ad736c7e5473ff804325b45b6b",
+    "path": "cache/4fa319c38ca3263cafcad012aa1663e2904cc56d9d019f92b9adbb8926e3dd99.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/add-starry-night.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "206",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 436594,
+    "sha256": "f4818a3ae9b50b2d65efab3ac527909f53aa06d9db12bcd538d8511efe170f8b",
+    "path": "cache/45a4f914dd5acaa048ad69eb7f086da9f9601a6e9fc90d86c2424d76c067391d.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/bold-v1/a291e3ef11502bab306b-neon-shop.webp?v=1",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 161248,
+    "sha256": "a291e3ef11502bab306b3a189ac4df844a7c9fb7530ff09d8c0d76ddd6fad0d6",
+    "path": "cache/07014d0106b2fb563c2d5efa815682e12c4ea800fe860201fc5f96cd3863be66.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/qin-bronze-horse.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 65402,
+    "sha256": "5388dfc82b37d7392ec8a3686a1c1c986025d30c3be307607247bad6fdde19df",
+    "path": "cache/30b7fff22adce4f845a17f3bb3bf1f853b70fa0ec52aa9760a6fd0a60cc24216.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/add-water-lilies.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 363520,
+    "sha256": "b411c46d666710652849b1eb5d72a727bbf6174af858edeeaaa22bd549ea22b8",
+    "path": "cache/7a8c3dcd01e3c5b36724036bb6a3b3b7540b0c2fa27e3df6724e5e2ecb273bac.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/add-van-gogh-starry-night-milk-frog.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 436594,
+    "sha256": "f4818a3ae9b50b2d65efab3ac527909f53aa06d9db12bcd538d8511efe170f8b",
+    "path": "cache/2efe9c29a675ab3fc048997462461e5d1212eee6cec1d902911213fad28a0aa7.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/bold-v1/5ed73ab6acf154f1458e-holo-cd.webp?v=1",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 182596,
+    "sha256": "5ed73ab6acf154f1458e787e44f192ff495604723d552709858c3d4a9e4f47d2",
+    "path": "cache/0fc13daea80734b9c2da40cfd7a7ef8368f48d3775cdb50c3125c16de3d5f45a.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/grip-v2/0f0fc09577b3194e4a49-tea.webp",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 126014,
+    "sha256": "0f0fc09577b3194e4a49ef0905b9b906724fc13192ccc328991e79bf543b92b9",
+    "path": "cache/f1571184582e0e8b5df15edc39c2e0c98343759e4da9ad473a748ffda3125729.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/library-v1/1437477ec39092241bd6-eyewear-05.webp",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 364544,
+    "sha256": "1437477ec39092241bd6ffc2b9b91aed5c7c4ea2998ed53cdf5a24add3c02ed4",
+    "path": "cache/ca0f1ca6daeb83a7fa295c53583c6dcbb86ab2800dc2fb4eddbf5a9d12eb9353.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/rom-orphan.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 125354,
+    "sha256": "4de0689dba0f487ec4f50686961037852b2a7aa52e38d7ea9921ed1a0e741a69",
+    "path": "cache/748bb5e36d4b35dffc3a195e24f0227838828867fdff2c22eb050b1b1e03d6d5.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/rom-hay-wain.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 235924,
+    "sha256": "e0d703de664bf9c078b5a7d4495fc1f8f82b97e4cf3cfabc85556f21bd11dd2d",
+    "path": "cache/582ea793a29123a0ce626eee88a18e546fa053dce26e4d421bf33d9a9e076cf3.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/war-fifer.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 44550,
+    "sha256": "d4c55a28d5b25b2afbfb8e3447f89f0ae419e66ef27a00d364ef4defa349e5ee",
+    "path": "cache/5d7cb8a14bd4486929264d2fcde8fb03c1323911a7e7bbd9365b886197b1ed19.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/rom-nightmare.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 63468,
+    "sha256": "9a187b5c45618e0aa28ee2cbc4decc2e0a1d2c28cfd37183cd9692741da2d179",
+    "path": "cache/b2b3b2bc18c86ee524c5311ce0c320dda4e60ec8654621dce189244e019e132c.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/details-v1/8e67530b101470ee82d0-bath.webp",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 307496,
+    "sha256": "8e67530b101470ee82d02ac5aa08c260f2a82f8283199f6a2e833771e877fbc9",
+    "path": "cache/fc1cf88df20cd58a5dd6c6698ad5dc4f5bc2fe2126c713739ea00c4bc153055a.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/war-balaclava.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 102028,
+    "sha256": "680f194ef8f49fad780ded2371880bd2935be37369691b9620c664baea8756a1",
+    "path": "cache/de4d27df5921ddf836bfc2d8183092c70b1017b5040e220e95099b4d0fe5902e.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/war-horatii.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 99578,
+    "sha256": "d95a224c3d058eddcb96155b482f5c24d3863a4266f43700c466b244d565e74f",
+    "path": "cache/a43d70461e4a3ba81bc185b6812cbc1ade70e592f021f93752c10438b81e308f.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/war-prisoners.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 111240,
+    "sha256": "3afdd937175ed2a0137b18fa198e526f6b1ea783f752a7439089192ce937776f",
+    "path": "cache/dfb233b51c177ad2d6f80040d2b324ada8f0088cbc5be7bbbd54c5fffe088002.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/rom-dante.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 184388,
+    "sha256": "aa6e174d49c32c0946a319214bac06d44bed5a52dc789097ea3acde86831aeb2",
+    "path": "cache/c2a9cffb837f581f47efb89cf7342565ae48170f2bcff820a2322976167ff761.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/qin-wu-shrine.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 502094,
+    "sha256": "4ca9bbca86938332e5cb0b9c558974f3882eee53b54ac0064e3852032397bd69",
+    "path": "cache/935c89f34c603ce1d0d18dbd6d435f30ec08b68d97c13791deb5d7f828b8d338.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/rom-wanderer.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 91782,
+    "sha256": "a5cfed7e623d20d41de13a8a993b43e279554deedc94bd137560c0595a4202cd",
+    "path": "cache/a64c3552472ed1bf87990626c0a40db0c0f7113b28bf3f9d3fd72f49a62e52c9.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/war-raleigh.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 194540,
+    "sha256": "bcc563dc737049d93ad1a1fd3d06c1ee26902098964d4bf9dcc9ab38874fb142",
+    "path": "cache/2d087d9533700d1e1fb4c081c3ed13148c99490fac3149c61166d1d665fb38f9.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/library-v1/66e29a6b3107227fcdf2-sticker-13.webp",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 27876,
+    "sha256": "66e29a6b3107227fcdf2a7aac5f8dd4eb0cce02cf4db76354143835756954460",
+    "path": "cache/ebd9cff6750e71ba563d82583dfe82ef5d48ef34a69585f484334103af08c8fa.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/grip-v2/5e18d3eb7671bf5ca4aa-game.webp",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 73478,
+    "sha256": "5e18d3eb7671bf5ca4aab1f0cfd95746029da52012e8c275a37cadf89ea20d8e",
+    "path": "cache/8b36ac40a4b7222da2ab698b626a807dc1e1fe89a94a6365825666bea157829c.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/add-venus-de-milo-milk-frog.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 47274,
+    "sha256": "3f606674fabf722963b1cd28367c13f655e6e96202c13091858df8054fb7f6ce",
+    "path": "cache/27221663c47e101af510e045c7b14822a9ce2982a316318d1bdc5f6b26f3a10c.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/headwear-v1/778c1ee81ae4079d491e-blue.webp?v=1",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 117142,
+    "sha256": "778c1ee81ae4079d491e3bc286b513d6aa6848e3783e9c1c4191c377254b1d44",
+    "path": "cache/f73d661c7d9f46e70a9c43476922e7194043c9177b1d0ac31601be280723f3cd.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/monet-waterlilies.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 618595,
+    "sha256": "e0da1396da3b862da6a0bd404c5f75ecaf94f444d606d68c26dfffdea83dd61b",
+    "path": "cache/02295097c1ff8b5f7fa24d0ce8a698ba88fe4796b46ea02e5ad023962c7f5d64.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-cezanne.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 363371,
+    "sha256": "77ba85d2db314b0857e493c46988153c71a944c0477cdb70daf55280189d046a",
+    "path": "cache/aef1b55a87581d723810dac28f7d82055e2e4e4dfa18d5613b4261762917b2cd.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-charioteer.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 1379333,
+    "sha256": "0f1b7ed06b095bb31f6d0253bc4f248a5ab1b6ebb971bbad8e99c8b66a3ec355",
+    "path": "cache/e6d262e5abdb40656508cf15bda2ac0f3f98a6b96762127275852b9fc820c841.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/add-tang-camel.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 117250,
+    "sha256": "c5865306493af91a1fbb22c9114944fc40cef609d25e9cd1549a12d25809ca28",
+    "path": "cache/4452a3f7d814ea3a14f6fb6bd0b51dd739de79e635c40dca4754ba10aa7e67b9.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/impressionism-renoir-umbrellas.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 1031714,
+    "sha256": "42fbc217e94bb5b1079f2b9d2f8cc39598154bf5d9ddf312067b30f6441227ee",
+    "path": "cache/bb40fa4ae4fdfe9926ec774bde6800c5e5161c036322e1b06327d2a210fc7b97.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-crystal-ball.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 176520,
+    "sha256": "4bc2e7fafad82c913ee21c5f6b67f1782947e1cc5ac776f9fc9e134d5eb5e528",
+    "path": "cache/98cee617d364fa18af19a617ff1fc1403af8e5d3123417dbb60139350f6347d4.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/qin-stone-horse.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 219514,
+    "sha256": "5e264b5b9be88c78df067c9deae611e6d680743f0350c66c5bbbfec2d1cceae6",
+    "path": "cache/48ca584acc26e48d09ca0d682d0b49ee515ec814ac83071dcb7af68e2fa2a7f5.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/batch3-proserpine.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 877786,
+    "sha256": "d1744aceed1c6a45d3f339530aff9fa6855c76d2b581f286bcf0dcdb561a391a",
+    "path": "cache/40603351269067f31c183f57f95240dc52319731d6ea764822299bd0586abefe.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/add-medusa.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 119326,
+    "sha256": "26b70af10e87091063391e9f0f24bf27b889b0ea297a5fba0e37a3e25aa904d4",
+    "path": "cache/ae0190fe459133f2bbc5c55d6c37730012bb990138baca9c718b62d18b216d44.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/assets/paintings/qin-mawang-banner.webp",
+    "rooms": [
+      "gallery"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 89276,
+    "sha256": "485ee6af45f4f060dbc1a60b26a304c224dec4e9a08638bb58e11736f3832bad",
+    "path": "cache/c3c3066680937275d0e10bfefe41f4129587f14b035b49870e22537f83748a05.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-fuchun.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 95210,
+    "sha256": "f0e553dc3fab014dedc40fa99b673128320364a56a4047cfd9e7b4d7a0808ebb",
+    "path": "cache/738d33f2d4640bbb9156162819deb2a448d9574f066f8daa58497a53fd4e1b52.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-cimabue-trinita.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 1757008,
+    "sha256": "b884f0d518cf1357d958c13e2375c7764da5a5bc78dab4e511c22412aa667e7f",
+    "path": "cache/c09bb7c4b2638d5ff699628520ae04c93ba432e8cb6c70dbd6d53dc9e8d7ae4e.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-bolt.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 145592,
+    "sha256": "62e41ce575fe22cee9c39cfaa7b7aeed3a2852545e2a3a0819d82a6e68d154cc",
+    "path": "cache/e703060a45465a72b42fe4e2b93f4f993fd622114c87b13fb33dfc7e75a5f8b9.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-fuchun-scroll.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 277935,
+    "sha256": "09fb78143bb1b1a9b44c2195b70cd550f0906b086fc1f259bac60cf250540644",
+    "path": "cache/24aa8457c936b3a9b5c36d16e38591f4f47e7936a428c412977284432ea5541f.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/grand-cliffs.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 755719,
+    "sha256": "34ffbb5c5ac66ef5e165eee43cfcbe13e062bc1a3422db4448f1ba930ab5c615",
+    "path": "cache/3f50889bbc2b9197fb0cf88825378c2414f46b39a3a025336fe042c6d27ccd88.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-gleaners.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 302744,
+    "sha256": "08bc2eec209259bcf3822c9dd8ec7c9bbba51817b3130b7645fadc0d3947b2a5",
+    "path": "cache/b266b11b263d45b79f4cc6a7d8137eb68d4035035773a4b790b4ca170984eb9f.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/impressionism-cassatt-blue-armchair.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 728114,
+    "sha256": "aa0a255871898304e902a32c483f3d62c7f4cea55adff1f2f93a86ee3bda4a74",
+    "path": "cache/8ff501f321d17c62086d9055a97cb9f3967c22a392cfbcc8563d67a0303138ce.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-gilles.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 650201,
+    "sha256": "524c8a658b7f77ecceff514e941f0d648191e1289cdd43595d174a2c3f8cc6f6",
+    "path": "cache/fe1af3b2e31333ea59a1d8e5b4fcedb93c2560b64b0be8e6e7360f4f9e48139d.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-han-entertainer.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 224827,
+    "sha256": "276fa045d755a1361fc2ad1e0434a75b1e3eb2e659e22b19659878fb0557fb92",
+    "path": "cache/f2243028881720159fc3ef0ad8e7fd329f3ca772ae47a7f289819f6d3d591ddc.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-cold-river.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 286569,
+    "sha256": "876cdabe7ff564f00c8755b6d149f1042bf75eb6e989ceabf4e9dbb05a383996",
+    "path": "cache/056fd8863d648b2d8f778c76cf2dc0dce7eb928c459b2ccac801a7b1b385fa9e.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-kneeling-archer.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 246403,
+    "sha256": "55964a69ee74e5691a49eb6ce226c49a0cb168d703a9c2d5663899969da8ba64",
+    "path": "cache/72b984033e31013c1baec40cb480b1b7a9a3b55d3b62f027a773e5dffca16565.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-emmaus.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 324350,
+    "sha256": "2903b500c7c96b8d51280dbb56d688dd7603fcb6fbb1c4c431c3142a19f5ff1c",
+    "path": "cache/b30ecfbcb6417d8973c6273dc36f31e0091246963c8b4524aa5a2305f1c8f564.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-four-rams-zun.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 438628,
+    "sha256": "f746bd8feba9be3cee7dd47b420988bd7375f5751c6daafdabc520d506e370b0",
+    "path": "cache/7f27859ecdf22683ab747691432c92d62e55cc15ed933cef973dea290d77a8b8.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-ladies-flowers.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 120505,
+    "sha256": "7e7cde22c42abaf81e5ac0a4d7c101c8a7747a88ea3acf35db9ed45d09c91dfe",
+    "path": "cache/c21e1da39926121bf0f8abe0077a6b42ae56d43aba997e80675846d212255131.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-lamp.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 177393,
+    "sha256": "489077d1fb6e8281fb049e8829eb7b622432ff818c82d99b9d8e7f79a81600da",
+    "path": "cache/10e4bd6f01e565017b6cbc1a7c1b377d92770aed6ca8c5ef9151380e5f3f9785.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-lebrun.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 148072,
+    "sha256": "0900b9eb69b4e850daf4f95d0c3a3e306311d9f9ced697593c300985ff725785",
+    "path": "cache/30ddc6964aea5e4f2ec79333dea9cef2c9fe2e7ef56c0ee3446992001b209f07.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-adele.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 899766,
+    "sha256": "84558c1e655882422a375dec9e41e31a4ab6b0e7b4ec8b24c7e1512133bd00da",
+    "path": "cache/c2c79d40db20a3ff9c21bd5103b592c9e8426df979e2fafd71626bccbb228c05.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-huguenot.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 512420,
+    "sha256": "d3b4ce471d19ffe6bbb5309002c9b522d23318383c8cce12ed8f4922fe921ee3",
+    "path": "cache/7fd3e45ad6be2b0c29bc8efcf5c621dec3ae03281451fc97a35cc845d03de34f.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/anc3-laocoon.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1095238,
+    "sha256": "7a7ee92ae4dfc33e612251765041c389b4177fbbee257f588ed66837a51e8ec8",
+    "path": "cache/c18caf41842f717a55a5ed93744cd04972aee6fc73c40dce159b40682e42c8ce.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-hundred-horses.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 904573,
+    "sha256": "59e58270208e9fe42b6973719859b6a1d8370dfeb63f90dfe7b778ce141a2c8c",
+    "path": "cache/f9155535ddc37485da36f775f3695f78475db596e90b839840b9e703fa5f04a0.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-luoshen.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 269619,
+    "sha256": "453bf445240b1dca6268056468f36210f5b935f85744be1c072e510cb2114fc5",
+    "path": "cache/98e20234a26d29ffff2dfe9f141ee51230f72619e9de03ca62124062d0369ac4.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-giotto-lamentation.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 822430,
+    "sha256": "2f162874daea07f4b920279fb55b426ce5532f6931ccaf921109dbe8bd1b3fb3",
+    "path": "cache/175b363ffc5516ed73bfffba82f674b9ebb7497945772f1eb84d7cd155b0bc85.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-may3.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 234625,
+    "sha256": "8eaf67b20fc23c66a015d6dfeb9698b813132e499ce8ce27ff47fe2edb530535",
+    "path": "cache/2df68533ac5b00296d0db1e07d35ca9740361930799cdfec3e0e9271dab01f32.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-medusa.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 345648,
+    "sha256": "cac29ff8d0bb9f92e2a48533c3892e6b90bec2a65ca08115e6f8410c65a5f317",
+    "path": "cache/93a46693b7f7754a10fcd2cb293dd166b474a64e33a0508a7c9e420e8e73388b.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-luoshen-scroll.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 361189,
+    "sha256": "c33858aeedd681e3e91467527727efdb9baffea4ef9c75499c9c487fb3813298",
+    "path": "cache/11f952b5341630c9e335f72eb3330e845cc6bc10e33a2364f0344233429f7756.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-napoleon.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 257119,
+    "sha256": "9bc891ecf1dbcc6c0cdb61100f0caff525d61cc05177872df05cb808abf8b392",
+    "path": "cache/9a5dac2697337c9c1c4b5c83405f2f925540eba6029b8bce2d849f882eb8256e.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-liangzhu-cong.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 628034,
+    "sha256": "35ea7e2c5a4ad074101bab487af63adf86105ec2b81833fb26e4ca0064c9ff08",
+    "path": "cache/c84d55803e090571f869f91865c13b7581033669d304f659041b98cba0912ae3.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-lotus-ducks.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 361977,
+    "sha256": "4e1b133a2c54201ba7c7379593076a1f943356e1bda185b94f27b3a09f86b708",
+    "path": "cache/07f272bd39763f3a215f34c1449afa7754713d13e01406df2af514bed3774d6d.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-night-revels.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 53068,
+    "sha256": "f820b4e7c44c1762492ca65a04d5b78b65693698b4410d5ee69680da14557a71",
+    "path": "cache/4273c48190692e4e8f14575c348beb5c1c6e02b9cbb892767e652e8dc30b4c17.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-neolithic-pottery.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 143494,
+    "sha256": "a447a28e4d0ac770356021c36f8e41adb63b40f95357dc2ba2d01f32997c3acd",
+    "path": "cache/7e59a076676a455d9bda54faf11e706b6b3f778ea444527db29f7d71d91aa54c.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/batch3-golden-stairs.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1652401,
+    "sha256": "7e0155482796d7f6a19f8ddfdcfe542447b7ff3f3db80b44c7369811e21cb428",
+    "path": "cache/72490db1fa58ca741532f6312562c88c45fa8af90f54dbed36cf11e5406f8cde.bin",
+    "attempts": 5
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-nefertiti.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "bytes": 178141,
+    "sha256": "aec311fe361a5233a29641fdb7899922ce47c4591e7f5e3bd9e377f9f8f52d5b",
+    "path": "cache/480fbcc9adbca76a3ace152735f9fcdf58acd7a711dd44d4751a1dce4f071fe6.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-ecce-ancilla.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1391202,
+    "sha256": "9539da150a6f4615b69d7b57dd916794fc3b4f3e3b2b2375380101b4a04c0d6a",
+    "path": "cache/51122892abbd51272c61b1a3f4c13f2aa0611d434809c417defa2e49e309300b.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-magdalen.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 283923,
+    "sha256": "6697399d5855d82507ea0f15c9cd0a78983bf16a645963083ffa87e20eaa87ee",
+    "path": "cache/d65777478e4423c8a228a0c18d0c33bf8fda618551d897ef4f90c3c33abf0b91.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-marat.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 657861,
+    "sha256": "bd26d28a80049540154f0dd9ba96fdc2bc3c1ca7c50ea7e216a8e5ba75773511",
+    "path": "cache/d1f8418054947e462914ec62bb613f554763c6ac14959c15a5daea35d6b9ec4b.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-hundred-steeds.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 82676,
+    "sha256": "cd3bc870935d82a148f4b8137ae417379513f6dfd5c4374cb62fbc6fbf32a69f",
+    "path": "cache/330ea0a0d8686ef0254c4803185d1d4591cbf643d933a6c5e9d358f118c216dc.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-jaffa.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 706926,
+    "sha256": "4ae31b0d994cdd9dea495412de7d14416d8cc78c1c582ca3ba108a1f89878e0c",
+    "path": "cache/a6563dee0eafc4b6d3d4f255c2ba8ed216e96df31c2838359b3ed1c59cc0266b.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-qingming.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 26204,
+    "sha256": "15b1275768f63dcde6d7fb9f9b5b1b73c82191ae822270adc59098fe6e23ba03",
+    "path": "cache/aa34f4aededd3d741456cc8eb1f74ea7ecf06666c0fd9c36cea79f2c0c60e331.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-saint-cecilia.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 288687,
+    "sha256": "6c3ca24d204c8a46087902c41b73c91a373c3edf15a3e7f964719c6ccd5da770",
+    "path": "cache/5ff44f957f5c901c64f50123a7ff6f1fba4d8e1bccd206bffe58422e66d5db98.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-pitcher.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 104834,
+    "sha256": "5741a284f88a41193ba0eb7fd2bfc2cd3f023f013a5230ce6078207a5a0add0a",
+    "path": "cache/71dfd6000dcc07dc35760bc08916dd41a183e898b000a54b9ea4f64e76e01c82.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-prodigal.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 469301,
+    "sha256": "c74cd85639c19f4b4b9d64743c3a61bc0fb419e600e24f42809bd6c121f13328",
+    "path": "cache/8ccbe4e887f2af724ef0cd64e70c4227ee638708c438d19a87e886b98c4fd336.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-seven-sages.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 140350,
+    "sha256": "dec98d2c79c1b79f794fb409351587bfa62fde8b2492b181695debf1a355546e",
+    "path": "cache/a138c06e38f08798b2f938f6c2cac7856302ad784e6f3e7db72883e9b74d52b8.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-paris-rain.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 273816,
+    "sha256": "99721da043dc3b965765b17327627653e1e226480f8d69c6034efe1074fcd04a",
+    "path": "cache/fee521db3d09e048378be97f7fd425952be945b4c4b29d0e81cb5f6b9633d82c.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-liberty.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 324643,
+    "sha256": "0def085f96e247e58956890ed2352559edb722087677b17490b83ae313c539d9",
+    "path": "cache/5765f4122c7805528bbd4e598e5c71357a824f7ec0d413e6c382f24fb6a1aac2.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/audio/waltz-no19.mp3",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "audio/mpeg",
+    "bytes": 3604461,
+    "sha256": "869b3660a318164a5069b0060be2e6796cfbb14a4b02736db365e12daca387d1",
+    "path": "cache/b0b6d1459b31c824c43212d292bf643a4e9394672fcafa01de91f3fc72585da1.bin",
+    "attempts": 8
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-snap-the-whip.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 196620,
+    "sha256": "66993e21d0c8dc887c791df82f430c1e6b76b8cea0bb528b64e7841fbc5fa4e6",
+    "path": "cache/56618ea0a38784071c8c48b49f20a9f67a052edc055c2ed1c89b9e148a8ecc57.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-ophelia.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 530749,
+    "sha256": "bfe975cf58ac73bff213ea5aa8cb7bf846af6a9b7df01463eb54a36a4d9932fb",
+    "path": "cache/111cf758ae4d8db52b8cf1749fa3923d6f9cfb0467390473f5f6642d8cad16ae.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-stone-breakers.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 226318,
+    "sha256": "1dcaf05360fdd4db21c1dd3fc4020593f3c6a3eb53f6b210c8bfcb27a1890cf2",
+    "path": "cache/12e5c69924d117e30fd6f208fc7895b1db6573e6059d353a3f14b611a54b891d.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-hunters-snow.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 505885,
+    "sha256": "32eea29b1fb4d4f3d51870dfdcbdb3ff354f7a70c6af189736c3466e9e62dcee",
+    "path": "cache/d071325df24d35a524a626a38dba75a39b44f21d391e4c948daa54d36e7341a9.bin",
+    "attempts": 5
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-reader.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1423873,
+    "sha256": "e08e8157c4cdd7e49aec118f1e1260afeacd4d151a6273e534a5885b00555ae6",
+    "path": "cache/a03d041beb73e701d9f2bf934c4a3f84a12680feef61a4f9459dabffd7f15077.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-recamier.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 709107,
+    "sha256": "cff1c23087b498c141569c4b0d5cc75f0c90b8798db463db3c6a055b4467f740",
+    "path": "cache/923f40f72b47bfb3606fec22784ef9e4d451e9ba0a6deb7b3fc174135007930f.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-spring-outing.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 347883,
+    "sha256": "590aafc114dd86450a67741bfba6ba91c70d1483cafaa970a1f714a5c9394746",
+    "path": "cache/e70798854356c7dd870ccb70d423cdae09d29d12a74e16848990d20a02d76032.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-nighthawks.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1139683,
+    "sha256": "df9c4627f7fad658e373c854413d2aade4e8bd51cc79deb189598f4f3d0ea337",
+    "path": "cache/af022de185a8854fe3cb145dc5da02dab968ed7667372ab358c118219cc004d7.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-tangcamel.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 324510,
+    "sha256": "d4954c9d62e0bead9a6f98f7f4bcb9f5816e1c31383d4b92d0ebe40810b7b839",
+    "path": "cache/01253b97f822612e224e60aabba279701fe02cef431e339c9d48ac999d0b0126.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-yungang-buddha.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 212344,
+    "sha256": "5175061391530b041978e3627d0de9a1a16b8d922fec8254e1d24126c5e68f77",
+    "path": "cache/64af8b9ce902448a64ed833acf770fb983929f2197ca7c27c442d42b77ad6040.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-third-class-carriage.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 189022,
+    "sha256": "f8181b6a1d922b7b82d705de255e6001b8b7dd380359692b2e0fc7c3cd7390c5",
+    "path": "cache/ed429986e85ebbfe7aef4cce94c0422ddf1c2dd3f319aade7143241fde3624f5.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-soap.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1121288,
+    "sha256": "311f8badf9c3e0dc08a243583c6ad092b1d777e2783c83a970d48baefb82b161",
+    "path": "cache/90b1c6f719d11bad8c7f97bbee44e5b63336c4361fda7b79c279f4725a8760b1.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-shrimp.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1088938,
+    "sha256": "b54983412b9106cde01bc758a069317190d2906b679b0a091af88c65e0abdc60",
+    "path": "cache/bf08d2c85d221c97c63bd42accee66d93b7b0de28340dc55a21ea1f4bef8dffd.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/postim-vangogh-rhone.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 136712,
+    "sha256": "cae79d6660afd5c468447856cfbf66dee6a47b7f00b1e755357ed5d5f6d9e4cd",
+    "path": "cache/f22b35f6912e5893b5d8e1d74915a89ded6fd2bb0e498ad08b34b717a2920dd3.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/postim-cezanne-cardplayers.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 207572,
+    "sha256": "394858491f5caa688b42957aee91cad09a9433b09549b998fb69113c17f74d8e",
+    "path": "cache/41e7e32138758fecd726696b5b7874b273eb03adee494536bb7e2fdaca57a7c9.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/rom-orphan.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 199461,
+    "sha256": "67687163ab61e54aef3b372e08ca191676dff6fda13eeccc9d8996d2218f580f",
+    "path": "cache/5f17e3e33582f1ce62d23d4d11fad909e66d418ac24632293baeb820795685f7.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-top.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 88267,
+    "sha256": "24dcd5cd742f2fe911514d5f952e550db0c8b62be1fa6c8e9aff8bbe66a7f3a5",
+    "path": "cache/37a4c072b83f5afd8cf6280bea1d42e5dbf3f7dd6a68a9aec4e70bd1a975c1ae.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/rom-nightmare.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 1510831,
+    "sha256": "79aedc6e880804333b9fb18aa388c65af8a5a3ffc1d65df4f3ea20d104f73119",
+    "path": "cache/e4aa2dad6a32c9b40d3b386102f617255a34701103840b08e86342893f97f0d8.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-order-release.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1719084,
+    "sha256": "5b702f61a349ef8bf815e6de332af5d9ed255af8a589d4798b4fe1fde8c4cfa9",
+    "path": "cache/476152e0d860a3c341747ae26098ecc01e478112ec58bff09bc47e52318a1671.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/postim-seurat-jatte.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 419417,
+    "sha256": "0ad69cd7646e78688fdc46af6410b4b091415ddc832a927f793b6963082aeb02",
+    "path": "cache/dbf523afcd7521895c6d0020bdd43dd3270d17c93c4eeeed95d22be12de9eeec.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-mezzetin.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1507679,
+    "sha256": "cae3303cdd4f24e2f8750fc6bbcb2e3e7eb00fc635fb87d0c97092569c1b55b1",
+    "path": "cache/b3068e11c27cdf138ddeeb6fa2e85cedca3e779693110966c14f96215b3e69e5.bin",
+    "attempts": 6
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/ukiyoe-kintaro.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 97205,
+    "sha256": "56b80e7a8949a49000ccd3738d93fa872dcf62bb132208ff2d298662b50af46b",
+    "path": "cache/94a7b7dc05c465b69bde58923048eef2dda13529c3861e20d3ce744e475fcb70.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-sunflowers.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 620738,
+    "sha256": "7d26174dd011a1d4cbdcf584089d22250585e4186f27f7a3bef29fde3d1ab975",
+    "path": "cache/67e6db1109313e4ddab912418422a5ad1378e66924e953b129f4668d814a5e42.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/rom-wanderer.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 258632,
+    "sha256": "a594b25d241fcc6c936d88faf3c6fd4d0a3d8b87357d8e2d32387a38b119ab5e",
+    "path": "cache/e1f4c7c42d08daa44df2f4443549bc5fbb648886faeb1057765c3ac900809873.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-socrates.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 401108,
+    "sha256": "f8d9daedd0da1e76da1094c2ff622ebbea8fbbcc046cc78486106501e359fc66",
+    "path": "cache/06701d0f416897f5cbe7d6793a1b4585c3c61e670052f9ddb114c16198a9c603.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/rom-dante.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 597928,
+    "sha256": "51913a8f0e306b8f967757eb085c72d2c12b45c3abab693c58f5f228f375d9dc",
+    "path": "cache/9245ac2d285bad021db9a24c430bfee294106f6b4f463ae36ab57b92a4a7cf9a.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-syndics.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 388044,
+    "sha256": "0232246cf25648ea8a55590bfac820a40a0dcd63ef7397e963e2bcd3bf002c06",
+    "path": "cache/ddb9d422c4aa6e2c546b0fb195f84cf716ae7928f741de8d0edfb2f3e4311b2a.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/ukiyoe-kajikazawa.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 281867,
+    "sha256": "03078f5b7ed564ee3a3a2048df0ff37f1adec97f392c49dd91f001ff4299a915",
+    "path": "cache/0eb91f332cffa8adfd4286d4e132d59d52850e5f7a6f1754ebaf11da3c2dc47e.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w02.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 205298,
+    "sha256": "512e33047cea83b849f725f4b70423f75dd7eec484f8951fa4d1f33865e23ffa",
+    "path": "cache/906dfd4f3caabe7e62e27ce886d219e6f70ee39e30fcb6432b48c7e499c29d83.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-sleeping-gypsy.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 215485,
+    "sha256": "b416de141fa6b84e0e57cd5a98cce0c384c3c56f19c1eb5076b850652c0cf41f",
+    "path": "cache/6ea94851edcb67c02d82bb3fd480d364daeeddc20b721c945218ebecf33652ab.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-love-among-ruins.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1199471,
+    "sha256": "cb962a3c372338cd42bd9eb2682cbbaca24eb15e469e392db98c11d04bb4cea1",
+    "path": "cache/9024d2f3b016854bd114f293bc618482ec5dce971dd78e792be039b141308deb.bin",
+    "attempts": 8
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w01.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 270296,
+    "sha256": "d4177ee917b7d61ecccb068226d745b02778954907986e4415225553454efd04",
+    "path": "cache/9802c1f29f4264037be45ba49c751e1db966f9916540894f67cda3781e855401.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w09.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 110756,
+    "sha256": "5af1eb83d36ac5742d77238c1c9a74f213357712ad2715b3a148cd9caf3097e7",
+    "path": "cache/f92eccb410c354efffc4ac47557ed9cfcc20bf87f5c9d21e2b03ea493a717a23.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w10.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 262940,
+    "sha256": "8a5782d448a4671d9d52a25244e24b3530722870f6a71636c9756c165c02a45e",
+    "path": "cache/db0553e02ee57167b81a0153ba2d88cdba2068b2b08d57cbdb4cca81ca91d0af.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/ukiyoe-sharaku.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 229445,
+    "sha256": "f23a784f41b562552e8d1c869cc099e7f9325483e6bd372ba9403ca9504215f2",
+    "path": "cache/7fd3dffc0108158bc8179a6f9baad2b3bc9377d803979f7fa470061847dc8a16.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w11.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 315046,
+    "sha256": "ca6049b3e4cbcdc24d1990309a99ecbb78f8c3d90e6f43766d64cd106bec8482",
+    "path": "cache/7f999dd2716a13310e2146884040881d0b692cee99073d4eaca2bdea193242c5.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w06.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 368074,
+    "sha256": "04358c9dbe9384ed23c43fc4b789ce3a2ed7ef15649012e735948804791b8699",
+    "path": "cache/b84e1f6cdd8a8fc129ecb76cec972f3018751fb5b1d9af3c8b601dd80133a0a4.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-soul-of-the-rose.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 2886597,
+    "sha256": "8827120cfbbb5a78f26f9ab957d4c49ecf633ba9a42d6123ac316b5caaafec32",
+    "path": "cache/3a442024b92ea24826a81160672e8e91ce9e976522f377f55fa56aea8ea62c15.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/rom-twomen.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "bytes": 260627,
+    "sha256": "9f147fad094c0a9c8f4d306ceee06326226b2788bd6d1a773c5b5e7aebda0d85",
+    "path": "cache/c8b46c176f2932f5387990d59d8cb82816248610687954638b9cd22c4c5aca82.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w13.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 94203,
+    "sha256": "d134f27f81efdffef67f419fe2a0f4fbd3be10faf43d683838aba97e09e20ad6",
+    "path": "cache/d3dfb76ddc94f5776538c7005b890b742c75fea220746ca273a175c77dba9cd2.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w07.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 293008,
+    "sha256": "4b72327f64908e1e12d83294ead9a206b8981d00282f02c519e4a2b381d8a7a9",
+    "path": "cache/b7b1e95f7df78e761a7327a8a31856c529539935d972678c591782b85a352112.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w08.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 548506,
+    "sha256": "b61356b9f1cbea6a6d4b714c56cf9632ca049217c41e5b99d836a1e250a4dcf2",
+    "path": "cache/d92670fccf7e647ec491798c70eade1232b82ae1f2aca3e6a1bb4ddc9a9ce43f.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/rom-haywain.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 624718,
+    "sha256": "37025d298e49806cef970086f3d9c9b0f70c59e527ec7a5c46965dbab8f4255e",
+    "path": "cache/5572f9648cfd0710fddc9cf71790946ea74a36ba0d9a541d2e96d8d46d48b545.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w20.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 98801,
+    "sha256": "1159d823064fcaf0e0eb201c96fd3b42490a24e25ade0308734e5812ab40384f",
+    "path": "cache/f845354dfdcedbe398c4d227f7e3c4e54118578f984f0211f94b2061b6b47388.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w18.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 487987,
+    "sha256": "096499cb7c1bff70de213a8f3f5f7f2ecaf53511402b9667869adf922dc8d9de",
+    "path": "cache/7dfd761912ef0b42077c9fdcc943ab9e6f5ac167e8b1f54e05614ccff97099a6.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w21.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 228616,
+    "sha256": "dfeb14797b321a9d388a6e8124f5e28c68b02a8112934be0718481dca63fd644",
+    "path": "cache/40bdfee479b56a56e3ead4daee7114e5d6bbf4b3bd984355f1e25a17001e7e53.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w19.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 317835,
+    "sha256": "01a1741e8372de2d64150ca95d21b038e69eb55f499ffb2d25f99552bb2a25e4",
+    "path": "cache/284d6c93a6ac24639286a767cc5a2ed62e2c6905a3f02a6fcf5c19300055c589.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w16.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 176957,
+    "sha256": "320ac2eee0fc0d7bd5f6872d6bad3619f6834ebc3ba86baf179c85650cbf04dc",
+    "path": "cache/f892bd29f27f19985336348d619cce7569139612ce4c33af6cb983c13bf3d01a.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w25.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 404941,
+    "sha256": "c3573ea5fe966fcc7014207dec9b4bcd3c7523988086e482a7e5ef63b2399bc7",
+    "path": "cache/056e4c65a3995f8718153ee1c95bc8ab34e578624db39ec240f78c7fa4c1e7e7.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w05.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 136484,
+    "sha256": "553b74647b5af2c2202eecbc4caebadb07dfe277caa6db68d7091b54481c3418",
+    "path": "cache/f4b59782423e0a53f8d120f215d712814b82c3fea5282a86a43b4752c15f788f.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w03.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 359946,
+    "sha256": "28325d7a1cf1396821b94003d4af8fe97e4282d8788891c20aa01a70f20656f5",
+    "path": "cache/722487ef7bb5a7308d7e586972a9e4483b693667745f0231d3069ae8c5a5789d.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w22.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 176562,
+    "sha256": "146bdfd292398d0eaf5003f3f916daf27d2f42990ac356337ff54fb36ef69cf1",
+    "path": "cache/5a313e44ab4c2952143d62ddecf1834f27b8bdadbef3b18cace989757d933bc1.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/original-swing.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 1892121,
+    "sha256": "0f8efe5f8cb808771f3b0d568d953cab54572f03515e8b312ba03df1407f0279",
+    "path": "cache/d4fbf3d76324e983d4c65ad93e7e2a2ef902ae2a0e8123917e745eb3ef00c46e.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w23.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 317835,
+    "sha256": "01a1741e8372de2d64150ca95d21b038e69eb55f499ffb2d25f99552bb2a25e4",
+    "path": "cache/2c91c9ca81e2e67da166871c8f1730ae2193a9482c9b269e61a687f52885c674.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w32.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 173030,
+    "sha256": "7d8b91ca7287c9172bf34bfa5b336085cfec4f53646b97bac77606f6872cdf74",
+    "path": "cache/ee20319a6ea96e3df3a7859e0f300e5ace824ca542cb67744cbdf91923e77fd6.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w30.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 381531,
+    "sha256": "a29646c34cfe4636d4f97e3bd6dc119b75816375e41c94fcfe76e34df5f5f145",
+    "path": "cache/26059175dd335ae98b4221a87d57b7870b37da363015b5d11f00db1b456c482a.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w14.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 387392,
+    "sha256": "5009bc94c6b8946365719da23f78102a56e8d5f9dac419bdf68acf4b89d06d3b",
+    "path": "cache/b5271c74bf48bdb54439603fb4c747dd7f2fe1e5d81793ce9683c3fc7cabc45d.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w27.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 289944,
+    "sha256": "a5c8d5a62393f4a2214232c146b097c1e0708f179666a343f68d302342614601",
+    "path": "cache/68ec386018ac2f14e8aa145bbd348695551e0c4a6891154d0bd62fec0b3274ef.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w12.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 361316,
+    "sha256": "cfb8dc59d36acc2d5c8694c1c746660fd471c3da2527c8ed8d318df88dbe8450",
+    "path": "cache/d37fd7573be0837edf8a77042546be3e373a5bf339b603962b437ffa45b160f4.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/ukiyoe-takiyasha.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 693945,
+    "sha256": "a746307e8822d57ebcde827af8915089adcc12f417270b09d75582d337156039",
+    "path": "cache/25f47a729b258fbfb723909be46b57a5f9b68364b9cfde2f8071178b643cf548.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/war-fifer.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 614884,
+    "sha256": "ae4f121607e7d40099e67fb959e584646386a6400d203c27caecb727dd66c837",
+    "path": "cache/b94077cef926b419f4d864b596c1ac9497360cbf76fafa266e33c001e51e9771.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w33.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 189344,
+    "sha256": "4466d39028291b1f19c07e0803feab9a116f98b05f99fadd49e3c2ab019a9000",
+    "path": "cache/8252d6a7d7eaa6cb6f695ef4955df4c0cc5ba69dc898ea71a14c759731220199.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w35.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 137073,
+    "sha256": "47b9d4b14506eac2edac994a04e6814e4d06a5c51904e447322717f0b3ae585e",
+    "path": "cache/5e466519ef653c35d8e0874ac77790b682997e29c839636db3adffc9f9bfd0de.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w34.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 372553,
+    "sha256": "f8382cedfdfbbb0e4e40de8abd3d73ee9a917ccf2ad9e3711e4688212dd60f74",
+    "path": "cache/9a5a8cef175707746f7217c8a38d8376ecd7eb19ed2fc73c05f694a8e89879e6.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w36.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 414359,
+    "sha256": "b51ff528f366542b23c6d08a578683ab322a33cd05306fc7f10688658abc7474",
+    "path": "cache/a712144896188d827d8d32c3481d378dad2a5d6f4d9c4744748a641beb6343e6.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/ukiyoe-shower.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 860963,
+    "sha256": "ea487fa880afe5cb9da640c2e809addd63256b2fdeb94b1f50be37ed6ff4bc15",
+    "path": "cache/839b9910067b1e32033b0b558c766302ec29af82e3415d6b789ed0b837010da4.bin",
+    "attempts": 5
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/hover-frogs/frog-02.png",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 420390,
+    "sha256": "58cfdfbbcaf4abb75ea80db9bd7e1165a7c5219202840c44bd535bece25aa24e",
+    "path": "cache/c69e8850e3cd87476c3618a93a333b2bd73513ebe48c2b2519d28d637254f34f.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w31.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 303735,
+    "sha256": "a01f08d279b756fe9bd124f1cbd6f95263d138abd574a5517e837f6ad43cdc1c",
+    "path": "cache/b65e50541e430f3b226ed90f2650f28946d5b20427ada19c920e4062c5aeff5a.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w15.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 225168,
+    "sha256": "c63e9f5f5adf0b4a356e497f1d1a9279cf84ff922d24f113ac8be0f5837c0f70",
+    "path": "cache/97d64f698f82987f60fd7fe0d7354cef35e9ea44abbe04f6773a94577d3dba18.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w24.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 395207,
+    "sha256": "672634e34a1b013ef4da018c3d86bfe86db960f4fcb6122cc34f94436e385f27",
+    "path": "cache/c5940f03ffdc0d1c8e199bd4ff4bcbc9e49ecc31a44ef60d202744bdc80ecb57.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w17.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 478375,
+    "sha256": "adbea9f32740723131090fd25d6b966f66fa3b9ee9b8d070f8df33c3c39cb7b7",
+    "path": "cache/58c92cdeef60e3c98ea3c7fb12f5bb0643b7b90d3e2989592640c84a9c78e115.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f03.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 48335,
+    "sha256": "fe171abafab6b9a467cc4c79a1a99218d68a50efd7f8d6a8547b642ecabc4a69",
+    "path": "cache/d4f6532615a01f53059a48aece1ec29422cd7a3ca243d132edad1dd4a0e06926.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f02.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 62043,
+    "sha256": "df0f98e1d944d9bb39e0608d6377c2343baf63abcd8b066643a827117bd4f319",
+    "path": "cache/a0f9154ad40ec8074a7519145f984c7ebb1bfad861ddaea4d033e4235cf38e94.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/hero-placeholder.png",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 539561,
+    "sha256": "2184223496d9748ed80ee4b380ed32b1d4e4d1befb645fdacba6388eef697d93",
+    "path": "cache/174ee1d8c6ff0d9d45fa4823609cebf0934a874f4916c55038753d2e84c60b45.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f06.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 66231,
+    "sha256": "d0f9ce3057a5e7aeb6310febc799cb334f16d718adffcda23c82e44c613c6707",
+    "path": "cache/3e54e8a5324a1e6d1ef7f64377c7b72a788630168bb28af21681e65c7d8c0502.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f01.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 87728,
+    "sha256": "6336436c2ccca712d88c60e45ad04f1e41c47a45ac6af84559b10fe089274493",
+    "path": "cache/2081eeeb8cb7d9cd58a1340697843966bc0d1b21c121102107c5b5b57c386b70.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/war-raleigh.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 274865,
+    "sha256": "658aed6ddad5420e55879de99c11170a56c41d853bd493b2c420193bcbfe8fe0",
+    "path": "cache/e59388b0bec4e3d361a0a433909f3cc81b880682ba95056204b93f53b0a11a81.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w26.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 311898,
+    "sha256": "612f6a2a205716e784e8718b265767a960152cdc335e2442421fdefe1a70b51d",
+    "path": "cache/c1bc4c13fbf31aa0059456b9ee919481b499811058fbf488f88e66227c1b6ee9.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/w28.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 367072,
+    "sha256": "3c0f781e9689a8234565a276fc32839489dd3d7ee9beb1e2a53dfdbd091f92bf",
+    "path": "cache/3822aa5535894c5e8e2e90df9a48c704eeb2ad22cef16f0cf9e43ca1e9ce33e2.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f10.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 57364,
+    "sha256": "0303b8ff19be052bea06069de141173bf5e3f9f853edec01efc89bc8f782d46f",
+    "path": "cache/e4e19f3f3716258f4cb45077ea7235ec681ffdd9bf22b13eaa80ae8a40820463.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f07.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 72558,
+    "sha256": "55727b457c524f15a519e3a7c011d62d6046d4acf32a5b2df9caf3175674a1af",
+    "path": "cache/e818b4b59a6c07c5bb868f595fcd1312aa274152f4596af63d241da9cb164f7e.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f05.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 70649,
+    "sha256": "439fe497c130b8da3235d06e03106e79eb317dd4dd99072ffda820cbe6a48891",
+    "path": "cache/bf9633c8b4690a0e922767972c73596ca617b53d8b1cd4eb6e5fbd6eefdbc5ec.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f04.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 70044,
+    "sha256": "a30d154bd084b6c4a2343ac316c6f852e2f452f680436355f129aba3d8995539",
+    "path": "cache/e3d49b6bc334f76b53b39bb76438ba9714f94becff8efa6aeeb41b8a65fd8406.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f15.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 43971,
+    "sha256": "159d3493a3e0063e8d6c9ef2927b0c97552f7e6439253b13949a71f9c7103994",
+    "path": "cache/5e64dd913b20581e86ed214087cd822c34be8819c2acc1fcfd41455d833852a4.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/hover-frogs/frog-03.png",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 487490,
+    "sha256": "2560779cb617cf2cf391cdb158d977503253250d604c0de38e8e8084669dd17c",
+    "path": "cache/7cbef0046e341d2b19c0155a2177a24c01d33111950cb10c9cb77da1ba7f63ba.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f18.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 55108,
+    "sha256": "726bbd7c2f0a15a396bde57bda6ca62f2202ea28ec3870f88d81035c27e774c8",
+    "path": "cache/17a61aeac98cb9c6a19cbd1c09276b2ca7c16d14a9cf2432ba723c19cc1590c2.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/audio/museum-bgm.mp3",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "audio/mpeg",
+    "bytes": 4955097,
+    "sha256": "0dbd0424576b6c61b6deb1afff3c0021352a7c19956af654ce59e184bbdad918",
+    "path": "cache/a56f27e1be908ea257fc5ee8395613bb7919286ed302606a0e721c8c1124a0e1.bin",
+    "attempts": 13
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f08.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "bytes": 86002,
+    "sha256": "cf1e73acdb6b41d6ad7075a49e1f5a1e313759150da842970b674253c82260ca",
+    "path": "cache/7dce0bd335508e596a6be2be5f6ff9e3fafb46bcb7d555a88b049aa2ec838c86.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f14.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 61780,
+    "sha256": "26a8363d7737dd42f13e85ae3b8c46ab7a865769b8568265f11346a77bf425b1",
+    "path": "cache/2f2ff8a6eed66641990ceca016908a8d6b2029edf0d33ee5453b98543552ea7f.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f16.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 98859,
+    "sha256": "0df89ca702dcd5194f72123f06c596e4071e9490166ad0daa3fe7a0867fc4ffe",
+    "path": "cache/71526b3a7b4094b6e352de7e32b16d759855bcf9525583f61c75cd4b9779eaa9.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/war-balaclava.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 341562,
+    "sha256": "a31c28abb3ede40b7fd20947e63ddf1457bebfd225d60e87d1e4a10919832aae",
+    "path": "cache/0dd9673c1f73924c6f4633c8b4814705036cd1f1cdb7152eb52ede40334db713.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f22.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 37970,
+    "sha256": "6a31fcc0377481d935552bc9eca94fb7ed4832eb82654ebaf4b5883bd391f123",
+    "path": "cache/2c1058d200b290ce3552676a44c1dfe5237044cc85b3add3dbc882b34fdc65f6.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f13.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 55679,
+    "sha256": "6e0419bc6a879de2cb5596f01bf5119b2411947912d8b4a2d996748395ef01e0",
+    "path": "cache/cb2dc9dc5fa0fdafb170dce39bff13f81b8d0ea6085357b41b6d3c1079ba8dd9.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f09.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 68546,
+    "sha256": "c32679f25578609857672a7610aca4377e1ca81487ec055aa5ba528f071b8c43",
+    "path": "cache/6d54b1ee03e02ba4f80a4e6f22a8a31eae4e80845490c58f58646a46ba946ac9.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f20.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 81255,
+    "sha256": "84d5fae5f912fc4945b041c65ec03ab062bddea0033140e94e5e8e81358f5447",
+    "path": "cache/2020e16768df2672924fb69d89f6eb002665ca52beb0d5f963ec52cd9e46aad1.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f24.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 76266,
+    "sha256": "993905824247f3514fd828217861e0dffa5e1e09312703cc9258d16903d3c0a5",
+    "path": "cache/49ea68f9f4be382f8df7ef1fd6d84af7f45ae0a658587b4b6bff9b8b0b4894f4.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/hover-frogs/frog-01.png",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 1523008,
+    "sha256": "c17180ce794bf02639b05559214673f355444373bc5d7d258265ef3e683dd9ca",
+    "path": "cache/fab60149bc755ce6cc047c4ca0f75e30cbb133779895081edc6d7916efa08485.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f25.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 116832,
+    "sha256": "63af579c1a365786d52e96109ef5a83a10cf85c3e4619154a51dad026dd4b48d",
+    "path": "cache/6c6e0121df538d22f1f8575e7110ba31c1807ec89939448d7cae1fc3f2c3539a.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f12.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 84548,
+    "sha256": "57c8954d9474e8022240bdd83b107a6e0bd3597482196ebae9563be8df8aa8c6",
+    "path": "cache/72194cdd03b31b71b2d11ebf24e46c3f33b8a90c9880c3ceb90c57a4b3c147e2.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f27.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 92110,
+    "sha256": "ba0196aec425c62e5d2bca39baf78c745d21233253265fd09cea2bb063552728",
+    "path": "cache/f7ebe6787c51f6f5fabcd0c43a31e4d54af545f748250bbea1363cac7fe386c4.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f11.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 60590,
+    "sha256": "f913b6b7b8ba09f67e0955ef3de83c412f0034456e50ad1fb6aa2f4fe7c449b9",
+    "path": "cache/ec086bd2d55107f0a604a536452de247299dd35b27e0a648cacb4b27b2b0a3db.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/favicon.png",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 11724,
+    "sha256": "35b4cbc7d4d5b8ef62413d622cceb35eab887fbcb037dc4034b209161d5415c7",
+    "path": "cache/3366de74d5da43c539c9ffd28574c587404ded92da93a686a30ad72ea09e03b4.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/war-prisoners.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 880332,
+    "sha256": "df1aeab1e7575c263c78521e6d87a5a8da6ad358550066124dd946d57bcd963e",
+    "path": "cache/d4d4652b54b414ac7f69e1d185610049af5dc0978d86e30fb893d783c7fe79dd.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/hover-frogs/frog-04.png",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 1588756,
+    "sha256": "5542a9cdcc5e0ab80f3cdc4c1e1c904d2288b5a4ddd38e3a139b0406b48dabce",
+    "path": "cache/d22ea7e8c77f7aa3c74c3dbad591d8df570ac4a9aea2709e472ad0cf7b2c90b0.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f19.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 52886,
+    "sha256": "71bd29aae1c50d452f0efb41e5d63c089bbff76eaf80115567d4e249e3a233a4",
+    "path": "cache/01ba990bf4f131be9d60d6f58ce11faafd6bb736d6eae6e216e006b068b088ae.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f28.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 96393,
+    "sha256": "757ce3696e9139a21ebb1127eba95ea741588306b41f25925e789aa66d3e9935",
+    "path": "cache/2d21bf8fccb7d190eb54f79294340d4b3aca9025bc0388bd43471cd8285ad330.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f17.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "bytes": 58368,
+    "sha256": "b9f16c0b4b62ff423be6e08fb6cb362901e2a8b10c01c41e3a915ffb5c29026c",
+    "path": "cache/2c5d067119dcd8c618eed85b8eadba764cbd3cd471ded521639edad59b052b4b.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f26.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 46849,
+    "sha256": "51290aaa9f7534aa3d9c51ab54f4a6397a9ca73d3de570f349cdd25e3673b7b6",
+    "path": "cache/fc15ca0c4ba9cc25575372269e29ee70213f6c87c7c9759c75d30f009a65877c.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/sticker-1.png",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 184675,
+    "sha256": "7efade7c0e1617f0bd8ae61b78712c80dfa8a068596d151503fe1286f5264018",
+    "path": "cache/4bb3776a0614194efb12da96bada1b2bfd1964d6c2942d608749cec4deccfc22.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/sticker-5.png",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 193444,
+    "sha256": "11833cc1ac46161c3d10f85fa281ab780f18a3660d8a7702e1e7f49699789d24",
+    "path": "cache/885f7e45b851b57bb53fea458ca8d8fd3002993a2cb9cea13eb59276b08e537e.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/nunito-latin.woff2",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "application/octet-stream",
+    "error": "",
+    "bytes": 39152,
+    "sha256": "20fc9b6fc618e7c3c68d3ac750a2a5dfbceb8521675458d2cea580b5693e4798",
+    "path": "cache/5601844710cfa2df8cd51ee8c85db0f475f4a2d907b638bc734752a91c566beb.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f30.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "bytes": 52380,
+    "sha256": "1e2a605ae7666d7dc4e3c978602150c84923870ce277738c95ff56f25bfde251",
+    "path": "cache/ff86aa32d329ebe2a8c2d0f155c89ae41defc90a877c7d552869f1c648733720.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/sticker-9.png",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 216674,
+    "sha256": "09361acea8a8407d5a07ff82138e871c7b6f0adabf0f4969e7b5768eb7bfe7a1",
+    "path": "cache/f555387ea40de480734f2a756ac5a11741df82050b82b5dc563f990c3f098eba.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f29.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "bytes": 64698,
+    "sha256": "25494d613904a0840db4ea03dea7dd2f2483a2ec70c027ee5d72b5fd69a62e14",
+    "path": "cache/f5809660229b3bd917c53d2a2d843423a64abafd9db30fb26628f996b28406ce.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/sticker-2.png",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 179921,
+    "sha256": "bc0fc39f30641abcb7a4f629b929196f18902c51d1de405d2c0fba7e8faff14a",
+    "path": "cache/0da75b8b3aff344299af583f7d0242b70b575dfab66c9abad349502ca96e12a3.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/context/works/war-horatii.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 935430,
+    "sha256": "b2d8ec2c34112c1b2521083f798c505025e020dc299d8cd5b7555bd2ee0bbb8a",
+    "path": "cache/205846ffe6944c19631dc58ac0f3bdd81d4d4c681486adcc6d26efbc2b2fa907.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f21.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/jpeg",
+    "error": "",
+    "bytes": 69878,
+    "sha256": "b6ceb816bbd70a6c8bd9759dad55a5f1776a198cccdea76f8534801853f35d0e",
+    "path": "cache/a79428d9b8e6ae93995b16de8e2d7232a06ddb25dad126a9a616e0fe0e933903.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/sticker-7.png",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 205466,
+    "sha256": "d3ae1de51d28f6c1d2204b9150e8b57d46d5a86a223d28fe4631d427e7f2b240",
+    "path": "cache/91e240287225f9e3fec8afa61cafb292966672791d8f7c2b63614bfb9bda6477.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/armored_snail/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 403612,
+    "sha256": "75ef7592b5d22c795ccfd1c31a43304275a9c59fe3e7da6ab86c95d62aa38da0",
+    "path": "cache/7a85402ff434faf6a6ed6f19bfde851e4922f6d6b817e0e256edd2c9e0820ab8.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/environments/battle_3.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 423490,
+    "sha256": "6130fb0bf9132efccc6a89f32c03f0fafe4054f80dc75327939d01ebeab7a32b",
+    "path": "cache/f3ef8151d267f71670e70a647409f646e6bc89a26709a7cbcf2b9fc3197d3b48.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/environments/battle_1.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 509178,
+    "sha256": "95f343908e987ab345d31e121b22d085f454e067172395c792903ec20c792edf",
+    "path": "cache/81c1c5e2eacb90be4594b5ea0400ce757b6b3a88fc2c88ed46ae37e777a261a2.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/quiz/f23.jpg",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/jpeg",
+    "bytes": 58426,
+    "sha256": "2c529746c11642f670336b3488f012eb51c0293a38a524c09e7eb975ee1adcda",
+    "path": "cache/341ab1e61aa17b8f790858b5e71be2a87b0d92edd81089316a19d275dc53160d.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/environments/map_1.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 384876,
+    "sha256": "2e039153fdd229638c5a59f74e28f856dfe58ea7d6b51fedddce41361129a1f4",
+    "path": "cache/ae09f5df2983bfb4e7c6b191a5bb01930c0555df8aa2a30eb5e67aa661d6f2f5.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/environments/camp.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 568100,
+    "sha256": "2e15d7bf938d9c8a5ded3b0db14238c4c6aa473b97faf308bed7c223e54ce248",
+    "path": "cache/b0c997dfc7f1fefbeb6dd11e63d1cfea5bc5e6d8ea81fc622e74ee4dd6009485.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/bell_moth/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 448532,
+    "sha256": "f6b341933541963a9a4515e3055b32a12b48cc2ae1308d6afd9e5ce226f23915",
+    "path": "cache/0f9820e1c287c0034504ae7135a5131cefae53b3657a1b99b8bc6ee0dbeebdd7.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/turntable.webp",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 144828,
+    "sha256": "5eb1e71ed393de7b9fb041f4163a394579cfec016d8119bdcfdef251e5321c40",
+    "path": "cache/033ec18c11ef0a693843285b05839d04cd42df9f4c510dd1c99d879450c83aa6.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/armored_snail/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 599270,
+    "sha256": "7b3256f0525dc7bebdb0c2704d7050886be5892bf2f61068418ebd213a6cd66a",
+    "path": "cache/3f0a11c50e2cc20a8c82f1e9408a588e8fe0ca06debdb501bf5e1b910c415531.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog/8c27a0f17a88/content/assets/sticker-3.png",
+    "rooms": [
+      "factory"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 173254,
+    "sha256": "688d234f85c3fce5661ba44fc5761536bfe2579e180139397ac0b15763f4a39b",
+    "path": "cache/8e29d68f9b6630c3ab9816749ea0ac3c8b211fb590cb857833eadaa70473a33e.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/environments/map_2.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 336948,
+    "sha256": "e5200fdc7defb9ed87b5242e8b6ce61b831082e08dc6841c0ecf28c34d758312",
+    "path": "cache/2eeae622536f90c70e132f583fd8a0d5d4c9da1abd00caa09c7e3035638f4351.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/bell_moth/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 537156,
+    "sha256": "2a2f7d7614a3c9f70b85f288dbe33108603a63191b40b94255a0557a9a0eac36",
+    "path": "cache/d23393575211b15ca4a47e482c2cd73c46e58ef934b4572f24eccbece6215885.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clock_tyrant/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 315534,
+    "sha256": "369230ddb92a6c31d2fc2432c6db4a661307a62ec2c2a08aa0a48e65076fca61",
+    "path": "cache/bcefb15c7a336203f53b32e804fce8be23454b1f2b8e55facb845ae89069234e.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/environments/battle_2.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 402226,
+    "sha256": "ff8300501470ee9e6058482b1d0318b6f650a643e3b77dfd91aa361edebfb937",
+    "path": "cache/67fd897548336200206bf070bae4b201d8ce25a89e8321221b440d0d386ae3de.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clock_tyrant/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 445274,
+    "sha256": "f4ab6c3abfc8b441fb5afc9460eb992110124fe3c88ce17145473366384a989f",
+    "path": "cache/1cb42c15b77b09eef6753405691ecaf46d1999f99b4c85d6ea2d5183fb650152.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/bell_moth/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 525880,
+    "sha256": "8db374a4bf3ca440be22182a456ab2673fd89aee27788c0568d3dd0b3f55a664",
+    "path": "cache/74dd330a6ab376faf49cf4da904a7c8397bacf44a5bd3793e9531ba86afe71ec.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/bell_moth/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 221982,
+    "sha256": "30ad6ec51e075965251a15038586cede37a6b0a7ca79eca392c8ac9cad78e2dd",
+    "path": "cache/405190e7bccca153d4c8ec98f193ec3bde2fb5c4e85e76345713de4b229e7c75.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/armored_snail/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 565164,
+    "sha256": "8e5e28fff5d2a28376abf5a91a6bc29cfd38cf438c598a469eb4e45ec9dd50d1",
+    "path": "cache/277362e2d5441a4958fbc68572eb383a3bb32d1407f0f43e504204dfe65aecd6.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_crab/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 283182,
+    "sha256": "a46ea62cdf21c91144f026767156467402a23ae1e5be352b07b56f9f959b7525",
+    "path": "cache/e22008d1110bf78929bb8b833ba5b2982eef8e483de6a28a74e7aeefc4d9b9f5.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/bell_moth/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 427236,
+    "sha256": "12b3906907534e179926485eb598bc0f5ec8b1dce60c511ec051f53d7883dd14",
+    "path": "cache/5e79817d2e8b734a658b97827574f72ea0ec4863f51838e5118fba7c57e5e795.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/environments/map_3.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 444772,
+    "sha256": "da7013e49499a0bd5e9f2ed7259a3325fd346fba905a6daa89053c2e88b0b0b0",
+    "path": "cache/e5e124bb90bdbf983858567290db7135317e9d682dae4bb9b94137fe2c7b385b.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_heron/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 463972,
+    "sha256": "fb308c811d0026abe3be54d884bfe686e04b14ce5fa65925f8314702343423a8",
+    "path": "cache/f0daabde6d85fcd9122a051ec88014ce2e504e3d5454e5d31a3fd339edb0b021.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clock_tyrant/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 292552,
+    "sha256": "d1b96a83d14d24e005d54172e2ca72ac081b3c6ab3d87d50a03655f533c338ff",
+    "path": "cache/b0426a0ec57a02592ef681a9d00cd9ea10ed209707f37434715b2e3a8505bc0e.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/%E5%8D%A1%E7%89%8C%E5%9B%BE%E9%9B%86.png",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 2718453,
+    "sha256": "755dd2e62e424075624b61d49aac6964f8f022ee712bf11f6240779f395d464f",
+    "path": "cache/b9faee0c63fc29115b08bfc9ecdac509818082345fcbbd2b9c661516cd649c4c.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/frog/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 145530,
+    "sha256": "974327ba2d68fafa2cd8105c8c9a3906392d47fb60bd51bdd0e79d5043c246e0",
+    "path": "cache/244bfa53b0f2090cebae141a436f08b1fc12d1a3db95d7431e2b931df764bd6c.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/armored_snail/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 410628,
+    "sha256": "6a645a6b066a44d3abf8a90953ae0e4bce202df574a4762ae309b21e2044be8f",
+    "path": "cache/2bf551b44e198e81a8677284862912db1bfb36fe16dbc998dd9daaaa950970fb.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clock_tyrant/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 392750,
+    "sha256": "2fa535e7f2598bb51dd1a628d3097212f13302c3bb4d7056196318cbd39f1ff5",
+    "path": "cache/7871c5617decce20f181ca3f432d84c18b2e2d745aa35dc1900b946c990cef56.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_heron/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 235654,
+    "sha256": "3b677701de6fc3bf438a28983c2808ca775149f3269eedee95d149d067e73428",
+    "path": "cache/5d660a73b4023bb0ca629627b25ae4cbbf8920341983a3af84904aee0f6c0acb.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_crab/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 425648,
+    "sha256": "2fff0befed9ffc5801999595dcc223e5f52e732e1fcb384f69ac4eb0abd8b765",
+    "path": "cache/398c6b0ebd4ab8e81d6a4cc1da3ffa33956c6f08a6fd126b01a57e1ad9e35dfb.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_heron/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 263266,
+    "sha256": "691cf0cdba73023f1413c8506e7eb71af9dc8aed05def757aaf42c8e8c7c7649",
+    "path": "cache/5c3e65e04fbf4f3870e9343a27cca94f3a180a7b0896af6fe0063cdb4eaedb3d.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/frog/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 328656,
+    "sha256": "9c7df3359bdee9495ed2ba5dc9e0aeb3557263b4f50c09a21c715f7a1e4a1da5",
+    "path": "cache/8d1269379d2b4423eec0862cefa6046de4effdbd6bc3148c5fbf279ac655d1dc.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clock_tyrant/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 429246,
+    "sha256": "617b48cd400547e1ff0a45a416c748a0c973a6c1d7fe6d850406ea27dcdca9ed",
+    "path": "cache/3e7452116dc2654e235c5f9f4adf167defe53220274d1c2b0d2083b027337687.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/frog/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 234782,
+    "sha256": "a3b89f6342080991c968dd7a2208742deb96b850deff138a4552dcb5804ef9f3",
+    "path": "cache/e66666efb4b3d2e9329521e4769477f097fcf5cd2f7772f8ca5ad21be3113375.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/mist_wisp/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 409482,
+    "sha256": "cf6f6870482b2b248859a49dcd513a5cbd495dd791d46e9e1c47d9ff08eada95",
+    "path": "cache/534cf9ad74efecba0d284ce5c59bfcfe65d8e8f1c0b9bc182b7694053d17da78.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/frog/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 295454,
+    "sha256": "0d9ad368a739a9a3f79f1e51e6fcab438a037c0abef47c07f70444c5e3c7a1e8",
+    "path": "cache/a2cd5c1778a1dc8561d790533130a498b8f6cca4e751bcbf187d53756ae218ab.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_crab/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 283518,
+    "sha256": "304b344f7f4e05e597ff289dba9d61ce088f2076f3b36c3a42cf0fc3ad83bff6",
+    "path": "cache/ffcfc6c68dd29959eb21218f9995958140b2ff59589fce8ef5166ede76805cfe.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/mist_wisp/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 238652,
+    "sha256": "80d6ca5890c034e37669bf8a9e116e759079e8a248757d784fd141833f50489a",
+    "path": "cache/b28b3602e96b32330d6390b85c223ce30ab4c1d22f22fa474245458271cef593.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_eel/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 323050,
+    "sha256": "300d7eab7862da9b6a0d7ebae574040077fba57b514aea21e51dc82cebc5a7b9",
+    "path": "cache/abe8a66e4c628a5bb84686680d40a15d045537b6e5db8d6cf3fe64074e592c1b.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_crab/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 386584,
+    "sha256": "b1e201dc50fabedff49fc25b49c4a5076fd4ee8d719c4ff019e62af3bd91ebbb",
+    "path": "cache/82902430136942e5bd4d68de92d3e99ab0725ca8abb8022c3315045c3c6a9174.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_heron/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 357474,
+    "sha256": "a7e35c064d235599aef04f611ab2a29d67e6c934947649af370fceaa6213333f",
+    "path": "cache/d9374aec8daeaf21298068aca362edb264c30ded7350fa090fda170e0444fa45.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_eel/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 518640,
+    "sha256": "ac2ae0678b2577ad8971403096361581d7ec57c603d0f8b8a58cc52a2d17883f",
+    "path": "cache/434d3f25c1ebf77516f3609d29b789093ddec4f1a454c4e0c54c2a80b7ddecd9.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_heron/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 354520,
+    "sha256": "fef41c5889ad2be73ca7a31fd7c8a6e1b051c3d41633f2b474d11688af33b0d9",
+    "path": "cache/a3c4fc8a18f376d3dbd90e078daabd9f7f00bdb21d5c67739299aaa4149e87d6.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/armored_snail/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 528854,
+    "sha256": "a7604cafd49025f08962f4b83d1f1bf698a8b6ba5e2070f1f59567a626fbf83b",
+    "path": "cache/776fd58f8e07ef82bbbf47c45320b61570e51516585907f34dc8c69712ccfae4.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_queen/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 505484,
+    "sha256": "b2b3196dd28901d0c41f694730efd376a0ac5c3d657c8186c16440979a334938",
+    "path": "cache/35b1796ebb3ff19c5a14d1b70f0b12b8fd6592d2cfc080aefb2b29489275cf3d.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/mist_wisp/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 396796,
+    "sha256": "884db51bfeda35b1f9f6f0c9cfb7d338447ddbc9a76edb712bd6e9cc8a693b8d",
+    "path": "cache/9e782df4f4f14aba5896bccd42390e8f3cf1ddada360c50c8880e3fd1b7778f9.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_queen/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 598612,
+    "sha256": "fe61d2a8d60ea554b5bcbd9e7c9919f629c616c4475c8386be6fca8c7f196b61",
+    "path": "cache/0618629f6f9ddcf1fe18a4fa08f5f707a8162af6288ba252166789a80d8c3c0c.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/mist_wisp/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 440810,
+    "sha256": "ae927f4c1b2a15d9da7a71ff0aebf34504556acfb3c0d848482ac56b91e7427d",
+    "path": "cache/ec3676c06bd87b640d92c42cd20856c8aa4f1f5d72bd59359f14c79fb5f6acb4.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/mist_wisp/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 442776,
+    "sha256": "df76710c4b1b120de001e472474d690968095792814ffd6fb2301856e1d57f32",
+    "path": "cache/8dda8078e663ca353826b35ef06cde32aeac6426876c64a2308b697a8f12e550.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_eel/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 601922,
+    "sha256": "dbaa6e5fa9de0fbf5bfa78ae623ff92c68b586e6b4e541dca274ddd0e54b54ab",
+    "path": "cache/6b998fc2a2d7a766ce393151fd694b39e05fafdd474352e9d799d88dceb780a8.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_queen/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 454630,
+    "sha256": "c5ef21631119fb88216f587570015757fb6dc9974b8a47eefd02358c4c96c693",
+    "path": "cache/b090c369b6b6e939202b05717734b63796a2cd05083be9ec04870d38c8ec7eb2.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/%E9%AB%98%E5%A1%94%E5%9B%BE%E9%9B%86.png",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 2800260,
+    "sha256": "fcecf0a19e746e77a3803fd1d6b55fcac4ec8a8644220619d07510a39018c075",
+    "path": "cache/2703d7cb97bc6f347ac59c431a9e437178439799484c054fb752029323f36097.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/clockwork_crab/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 479846,
+    "sha256": "3754bbe59ed140ec0de93fcfda965f91fbd5f18262f9fd4578a4ed3a19326dfa",
+    "path": "cache/955d18d9eee03ffa5b83b6f29be82eb5accda0438be5c188b8652106f12f8275.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/pond_slime/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 566414,
+    "sha256": "c163888a475c6d9acad455d2f6d0ffdff7fc457b2625a567a753677640a63f69",
+    "path": "cache/bedb6e42ed2311597ac747980783be6d36bea09fbd7798bb19bcbab2caed13df.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moss_colossus/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 519514,
+    "sha256": "e766b87a344243e650615089f7c8fd2204e59ea110d4697cfcdd732a274c1e62",
+    "path": "cache/dd65b0c76f30c72b61b267bafdf6add5752181072e18d7f8ad98ed66f7e1c6a2.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_queen/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 573574,
+    "sha256": "4ac3926e2033fe9d766b1f856bcbd75220ac93e5cccdabfe74f9c08dba8e732e",
+    "path": "cache/b8b9ef72750457d18b4a3337bdd4c2956a7ff7eb5be61cb81a61da17927a0a1f.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moss_colossus/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 784706,
+    "sha256": "1c61de596dee3fbdd1cfbcf7d89064bb15b2e69c018d3255adb7e7246b509bde",
+    "path": "cache/ce8737c68e8e71e1ab76e49952084a2dcf9db67d4d3879d07594620b9c0abef4.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/frog/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 287186,
+    "sha256": "3cb215d8ef8903df7a65bb94238e9aaa529615d62cf4b8fd034c7b68cca1356c",
+    "path": "cache/679d6a8f6d324e7be12918bd46bc61d3264cf0cb6e41d85618b2bebb97e8027f.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/pond_slime/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 594840,
+    "sha256": "c78737951916ac548fa87bc21bf76bf78f40e59ac6d3007ea5c0b06a094d95c2",
+    "path": "cache/6731ebd1c28aed294f64a6718f20324dfa4575bdad14db9f68cb1ecc5030423a.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_eel/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 583994,
+    "sha256": "6d4db47b4063459ac9326cf5f9f8729557c8d4959c1f35ca74b2bb780ed295d3",
+    "path": "cache/e87d3d4d88cfad5761294bfed6e5bfeed0ae6bbe82c3e75dfc7070b24dfdb335.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/pond_slime/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 482936,
+    "sha256": "302b0f9a14eedff49ab8d2883cc4cc58505f6c5253945f916b4424b2af29c7be",
+    "path": "cache/90abd5f896eb4eadf836a70d6f39a3d80b2c8207a2f04549f7dc399aab31ba2e.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/thorn_beetle/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 346450,
+    "sha256": "5519ed7242a242fc4aed1c567c56705d680eadead9e4bfb451883d2fc704c3fa",
+    "path": "cache/0b09b26f420c2690abe9499fe59f573d9dfb6520cdaaf7352cc18a67e8ebc36c.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/reed_hunter/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 309674,
+    "sha256": "4e09ff9d56c85790b7461bd1c2b808addcf4e34c04b42eb3ea4b41955953ae7a",
+    "path": "cache/2bbd755ecebca44dfeba308f1f8288d34cd42faa83ccc2cf487b9f5c9f287ecd.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/%E8%8B%94%E9%98%B6.png",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 2731877,
+    "sha256": "e334b748465b08c1c5dd086c90060d7fc4025a50ab0b023328a63e0175363694",
+    "path": "cache/e149fde7855d0813d7e40041de352d1ca56a332c3452ad20bbd396c1d8d724f8.bin",
+    "attempts": 6
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moss_colossus/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 597680,
+    "sha256": "4a0243c35434823107a6b722a9f084aca6b83e1d159be72d3366cce1f2621542",
+    "path": "cache/d1f681e253fc58036c33f1e1fc2ca153fddb627b12aefeda4829c6fd2fee2752.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/thorn_beetle/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 352640,
+    "sha256": "0cd8a0d64bc533061b4442861dcec6aa14aed0ef6cf6af05bdbc859a62556a14",
+    "path": "cache/df2e9b817a11c768c1b5a16484b3627d6ae2022ece4a4894e0149dd97cc64f60.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/pond_slime/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 676274,
+    "sha256": "04fcdd6f1689f589dfc36e4ed7aa67d6b04b27c58c9ad768e08c2ba336a3ba9f",
+    "path": "cache/8262563d84e2beaae6d1a71870d6038912d822bccecfbf50e349f04b926890a8.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/equip-hat.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 24453,
+    "sha256": "4e1f5fb9169b5d74f6d537490ba40223b10a1a9e24dc6ce0dcafcace867ea32b",
+    "path": "cache/49f532a63fc39a9aff052d93fcae9401a932a2944044b15795f4ab23f643e782.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/reed_hunter/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 269854,
+    "sha256": "6f72d3032f12737add5bcb35ba77b90ca69d94215dd138baf54379d0416eb6f6",
+    "path": "cache/aa1413d13025230fc2b809361430c374de37cdd3565103d0ac9f28ccf593b71f.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_queen/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 444188,
+    "sha256": "b93c5060001002491fe90d6200f91623b1dde24b9fac332fef40d6a5b4def2a1",
+    "path": "cache/b7c294765e72d02a7a9054aac5362df087b07995bb6172c3d2e9dd3f06f202b5.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/equip-bag.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 30669,
+    "sha256": "548d8a1a052bca3093707041824960d990ffaf5040a5a21e6af2c73125147f35",
+    "path": "cache/593be6e46e299f75a3eccfac27613aaefba322b8cf3505aea3961c7cf014f5b2.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/reed_hunter/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 369748,
+    "sha256": "020e5cb19637c4f69aa09b934d596e5fb4ec7da90637871dbf3073e189469ba9",
+    "path": "cache/2db8cf2c16a4d93328319b554e4a126fee246015f396fea24adab033b437b5b1.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moss_colossus/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 670046,
+    "sha256": "7c95b4fee0d0e74d42bb5ee045a8d13a3b50cc0ccf1b4f84bf14605dc96c9268",
+    "path": "cache/b521ebac3df263c1ec7b230a9a97afc02c411d1f3db505751de386cd6d02065e.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/reed_hunter/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 384306,
+    "sha256": "2a8976e1103e62b2917036e4b167014cc7bccbc94f6ca0c772336093a69dffff",
+    "path": "cache/c4d276187641116a67a5694019997c5988f71827448881d11d6bb141175c4143.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/frog-side.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 52776,
+    "sha256": "f0b19253f385937ac2ed6bdb6c840faf4bebebd67006ff436e178576ef730d86",
+    "path": "cache/bc97722a045081ddacb436d0530231f09886852399c30646b572cca954329c4e.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/equip-scarf.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 36263,
+    "sha256": "283cba4a369519670bab417a605b4485a7561fa66ab1e4c77b3329d86d482778",
+    "path": "cache/233a72b3a828a9d22f6cae4a6a9de86a85b5e39b98066122b614303290321a73.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/frog-back.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 61983,
+    "sha256": "c92f0ec4bba6ef1ba3de452943b215089af4be09b2aef110f17d479967575461",
+    "path": "cache/af437bc0a24ba1d5275ad6b9067c59234db18307c1b235af2aed7371a6b4c043.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/pond_slime/attack.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 721248,
+    "sha256": "ec7c8cda2a84fb181808ae5b33a3115dc188b870f9d1aa79eee9b8dd89790e65",
+    "path": "cache/d1dc4b53bcba5e545c5f457f28591d9dc7c336f6b2ec0b8e73d1ec95ce83a2f7.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moon_eel/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 252070,
+    "sha256": "bfa4b352de5b39d62ab3ef01601a413ef3301663106cc9d147069bab68fb6d60",
+    "path": "cache/0b6e3a119f965f3427f606fdc440f56847ea1119c6a7aafd1b08f1ca44b06a45.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/mat-cloth.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 17418,
+    "sha256": "f86ff5e0abfe88f20e81750ecf1fd341db5dd83c8e60edceabec63c4707ea3a7",
+    "path": "cache/92060b914fe5cc3af4ff3b6292be9b4e8c4d13b7c6bcfb0702f6b900c420f9f3.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/item-carton.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/png",
+    "bytes": 85116,
+    "sha256": "ef58ff3a05888bdc55f7b600e986c1e4f2f17db0b0d9aacf1dfa956b0f206e4f",
+    "path": "cache/33bbd0bd95875fc7b6ef2c45b03961c8af7b8989054e78753d86b1f3f9900a32.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/moss_colossus/hit.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 653234,
+    "sha256": "1a934345660296484b3aaba8028ed121a83bf4d4909b1d6fae466f93b8707897",
+    "path": "cache/de96b2b17a47c660810fe8f4e8b5d91fe7b920133166f3b393c6060203174db5.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/thorn_beetle/idle.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 346714,
+    "sha256": "05c5886ae5b4d22567f0958e9f6de8cf16340a2c82d9fc7503b5176582872a3e",
+    "path": "cache/4883ec20730f5d3dabe0ce16ee3315844000170176a391ca5dd6cb8d2d232384.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/frog-front.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/png",
+    "error": "",
+    "bytes": 70490,
+    "sha256": "c1c75e2097df3f336074b540daecfe3ef76174a4b2802230e6a3dc02a798629f",
+    "path": "cache/2f9ea68ea48ccfc59f2a3069b7f77805b1c3990d50bc03da76f278c58c774f30.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/mat-wood.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/png",
+    "bytes": 26672,
+    "sha256": "847a388c2ee6f5957332f0b0db83c754a2c70d4318112e4110aae65a46128775",
+    "path": "cache/08f349936a6fb77f4a297275e070a60d96fcf0268e47568c54995d2dede581de.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/reed_hunter/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 480612,
+    "sha256": "e8de93f50e245429b8e8a69edd31562afc018b54a7d5b82b93e44abe6a48b6f1",
+    "path": "cache/7d386fcebf8a8a944f348bd4f3ac86fb5b29e5ea71f3682a6ccdbb7ee458ee8d.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/equip-rattle.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 15794,
+    "sha256": "3ff6ad5433fdaf85992727a7de976c80de3dcc38ee8cca42b3e6ead3cbdb67f1",
+    "path": "cache/fbbdb05e2842331a442cd5656f81d5a3ae0e533444e76ac7a7dc9e69a8abcc08.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/travel-market.webp",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 103790,
+    "sha256": "a47b608feb54925f09a4764a13a0e821b568ed562623a6427ef41d1194830d07",
+    "path": "cache/6bf462e816b2b07a29506518f1bec738943a55cbb651502a38adf0dc86e51a3a.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/item-leaf.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 76712,
+    "sha256": "99447d1915446d5274046dc927499379707abb3a98124d14a09c47019bd2bcd8",
+    "path": "cache/5c6c43c32c51eefc5a2532d3500216efded06155a6a875a54418083df07c470e.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/item-shell.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 57055,
+    "sha256": "3a9c2def79166d20db1c0cbe31c3cdd783e7b42a323f740c56be20672cfe71d7",
+    "path": "cache/c12cfe2afffcb325fb35247c010f89647ada19bfd697b3d86a2d883fd17b4081.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/travel-beach.webp",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "200",
+    "content_type": "image/webp",
+    "bytes": 34204,
+    "sha256": "58c26587062458ecf72385e1dfc6cdaca4469180a7969aa6e55e7ef2386a56c3",
+    "path": "cache/90d455c622d192234a075f26c6a07b41b8784fd7b3a1e1cbadd32bf1e9849ce4.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/mat-rope.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 30304,
+    "sha256": "c0910b8d6854a962b0b2e609e959eaeb24f14f9365e5eb71fb3333b2e7cdbc3b",
+    "path": "cache/29ed65ee1cec2d724b92ea9dbb2a0ae2ec043baaeec841d94ce89f76e2c6fea0.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/town-isometric.webp",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "http_status": "200",
+    "content_type": "image/webp",
+    "error": "",
+    "bytes": 91816,
+    "sha256": "a728b20e2905e5d59cb5d20a295b44b88f465c7f2e1cfa0647b5af6b9231dc15",
+    "path": "cache/41b6a965b31f7c69d32b2ffa61ae589773993eda211ec37b5fbc26c9a89c6308.bin",
+    "attempts": 1
+  },
+  {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/assets/hero.mp4",
+    "rooms": [
+      "main"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "video/mp4",
+    "bytes": 7915659,
+    "sha256": "5c00a4f81f97c68a1bff52ab6bbe6b9b16c5fdbd3bc559aa6aa2b450b5f21f5c",
+    "path": "cache/5fb87c2bec363a4bcea11a03781ca7232e6e5434fd6d4cb0214f9a8000d0d63e.bin",
+    "attempts": 10
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/thorn_beetle/cast.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 235000,
+    "sha256": "058af5cc97776aceb1ee66d8d131cd7f18382aa61c24d96e4170a2eeecdff4ff",
+    "path": "cache/de17c1c173acbe3007bebc3d45fd54c9c1ed6cb14bb39d7737b1f3bb1957001c.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/travel-forest.webp",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 135456,
+    "sha256": "fd17a51183f059c564457882b955521da2bdea35db209d4d0103666f84504edc",
+    "path": "cache/61a5e1fe15b5207e608167687841f2b9d1a6dc744a89ccdb8f8bc4b8c51d2605.bin",
+    "attempts": 2
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/sprites/thorn_beetle/defend.webp",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/webp",
+    "bytes": 441282,
+    "sha256": "25bcb54857b879c3e546082444a902187bfdd0c7e418126f68d65715e2369333",
+    "path": "cache/893082090fcf136bbad78bbcf7a0dd347e3df2f686c730793a294689fbfb327e.bin",
+    "attempts": 5
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/equip-necklace.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 18605,
+    "sha256": "69dc871e3a1f7952459280ee5a7e0ee16f0ebecd1553e1a7274efe0048a07297",
+    "path": "cache/cd6a38de2aab7ddc900af6d371d8c247d996433756309cecd46fb435a845538d.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/d8386a89-4a09-4470-9b8a-5bebf98572b0/naiwa-town/502d979a5c76/content/assets/equip-stick.png",
+    "rooms": [
+      "town"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "image/png",
+    "bytes": 14021,
+    "sha256": "af230a43a2c0ecbe4c300a9c94dde85ef93c92625c9ec392c3ff8c326192f3ce",
+    "path": "cache/7e86e6329e326efbdf3d2be0b8e9ee7115db10cf3a7bc6b7619deb78eb51d61e.bin",
+    "attempts": 4
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/登塔.m4a",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "audio/mp4",
+    "bytes": 1989952,
+    "sha256": "1da0631869a9dcb5036f061c0ace34b5a645623b9e320987abca25e5fd519aab",
+    "path": "cache/6530bf4cb206e1d32a3d97f59ceaa2e698e37d5578eeef7db8203a0fc57dc0ec.bin",
+    "attempts": 3
+  },
+  {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/assets/决战.m4a",
+    "rooms": [
+      "tower"
+    ],
+    "ok": true,
+    "error": "",
+    "http_status": "206",
+    "content_type": "audio/mp4",
+    "bytes": 2230864,
+    "sha256": "480df8f212b04115f354c935c966fc8a503e41e45be9b4e3d1804d9c7dbbaab0",
+    "path": "cache/9fc974597c358fa8368c86119a8bd24d27fd18e39373a947e39e9a2c5a978b66.bin",
+    "attempts": 3
+  }
+]

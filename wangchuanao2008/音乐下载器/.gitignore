@@ -1,0 +1,20 @@
+.venv/
+build/
+dist/
+*.spec
+!音乐下载器.spec
+__pycache__/
+*.pyc
+*.log
+validation-output/
+.DS_Store
+.env
+.env.*
+*.jks
+*.keystore
+windows/wheels/
+
+# Local environment and generated caches
+node_modules/
+*.py[cod]
+!.env.example

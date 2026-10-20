@@ -1,0 +1,27 @@
+{
+  "description": "奶蛙电子科技大学 · 首页与数字展馆",
+  "miniprogramRoot": "miniprogram/",
+  "compileType": "miniprogram",
+  "appid": "wx44f0c2f018d36fbe",
+  "projectname": "xidiannaiwa-miniprogram",
+  "libVersion": "2.20.1",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "uploadWithSourceMap": false
+  },
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
+  "isGameTourist": false
+}

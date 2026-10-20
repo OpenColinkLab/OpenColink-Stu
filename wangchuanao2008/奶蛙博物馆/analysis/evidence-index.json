@@ -1,0 +1,333 @@
+[
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/rea-outer.json",
+    "evidence_id": "ev_cf9c5331f28a937e1179ff2a44146fa6259e218e75f262cec53ad446adc09673",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "incomplete",
+      "equality_eligible": false,
+      "missing_sections": [
+        "events"
+      ],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Some network requests had not completed when capture ended; later activity is unknown.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/rea-settled.json",
+    "evidence_id": "ev_3107eca494413973c50d788e0f713a8d7efa9118dc03739aedae19f7cc939f43",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/rea-static.json",
+    "evidence_id": "ev_58c4adb93006f957d1d453a02ad75e931c4e2274e9dad288ae762343ef852f88",
+    "operation": "analyze_javascript_application",
+    "completeness": null,
+    "limitations": [
+      "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+      "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+      "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+      "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+      "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/rea-desktop.json",
+    "evidence_id": "ev_810612188843c2ce3b82a23df7df3cbec0369ccbef72636c1d89cac225e097c6",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "incomplete",
+      "equality_eligible": false,
+      "missing_sections": [
+        "action",
+        "events"
+      ],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Some selected network content was unavailable; per-transaction content states retain the reason.",
+      "Some network requests had not completed when capture ended; later activity is unknown.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/rea-mobile.json",
+    "evidence_id": "ev_7c65e5322a68d16dbaadb546b6fd4330a24ee8169f80701f23dc4799f9ca1315",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "incomplete",
+      "equality_eligible": false,
+      "missing_sections": [
+        "action",
+        "events"
+      ],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Some network requests had not completed when capture ended; later activity is unknown.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/rea-mobile-extra.json",
+    "evidence_id": "ev_4eadccb9cc1abb6de60938db265a84aa1edd196088a9b96be26e568a47ec2dda",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/rea-interactions.json",
+    "evidence_id": "ev_370f78047e311edfbb7ee75fcfd61c791773298d98d5986398740454c81bbe5e",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/rea-static-summary.json",
+    "evidence_id": "ev_8ce67f06f7001b9fc33a15b0c3f03e977f6642d485c1674aec3fc324f2905145",
+    "operation": "inspect_analysis_view",
+    "completeness": null,
+    "limitations": [
+      "Boundary extraction covers unshadowed JSON/global coercions plus parse and validation method candidates.",
+      "Child-process extraction covers asynchronous node:child_process creation, literal argv/env/stdio options, exit/error listeners, and kill signals.",
+      "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+      "Configuration extraction covers process.env, process.argv, node:fs reads, and direct logical defaults.",
+      "Event extraction covers EventEmitter-style literal registrations, removals, and dispatch candidates; dynamic names remain unknown.",
+      "Function fingerprints are static candidates; equal digests can remain ambiguous and do not prove behavioral equivalence.",
+      "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+      "Local data flow does not claim control-flow-sensitive reaching definitions or arbitrary dynamic property resolution.",
+      "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+      "Request extraction covers fetch, WebSocket, node:http/node:https construction, direct option fields, and exact local response consumers.",
+      "Resource extraction covers built-in filesystem/network acquisition and exact local close/destroy/end handles.",
+      "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+      "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+      "The semantic graph contains static syntax observations and conservative relationship candidates; it does not claim runtime execution.",
+      "Timer extraction covers global or node:timers scheduling and exact local-handle cancellation.",
+      "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/branches/survivor/runtime-rea.json",
+    "evidence_id": "ev_31b59f74235d0392c3aa5ba57d54490b60992fb928017e470d4ab59c5124c3ee",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/branches/tower/runtime-expanded-rea.json",
+    "evidence_id": "ev_b31343633b54341f45abaff03114162924e1e5acf69481a3d6a5d5f34e6893ce",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "incomplete",
+      "equality_eligible": false,
+      "missing_sections": [
+        "events"
+      ],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Some network requests had not completed when capture ended; later activity is unknown.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/branches/tower/runtime-rea.json",
+    "evidence_id": "ev_05a167f4a43791c943fea058f50cc76b278800f9caa50db63d2b91b931aec4b3",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/branches/gallery/runtime-rea.json",
+    "evidence_id": "ev_1cb787f66e7a18278e70aee0dadcb2ea5a39448cad4893a08f421b8776a4314e",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "incomplete",
+      "equality_eligible": false,
+      "missing_sections": [
+        "events"
+      ],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Some network requests had not completed when capture ended; later activity is unknown.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/branches/town/runtime-rea.json",
+    "evidence_id": "ev_3171e66171aea297bcb808c0fc429bc335c644b9d8593b41989792ab0c85c476",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/branches/factory/runtime-expanded-rea.json",
+    "evidence_id": "ev_a5f0fbb957d4fcc881addc8ebfdd33b9bf82028b85f85ab4d1ec40c59e3a8452",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "incomplete",
+      "equality_eligible": false,
+      "missing_sections": [
+        "events"
+      ],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Some network requests had not completed when capture ended; later activity is unknown.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "file": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/analysis/evidence/branches/factory/runtime-rea.json",
+    "evidence_id": "ev_0070013b3464d5c5b35d9b5656927fdbc29121639772656985beb4c4ae9dc01d",
+    "operation": "capture_browser_scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; response bytes are browser-decoded, not compressed wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and never wait for unfinished responses or refetch them.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  }
+]

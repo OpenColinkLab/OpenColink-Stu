@@ -1,0 +1,5 @@
+:host { display: block; width: 100%; height: 100%; }
+.frame, .image { width: 100%; height: 100%; display: block; }
+.unavailable { height: 100%; min-height: 120rpx; display: flex; align-items: center; justify-content: center; flex-direction: column; color: #91846f; font-size: 24rpx; }
+.retry { color: #9f1523; background: transparent; font-size: 22rpx; margin-top: 12rpx; }
+.retry::after { border: 0; }

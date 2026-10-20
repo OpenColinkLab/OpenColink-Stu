@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "奶蛙博物馆",
+  "usingComponents": {
+    "image-view": "/components/image-view/index"
+  }
+}

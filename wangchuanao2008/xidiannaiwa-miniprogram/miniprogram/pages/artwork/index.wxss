@@ -1,0 +1,18 @@
+.art-stage { position: relative; height: 640rpx; padding: 34rpx; background: #eee7da; }
+.art-thumbnail, .art-original { position: absolute; top: 34rpx; left: 34rpx; width: calc(100% - 68rpx); height: calc(100% - 68rpx); }
+.art-original { opacity: 0; }
+.art-original.loaded { opacity: 1; }
+.image-status { position: absolute; left: 24rpx; right: 24rpx; bottom: 12rpx; text-align: center; color: #77674f; background: #eee7dad9; font-size: 23rpx; padding: 12rpx; }
+.retry { color: #9f1523; }
+.art-info { padding: 42rpx; }
+.art-title { font-size: 44rpx; margin: 22rpx 0 10rpx; }
+.english { display: block; color: #aaa08f; font-size: 24rpx; line-height: 1.6; }
+.preview-hint { display: block; font-size: 22rpx; color: #a68e69; margin-top: 18rpx; }
+.metadata { margin: 38rpx 0; padding: 24rpx 0; border-top: 1rpx solid #e2d9c9; border-bottom: 1rpx solid #e2d9c9; }
+.metadata view { display: flex; color: #655b4e; font-size: 25rpx; line-height: 1.6; margin: 15rpx 0; }
+.label { width: 145rpx; flex-shrink: 0; color: #a68e69; }
+.section-title { display: block; color: #9f1523; font-size: 26rpx; margin: 34rpx 0 14rpx; }
+.paragraph { display: block; color: #7b7060; font-size: 26rpx; line-height: 1.85; }
+.steps { display: flex; align-items: center; justify-content: space-between; margin-top: 44rpx; }
+.steps text { color: #a39072; font-size: 24rpx; }
+.missing-back { margin: 36rpx auto 0; max-width: 300rpx; }

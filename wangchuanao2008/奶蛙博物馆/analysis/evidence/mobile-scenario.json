@@ -1,0 +1,116 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/Users/wangchuanao/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  },
+  "start_url": {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-museum/2c0b53941f17/content/index.html?_reload=0"
+  },
+  "environment": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai",
+    "reduced_motion": "no-preference"
+  },
+  "actions": [
+    {
+      "step_id": "mobile-enter",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#mobileEnter"
+      },
+      "timeout_ms": 6000
+    },
+    {
+      "step_id": "mobile-collection",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#top .hero-caption a"
+      },
+      "timeout_ms": 6000
+    },
+    {
+      "step_id": "mobile-pagination",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#pagination button[aria-label=\"第2页\"]"
+      },
+      "timeout_ms": 6000
+    },
+    {
+      "step_id": "mobile-work",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#gallery .card:not(.hide) >> nth=0"
+      },
+      "timeout_ms": 6000
+    },
+    {
+      "step_id": "mobile-flip",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#lbFlip"
+      },
+      "timeout_ms": 6000
+    },
+    {
+      "step_id": "mobile-work-close",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#lbClose"
+      },
+      "timeout_ms": 6000
+    },
+    {
+      "step_id": "mobile-china",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#chinaMobileVisit"
+      },
+      "timeout_ms": 6000
+    },
+    {
+      "step_id": "mobile-china-back",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#chinaBack"
+      },
+      "timeout_ms": 6000
+    },
+    {
+      "step_id": "mobile-menu",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#menuToggle"
+      },
+      "timeout_ms": 6000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "dom",
+      "accessibility",
+      "url",
+      "screenshot"
+    ],
+    "at_end": [
+      "url"
+    ],
+    "events": [
+      "page-errors",
+      "network"
+    ]
+  }
+}

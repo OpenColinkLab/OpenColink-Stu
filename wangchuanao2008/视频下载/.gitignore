@@ -1,0 +1,27 @@
+.venv/
+.pycache_tmp/
+__pycache__/
+*.pyc
+data/
+node_modules/
+dist/
+build-electron/
+release/
+test-artifacts/
+resources/bin/
+resources/bin-win-x64/
+resources/windows-downloads/
+resources/*.zip
+.DS_Store
+.env
+.env.*
+!.env.example
+
+release-v*/
+
+release-windows-v*/
+/视频下载器.app/
+resources/yt-dlp-single-file
+
+# Local environment and generated caches
+*.py[cod]

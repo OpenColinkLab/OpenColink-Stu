@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "馆藏欣赏",
+  "usingComponents": {
+    "image-view": "/components/image-view/index"
+  }
+}

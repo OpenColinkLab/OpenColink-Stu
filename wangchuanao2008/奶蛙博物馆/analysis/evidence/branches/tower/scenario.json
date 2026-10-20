@@ -1,0 +1,72 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/Users/wangchuanao/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  },
+  "start_url": {
+    "url": "https://works.cohub.live/w/a3c46aa6-ce65-4cf7-9d69-3d564bdb7f5a/milk-frog-spire/bae45df10a91/content/index.html?_reload=0"
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "actions": [
+    {
+      "step_id": "tower-1",
+      "action": "wait_for",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-ui=\"new\"]"
+      },
+      "timeout_ms": 15000,
+      "state": "visible"
+    },
+    {
+      "step_id": "tower-2",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-ui=\"new\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "tower-3",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-ui=\"deck\"]"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "tower-4",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "[data-ui=\"close\"]"
+      },
+      "timeout_ms": 15000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "dom",
+      "accessibility",
+      "url",
+      "screenshot"
+    ],
+    "at_end": [
+      "url"
+    ],
+    "events": [
+      "network",
+      "page-errors",
+      "console"
+    ]
+  }
+}

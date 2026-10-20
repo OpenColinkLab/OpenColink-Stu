@@ -1,0 +1,30 @@
+{
+  "html": "/Users/wangchuanao/Programs/Creative/奶蛙博物馆/奶蛙博物馆-完整版离线.html",
+  "bytes": 581921168,
+  "sha256": "01c979fcb655334573ea2d9aa1147f4b803f3dd43459fe51117a007bfdfa4305",
+  "embedded_assets": 852,
+  "asset_decode_errors": 0,
+  "desktop": {
+    "rooms": [
+      "gallery",
+      "town",
+      "tower",
+      "factory",
+      "survivor"
+    ],
+    "page_errors": [],
+    "external_requests": [],
+    "missing_resources": [],
+    "decoded_media": 8,
+    "avatar_png_bytes": 720717,
+    "gif_ready": true,
+    "china_works": 35
+  },
+  "mobile": {
+    "page_errors": [],
+    "external_requests": [],
+    "missing_resources": [],
+    "horizontal_overflow": false,
+    "isolated_renamed_file": true
+  }
+}

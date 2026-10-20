@@ -1,0 +1,71 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/Users/wangchuanao/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  },
+  "start_url": {
+    "url": "https://works.cohub.live/w/157e937b-95da-4c17-add4-f916e37c3574/milk-frog-3d-gallery/ba518f92d4d0/content/index.html?_reload=0"
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "actions": [
+    {
+      "step_id": "gallery-1",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#enterButton"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "gallery-2",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#mapButton"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "gallery-3",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "#mapClose"
+      },
+      "timeout_ms": 15000
+    },
+    {
+      "step_id": "gallery-4",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "button[data-floor=\"china\"] >> nth=0"
+      },
+      "timeout_ms": 15000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "dom",
+      "accessibility",
+      "url",
+      "screenshot"
+    ],
+    "at_end": [
+      "url"
+    ],
+    "events": [
+      "network",
+      "page-errors",
+      "console"
+    ]
+  }
+}

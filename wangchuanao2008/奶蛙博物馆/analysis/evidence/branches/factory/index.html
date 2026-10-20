@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#edf0ee">
+  <meta name="description" content="捏奶蛙、做表情、和朋友配一对，把喜欢的东西戴在身上。">
+  <title>奶蛙制造所 · 捏一只自己的奶蛙</title>
+  <link rel="icon" href="./assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./generation.css">
+  <link rel="stylesheet" href="./design.css">
+  <script src="./vendor/lucide.min.js" defer></script>
+  <script type="module" src="./app.mjs"></script>
+  <script type="module" src="./generation.mjs"></script>
+  <link rel="stylesheet" href="./memes.css">
+  <script type="module" src="./memes.mjs"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="奶蛙首页"><img src="./assets/favicon.png" width="36" height="36" alt=""><strong>奶蛙<span class="brand-period">.</span></strong><span class="studio">奶蛙制造所</span></a>
+    <div class="header-actions">
+      <button class="button subtle" id="share"><i data-lucide="link"></i><span>分享</span></button>
+      <button class="button primary" id="download"><i data-lucide="download"></i><span>下载头像</span></button>
+    </div>
+  </header>
+
+  <nav class="workspace-switch" aria-label="创作方式"><button data-workspace="edit" aria-pressed="true"><i data-lucide="sliders-horizontal"></i>捏奶蛙</button><button data-workspace="generate" aria-pressed="false"><i data-lucide="sparkles"></i>变成奶蛙</button><button data-workspace="stickers" aria-pressed="false"><i data-lucide="smile"></i>表情包</button></nav>
+  <main class="workspace" id="manual-workspace">
+    <section class="preview-panel" aria-label="头像预览">
+      <div class="preview-live">
+      <div class="canvas-toolbar">
+        <div class="tool-group">
+          <button class="icon-button" id="undo" aria-label="撤销" data-tip="撤销" disabled><i data-lucide="undo-2"></i></button>
+          <button class="icon-button" id="redo" aria-label="重做" data-tip="重做" disabled><i data-lucide="redo-2"></i></button>
+        </div>
+        <div class="segmented" aria-label="预览形状">
+          <button class="icon-button active" id="square" aria-label="方形预览" aria-pressed="true" data-tip="方形预览"><i data-lucide="square"></i></button>
+          <button class="icon-button" id="circle" aria-label="圆形预览" aria-pressed="false" data-tip="圆形预览"><i data-lucide="circle"></i></button>
+        </div>
+      </div>
+      <div class="art-stage" id="stage">
+        <canvas id="avatar" width="1024" height="1024" aria-label="你的奶蛙"></canvas>
+        <div class="loading" id="loading" role="status">奶蛙准备中…</div>
+      </div>
+      </div>
+    </section>
+
+    <section class="editor-panel" aria-label="奶蛙部件">
+      <nav class="editor-modes" aria-label="编辑模式">
+        <button data-mode="look" aria-pressed="true"><i data-lucide="smile"></i>风格</button>
+        <button data-mode="palette" aria-pressed="false"><i data-lucide="palette"></i>配色</button>
+        <button data-mode="tune" aria-pressed="false"><i data-lucide="sliders-horizontal"></i>微调</button>
+        <button data-mode="stickers" aria-pressed="false"><i data-lucide="sticker"></i>贴纸</button>
+      </nav>
+      <div class="editor-scroll" tabindex="0" role="region" aria-label="编辑选项">
+      <div id="look-panel">
+      <nav class="categories" id="categories" role="tablist" aria-label="装扮分类"></nav>
+      <div id="parts-panel" role="tabpanel" aria-labelledby="tab-face">
+        <div class="section-heading"><div><h1 id="category-title">表情</h1><span id="option-count" class="count">16 款</span></div><div class="section-actions"><button id="clear-part" class="icon-button" aria-label="取消选择" data-tip="取消选择"><i data-lucide="circle-slash"></i></button><button id="lock" class="button lock-button" aria-pressed="false"><i data-lucide="lock-open"></i><span>锁定</span></button></div></div>
+        <div class="swatches" id="swatches" aria-label="装扮配色" hidden></div>
+        <div class="parts-grid" id="parts"></div>
+      </div>
+      <div class="selection-footer"><i data-lucide="check"></i><span id="selection-name">淡定</span><span class="part-total">64 种基础部件</span></div>
+      </div>
+      <div id="tune-panel" hidden></div>
+      <div id="stickers-panel" hidden></div>
+      <div id="palette-panel" class="preview-options" hidden>
+        <div class="head-palette"><div class="palette-label"><span>奶蛙颜色</span><span id="head-color-name">原味奶黄</span></div><div id="head-colors" aria-label="奶蛙配色"></div></div>
+      </div>
+      <div class="editor-utilities">
+        <div class="preview-bottom">
+          <div class="miniatures" aria-label="小头像预览">
+            <canvas id="mini64" width="128" height="128" aria-label="64 像素头像预览"></canvas>
+            <canvas id="mini40" width="80" height="80" aria-label="40 像素头像预览"></canvas>
+            <canvas id="mini24" width="48" height="48" aria-label="24 像素头像预览"></canvas>
+          </div>
+          <span class="file-info">PNG <span>·</span> 1024 × 1024</span>
+        </div>
+        <div class="random-row">
+          <button class="button random-button" id="random"><i data-lucide="shuffle"></i><span>换个搭配</span></button>
+          <button class="icon-button reset-button" id="reset" aria-label="还原原味奶蛙" data-tip="还原原味"><i data-lucide="rotate-ccw"></i></button>
+        </div>
+        <div class="locked-row" id="locks" aria-label="已锁定装扮"></div>
+        <button class="button subtle" id="editor-emotions" disabled><i data-lucide="smile-plus"></i><span>做一组表情</span></button>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <main class="generation-workspace" id="generation-workspace" hidden>
+    <section class="generation-settings" aria-label="生成设置">
+      <div class="generation-modes" role="group" aria-label="玩法"><button data-generation-mode="reimagine" aria-pressed="true">变成奶蛙</button><button data-generation-mode="emotions" aria-pressed="false">今日状态</button><button data-generation-mode="pairs" aria-pressed="false">和你一对</button><button data-generation-mode="wear" aria-pressed="false">戴点我的</button></div>
+      <div class="generation-heading"><h1 id="generation-source-title">你的参考图</h1><span id="generation-count">0 / 8</span></div>
+      <div class="generation-upload"><i data-lucide="image-plus"></i><label for="generation-input">添加图片</label><input id="generation-input" type="file" accept="image/png,image/jpeg,image/webp" multiple aria-label="上传参考图"></div>
+      <div id="generation-references" class="generation-references"></div>
+      <label class="generation-style-label" for="generation-style">风格</label><select id="generation-style" class="visually-hidden" tabindex="-1" aria-hidden="true"></select>
+      <div id="generation-style-grid" role="group" aria-label="生成风格"></div>
+      <div id="generation-hair-settings" class="generation-hair-settings"><label class="generation-style-label" for="generation-hair-style">发型</label><select id="generation-hair-style" aria-label="生成发型"></select><label class="generation-style-label" for="generation-hair-text">发型与染色细节 <span>选填</span></label><textarea id="generation-hair-text" rows="2" maxlength="500" aria-label="发型与染色细节" placeholder="黑色脏辫，发尾樱花粉，额前两缕银白挑染"></textarea></div>
+      <div id="generation-emotions" hidden><label class="generation-style-label" for="generation-emotion">今日心情</label><select id="generation-emotion"></select></div>
+      <div id="generation-pair-settings" hidden><label class="generation-style-label" for="generation-pair">和你一对</label><select id="generation-pair"></select></div>
+      <div id="generation-wear-settings" hidden><button class="button subtle" id="generation-wear-editor"><i data-lucide="sliders-horizontal"></i>用我捏好的奶蛙</button><label class="generation-style-label" for="generation-wear">变成什么</label><select id="generation-wear"></select></div>
+      <label class="generation-style-label generation-prompt-label" for="generation-prompt">再说具体一点 <span>选填</span></label>
+      <textarea id="generation-prompt" rows="4" maxlength="2000" aria-label="再说具体一点"></textarea>
+      <div class="generation-payment"><i data-lucide="wallet"></i><span id="generation-account">使用你的 Cohub 余额 · 存入你的 Home</span></div>
+      <button class="button primary" id="generation-submit" disabled><i data-lucide="sparkles"></i><span>生成四张</span></button>
+      <button class="button subtle" id="generation-resume" hidden><i data-lucide="refresh-cw"></i>查看结果</button>
+      <p id="generation-status" role="status" aria-live="polite"></p>
+    </section>
+    <section class="generation-gallery" aria-label="生成的奶蛙">
+      <div class="generation-heading"><h2>我的奶蛙</h2><span id="generation-dimensions">一次四张 · 挑你喜欢的</span></div>
+      <div id="generation-empty"><img src="https://public.cohub.live/p/5990ff16-a7fb-4bcf-91fe-66eb8206d499/milkfrog-assets/library-v1/1d127ee562dbc3e69679-face-00.webp" alt="原味奶蛙"><span>今天，想做哪只奶蛙？</span></div>
+      <div id="generation-results"></div>
+      <div id="generation-pair-downloads"></div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer-signature"><span>有点不同，就是你。</span><span>奶蛙制造所</span></div>
+    <nav class="friend-links" aria-label="奶蛙友邻">
+      <span class="friend-links-label">奶蛙友邻</span>
+      <a href="https://neta.art/w/1bbf7fb7-8920-45af-8481-27f4dfc7e692" target="_blank" rel="noopener noreferrer">奶蛙博物馆<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      <a href="https://neta.art/w/6f97ac11-95f5-451f-b4c6-214c3f02668a" target="_blank" rel="noopener noreferrer">3D 展馆<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      <a href="https://neta.art/w/337d4274-ff22-43c7-9e3c-7f03e58766e8" target="_blank" rel="noopener noreferrer">奶蛙小镇<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      <a href="https://neta.art/w/c659fde8-8117-4fc4-82ed-751c781308c4" target="_blank" rel="noopener noreferrer">奶蛙尖塔<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      <a href="https://neta.art/w/68438093-6659-4747-87b7-4d8e47dc093b" target="_blank" rel="noopener noreferrer">奶龙幸存者<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+    </nav>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="share-dialog" aria-labelledby="share-title">
+    <div class="dialog-heading"><h2 id="share-title">把这只奶蛙分享出去</h2><button id="close-share" class="icon-button" aria-label="关闭"><i data-lucide="x"></i></button></div>
+    <label for="share-url">搭配链接</label><input id="share-url" readonly>
+    <button class="button primary" id="copy-link"><i data-lucide="copy"></i>复制链接</button>
+    <span id="copy-status" role="status"></span>
+  </dialog>
+  <noscript>请开启 JavaScript，以绘制和保存奶蛙头像。</noscript>
+  <dialog id="refine-dialog" aria-labelledby="refine-title">
+    <h2 id="refine-title">就精修这一只</h2>
+    <img id="refine-preview" alt="待精修的奶蛙">
+    <label for="refine-prompt">想调整的细节（选填）</label>
+    <textarea id="refine-prompt" rows="3" maxlength="2000"></textarea>
+    <p>将使用 Image 2.5 单独生成一张，申请 1024 × 1024 高质量图片。会从你的 Cohub 余额另行扣费，实际费用以 Cohub 计费为准；原图和成品存入你的 Home。</p>
+    <div class="refine-actions"><button id="refine-cancel" class="button subtle">先不精修</button><button id="refine-confirm" class="button primary"><i data-lucide="scan-face"></i>确认付费精修</button></div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,15 @@
+page { background: #faf8f2; color: #312f2a; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; font-size: 28rpx; }
+view, text, image, button, input, swiper, swiper-item { box-sizing: border-box; }
+button { margin: 0; font-size: inherit; font-weight: normal; line-height: 1.5; border-radius: 0; }
+button::after { border: 0; }
+button[disabled] { opacity: .4; }
+.page { padding-bottom: calc(40rpx + env(safe-area-inset-bottom)); }
+.brand { background: #fff; padding: 24rpx 42rpx; }
+.brand-image { display: block; width: 100%; height: 206rpx; }
+.school { color: #a58a5c; font-size: 22rpx; letter-spacing: 3rpx; }
+.heading { display: block; font-size: 44rpx; line-height: 1.5; font-weight: 500; }
+.muted { color: #91846f; font-size: 24rpx; }
+.back { width: 100%; background: transparent; color: #9f1523; padding: 24rpx 36rpx; text-align: left; font-size: 26rpx; }
+.outline-button { border: 1rpx solid #d3c5ac; color: #9f1523; background: transparent; padding: 17rpx 28rpx; font-size: 25rpx; }
+.empty { text-align: center; padding: 90rpx 30rpx; color: #91846f; line-height: 1.9; }
+.footer { margin: 54rpx 36rpx 0; padding-top: 36rpx; text-align: center; border-top: 1rpx solid #dfd5c3; color: #a59780; font-size: 22rpx; }

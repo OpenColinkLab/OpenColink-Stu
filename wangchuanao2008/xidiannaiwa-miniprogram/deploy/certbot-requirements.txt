@@ -1,0 +1,20 @@
+# Server-only dependency snapshot: Python 3.12 / Certbot venv, 2026-10-20.
+# Not a mini-program/npm dependency. Review and update before a future reinstall.
+acme==5.8.0
+certbot==5.4.0
+certifi==2026.10.19
+cffi==2.1.1
+charset-normalizer==3.5.2
+ConfigArgParse==1.8.0
+configobj==5.0.9
+cryptography==50.0.2
+distro==1.9.0
+idna==3.20
+josepy==2.2.0
+parsedatetime==2.6
+pycparser==3.11
+pyOpenSSL==26.4.0
+pyRFC3339==2.1.1
+requests==2.34.2
+typing_extensions==4.16.0
+urllib3==2.8.0

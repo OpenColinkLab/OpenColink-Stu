@@ -1,0 +1,40 @@
+# Account credentials, user configuration and login state
+/config.yaml
+/gui/settings.json
+/gui-tmp/
+/wrapper-lite/qemu/data.img
+/wrapper-lite/qemu/.lite-qemu-args
+/wrapper-lite/rootfs/data/
+.env
+.env.*
+
+# Downloads
+/AM-*/
+*.m4a
+*.mp3
+*.flac
+*.wav
+*.lrc
+*.ttml
+
+# Runtime binaries are distributed with GitHub Releases
+/amdl
+/wrapper-lite/wrapper-lite-qemu
+/wrapper-lite/wrapper-lite-qemu-local
+/wrapper-lite/qemu/bin/
+/wrapper-lite/qemu/lib/
+/wrapper-lite/qemu/*.img
+/wrapper-lite/qemu/vmlinuz-lite-qemu
+/wrapper-lite/qemu/lite-initramfs.cpio.gz
+
+# Local output and caches
+/dist/
+.DS_Store
+__pycache__/
+*.py[cod]
+*.log
+
+# Local environment and generated caches
+node_modules/
+.venv/
+!.env.example

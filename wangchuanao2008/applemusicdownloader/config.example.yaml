@@ -1,0 +1,95 @@
+# ------------------------------------------------------------------------------
+# 1. General Settings (Account, Network & System)
+# ------------------------------------------------------------------------------
+general:
+  lite-server: "http://127.0.0.1:12340"   # wrapper-lite HTTP API endpoint (/m3u8, /key, /lyrics, etc.)
+  media-user-token: ""                    # Media user token for Station downloads
+  # Supported storefront languages: https://gist.github.com/itouakirai/c8ba9df9dc65bd300094103b058731d0
+  language: ""                            # Storefront language code (e.g. "en-US", "ja", "zh-Hans-CN")
+  max-memory-limit: 256                   # Maximum memory buffer limit in MB for stream processing
+  proxy: ""                               # HTTP/SOCKS5 proxy (e.g. "http://127.0.0.1:7890", "socks5://127.0.0.1:1080")
+  storefront: "us"                        # Storefront country code; used only for search or missing URL storefront
+  authorization-token: ""                 # Bearer token for Apple Music API (leave blank to auto-fetch)
+  exit-on-error: false                    # Set true to exit on download errors instead of prompting interactively
+
+# ------------------------------------------------------------------------------
+# 2. Media Quality & Stream Settings (Audio & Video)
+# ------------------------------------------------------------------------------
+media:
+  get-m3u8-mode: "hires"                  # M3U8 retrieval mode: "hires" (detect high-res) or "all" (all streams)
+  alac-max: 192000                        # Maximum sample rate limit for ALAC (192000 | 96000 | 48000 | 44100)
+  atmos-max: 2768                         # Maximum bitrate limit for Dolby Atmos (2768 | 2448)
+  aac-type: "aac-lc"                      # AAC stream profile: "aac-lc", "aac", "aac-binaural", or "aac-downmix"
+  alac-fix: true                          # Automatically patch malformed ALAC packets
+
+  # Music Video settings
+  mv:
+    audio-type: "atmos"                   # Audio codec selection for MV: "atmos", "ac3", or "aac"
+    max: 2160                             # Maximum video resolution for MV (e.g. 2160, 1080, 720)
+
+# ------------------------------------------------------------------------------
+# 3. Storage Paths & Templates (Save Folders & Naming Templates)
+# ------------------------------------------------------------------------------
+paths:
+  alac: "AM-Lossless"                     # Save folder for ALAC (Lossless / Hi-Res) downloads
+  atmos: "AM-Atmos"                       # Save folder for Dolby Atmos (Spatial Audio) downloads
+  aac: "AM-AAC"                           # Save folder for AAC downloads
+  mv: "AM-MV"                             # Save folder for Music Videos
+
+  # Variables: {AlbumId}, {AlbumName}, {ArtistName}, {ReleaseDate}, {ReleaseYear}, {UPC}, {Copyright}, {Quality}, {Codec}, {Tag}, {RecordLabel}
+  album-folder: "{AlbumName}"
+
+  # Variables: {PlaylistId}, {PlaylistName}, {ArtistName}, {Quality}, {Codec}, {Tag}
+  playlist-folder: "{PlaylistName}"
+
+  # Variables: {ArtistId}, {ArtistName}, {UrlArtistName}. Set to "" to disable artist sub-folder.
+  artist-folder: "{UrlArtistName}"
+
+  # Variables: {SongId}, {SongNumer}, {ArtistName}, {SongName}, {DiscNumber}, {TrackNumber}, {Quality}, {Codec}, {Tag}
+  song-file: "{SongNumer}. {SongName}"
+
+  limit-max: 200                        # Maximum character limit for folder and file names
+  explicit: "[E]"                       # Tag suffix for explicit tracks (set to "" to disable)
+  clean: "[C]"                          # Tag suffix for clean tracks (set to "" to disable)
+  apple-master: "[M]"                   # Tag suffix for Apple Digital Master tracks (set to "" to disable)
+
+# ------------------------------------------------------------------------------
+# 4. Metadata Settings (Lyrics, Artwork & Tags)
+# ------------------------------------------------------------------------------
+metadata:
+  lyrics:
+    save-file: false                      # Save .lrc file to disk
+    embed: true                           # Embed lyrics directly into audio container tags
+    type: "lyrics"                        # Lyrics type: "lyrics" (standard line-by-line) or "syllable-lyrics" (word-by-word)
+    format: "lrc"                         # Lyrics file format: "lrc" or "ttml"
+    extra: ""                             # Additional lyric options: "translation" or "pronunciation" (when available)
+
+  artwork:
+    embed: true                           # Embed cover artwork into downloaded audio files
+    size: "5000x5000"                     # Cover image resolution: "5000x5000", "3000x3000", "1400x1400", etc.
+    format: "jpg"                         # Image format: "jpg", "png", or "original"
+    save-artist: false                    # Save artist banner/avatar cover image to artist folder
+    save-animated: false                  # Save motion/animated artwork as video (requires ffmpeg)
+    emby-animated: false                  # Save animated artwork formatted for Emby/Jellyfin (requires ffmpeg)
+    dl-for-playlist: false                # Download separate album cover image for playlists
+
+  tags:
+    sort-order: true                      # Write iTunes sort order tags (artist, album artist, album name)
+    itunes-id: true                       # Write iTunes catalog IDs into metadata
+    use-songinfo-for-playlist: false      # For playlists, use original song info for album name, track and disc number
+
+# ------------------------------------------------------------------------------
+# 5. Conversion Settings (Post-download Audio Transcoding via FFmpeg)
+# ------------------------------------------------------------------------------
+convert:
+  after-download: false                   # Enable post-download conversion (requires ffmpeg)
+  format: "flac"                          # Target format: "flac", "mp3", "opus", "wav", or "copy"
+  keep-original: false                    # Keep original m4a file after successful conversion
+  skip-if-source-matches: true            # Skip conversion if downloaded source matches target format
+  ffmpeg-path: "ffmpeg"                   # Path to ffmpeg executable (override if not in system PATH)
+  extra-args: ""                          # Additional raw command-line arguments passed directly to ffmpeg
+  with-metadata: true                     # Preserve original metadata and tags in converted files
+  warn-lossy-to-lossless: true            # Print a warning when converting a detected lossy source to lossless
+  skip-lossy-to-lossless: true            # Skip converting detected lossy sources to lossless formats (e.g. flac/wav)
+  check-bad-alac: false                   # Check and report if downloaded ALAC audio stream is damaged
+  delete-bad-alac: false                  # Automatically delete damaged ALAC files

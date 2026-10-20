@@ -1,0 +1,20 @@
+<view class="page">
+  <button class="back" bindtap="back">‹ 返回首页</button>
+  <view class="hero"><text class="hero-school">奶蛙电子科技大学 · 数字展馆</text><text class="hero-title">奶蛙博物馆</text><text class="hero-lead">在经典艺术与数字想象之间，收藏奶蛙的不同面貌。走进常设典藏与中国馆，开启一场跨越艺术史的校园漫游。</text><view class="stats"><view><text class="stat-number">{{totalWorks}}</text><text>件馆藏</text></view><view><text class="stat-number">{{totalEras}}</text><text>个主题展厅</text></view></view></view>
+  <view id="museum-browse" class="browse">
+    <view class="tabs"><button wx:for="{{galleries}}" wx:key="id" class="tab {{gallery === item.id ? 'selected' : ''}}" data-gallery="{{item.id}}" bindtap="changeGallery" aria-label="{{item.name}} {{item.count}}件">{{item.name}}<text class="tab-count">{{item.count}}</text></button></view>
+    <view class="controls">
+      <view class="search"><text class="search-symbol">⌕</text><input value="{{query}}" bindinput="onSearch" bindconfirm="confirmSearch" maxlength="100" confirm-type="search" placeholder="搜索作品、艺术家" aria-label="搜索馆藏" /><button wx:if="{{query}}" class="clear" bindtap="clearSearch" aria-label="清空搜索">×</button></view>
+      <picker class="era-picker" mode="selector" range="{{eras}}" range-key="name" value="{{eraIndex}}" bindchange="changeEra"><view class="picker-label">{{eraName}} ▾</view></picker>
+    </view>
+    <view class="summary"><text>{{galleryName}} · {{eraName}} · {{total}} 件作品</text></view>
+    <view class="grid">
+      <view wx:for="{{works}}" wx:key="id" class="work" data-id="{{item.id}}" bindtap="openWork" role="link" aria-label="查看作品：{{item.name}}">
+        <view class="work-frame"><image-view src="{{item.thumbnail}}" alt="{{item.name}}" /></view><text class="work-era">{{item.era_name}}</text><text class="work-title">{{item.name}}</text><text class="work-year">{{item.year}}</text>
+      </view>
+    </view>
+    <view wx:if="{{!works.length}}" class="empty">没有找到相关作品，试试其它关键词或展厅。</view>
+    <view class="pagination"><button class="outline-button" data-offset="-1" bindtap="changePage" disabled="{{page <= 1}}">上一页</button><text>{{page}} / {{pages}}</text><button class="outline-button" data-offset="1" bindtap="changePage" disabled="{{page >= pages}}">下一页</button></view>
+  </view>
+  <view class="footer">奶蛙电子科技大学 · 奶蛙博物馆</view>
+</view>
