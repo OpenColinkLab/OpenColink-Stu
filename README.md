@@ -49,6 +49,7 @@
 - [`文档与接线说明`](Training/docs/README.md)：JTAG 接线注意事项及文档索引
 - [`traindoc.docx`](Training/docs/traindoc.docx)：Zynq 开发基础与 Shell 移植培训文档
 - [`FormattExample.pdf`](Training/docs/FormattExample.pdf)：文档格式示例
+- [process_chart.docx](Training/docs/process_chart.docx)：嵌入式学习冲刺计划
 - [`购买参考`](Training/docs/购买参考/)：开发板及外设购买参考图片
 
 ### RaspberryPi
