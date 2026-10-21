@@ -76,6 +76,7 @@
 | ZardFan334 | [未命名1.cpp](C++/ZardFan334/未命名1.cpp) | 使用辗转相除法计算两个非负整数的最大公约数 |
 | ZardFan334 | [4.cpp](C++/ZardFan334/4.cpp) | C++ 练习程序 |
 | ZardFan334 | [最后结果.cpp](C++/ZardFan334/最后结果.cpp) | 实现加减乘除和取模的计算器程序 |
+| swh0918 | [ball.cpp](C++/swh0918/ball/ball.cpp) | 判断输入是否为三位数并求各位数字之和 |
 
 ### Python
 
@@ -111,6 +112,7 @@ OpenColink-Stu/
 ├── STM32/
 │   └── billion605/JL-0100/STM32/
 ├── C++/
+│   ├── swh0918/ball/
 │   └── ZardFan334/
 ├── Python/
 │   └── 114514gyh1111/
