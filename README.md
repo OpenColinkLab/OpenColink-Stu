@@ -42,6 +42,7 @@
 | Qwerty114514217 | [`project_4`](Training/Qwerty114514217/project_4/) | Vivado 数字逻辑练习工程 |
 | Qwerty114514217 | [`project_6`](Training/Qwerty114514217/project_6/) | UART 发送与接收练习工程 |
 | wyh | [`led_shell`](Training/wyh/led_shell/) | PS+PL LED 控制、手写命令解析与仿真验证工程 |
+| chentc857 | [PG002-Day1](Training/chentc857/PG002-Day1/) | Zynq PS Hello World 串口输出作业 |
 
 共享培训资料位于：
 
@@ -72,6 +73,8 @@
 | --- | --- | --- |
 | ZardFan334 | [`2work.cpp`](C++/ZardFan334/2work.cpp) | C++ 练习程序 |
 | ZardFan334 | [未命名1.cpp](C++/ZardFan334/未命名1.cpp) | 使用辗转相除法计算两个非负整数的最大公约数 |
+| ZardFan334 | [4.cpp](C++/ZardFan334/4.cpp) | C++ 练习程序 |
+| ZardFan334 | [最后结果.cpp](C++/ZardFan334/最后结果.cpp) | 实现加减乘除和取模的计算器程序 |
 
 ### Python
 
@@ -94,6 +97,8 @@ OpenColink-Stu/
 │   │   └── IP.7z
 │   ├── wyh/
 │   │   └── led_shell/
+│   ├── chentc857/
+│   │   └── PG002-Day1/
 │   └── docs/
 │       ├── FormattExample.pdf
 │       ├── OpenColink-horizontal.png
