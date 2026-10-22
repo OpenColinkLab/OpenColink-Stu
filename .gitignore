@@ -94,3 +94,10 @@ desktop.ini
 # ---- 本地 AI 工具状态 ----
 .codex/
 .claude/
+# ---- Vivado 生成物（任意子目录，通用规则）----
+**/*.cache/
+**/*.runs/
+**/*.sim/
+**/*.hw/
+**/*.ip_user_files/
+**/.Xil/
