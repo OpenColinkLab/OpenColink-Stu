@@ -1,31 +1,9 @@
-// -----------------------------------------------------------------------------
-// Organization : Lab training project
-// Engineer     : WenYH
-// Create Date  : 2026-10-18
-// File Name    : led_shell_top.v
-// Module Name  : Led_Shell_Top
-// Target       : xc7z010clg400-1 (EBAZ4205)
-// Tool Version : Vivado 2018.3
-//
-// Versions | Modify
-// ------------------
-// v1.0     | 2026-10-18 | first version
-// ------------------
-// Description :
-//   Top level of the project.  It brings the PS (built in the block design
-//   led_shell_bd) and the LED driver together:
-//
-//       PS UART1 <-> shell  ->  AXI GPIO  ->  Led_Driver  ->  W14 (red LED)
-//
-//   The block design exports three signals for the PL side:
-//       pl_clk     : PS FCLK_CLK0, 50 MHz
-//       pl_rst_n   : PS peripheral reset, active low
-//       ctrl[3:0]  : output register of the AXI GPIO
-// -----------------------------------------------------------------------------
+// led_shell_top.v
+// 顶层：PS 的 BD + LED 驱动，PL 时钟用 PS 出来的 FCLK_CLK0
+
 `timescale 1ns / 1ps
 
 module Led_Shell_Top (
-    // ---- PS DDR3 ----
     inout  [14:0] DDR_addr,
     inout  [2:0]  DDR_ba,
     inout         DDR_cas_n,
@@ -41,20 +19,16 @@ module Led_Shell_Top (
     inout         DDR_ras_n,
     inout         DDR_reset_n,
     inout         DDR_we_n,
-    // ---- PS fixed IO (MIO, clock, reset) ----
     inout         FIXED_IO_ddr_vrn,
     inout         FIXED_IO_ddr_vrp,
     inout  [53:0] FIXED_IO_mio,
     inout         FIXED_IO_ps_clk,
     inout         FIXED_IO_ps_porb,
     inout         FIXED_IO_ps_srstb,
-    // ---- PL LED ----
     output        led_red
 );
 
-    // ------------------------------------------------------------------------
-    // Block design (PS7 + AXI GPIO)
-    // ------------------------------------------------------------------------
+    // BD 导出的信号：ctrl 就是 AXI GPIO 的输出
     wire       pl_clk;
     wire       pl_rst_n;
     wire [3:0] ctrl;
@@ -86,9 +60,6 @@ module Led_Shell_Top (
         .pl_rst_n          (pl_rst_n)
     );
 
-    // ------------------------------------------------------------------------
-    // LED driver
-    // ------------------------------------------------------------------------
     Led_Driver #(
         .CLK_HZ         (50_000_000),
         .PWM_HZ         (1_000),
