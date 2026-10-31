@@ -1,0 +1,14 @@
+Dependencies for Project 'STM32_LED', Target 'Target_1': (DO NOT MODIFY !)
+CompilerVersion: 6240000::V6.24::ARMCLANG
+F (.\main.c)(0x6AE49745)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/DogWo/AppData/Local/Arm/Packs/ARM/CMSIS/6.4.0/CMSIS/Core/Include-IC:/Users/DogWo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MMD)
+I (C:\Users\DogWo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x6AE326E2)
+I (RTE\_Target_1\RTE_Components.h)(0x6AE34171)
+I (C:\Users\DogWo\AppData\Local\Arm\Packs\ARM\CMSIS\6.4.0\CMSIS\Core\Include\core_cm3.h)(0x6AE326C1)
+I (C:\Users\DogWo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h)(0x6AE326E2)
+F (RTE/Device/STM32F103C8/RTE_Device.h)(0x6AE326E2)()
+F (RTE/Device/STM32F103C8/startup_stm32f10x_md.s)(0x6AE326E2)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/DogWo/AppData/Local/Arm/Packs/ARM/CMSIS/6.4.0/CMSIS/Core/Include-IC:/Users/DogWo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 543" -Wa,armasm,--pd,"STM32F10X_MD SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f10x_md.o)
+F (RTE/Device/STM32F103C8/system_stm32f10x.c)(0x6AE326E2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/DogWo/AppData/Local/Arm/Packs/ARM/CMSIS/6.4.0/CMSIS/Core/Include-IC:/Users/DogWo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="543" -DSTM32F10X_MD -D_RTE_-o ./objects/system_stm32f10x.o -MMD)
+I (C:\Users\DogWo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x6AE326E2)
+I (RTE\_Target_1\RTE_Components.h)(0x6AE34171)
+I (C:\Users\DogWo\AppData\Local\Arm\Packs\ARM\CMSIS\6.4.0\CMSIS\Core\Include\core_cm3.h)(0x6AE326C1)
+I (C:\Users\DogWo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h)(0x6AE326E2)
