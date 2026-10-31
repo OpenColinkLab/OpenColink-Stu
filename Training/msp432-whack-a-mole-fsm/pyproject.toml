@@ -1,0 +1,9 @@
+[project]
+name = "msp432-whack-a-mole-tutorial"
+version = "0.1.0"
+description = "Portable C state-machine extraction and interactive tutorial for the MSP432 whack-a-mole game."
+requires-python = ">=3.12.12,<3.13"
+dependencies = []
+
+[tool.uv]
+package = false

@@ -43,6 +43,7 @@
 | Qwerty114514217 | [`project_6`](Training/Qwerty114514217/project_6/) | UART 发送与接收练习工程 |
 | wyh | [`led_shell`](Training/wyh/led_shell/) | PS+PL LED 控制、手写命令解析与仿真验证工程 |
 | chentc857 | [PG002-Day1](Training/chentc857/PG002-Day1/) | Zynq PS Hello World 串口输出作业 |
+| OpenColinkLab | [`msp432-whack-a-mole-fsm`](Training/msp432-whack-a-mole-fsm/) | MSP432 打地鼠 C 状态机、可视化实验台与教学文档 |
 
 共享培训资料位于：
 
@@ -102,6 +103,7 @@ OpenColink-Stu/
 │   │   └── led_shell/
 │   ├── chentc857/
 │   │   └── PG002-Day1/
+│   ├── msp432-whack-a-mole-fsm/
 │   └── docs/
 │       ├── FormattExample.pdf
 │       ├── OpenColink-horizontal.png
@@ -130,6 +132,7 @@ OpenColink-Stu/
 | Raspberry Pi | Raspberry Pi OS、Python 3、`smbus2` |
 | Python 练习 | Python 3 |
 | C++ | 支持 C++11 及以上的编译器 |
+| MSP432 打地鼠教程 | Keil MDK；主机实验台需要 MSVC Build Tools、PowerShell、uv 与 Python 3.12 |
 
 具体接线、编译和运行方法请优先查看对应项目目录中的 `README.md` 或说明文档。
 

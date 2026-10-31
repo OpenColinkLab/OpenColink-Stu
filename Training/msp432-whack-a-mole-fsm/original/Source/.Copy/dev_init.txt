@@ -1,0 +1,146 @@
+//常用设备定义
+_DEV(W25Qxx) w25q_table = {0};
+_DEV(SPI_Analog) spi_for_w25q = {0};
+_DEV(AD9833) ad9833_dds = {0};
+_DEV(SPI_Analog) spi_for_ad9833 = {0};
+_DEV(HMI) hmi_used = {0};
+_DEV(MKEY) mkey_used = {0};
+_DEV(Switch) switch_used = {0};
+_DEV(MAX262_PCF) pcf_used = {0};
+_DEV(DAC_TLV5638) dac_used = {0};
+_DEV(SPI_Analog) spi_for_dac = {0};
+_DEV(AT24Cxx) at24_used = {0};
+_DEV(I2C_Analog) i2c_for_at24 = {0};
+_DEV(AD9959) ad9959_used = {0};
+_DEV(SPI_Analog) spi_for_ad9959 = {0};
+
+/**
+ * @brief 用户初始化SOL库内支持设备结构体和设置对应硬件属性
+ * @note 
+ * platform :432sdk
+ * istested :N
+ */
+void Main_SOL_Dev_Setup()
+{
+/* 	SOL_Setup_Dev(SOL_W25Qxx_USER);
+		spi_for_w25q.cs_pin = GPIO_PIN;
+		spi_for_w25q.cs_port = GPIO_PORT_P;
+		spi_for_w25q.miso_pin = GPIO_PIN;
+		spi_for_w25q.miso_port = GPIO_PORT_P;
+		spi_for_w25q.mosi_pin = GPIO_PIN;
+		spi_for_w25q.mosi_port = GPIO_PORT_P;
+		spi_for_w25q.sclk_pin = GPIO_PIN;
+		spi_for_w25q.sclk_port = GPIO_PORT_P;
+		spi_for_w25q.spi_mod = SPI_MOD_0;
+		spi_for_w25q.spi_speed = SPI_HIGH_SPEED;
+		SOL_SPI_Init(&spi_for_w25q,SOL_Write_Pin,SOL_Read_Pin,SOL_Delay);
+		w25q_table.hold_port = HW_SET;
+		w25q_table.hold_pin = HW_SET;
+		w25q_table.wp_port = HW_SET;
+		w25q_table.wp_pin = HW_SET;
+		w25q_table.spi_used = &spi_for_w25q;
+		w25q_table.w25qxx_type = W25Q16;
+		SOL_W25Qxx_Init(&w25q_table); */
+
+/* 	SOL_Setup_Dev(SOL_BEEP_USER); */
+
+/* 	SOL_Setup_Dev(SOL_MKEY_USER);
+		mkey_used.clk_pin = GPIO_PIN0;
+		mkey_used.clk_port = GPIO_PORT_P9;
+		mkey_used.qh_pin = GPIO_PIN5;
+		mkey_used.qh_port = GPIO_PORT_P8;
+		mkey_used.sl_pin = GPIO_PIN4;
+		mkey_used.sl_port = GPIO_PORT_P8;
+		SOL_Mkey_Init(&mkey_used,SOL_Write_Pin,SOL_Read_Pin,SOL_Delay); */
+
+/* 	SOL_Setup_Dev(SOL_SWITCH_USER);
+		switch_used.en_pin = HW_SET;
+		switch_used.en_port = HW_SET;
+		switch_used.in0_pin = GPIO_PIN;
+		switch_used.in0_port = GPIO_PORT_P;
+		switch_used.in1_pin = GPIO_PIN;
+		switch_used.in1_port = GPIO_PORT_P;
+		SOL_Switch_Init(&switch_used,SOL_Write_Pin,SOL_Read_Pin,SOL_Delay); */
+
+//	SOL_Setup_Dev(SOL_AD9833_USER);
+//		spi_for_ad9833.cs_pin = GPIO_PIN;
+//		spi_for_ad9833.cs_port = GPIO_PORT_P;
+//		spi_for_ad9833.mosi_pin = GPIO_PIN;
+//		spi_for_ad9833.mosi_port = GPIO_PORT_P;
+//		spi_for_ad9833.sclk_pin = GPIO_PIN;
+//		spi_for_ad9833.sclk_port = GPIO_PORT_P;
+//		spi_for_ad9833.spi_mod = SPI_MOD_2;
+//		spi_for_ad9833.spi_speed = SPI_HIGH_SPEED;
+//		SOL_SPI_Init(&spi_for_ad9833,SOL_Write_Pin,SOL_Read_Pin,SOL_Delay);
+//		ad9833_dds.spi_used = &spi_for_ad9833;
+//		ad9833_dds.mclk = 25.0;
+//		SOL_AD9833_Init(&ad9833_dds,SOL_Delay);		
+
+//	SOL_Setup_Dev(SOL_HMI_USER);
+//		hmi_used.moduleInstance = EUSCI_A0_BASE;
+//		hmi_used.HMI_Delay = SOL_Delay;
+
+/* 	SOL_Setup_Dev(SOL_MAX262_PCF_USER);
+		pcf_used.a0_pin = GPIO_PIN;
+		pcf_used.a0_port = GPIO_PORT_P;
+		pcf_used.a1_pin = GPIO_PIN;
+		pcf_used.a1_port = GPIO_PORT_P;
+		pcf_used.a2_pin = GPIO_PIN;
+		pcf_used.a2_port = GPIO_PORT_P;
+		pcf_used.a3_pin = GPIO_PIN;
+		pcf_used.a3_port = GPIO_PORT_P;
+		pcf_used.d0_pin = GPIO_PIN;
+		pcf_used.d0_port = GPIO_PORT_P;
+		pcf_used.d1_pin = GPIO_PIN;
+		pcf_used.d1_port = GPIO_PORT_P;
+		pcf_used.wr_pin = GPIO_PIN;
+		pcf_used.wr_port = GPIO_PORT_P;
+		SOL_MAX262_PCF_Init(&pcf_used,SOL_Write_Pin,SOL_Read_Pin,SOL_Delay); */
+
+/* 	SOL_Setup_Dev(SOL_DAC_TLV5638_USER);
+		spi_for_dac.cs_pin = GPIO_PIN0;
+		spi_for_dac.cs_port = GPIO_PORT_P10;
+		spi_for_dac.mosi_pin = GPIO_PIN2;
+		spi_for_dac.mosi_port = GPIO_PORT_P10;
+		spi_for_dac.sclk_pin = GPIO_PIN1;
+		spi_for_dac.sclk_port = GPIO_PORT_P10;
+		spi_for_dac.miso_pin = NULL;
+		spi_for_dac.miso_port = NULL;
+		spi_for_dac.spi_mod = SPI_MOD_2;
+		spi_for_dac.spi_speed = SPI_VHIGH_SPEED;
+		SOL_SPI_Init(&spi_for_dac,SOL_Write_Pin,SOL_Read_Pin,SOL_Delay);
+		dac_used.spi_used = &spi_for_dac;
+		SOL_DAC_TLV5638_Init(&dac_used,SOL_Write_Pin,SOL_Read_Pin,SOL_Delay); */
+
+/* 	SOL_Setup_Dev(SOL_AT24Cxx_USER);
+		i2c_for_at24.scl_pin = GPIO_PIN7;
+		i2c_for_at24.scl_port = GPIO_PORT_P1;
+		i2c_for_at24.sda_pin = GPIO_PIN6;
+		i2c_for_at24.sda_port = GPIO_PORT_P1;
+		i2c_for_at24.speed = I2C_LOW_SPEED;
+		SOL_I2C_Init(&i2c_for_at24,SOL_Write_Pin_Force,SOL_Read_Pin_Force,SOL_Delay);
+		at24_used.addr = 0xa0;
+		at24_used.i2c_used = &i2c_for_at24;
+		at24_used.type = AT24C256;
+		SOL_AT24Cxx_Init(&at24_used,SOL_Write_Pin_Force,SOL_Read_Pin_Force,SOL_Delay); */
+
+/*  SOL_Setup_Dev(SOL_AD9959_USER);
+		spi_for_ad9959.cs_pin = GPIO_PIN4;
+		spi_for_ad9959.cs_port = GPIO_PORT_P2;
+		spi_for_ad9959.mosi_pin = GPIO_PIN1;
+		spi_for_ad9959.mosi_port = GPIO_PORT_P6;
+		spi_for_ad9959.sclk_pin = GPIO_PIN1;
+		spi_for_ad9959.sclk_port = GPIO_PORT_P5;
+		spi_for_ad9959.miso_pin = NULL;
+		spi_for_ad9959.miso_port = NULL;
+		spi_for_ad9959.spi_mod = SPI_MOD_0;
+		spi_for_ad9959.spi_speed = SPI_HIGH_SPEED;
+		SOL_SPI_Init(&spi_for_ad9959,SOL_Write_Pin,SOL_Read_Pin,SOL_Delay);
+		ad9959_used.rst_pin =GPIO_PIN6;
+		ad9959_used.rst_port = GPIO_PORT_P2;
+		ad9959_used.up_pin = GPIO_PIN7;
+		ad9959_used.up_port = GPIO_PORT_P2;
+		ad9959_used.spi_used = &spi_for_ad9959;
+		SOL_AD9959_Init(&ad9959_used,SOL_Write_Pin,SOL_Read_Pin,SOL_Delay); */
+
+}

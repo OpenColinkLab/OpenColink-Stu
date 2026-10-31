@@ -1,0 +1,96 @@
+/*-------------------------------------------------------*\
+            EUSCI_A2作为蓝牙收发串口(接收中断)
+\*-------------------------------------------------------*/
+/*--------------------------*\
+            INIT
+\*--------------------------*/
+//UCA2
+MAP_GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_P3,GPIO_PIN2/* RX */ | GPIO_PIN3/* TX */, 
+                                                   GPIO_PRIMARY_MODULE_FUNCTION);
+eUSCI_UART_ConfigV1 blueteeth_uart_cfg = {0};
+    //结构体初始化
+    blueteeth_uart_cfg.selectClockSource = EUSCI_A_UART_CLOCKSOURCE_SMCLK;  //时钟源
+    blueteeth_uart_cfg.clockPrescalar = 312;								//48M下9600
+    blueteeth_uart_cfg.firstModReg = 8;
+    blueteeth_uart_cfg.secondModReg = 0;
+    blueteeth_uart_cfg.parity = EUSCI_A_UART_NO_PARITY;					 	//无校验
+    blueteeth_uart_cfg.msborLsbFirst = EUSCI_A_SPI_LSB_FIRST;				//LSB
+    blueteeth_uart_cfg.numberofStopBits = EUSCI_A_UART_ONE_STOP_BIT;		//1位停止位
+    blueteeth_uart_cfg.uartMode = EUSCI_A_UART_MODE;						//普通串口模式
+    blueteeth_uart_cfg.overSampling = 1;
+    blueteeth_uart_cfg.dataLength = EUSCI_A_UART_8_BIT_LEN;					//8位
+MAP_UART_initModule(EUSCI_A2_BASE,&blueteeth_uart_cfg);
+
+/*--------------------------*\
+           INTERRUPT
+\*--------------------------*/
+void EUSCIA2_IRQHandler (void){
+    //主要使用低优先级的接收中断来接受HMI命令
+    /*---flag clean---*/
+        //标志位清除
+        uint16_t int_status = MAP_UART_getEnabledInterruptStatus(EUSCI_A2_BASE);
+        MAP_UART_clearInterruptFlag(EUSCI_A2_BASE,EUSCI_A_UART_RECEIVE_INTERRUPT_FLAG);
+    //-------------------------------------------------------//
+        if(int_status & EUSCI_A_UART_RECEIVE_INTERRUPT_FLAG)
+        {
+            *uart_buf_2_p = MAP_UART_receiveData(EUSCI_A2_BASE);
+            uart_buf_2_p ++;
+            uart_buf_2_cnt ++;
+            if(uart_buf_2_cnt == UART_BUF_SIZE){
+                uart_buf_2_p -= UART_BUF_SIZE;
+                uart_buf_2_cnt = 0;
+            }
+        }
+    
+    #ifdef DBG_MOD_OFF
+        USER_DBG("In EUSCIA2_IRQHandler");
+    #endif
+    }
+
+/*--------------------------*\
+            ENABLE
+\*--------------------------*/
+//Blue_Teeth_UART
+MAP_UART_enableModule(EUSCI_A2_BASE);
+MAP_UART_enableInterrupt(EUSCI_A2_BASE,EUSCI_A_UART_RECEIVE_INTERRUPT);		
+MAP_Interrupt_enableInterrupt(INT_EUSCIA2);
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+/*-------------------------*\
+	  EUSCIA3_IRQHandler
+\*-------------------------*/
+//from buf_sup.h
+
+void EUSCIA3_IRQHandler (void){
+//主要用于和STM32通信
+/*---flag clean---*/
+    //标志位清除
+    uint16_t int_status = MAP_UART_getEnabledInterruptStatus(EUSCI_A3_BASE);
+    MAP_UART_clearInterruptFlag(EUSCI_A3_BASE,/* EUSCI_A_UART_RECEIVE_INTERRUPT_FLAG */int_status);
+//-------------------------------------------------------//
+    if(int_status & EUSCI_A_UART_RECEIVE_INTERRUPT_FLAG)
+    {   
+        //相关变量在buf_sup.h中定义
+        *uart_buf_3_p = MAP_UART_receiveData(EUSCI_A3_BASE);
+        uart_buf_3_p ++;
+        uart_buf_3_cnt ++;
+
+        if(uart_buf_3_cnt == UART_BUF_SIZE){
+            uart_buf_3_p -= UART_BUF_SIZE;
+            uart_buf_3_cnt = 0;
+        }
+
+        if(uart_buf_3_cnt == uart_byte_limit){
+            uart_buf_3_cnt = 0;
+            uart_rx_cmp_flag_3 = 1;   //接收已经完成
+            MAP_UART_disableInterrupt(EUSCI_A3_BASE,EUSCI_A_UART_RECEIVE_INTERRUPT);//关闭此次接收
+        }
+    }
+
+#ifdef DBG_MOD_OFF
+    USER_DBG("In EUSCIA3_IRQHandler");
+#endif
+}

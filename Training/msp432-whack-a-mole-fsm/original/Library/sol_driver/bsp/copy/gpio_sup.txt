@@ -1,0 +1,53 @@
+/*-------------------------------------------------------*\
+				Key1.1下降沿中断闪烁三彩灯
+\*-------------------------------------------------------*/
+/*------------------------*\
+			INIT
+\*------------------------*/
+	//设置彩灯引脚
+		GPIO_setAsOutputPin(LED_PORT,LED_RED_PIN);
+		GPIO_setOutputLowOnPin(LED_PORT,LED_RED_PIN);
+		GPIO_setAsOutputPin(LED_PORT,LED_BLUE_PIN);
+		GPIO_setOutputLowOnPin(LED_PORT,LED_BLUE_PIN);
+		GPIO_setAsOutputPin(LED_PORT,LED_GREEN_PIN);
+		GPIO_setOutputLowOnPin(LED_PORT,LED_GREEN_PIN);
+	
+	//设置中断引脚并选择触发方式
+		GPIO_setAsInputPinWithPullUpResistor(GPIO_PORT_P1,GPIO_PIN1);
+		GPIO_interruptEdgeSelect(GPIO_PORT_P1,GPIO_PIN1,GPIO_HIGH_TO_LOW_TRANSITION);
+	//使能对应管脚中断
+		GPIO_enableInterrupt(GPIO_PORT_P1,GPIO_PIN1);
+	//使能管脚中断并打开总中断处理
+		Interrupt_enableInterrupt(INT_PORT1);
+		Interrupt_enableMaster();
+		
+	FOREVER();
+
+/*------------------------*\
+		  INTERRUPT
+\*------------------------*/
+void PORT1_IRQHandler (void)
+{
+    //清除标志位
+    uint16_t int_state = GPIO_getEnabledInterruptStatus(GPIO_PORT_P1);
+    GPIO_clearInterruptFlag(GPIO_PORT_P1,int_state);
+    //-----------------------------------------------------------------//
+    if(int_state & GPIO_PIN1){
+        GPIO_toggleOutputOnPin(LED_PORT,LED_RED_PIN);
+        Gen_Delay(1000000);
+        GPIO_toggleOutputOnPin(LED_PORT,LED_BLUE_PIN);
+        Gen_Delay(1000000);
+        GPIO_toggleOutputOnPin(LED_PORT,LED_GREEN_PIN);
+        Gen_Delay(1000000);
+        #ifdef DBG_MOD
+           USER_DBG("In interrupt key 1.1 \n");
+        #endif
+    } 
+}
+/*------------------------*\
+		  ENABLE
+\*------------------------*/
+//IO_interrupt
+MAP_GPIO_interruptEdgeSelect();
+MAP_GPIO_enableInterrupt();
+MAP_Interrupt_enableInterrupt();
