@@ -39,14 +39,32 @@ if {![file exists [file join $sdk_dir $bsp_name ".project"]]} {
     createbsp -name $bsp_name -hwproject $hw_name -proc ps7_cortexa9_0 -os standalone
 }
 
-# The application project is part of the repository.  A fresh workspace does
-# not know it, so import it before building.
-if {[lsearch -exact [getprojects -type app] $app_name] < 0} {
-    if {![file exists [file join $sdk_dir $app_name ".cproject"]]} {
-        error "application project '$app_name' not found in $sdk_dir - it should be part of the repository"
-    }
-    puts "== import application $app_name"
-    importprojects [file join $sdk_dir $app_name]
+if {![file exists [file join $sdk_dir $app_name ".cproject"]]} {
+    puts "== create application $app_name"
+    createapp -name $app_name -hwproject $hw_name -proc ps7_cortexa9_0 \
+        -os standalone -lang c -app {Empty Application} -bsp $bsp_name
+    importsources -name $app_name -path [file join $proj_dir "app_src"]
+
+    # the "Empty Application" template always creates an empty README.txt,
+    # it is not used by the build, remove it to keep the source folder clean
+    file delete -force [file join $sdk_dir $app_name "src" "README.txt"]
+}
+
+# -----------------------------------------------------------------------------
+# 1b. refresh the sources inside the SDK application
+#
+# importsources above only runs once, when the application is created.  Editing
+# app_src/ afterwards would therefore never reach the build.  Copying the
+# sources on every run keeps app_src/ as the single source of truth, and it is
+# also what puts the patched lscript.ld (the one that defines
+# _shell_command_start / _shell_command_end) into the application: the
+# "Empty Application" template always generates its own default linker script.
+# -----------------------------------------------------------------------------
+set app_src_dir [file join $proj_dir "app_src"]
+set sdk_src_dir [file join $sdk_dir $app_name "src"]
+file mkdir $sdk_src_dir
+foreach src_file [glob -nocomplain -directory $app_src_dir *.c *.h *.ld] {
+    file copy -force $src_file $sdk_src_dir
 }
 
 # -----------------------------------------------------------------------------

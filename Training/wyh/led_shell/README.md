@@ -1,12 +1,12 @@
 # Led_Shell - PS + PL LED Driver with a Serial Shell
 
-Second implementation of the LabTrain LED task (PG002, section 1.2). The other
-implementation in this repository is `LabTrain/test` (letter-shell based); this
-one uses a small hand-written command parser on the PS and a state machine on
-the PL, so the two can be compared side by side.
+Implementation of the lab training task (PG002, section 1.2): the PS receives
+commands over UART, writes a register through AXI-Lite, and the PL uses a state
+machine to blink the LED and to dim it with PWM.
 
-- **PS side** - UART1 (MIO24/25, 115200 8N1) runs a small hand-written command
-  line; it parses the command and writes the mode number into an AXI GPIO.
+- **PS side** - UART1 (MIO24/25, 115200 8N1) runs **letter-shell 3.2.4**
+  (option 1 of task 1.2.1); a small port layer forwards the UART to the shell and
+  the shell commands write the mode number into an AXI GPIO.
 - **PL side** - the `Led_Driver` state machine with 1 kHz PWM drives the
   on-board red LED (FPGA pin W14).
 - **PS to PL path** - PS `M_AXI_GP0` -> AXI Interconnect -> AXI GPIO (AXI-Lite
@@ -14,7 +14,8 @@ the PL, so the two can be compared side by side.
 
 The prerequisite task (PG002, section 1.1), the "Hello World" output, is
 included too: it is printed once at start-up and can be repeated with the
-`hello` command, so both tasks share one bitstream and one ELF file.
+`hello` command, so the prerequisite task and the training task share one
+bitstream and one ELF file.
 
 ---
 
@@ -34,12 +35,12 @@ included too: it is printed once at start-up and can be repeated with the
 
 ## 2. Commands
 
-Connect at 115200 8N1, press Enter and the `led>` prompt appears. Supported
+Connect at 115200 8N1, press Enter and the `zynq:/$ ` prompt appears. Supported
 commands:
 
 | Command | Action |
 | --- | --- |
-| `help` | List all commands |
+| `help` | List all commands (letter-shell built-in) |
 | `hello` | Print "Hello World" (prerequisite task) |
 | `led 0` | Off |
 | `led 1` | Blink, 1 s period (0.5 s on / 0.5 s off) |
@@ -47,44 +48,60 @@ commands:
 | `led 3` | PWM steady on, brightness level 1 (about 33 %) |
 | `led 4` | PWM steady on, brightness level 2 (about 67 %) |
 | `led 5` | PWM steady on, brightness level 3 (100 %) |
-| `status` | Show the current LED mode |
+| `status` | Show the current LED mode and the AXI GPIO read-back value |
+| `demo` | Hands-free acceptance test: 6 modes, 10 s each, `q` to quit |
+
+letter-shell also brings 7 built-in commands (`users`, `cmds`, `vars`, `keys`,
+`setVar`, `clear`, `help`); they are upstream features and are not part of the
+LED driver design.
+
 
 A space is required between the command and its argument (`led 3`), and command
 names are case-sensitive.
+
+letter-shell also provides, without any extra code:
+
+- `Tab` - complete the command / argument being typed (press `Tab` twice to show
+  every candidate);
+- `Up` / `Down` - browse the 8-entry history;
+- `help <cmd>` - show one command with its help text;
+- `Backspace` / `Left` / `Right` - line editing at any cursor position;
+- `Enter` on an empty line - just re-prints the prompt.
 
 ---
 
 ## 3. Directory Layout
 
 ```text
-LabTrain/led_shell/
-|-- src/                       RTL and constraints
-|   |-- led_driver.v           PL: 6-state FSM + 1 kHz PWM + blink
+Led_Shell/
+|-- src/                       RTL and constraints (written for this project)
+|   |-- led_driver.v           PL: state machine + 1 kHz PWM + blink
 |   |-- led_shell_top.v        Top level: block design (PS) + Led_Driver
 |   `-- led_shell.xdc          Pin constraint (W14)
-|-- tb/                        Self-checking testbench
-|   `-- tb_led_driver.v        Checks all 6 modes, blink half period and PWM duty
+|-- app_src/                   PS side C sources
+|   |-- main.c                 Shell main loop (banner + Hello World at boot)
+|   |-- cmd.c / cmd.h          Shell commands: led / status / hello / demo
+|   |-- shell_port.c / .h      Port layer: UART <-> letter-shell, tick, delay
+|   |-- shell.c / shell.h      letter-shell 3.2.4 core (third party, unmodified)
+|   |-- shell_ext.c / .h       letter-shell extended parser (third party)
+|   |-- shell_cfg.h            letter-shell configuration (edited for this port)
+|   |-- lscript.ld             Linker script with the `shellCommand` section
+|   |-- helloworld.c / .h      Prerequisite task: Hello World output
+|   |-- uart.c / uart.h        PS UART1 polled driver
+|   |-- led.c / led.h          AXI GPIO register write
+|   `-- platform.c / .h        Board bring-up hooks
 |-- scripts/
 |   |-- build_project.tcl      Rebuild Vivado project + bitstream/HDF
 |   |-- ps7_cfg.tcl            PS7 configuration (DDR3 / UART1 / FCLK / M_AXI)
-|   |-- build_sdk.tcl          Create hw_platform/BSP and compile the ELF
-|   |-- run_sim.cmd            Run the testbench with Vivado Simulator
+|   |-- build_sdk.tcl          Create hw_platform/BSP/app and compile the ELF
 |   |-- run_app.cmd            One click start: PS init -> program PL -> run app
 |   `-- run_app.tcl            XSCT script called by run_app.cmd
-|-- docs/
-|   |-- design.md              Module description, state diagram, timing, PG001 map
-|   |-- sim_result.txt         Recorded simulation result (all checks PASS)
-|   `-- debug_log.md           Problems hit while bringing the design up
+|-- run/                       Prebuilt board files (bit / elf / ps7_init)
 |-- Led_Shell.xpr              Vivado project
 |-- Led_Shell.srcs/            Project sources and block design (led_shell_bd)
-|-- Led_Shell.sdk/             SDK project; PS side C sources are in
-|                              Led_Shell.sdk/led_shell/src
-`-- README.md
+|-- Led_Shell.sdk/             SDK project (app led_shell; BSP generated by script)
+`-- .gitignore
 ```
-
-Generated folders (`*.cache`, `*.runs`, `*.hw`, `*.sim`, `*.ip_user_files`,
-BD output products, BSP, `Debug/`, `run/`, `sim_out/`) are created by the
-scripts and are ignored by the repository `.gitignore`.
 
 ---
 
@@ -119,42 +136,61 @@ S_DIM_2 / S_FULL`) to implement the three LED actions:
 - the LED is active low, so the output is inverted (`LED_ACTIVE_LOW` parameter,
   change it for a different board).
 
-### 4.3 PS Side Shell
+### 4.3 PS Side Shell (letter-shell port)
 
-No third-party shell was ported; a minimal command parser was written instead
-(option 3 of task 1.2.1):
+Task 1.2.1 option 1: **letter-shell 3.2.4** (MIT, by Letter / NevermindZZT) was
+ported instead of writing a private parser. The upstream `shell.c`, `shell.h`,
+`shell_ext.c`, `shell_ext.h` are used as published; only `shell_cfg.h` is edited
+(prompt user `zynq`, no clear-screen on login, 8 history entries, 256-byte print
+buffer, and `SHELL_GET_TICK()` mapped to the Zynq global timer).
 
-- UART is polled, the main loop takes characters without blocking;
-- on Enter the line is split by spaces, the first word is looked up in the
-  command table and the handler is called;
-- the `led` command writes the mode into the AXI GPIO and keeps a copy for
-  `status`.
+Four things connect the library to the board:
 
-### 4.4 Simulation
+1. **Byte stream** - `shell_read` / `shell_write` in `shell_port.c` (`read`)
+   calls `Uart_GetChar()` in a loop, (`write`) calls `Uart_PutChar()`; the UART
+   driver under them is the same polled driver used by the PL/PS bring-up.
+2. **Tick** - `SHELL_GET_TICK()` -> `Shell_GetTickMs()` ->
+   `XTime_GetTime()` / (`COUNTS_PER_SECOND / 1000`). letter-shell needs it for
+   the "press Tab twice quickly" behaviour; with `0` that feature silently dies.
+3. **Command table** - `SHELL_EXPORT_CMD()` puts every command struct into the
+   input section `shellCommand`. The linker script therefore has to keep that
+   section and expose its bounds:
 
-`tb/tb_led_driver.v` is a self-checking testbench. It scales `CLK_HZ`/`PWM_HZ`
-down (100 Hz / 1 Hz) so that the counters stay small, then checks:
+   ```text
+   . = ALIGN(4);
+   _shell_command_start = .;
+   KEEP (*(SORT_BY_NAME(shellCommand)))
+   _shell_command_end   = .;
+   ```
 
-- mode 0 and the reserved modes keep the LED off;
-- the blink half period of mode 1 and mode 2 (50 / 100 clocks in the scaled run);
-- the PWM duty of mode 3 / 4 / 5 (33 / 66 / 100 clocks per 100-clock window).
+   `shellInit()` scans `_shell_command_start .. _shell_command_end`, so without
+   these lines the ELF contains commands but the shell reports
+   `command not found`. The DWARF/ELF check is
+   `arm-none-eabi-nm Debug/led_shell.elf | grep _shell_command_`.
+4. **Task loop** - `for (;;) { shellTask(Shell_PortGetInstance()); }` in `main.c`; the
+   shell owns the UART afterwards, so nothing else may call `Uart_GetChar()`
+   except the `demo` command's non-blocking `q` check.
 
-The recorded result is in `docs/sim_result.txt` (all checks PASS, and the end
-of the log says `SIMULATION PASSED`). Run it with:
+The shell buffer is 512 bytes and is split into
+`SHELL_HISTORY_MAX_NUMBER + 1` slices by `shellInit()`, so the line length and
+the history depth trade off against each other.
 
-```text
-scripts\run_sim.cmd
-```
+The `demo` command implements acceptance mode 2 (auto control, 10 s per action)
+on top of the shell: `led` is still available interactively, so both acceptance
+options of task 1.2.4 are covered by one ELF.
 
 ---
 
 ## 5. Building
 
 > **Important**: the Vivado 2018.3 synthesis sub-process does not support
-> non-ASCII paths. Clone or copy this repository to an **ASCII-only path**
-> before rebuilding, for example `C:\OpenColink-Stu`.
-> Submitting and reading the code are not affected; the scripts recreate every
-> generated file from the sources.
+> non-ASCII paths. If you rebuild the project, put the whole folder under an
+> **ASCII-only path** — the build tree used for this version is
+> `C:\Users\WenYH\Desktop\Led_Shell` (also ASCII). Building from a path
+> that contains Chinese characters fails with "implementation failed" (the
+> synthesis sub-process exits). Submitting, archiving and reading the code are
+> not affected, and `run\` already contains the prebuilt files, so **no rebuild
+> is needed to run the design on the board**.
 
 ### 5.1 Command Line (recommended)
 
@@ -162,19 +198,27 @@ scripts\run_sim.cmd
 REM 1) Vivado: create project, synthesize, implement, write bitstream + HDF
 vivado -mode batch -source scripts\build_project.tcl
 
-REM 2) SDK: prepare the workspace (hw_platform / BSP) and compile the ELF
+REM 2) SDK: create hw_platform / BSP / application and compile the ELF
 xsct scripts\build_sdk.tcl
 ```
 
 The generated files are copied to `run\`: `Led_Shell_Top.bit`, `led_shell.elf`
 and `ps7_init.tcl`.
 
+Step 2 re-copies `app_src\*.c *.h *.ld` into `Led_Shell.sdk\led_shell\src` on
+every run. That is deliberate: the SDK template generates its own default
+`lscript.ld`, which does not define `_shell_command_start` /
+`_shell_command_end`, and the link then fails with
+`undefined reference to '_shell_command_start'`. Keep `app_src/` as the single
+source of truth and let the script do the copy.
+
+
 ### 5.2 GUI
 
 1. Open `Led_Shell.xpr` in Vivado, then **Generate Bitstream**;
 2. **File -> Export -> Export Hardware** (include bitstream) to get `system.hdf`;
-3. Open `Led_Shell.sdk` in SDK, create the BSP and build the `led_shell`
-   application (sources are in `Led_Shell.sdk/led_shell/src`).
+3. Open `Led_Shell.sdk` in SDK, then create/build the `led_shell` application
+   (sources are in `Led_Shell.sdk/led_shell/src`).
 
 ---
 
@@ -187,8 +231,8 @@ scripts\run_app.cmd
 ```
 
 When `@@@@ PS_INIT + FPGA + APPLICATION RUNNING` appears, the serial terminal
-(115200 8N1) prints Hello World (prerequisite task) and the `led>` prompt.
-Type `help`, `hello`, `led 1`, `led 5`, ... to check the LED actions.
+(115200 8N1) prints Hello World (prerequisite task) and the `zynq:/$ ` prompt.
+Type `help`, `hello`, `led 1`, `led 5`, `demo`, ... to check the LED actions.
 
 > The board has no oscillator on the PL side: the PL clock comes from the PS
 > `FCLK_CLK0`, therefore `ps7_init` has to run before the bitstream is loaded.
@@ -202,8 +246,12 @@ Type `help`, `hello`, `led 1`, `led 5`, ... to check the LED actions.
 | --- | --- |
 | `no JTAG targets` | hw_server has not finished enumerating; wait 10 s and run again, or re-plug the FT232H |
 | Nothing on the serial port | Check 115200 8N1 and the COM port; make sure RUNNING was printed |
-| `led` reports unknown command | A space is required (`led 3`); the command table is in `cmd.c` |
+| `led` reports unknown command | A space is required (`led 3`); run `help` to confirm the command table is not empty |
 | LED behaviour is inverted | Set `LED_ACTIVE_LOW` to 0 in `led_driver.v` and rebuild the bitstream |
+| `led` reports `command not found` | The `shellCommand` section got dropped: check the `KEEP` block in `lscript.ld` and rebuild the ELF |
+| `help` prints an empty list | Same cause: `_shell_command_start == _shell_command_end` |
+| `Tab` twice does nothing | `SHELL_GET_TICK()` is not wired to `Shell_GetTickMs()` |
+| Garbled characters on the terminal | Baud rate must be 115200 8N1; the terminal must be in plain-text mode |
 | `elf not found` | Run `xsct scripts\build_sdk.tcl` first |
 
 ---
@@ -214,39 +262,28 @@ Type `help`, `hello`, `led 1`, `led 5`, ... to check the LED actions.
   `helloworld.c`; it is printed at start-up and can be repeated with `hello`,
   so both tasks use the same bitstream and ELF file.
 - The PS7, AXI GPIO, AXI Interconnect and proc_sys_reset cells in the block
-  design are Vivado IP. `led_driver.v`, `led_shell_top.v`, `led_shell.xdc`,
-  the testbench under `tb/` and the C sources under
-  `Led_Shell.sdk/led_shell/src` were written for this project.
+  design are Vivado IP. `led_driver.v`, `led_shell_top.v`, `led_shell.xdc` and
+  the C sources under `app_src/` were written for this project.
+- `app_src/shell.c`, `shell.h`, `shell_ext.c`, `shell_ext.h` are letter-shell
+  3.2.4 by Letter (NevermindZZT@gmail.com), MIT licence, copied verbatim. The
+  files written for this port are `shell_port.c/.h` (UART + tick glue),
+  `cmd.c/.h` (the four commands), `main.c` (the `shellTask` loop),
+  `shell_cfg.h` (configuration) and the `shellCommand` block in `lscript.ld`.
+  Each command is registered with `SHELL_EXPORT_CMD()` and is not listed by
+  hand anywhere: adding a command means adding one macro line.
 - The code follows the lab coding style (PG001): file headers, doxygen function
   comments (`@brief / @param / @return`) and variable prefixes
   (`fg_` file-static, `f_` parameter, `tp_` temporary, `ix_` index).
-- Compared with the letter-shell implementation in `LabTrain/test`: this one
-  uses a 6-state FSM instead of a counter plus multiplexer, a 4-bit control
-  word instead of 32-bit, and a hand-written shell instead of a third-party
-  library (the "option 3" of task 1.2.1).
 
----
+### 4.4 Pitfall: never call shellGetCurrent() from main()
 
-## 9. Known Limitations and TODO
+shellGetCurrent() only returns a shell while a command handler is executing
+(it checks status.isActive). In main() it returns NULL, and shellTask(NULL)
+dereferences it and the core ends up in the prefetch-abort handler at  xE6000000.
+Use the port getter instead:
 
-Known limitations:
+`c
+for (;;) { shellTask(Shell_PortGetInstance()); }
+`
 
-- only the red LED (W14) is driven, the green LED (W13) is not used;
-- the shell polls UART in the main loop (no interrupt / DMA);
-- modes 6 and 7 are reserved, there is no breathing or SOS pattern yet;
-- LED polarity assumes the EBAZ4205 board (active low), other boards need
-  `LED_ACTIVE_LOW` changed;
-- the bitstream is not stored in flash, the board has to be programmed again
-  after every power cycle.
-
-TODO:
-
-- add a breathing LED (ctrl=6) and an SOS pattern (ctrl=7), plus testbench
-  cases for them;
-- replace the polled UART with an interrupt driven one;
-- pack FSBL + bitstream + elf into `boot.bin` and write it to flash so the
-  design starts automatically.
-
-Problems hit while bringing the design up (Vivado non-ASCII path, SDK project
-import, `ps7_init` order, LED polarity, ...) are collected in
-`docs/debug_log.md`.
+which is equivalent to the upstream demo's shellTask(&shell).
