@@ -1,0 +1,67 @@
+//模拟开关测试代码
+/* 		SOL_Switch_Select(&switch_used,SWITCH_CH1);
+		SOL_Delay(50);
+		SOL_Switch_Select(&switch_used,SWITCH_CH2);
+		SOL_Delay(50);
+		SOL_Switch_Select(&switch_used,SWITCH_CH3);
+		SOL_Delay(50);
+		SOL_Switch_Select(&switch_used,SWITCH_CH4);
+		SOL_Delay(50);
+		SOL_Switch_Select(&switch_used,SWITCH_OPEN); */
+
+//FLASH测试代码
+/* 		uint32_t id = 0;
+		//GPIO_toggleOutputOnPin(GPIO_PORT_P1,GPIO_PIN5);
+		//id = SOL_W25Qxx_Read_ID(&w25q_table);
+		printf("ID: %6x\n",id);
+		//SOL_FSM_Dispatch((FSM_t *) &proj_fsm, (event_t *)&sol_fsm_evt); */
+		//uint16_t key_val = 0;
+		//key_val = SOL_MKey_Scan(&mkey_used);
+		//printf("Key is : %d \n",key_val);
+
+//程控滤波器测试代码
+/* 		SOL_MAX262_PCF_Shutdown(&pcf_used);
+		SOL_MAX262_PCF_PWUP(&pcf_used);
+		SOL_MAX262_PCF_Write(&pcf_used,PCF_CHB,PCF_MOD_2,34,120);
+		SOL_MAX262_PCF_Write(&pcf_used,PCF_CHA,PCF_MOD_2,46,PCF_CHA_QVAL); */
+		
+/* DAC测试 */
+/* 	SOL_TLV5638_Write_CtrReg(&dac_used,FAST_MOD|PWR_NORMAL|REF_1024);
+	SOL_TLV5638_Format(&dac_used,a,10,FAST_MOD|PWR_NORMAL|W2_A_AND_UPDATE_B_WITH_BUF);
+	while(1)
+	SOL_TLV5638_Output(&dac_used,a,10); */
+
+
+/* 矩阵键盘测试 */
+/* 	mkey_get = SOL_MKey_Scan(&mkey_used);
+	printf("mkey_get = %d\n",mkey_get); */
+
+	//MAP_GPIO_toggleOutputOnPin(GPIO_PORT_P1,GPIO_PIN5);
+	//SOL_Delay(1000);
+
+
+/* AT24C256_板载 测试 */
+/* 	Dbg_Up_Init_U32(tx_dat,100);
+	tx_dat[10] = 123456789;
+	SOL_AT24Cxx_Write(&at24_used,(uint8_t *)tx_dat,0x00,4,100);
+	SOL_Delay_15ms();
+	SOL_AT24Cxx_Read(&at24_used,(uint8_t *)rx_dat,0x00,4,100);
+	Dbg_Plot_U32(EUSCI_A0_BASE,"rx_dat",rx_dat,100); */
+
+/*	uint16_t receive = 0;
+ 	SOL_AT24Cxx_Write_Byte(&at24_used,0x55,0x77);
+	SOL_Delay_15ms();	//不要写后立即读，会失败，器件反应不过来
+	receive = SOL_AT24Cxx_Read_Byte(&at24_used,0x55); 
+	printf("receive = %d\n",receive);	*/
+
+/* AD9959测试 */
+/* 	SOL_AD9959_Quick_Set(&ad9959_used,AD9959_CH0,512,200000000,1000);
+ 	SOL_AD9959_Quick_Set(&ad9959_used,AD9959_CH1,512,200000000,1000);
+	SOL_AD9959_Quick_Set(&ad9959_used,AD9959_CH2,512,200000000,1000);
+	SOL_AD9959_Quick_Set(&ad9959_used,AD9959_CH3,512,200000000,1000); 
+	SOL_Delay(1000000);
+	SOL_AD9959_Quick_Set(&ad9959_used,AD9959_CH0,100,2000000,2000);
+	SOL_Delay(1000000);
+	SOL_AD9959_Quick_Set(&ad9959_used,AD9959_CH0,750,5000000,0);
+	SOL_Delay(1000000);
+	SOL_AD9959_Quick_Set(&ad9959_used,AD9959_CH0,1000,20000,100); */

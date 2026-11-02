@@ -1,0 +1,32 @@
+	//IO_interrupt
+/* 		MAP_GPIO_interruptEdgeSelect();
+		MAP_GPIO_enableInterrupt();
+		MAP_Interrupt_enableInterrupt(); */
+
+/* 	SOL_432_PerCfg_Init(TIMER_USER);
+	//Token
+		MAP_Interrupt_enableInterrupt(INT_TA0_0);
+		MAP_Timer_A_startCounter(TIMER_A0_BASE,TIMER_A_UP_MODE); */
+
+/* 	SOL_432_PerCfg_Init(UART_USER);
+	//Blue_Teeth_UART
+		MAP_UART_enableModule(EUSCI_A2_BASE);
+		MAP_UART_enableInterrupt(EUSCI_A2_BASE,EUSCI_A_UART_RECEIVE_INTERRUPT);		
+		MAP_Interrupt_enableInterrupt(INT_EUSCIA2); */
+
+/* 	SOL_432_PerCfg_Init(I2C_USER);	//ala_:未测试,比赛后再解决
+		MAP_I2C_enableModule(EUSCI_B0_BASE);
+		MAP_Interrupt_enableInterrupt(INT_EUSCIB0); */
+
+/* 	SOL_432_PerCfg_Init(ADC_USER);
+	//单通道单次手动采集ADC
+		//Cap_Init
+		//MAP_REF_A_enableReferenceVoltage();//使能内部参考电压
+		MAP_ADC14_enableModule();
+		MAP_ADC14_enableSampleTimer(ADC_MANUAL_ITERATION);
+		MAP_ADC14_enableInterrupt(ADC_INT1);
+		MAP_ADC14_enableConversion();
+		//MAP_ADC14_toggleConversionTrigger();//翻转触发源开启中断,开始转换
+		MAP_Interrupt_enableInterrupt(INT_ADC14); */
+
+	//单通道多次自动采集(ADC_DMA)

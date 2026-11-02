@@ -1,0 +1,248 @@
+/*-------------------------------------------------------*\
+                    内部温度传感器(ADC)
+\*-------------------------------------------------------*/
+/*--------------------------*\
+          VARIABLE
+\*--------------------------*/
+//externed from ref_sup.c 
+float temperature_c;
+float temperature_f;
+uint16_t temperature_adc_val_get;
+/*--------------------------*\
+            INIT
+\*--------------------------*/
+//内部温度传感器ADC
+//设置ADC
+  //初始化ADC模块、使能ADC内核
+  MAP_ADC14_initModule(ADC_CLOCKSOURCE_SMCLK,
+                       ADC_PREDIVIDER_32,
+                       ADC_DIVIDER_4,
+                       ADC_TEMPSENSEMAP);
+  //配置为单通道连续采样,设置参考电压、通道、是否为差分输入
+  MAP_ADC14_configureSingleSampleMode(ADC_MEM0,True);
+  MAP_ADC14_configureConversionMemory(ADC_MEM0,
+                                      ADC_VREFPOS_INTBUF_VREFNEG_VSS,
+                                      ADC_INPUT_A22,
+                                      False);
+  //设置单次转换时间
+  MAP_ADC14_setSampleHoldTime(ADC_PULSE_WIDTH_192,ADC_PULSE_WIDTH_192);
+  //设置内部温度传感器
+  MAP_REF_A_setReferenceVoltage(REF_A_VREF2_5V);
+/*--------------------------*\
+		   INTERRUPT
+\*--------------------------*/
+void ADC14_IRQHandler (void){
+  #ifdef DBG_MOD_OFF
+      USER_DBG("In ADC14_IRQHandler");
+  #endif
+  /*---flag clean---*/
+      //标志位清除
+      uint16_t int_status = MAP_ADC14_getEnabledInterruptStatus();
+      MAP_ADC14_clearInterruptFlag(int_status);
+  //-------------------------------------------------------//
+  
+      if(int_status & ADC_INT0){
+         temperature_adc_val_get = MAP_ADC14_getResult(ADC_MEM0);
+      }
+  }
+/*--------------------------*\
+			ENABLE
+\*--------------------------*/
+SOL_User_CfgInit_432(ADC_USER);
+//内部温度传感器
+  //REF_Init
+  MAP_REF_A_enableReferenceVoltage();
+  MAP_REF_A_enableTempSensor();
+  //ADC14_Init
+  MAP_ADC14_enableModule();
+  MAP_ADC14_enableSampleTimer(ADC_AUTOMATIC_ITERATION);
+  MAP_ADC14_enableInterrupt(ADC_INT0);
+  MAP_ADC14_enableConversion();
+  MAP_ADC14_toggleConversionTrigger();
+  MAP_Interrupt_enableInterrupt(INT_ADC14);
+/*--------------------------*\
+          HOW_TO_USE
+\*--------------------------*/
+SOL_REF_Calc_Temperature(temperature_adc_val_get,TEMP_REF_DEFAULT);
+USER_DBG("temperature_c = %f\n",temperature_c);
+USER_DBG("temperature_f = %f\n",temperature_f);
+
+
+
+/*-------------------------------------------------------*\
+
+\*-------------------------------------------------------*/
+/*--------------------------*\
+          VARIABLE
+\*--------------------------*/
+//externed from main.c
+uint16_t adc_0pin_value;
+
+/*--------------------------*\
+            INIT
+\*--------------------------*/
+//单通道单次手动采集ADC
+MAP_ADC14_initModule(ADC_CLOCKSOURCE_SMCLK,ADC_PREDIVIDER_1,ADC_DIVIDER_1,ADC_NOROUTE);
+MAP_ADC14_configureSingleSampleMode(ADC_MEM1,True);
+MAP_ADC14_configureConversionMemory(ADC_MEM1,ADC_VREFPOS_AVCC_VREFNEG_VSS,ADC_INPUT_A0,False);
+MAP_ADC14_setSampleHoldTime(ADC_PULSE_WIDTH_96,ADC_PULSE_WIDTH_96);
+/*--------------------------*\
+          INTERRUPT
+\*--------------------------*/
+
+void ADC14_IRQHandler (void){
+#ifdef DBG_MOD_OFF
+    USER_DBG("In ADC14_IRQHandler");
+#endif
+/*---flag clean---*/
+    //标志位清除
+    uint16_t int_status = MAP_ADC14_getEnabledInterruptStatus();
+    MAP_ADC14_clearInterruptFlag(int_status);
+//-------------------------------------------------------//
+//ADC_0pin_1memInt采集
+    if(int_status & ADC_INT1){
+       adc_0pin_value = MAP_ADC14_getResult(ADC_MEM1);
+    }
+}
+/*--------------------------*\
+           ENABLE
+\*--------------------------*/
+//单通道单次手动采集ADC
+//Cap_Init
+MAP_REF_A_enableReferenceVoltage();
+MAP_ADC14_enableModule();
+MAP_ADC14_enableSampleTimer(ADC_MANUAL_ITERATION);
+MAP_ADC14_enableInterrupt(ADC_INT1);
+MAP_ADC14_enableConversion();
+MAP_ADC14_toggleConversionTrigger();
+MAP_Interrupt_enableInterrupt(INT_ADC14);
+/*--------------------------*\
+         HOW_TO_USE
+\*--------------------------*/
+START(RUN_ONCE){//RUN_ONCE = 0;
+  #ifdef DBG_MOD
+    Gen_Delay(5000000);
+    BLUE_TG();
+    MAP_ADC14_toggleConversionTrigger();//手动开启才行
+    USER_DBG("Voltage = %.4f V\n",((float)adc_0pin_value/16383) * 3.299f);
+  #endif
+  }
+
+
+
+/*-------------------------------------------------------*\
+                    计时器触发采样
+\*-------------------------------------------------------*/
+/*--------------------------*\
+            INIT
+\*--------------------------*/
+//ADC14 TA3_N(CCR1)触发
+//设置为增计数
+Timer_A_UpModeConfig tim_a3_up_cfg = {0}; //设置了CCR0
+  tim_a3_up_cfg.clockSource = TIMER_A_CLOCKSOURCE_SMCLK;	//48MHZ
+  tim_a3_up_cfg.clockSourceDivider = TIMER_A_CLOCKSOURCE_DIVIDER_1;//48MHz
+  tim_a3_up_cfg.timerClear = TIMER_A_DO_CLEAR;	//溢出自动清零
+  tim_a3_up_cfg.timerInterruptEnable_TAIE = TIMER_A_TAIE_INTERRUPT_DISABLE;	//关闭TA3 ISR
+  tim_a3_up_cfg.captureCompareInterruptEnable_CCR0_CCIE = TIMER_A_CCIE_CCR0_INTERRUPT_DISABLE; //关闭CCR0中断
+  tim_a3_up_cfg.timerPeriod = 48*8-1;
+MAP_Timer_A_configureUpMode(TIMER_A3_BASE,&tim_a3_up_cfg);
+//TIMER_A3比较(CCR1-ADC_TRIGGER_TA3_C1)
+Timer_A_CompareModeConfig tim_a3_cmp_cfg = {0}; //设置了CCR1
+  tim_a3_cmp_cfg.compareInterruptEnable = TIMER_A_CAPTURECOMPARE_INTERRUPT_DISABLE;	//关闭计时器TA3CCR中断
+  tim_a3_cmp_cfg.compareOutputMode = TIMER_A_OUTPUTMODE_SET_RESET;	//设置为取反输出模式
+  tim_a3_cmp_cfg.compareRegister = TIMER_A_CAPTURECOMPARE_REGISTER_1;	//选择CCR1
+  tim_a3_cmp_cfg.compareValue = 48*8-1;	//设置比较值
+MAP_Timer_A_initCompare(TIMER_A3_BASE, &tim_a3_cmp_cfg);
+
+//TA3_CCR1触发采样ADC
+//MAP_ADC14_enableModule();
+MAP_ADC14_initModule(ADC_CLOCKSOURCE_SMCLK,
+          ADC_PREDIVIDER_1,
+          ADC_DIVIDER_1,
+          ADC_NOROUTE);
+MAP_ADC14_configureSingleSampleMode(ADC_MEM0,True);
+MAP_ADC14_configureConversionMemory(ADC_MEM0,
+                  ADC_VREFPOS_INTBUF_VREFNEG_VSS,
+                  ADC_INPUT_A0,
+                  False);//参考电压为在REF_USER中使能的2.5V内部参考
+MAP_ADC14_setSampleHoldTrigger(ADC_TRIGGER_TA3_C1,False);
+//MAP_ADC14_setSampleHoldTime(ADC_PULSE_WIDTH_96,ADC_PULSE_WIDTH_96);
+MAP_GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P5,GPIO_PIN5,GPIO_TERTIARY_MODULE_FUNCTION);//P5.5 A0
+/*-------------------------*\
+	   ADC14_IRQHandler
+\*-------------------------*/
+//in main.c:
+    //extern uint16_t adc_0pin_internal_temp_value;
+    extern uint16_t tim_tri_adc_buf[1024];
+    extern uint16_t tim_tri_adc_buf_pos;
+    extern bool_t tim_tri_adc_cmpflg;
+void ADC14_IRQHandler (void){
+#ifdef DBG_MOD_OFF
+    USER_DBG("In ADC14_IRQHandler");
+#endif
+/*---flag clean---*/
+    //标志位清除
+    uint16_t int_status = MAP_ADC14_getEnabledInterruptStatus();
+    MAP_ADC14_clearInterruptFlag(int_status);
+//-------------------------------------------------------//
+//获取内部温度传感器温度
+/*  if(int_status & ADC_INT0){
+       adc_0pin_internal_temp_value = MAP_ADC14_getResult(ADC_MEM0);
+    } */
+
+//获取ADC_INT0
+    if(int_status & ADC_INT0){
+        if(tim_tri_adc_buf_pos == ADC_BUF_SIZE)
+        {
+            tim_tri_adc_buf_pos = 0; 
+            tim_tri_adc_cmpflg = 1;
+        }
+        //while(MAP_ADC14_isBusy());
+        tim_tri_adc_buf [tim_tri_adc_buf_pos++] = MAP_ADC14_getResult(ADC_MEM0);
+        //printf("tim_tri_adc_buf[%d] = %d\n",(tim_tri_adc_buf_pos - 1),tim_tri_adc_buf[tim_tri_adc_buf_pos - 1]);
+    }
+    
+/* //获取ADC_INT1
+    if(int_status & ADC_INT1){
+        //NONE
+    }
+//获取ADC_INT2
+    if(int_status & ADC_INT2){
+        //NONE
+    }
+//获取ADC_INT3
+    if(int_status & ADC_INT3){
+        //NONE
+    }
+//获取ADC_INT1
+    if(int_status & ADC_INT1){
+        //NONE
+    }
+//获取ADC_INT4
+    if(int_status & ADC_INT4){
+        //NONE
+    }
+//获取ADC_INT5
+    if(int_status & ADC_INT5){
+        //NONE
+    }
+//获取ADC_INT6
+    if(int_status & ADC_INT6){
+        //NONE
+    }
+//获取ADC_INT7
+    if(int_status & ADC_INT7){
+        //NONE
+    } */
+
+}
+
+/*--------------------------*\
+           ENABLE
+\*--------------------------*/
+SOL_432_PerCfg_Init(ADC_USER);
+//开启时钟触发ADC_MEM0
+  MAP_ADC14_enableModule();
+  MAP_ADC14_enableInterrupt(ADC_INT0);
+  MAP_Interrupt_enableInterrupt(INT_ADC14);
+  MAP_ADC14_enableConversion();

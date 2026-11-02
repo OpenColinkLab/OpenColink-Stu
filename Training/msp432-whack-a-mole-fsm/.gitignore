@@ -1,0 +1,12 @@
+.venv/
+.venv-broken-wsl/
+build/
+__pycache__/
+*.pyc
+output/
+.playwright-cli/
+*.lib
+!original/Library/cmsis_dsp/lib/
+!original/Library/cmsis_dsp/lib/arm_cortexM4lf_math.lib
+*.exp
+*.obj

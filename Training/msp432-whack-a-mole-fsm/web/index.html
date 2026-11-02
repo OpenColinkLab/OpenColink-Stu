@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MSP432 打地鼠 C 状态机可视化实验台">
+  <title>打地鼠状态机实验台 | MSP432</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lab-page">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-grid" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+      <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+      <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+      <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <path d="m8 5 11 7-11 7Z"></path>
+    </symbol>
+    <symbol id="icon-rotate" viewBox="0 0 24 24">
+      <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+      <path d="M3 3v5h5"></path>
+    </symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24">
+      <path d="M18 6 6 18"></path>
+      <path d="m6 6 12 12"></path>
+    </symbol>
+    <symbol id="icon-volume" viewBox="0 0 24 24">
+      <path d="M11 5 6 9H2v6h4l5 4Z"></path>
+      <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+      <path d="M19 5a10 10 0 0 1 0 14"></path>
+    </symbol>
+    <symbol id="icon-volume-off" viewBox="0 0 24 24">
+      <path d="M11 5 6 9H2v6h4l5 4Z"></path>
+      <path d="m22 9-6 6"></path>
+      <path d="m16 9 6 6"></path>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14"></path>
+      <path d="m13 6 6 6-6 6"></path>
+    </symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24">
+      <path d="m16 18 6-6-6-6"></path>
+      <path d="m8 6-6 6 6 6"></path>
+    </symbol>
+    <symbol id="icon-cpu" viewBox="0 0 24 24">
+      <rect x="6" y="6" width="12" height="12" rx="2"></rect>
+      <path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"></path>
+    </symbol>
+    <symbol id="icon-terminal" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+      <path d="m7 9 3 3-3 3M13 15h4"></path>
+    </symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="8"></circle>
+      <circle cx="12" cy="12" r="3"></circle>
+    </symbol>
+  </svg>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="WAM/432 状态机实验台首页">
+      <span class="brand-mark"><svg aria-hidden="true"><use href="#icon-grid"></use></svg></span>
+      <span class="brand-copy">
+        <strong>WAM/432</strong>
+        <small>STATE MACHINE LAB</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a class="active" href="index.html">实验台</a>
+      <a href="lesson.html">C 状态机教案</a>
+    </nav>
+    <div class="bridge-state" id="bridge-state" title="状态由本地 C DLL 提供">
+      <span class="status-dot"></span>
+      <span>C BRIDGE</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="lab-heading-band" aria-labelledby="page-title">
+      <div class="lab-heading-copy">
+        <p class="eyebrow">MSP432P401R · PORTABLE C EXTRACTION</p>
+        <h1 id="page-title">打地鼠状态机实验台</h1>
+        <p class="lede">原机三状态逻辑被提取成可移植 C。每一次点击、超时和分数变化都经本地 DLL 进入同一套处理函数。</p>
+      </div>
+      <dl class="readout-strip" aria-label="当前运行信息">
+        <div>
+          <dt>技术状态</dt>
+          <dd id="technical-state">IDLE</dd>
+        </div>
+        <div>
+          <dt>游戏阶段</dt>
+          <dd id="phase-label">待机</dd>
+        </div>
+        <div>
+          <dt>执行源</dt>
+          <dd>WAM.DLL</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="workbench-band" aria-label="打地鼠实验台">
+      <div class="workbench-grid">
+        <section class="game-panel" aria-labelledby="game-title">
+          <header class="panel-header">
+            <div>
+              <p class="section-index">01 / GAME</p>
+              <h2 id="game-title">九宫地鼠盘</h2>
+            </div>
+            <div class="scoreboard" aria-label="分数">
+              <div>
+                <span>SCORE</span>
+                <strong id="score">0000</strong>
+              </div>
+              <div>
+                <span>LOST</span>
+                <strong id="lost">0000</strong>
+              </div>
+              <div>
+                <span>ROUND</span>
+                <strong id="round">00</strong>
+              </div>
+            </div>
+          </header>
+
+          <div class="game-status-row">
+            <p class="game-message" id="game-message" role="status" aria-live="polite">等待开始。</p>
+            <span class="round-timer" id="round-timer">500 ms</span>
+          </div>
+
+          <div class="board-frame">
+            <div class="mole-board" id="mole-board" aria-label="九宫地鼠盘"></div>
+          </div>
+
+          <div class="reaction-meter" aria-label="剩余反应时间">
+            <span id="reaction-fill"></span>
+          </div>
+
+          <div class="control-row">
+            <button class="control-button primary" id="start-button" type="button" data-testid="start-button">
+              <svg aria-hidden="true"><use href="#icon-play"></use></svg>
+              开始
+            </button>
+            <button class="control-button" id="quit-button" type="button">
+              <svg aria-hidden="true"><use href="#icon-x"></use></svg>
+              退出
+            </button>
+            <button class="control-button icon-only" id="reset-button" type="button" aria-label="重置状态机" title="重置状态机">
+              <svg aria-hidden="true"><use href="#icon-rotate"></use></svg>
+            </button>
+            <button class="control-button icon-only" id="sound-button" type="button" aria-label="关闭声音" title="声音">
+              <svg aria-hidden="true"><use href="#icon-volume"></use></svg>
+            </button>
+          </div>
+
+          <div class="keypad-section">
+            <div class="keypad-heading">
+              <span>MKEY 74HC165</span>
+              <span>键值 / 原始矩阵</span>
+            </div>
+            <div class="keypad" id="keypad" aria-label="矩阵键盘"></div>
+          </div>
+        </section>
+
+        <aside class="inspector" aria-labelledby="inspector-title">
+          <header class="panel-header inspector-header">
+            <div>
+              <p class="section-index">02 / INSPECT</p>
+              <h2 id="inspector-title">状态机观察窗</h2>
+            </div>
+            <svg class="cpu-icon" aria-hidden="true"><use href="#icon-cpu"></use></svg>
+          </header>
+
+          <div class="state-route" id="state-route" aria-label="状态迁移图">
+            <div class="state-node" id="state-idle" data-state="IDLE">
+              <span>00</span>
+              <strong>IDLE</strong>
+              <small>等待启动</small>
+            </div>
+            <div class="route-arrow" aria-hidden="true">
+              <span>16</span>
+              <svg><use href="#icon-arrow-right"></use></svg>
+            </div>
+            <div class="state-node" id="state-start" data-state="START_GAME">
+              <span>01</span>
+              <strong>START_GAME</strong>
+              <small>生成与重置</small>
+            </div>
+            <div class="route-arrow" aria-hidden="true">
+              <span>生成</span>
+              <svg><use href="#icon-arrow-right"></use></svg>
+            </div>
+            <div class="state-node" id="state-check" data-state="CHECK">
+              <span>02</span>
+              <strong>CHECK</strong>
+              <small>超时与判定</small>
+            </div>
+          </div>
+
+          <div class="telemetry-grid">
+            <div>
+              <span>地鼠键值</span>
+              <strong id="mole-code">--</strong>
+            </div>
+            <div>
+              <span>等待令牌</span>
+              <strong id="wait-token">0</strong>
+            </div>
+            <div>
+              <span>随机延时</span>
+              <strong id="spawn-delay">--</strong>
+            </div>
+            <div>
+              <span>计时 tick</span>
+              <strong id="tick-count">0</strong>
+            </div>
+          </div>
+
+          <section class="trace-section" aria-labelledby="trace-title">
+            <div class="trace-heading">
+              <h3 id="trace-title">C 事件轨迹</h3>
+              <svg aria-hidden="true"><use href="#icon-terminal"></use></svg>
+            </div>
+            <ol class="trace-list" id="trace-list" aria-live="polite">
+              <li class="trace-empty">等待 C 事件。</li>
+            </ol>
+          </section>
+
+          <div class="lesson-pointer">
+            <div>
+              <span>从行为到代码</span>
+              <strong>拆开这套三状态机</strong>
+            </div>
+            <a href="lesson.html">阅读 C 教案 <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="lesson-overview-band" aria-labelledby="overview-title">
+      <div class="overview-heading">
+        <p class="section-index">03 / LESSON MAP</p>
+        <h2 id="overview-title">C 状态机教案的核心路径</h2>
+      </div>
+      <div class="overview-grid">
+        <article>
+          <span class="overview-number">01</span>
+          <h3>先固定事件语义</h3>
+          <p>把“开始、命中、错击、超时、退出”归并为信号与条件，不先写 GPIO。</p>
+        </article>
+        <article>
+          <span class="overview-number">02</span>
+          <h3>再搭派发骨架</h3>
+          <p>用函数指针保存当前状态，转移宏只改句柄，派发器统一执行退出和进入动作。</p>
+        </article>
+        <article>
+          <span class="overview-number">03</span>
+          <h3>最后接入硬件</h3>
+          <p>按键、定时器、蜂鸣器和引脚输出留在边界层，状态处理函数只消费结果。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>MSP432P401R / 原工程 2022</span>
+    <span>Portable C extraction · Python 3.12.12</span>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

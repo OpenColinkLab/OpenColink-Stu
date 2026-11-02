@@ -1,0 +1,195 @@
+/****************************************************************
+* @Name:timerA_sup.txt
+* @Describe:432 timerA_sup复制源文档
+* @Ver:v_alpha
+* @Update Date:2021-9-13 17:31:27
+* @Author:Chsier 1481154662@qq.com
+*****************************************************************/
+/*-------------------------------------------------------*\
+			  Timer_A1_CCR4 1k-400k测频模块
+\*-------------------------------------------------------*/
+/*--------------------------*\
+            INIT
+\*--------------------------*/
+	//Freq_Cap_Timer_16Bit(Time_A1 CCR4)
+		//TIMER_A1设置为连计数
+		Timer_A_ContinuousModeConfig tim_a1_con_cfg = {0};
+			tim_a1_con_cfg.clockSource = TIMER_A_CLOCKSOURCE_SMCLK;	//48MHZ
+			tim_a1_con_cfg.clockSourceDivider = TIMER_A_CLOCKSOURCE_DIVIDER_1;
+			tim_a1_con_cfg.timerClear = TIMER_A_DO_CLEAR;
+			tim_a1_con_cfg.timerInterruptEnable_TAIE = TIMER_A_TAIE_INTERRUPT_DISABLE;
+		MAP_Timer_A_configureContinuousMode(TIMER_A1_BASE,&tim_a1_con_cfg);
+
+		//TIMER_A1设置同步捕获模式,开启中断
+		Timer_A_CaptureModeConfig tim_a1_cap_cfg = {0};
+			tim_a1_cap_cfg.captureRegister = TIMER_A_CAPTURECOMPARE_REGISTER_4;
+			tim_a1_cap_cfg.captureMode = TIMER_A_CAPTUREMODE_RISING_AND_FALLING_EDGE;
+			tim_a1_cap_cfg.captureInputSelect = TIMER_A_CAPTURE_INPUTSELECT_CCIxA;
+			tim_a1_cap_cfg.synchronizeCaptureSource = TIMER_A_CAPTURE_SYNCHRONOUS;
+			tim_a1_cap_cfg.captureInterruptEnable = TIMER_A_CAPTURECOMPARE_INTERRUPT_ENABLE;
+			tim_a1_cap_cfg.captureOutputMode = TIMER_A_OUTPUTMODE_OUTBITVALUE;
+		MAP_Timer_A_initCapture(TIMER_A1_BASE,&tim_a1_cap_cfg);
+		//设置P7.4为捕获输入 tima1 ccr4 <---> P7.4
+		MAP_GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P7,GPIO_PIN4,GPIO_PRIMARY_MODULE_FUNCTION);
+/*--------------------------*\
+           INTERRUPT
+\*--------------------------*/
+void TA1_N_IRQHandler (void){
+if(int_cap_status == TAxCCR4_CCIFG)
+    {
+        uint16_t index = 0;
+        #ifdef DBG_MOD_OFF
+            SOL_Timer_A_clearTAxR(TIMER_A1_BASE);
+            cap_val3 = MAP_Timer_A_getCaptureCompareCount(TIMER_A1_BASE,TIMER_A_CAPTURECOMPARE_REGISTER_4);
+            USER_DBG("cap_val3 = %d[MAP_Timer_A_getCaptureCompareCount]\n",cap_val3);
+            cap_val3 = MAP_Timer_A_getCounterValue(TIMER_A1_BASE);
+            USER_DBG("cap_val3 = %d[MAP_Timer_A_getCaptureCompareCount]\n",cap_val3);
+
+            SOL_Timer_A_clearCCRx(TIMER_A1_BASE,TIMER_A_CAPTURECOMPARE_REGISTER_4);
+            cap_val3 = MAP_Timer_A_getCounterValue(TIMER_A1_BASE);
+            USER_DBG("cap_val3 = %d[Timer_A_getCounterValue]\n",cap_val3);
+            cap_val3 = MAP_Timer_A_getCaptureCompareCount(TIMER_A1_BASE,TIMER_A_CAPTURECOMPARE_REGISTER_4);
+            USER_DBG("cap_val3 = %d[Timer_A_getCounterValue]\n",cap_val3);
+            for ( index = 0; index < 20; index++)
+            {
+                cap_val3 = MAP_Timer_A_getCaptureCompareCount(TIMER_A1_BASE,TIMER_A_CAPTURECOMPARE_REGISTER_4);
+                USER_DBG("cap_val3 = %d[Timer_A_getCounterValue][%d]\n",cap_val3,index);
+            }
+            
+        #endif
+        if(int_cap_status == TAxCCR4_CCIFG)
+        {
+            switch (freq_cap_status)
+            {
+                case CAP_START:
+                        freq_cap_status = CAP_VAL1;
+                        #ifdef DBG_MOD_OFF
+                            USER_DBG("counter clear\n");
+                        #endif
+                    break;
+
+                case CAP_VAL1:
+                        cap_val1 = MAP_Timer_A_getCaptureCompareCount(TIMER_A1_BASE,TIMER_A_CAPTURECOMPARE_REGISTER_4);
+                        freq_cap_status = CAP_VAL2;
+                        #ifdef DBG_MOD_OFF
+                            USER_DBG("cap_val1 = %d\n",cap_val1);
+                        #endif
+                    break;
+
+                case CAP_VAL2:
+                        cap_val2 = MAP_Timer_A_getCaptureCompareCount(TIMER_A1_BASE,TIMER_A_CAPTURECOMPARE_REGISTER_4);
+                        freq_cap_status = CAP_END;
+                        #ifdef DBG_MOD_OFF
+                            USER_DBG("cap_val2 = %d\n",cap_val2);
+                        #endif
+                    break;
+
+                case CAP_END:
+                        #ifdef DBG_MOD
+                            USER_DBG("end of get cap_val\n");
+                            cap_val3 = MAP_Timer_A_getCaptureCompareCount(TIMER_A1_BASE,TIMER_A_CAPTURECOMPARE_REGISTER_4);
+                            USER_DBG("cap_val3 = %d\n",cap_val3);
+                            printf("Freq = %f\ncap_val1 = %d\ncap_val2 = %d\n",48000000 / (float)(cap_val2 - cap_val1),cap_val1,cap_val2);
+
+                            printf("\n\n**************************************\n");
+                        #endif
+                        freq_cap_status = CAP_START;
+                        //关闭TA0中断,在START中打开
+                        //MAP_Interrupt_disableInterrupt(INT_TA1_N);
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+}
+
+
+
+/*-------------------------------------------------------*\
+				SMCLK48M下1msToken令牌分发时钟
+\*-------------------------------------------------------*/
+/*--------------------------*\
+            INIT
+\*--------------------------*/
+//Token_Timer(Timer_A0 CCR0)
+//设置为增计数
+Timer_A_UpModeConfig tim_a0_up_cgf = {0};
+    tim_a0_up_cgf.captureCompareInterruptEnable_CCR0_CCIE = TIMER_A_CCIE_CCR0_INTERRUPT_ENABLE;
+    tim_a0_up_cgf.clockSource = TIMER_A_CLOCKSOURCE_SMCLK;
+    tim_a0_up_cgf.clockSourceDivider = TIMER_A_CLOCKSOURCE_DIVIDER_48;
+    tim_a0_up_cgf.timerClear = TIMER_A_DO_CLEAR;
+    tim_a0_up_cgf.timerInterruptEnable_TAIE =TIMER_A_TAIE_INTERRUPT_DISABLE;
+    tim_a0_up_cgf.timerPeriod = 1000 - 1;
+MAP_Timer_A_configureUpMode(TIMER_A0_BASE, &tim_a0_up_cgf);
+
+/*-------------------------*\
+         INTERRUPT
+\*-------------------------*/
+void TA0_0_IRQHandler (void){
+/*---flag clear---*/
+#ifdef DBG_MOD_OFF
+    USER_DBG("In TA0_0_IRQHandler");
+    //GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
+#endif
+    //清除溢出标志位
+/*     MAP_Timer_A_clearInterruptFlag(TIMER_A0_BASE); */
+    //清除捕获比较中断标志位
+    MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A0_BASE,
+                                             TIMER_A_CAPTURECOMPARE_REGISTER_0);
+//-------------------------------------------------------//
+    
+    //token++
+    //if(token >= TOKEN_TIME)
+    //token = 0;
+}
+/*------------------------*\
+		  ENABLE
+\*------------------------*/
+//Token
+MAP_Interrupt_enableInterrupt(INT_TA0_0);
+MAP_Timer_A_startCounter(TIMER_A0_BASE,TIMER_A_UP_MODE);
+
+/*-------------------------------------------------------*\
+				  TIMER_A连续计数闪烁绿灯
+\*-------------------------------------------------------*/
+/*------------------------*\
+			INIT
+\*------------------------*/
+	//绿灯初始化
+	GREEN_INIT();
+	//参考ACLK时钟初始化
+	MAP_CS_setReferenceOscillatorFrequency(CS_REFO_128KHZ);
+	MAP_CS_initClockSignal(CS_ACLK,CS_REFOCLK_SELECT,CS_CLOCK_DIVIDER_8);
+	//TIMER_A初始化
+	Timer_A_ContinuousModeConfig tim_a0_cfg = {0};
+		tim_a0_cfg.clockSource = TIMER_A_CLOCKSOURCE_ACLK;
+		tim_a0_cfg.clockSourceDivider = TIMER_A_CLOCKSOURCE_DIVIDER_1;
+		tim_a0_cfg.timerInterruptEnable_TAIE = TIMER_A_TAIE_INTERRUPT_ENABLE;
+		tim_a0_cfg.timerClear = TIMER_A_DO_CLEAR;
+	MAP_Timer_A_configureContinuousMode(TIMER_A0_BASE,&tim_a0_cfg);
+	//开启时钟连续计数中断
+    MAP_Interrupt_enableInterrupt(INT_TA0_N);
+	//使能管脚中断并打开总中断处理
+    MAP_Interrupt_enableMaster();
+	//开始计数
+    MAP_Timer_A_startCounter(TIMER_A0_BASE,TIMER_A_CONTINUOUS_MODE);
+	
+	FOREVER();
+/*------------------------*\
+		  INTERRUPT
+\*------------------------*/
+void TA0_N_IRQHandler (void){
+    //清除标志位
+    MAP_Timer_A_clearInterruptFlag(TIMER_A0_BASE);
+    #ifdef DBG_MOD
+        USER_DBG("In TA0_N_IRQHandler");
+    #endif  
+    GREEN_TG();
+}
+/*------------------------*\
+		  ENABLE
+\*------------------------*/
+//MAP_Interrupt_enableInterrupt(INT_TA0_N);
+//MAP_Timer_A_startCounter(TIMER_A0_BASE,TIMER_A_CONTINUOUS_MODE);

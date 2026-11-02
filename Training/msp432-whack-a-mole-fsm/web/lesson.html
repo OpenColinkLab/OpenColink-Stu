@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="四页速读：MSP432 打地鼠工程中的 FSM 与 C 实现">
+  <title>四页速读：FSM 与 C 实现 | MSP432 打地鼠</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lesson.css">
+</head>
+<body class="lesson-page">
+  <a class="skip-link" href="#lesson-main">跳到教案正文</a>
+
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-grid" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+      <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+      <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+      <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14"></path>
+      <path d="m13 6 6 6-6 6"></path>
+    </symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24">
+      <path d="m16 18 6-6-6-6"></path>
+      <path d="m8 6-6 6 6 6"></path>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"></circle>
+      <path d="M12 7v5l3 2"></path>
+    </symbol>
+    <symbol id="icon-warning" viewBox="0 0 24 24">
+      <path d="M10.3 3.7 2.4 17.4A2 2 0 0 0 4.1 20h15.8a2 2 0 0 0 1.7-2.6L13.7 3.7a2 2 0 0 0-3.4 0Z"></path>
+      <path d="M12 9v4M12 17h.01"></path>
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <path d="m8 5 11 7-11 7Z"></path>
+    </symbol>
+    <symbol id="icon-file" viewBox="0 0 24 24">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path>
+      <path d="M14 2v6h6M8 13h8M8 17h6"></path>
+    </symbol>
+  </svg>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="WAM/432 状态机实验台首页">
+      <span class="brand-mark"><svg aria-hidden="true"><use href="#icon-grid"></use></svg></span>
+      <span class="brand-copy">
+        <strong>WAM/432</strong>
+        <small>STATE MACHINE LAB</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="index.html">实验台</a>
+      <a class="active" href="lesson.html">四页速读</a>
+    </nav>
+    <a class="lesson-run-link" href="index.html">
+      运行验证
+      <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+    </a>
+  </header>
+
+  <nav class="page-tabs" aria-label="教案页面">
+    <a href="#page-1"><span>01</span>FSM 模型</a>
+    <a href="#page-2"><span>02</span>C 骨架</a>
+    <a href="#page-3"><span>03</span>三状态</a>
+    <a href="#page-4"><span>04</span>移植与视频</a>
+  </nav>
+
+  <main id="lesson-main" class="lesson-stack">
+    <article class="lesson-sheet lesson-cover" id="page-1">
+      <header class="sheet-header">
+        <div>
+          <p class="eyebrow">MSP432P401R · FSM IN C · 4 PAGES</p>
+          <h1>状态机先解决“现在是什么状态”</h1>
+          <p class="sheet-lede">这套打地鼠程序只有三个稳定状态。按键、超时和分数都被解释为事件或状态内部数据，不先绑定 GPIO。</p>
+        </div>
+        <dl class="cover-facts">
+          <div><dt>稳定状态</dt><dd>3</dd></div>
+          <div><dt>业务信号</dt><dd>IS_GAME</dd></div>
+          <div><dt>定时基准</dt><dd>1 ms</dd></div>
+          <div><dt>反应窗</dt><dd>500 ms</dd></div>
+        </dl>
+      </header>
+
+      <section class="sheet-section">
+        <div class="section-title">
+          <span>1.1</span>
+          <div>
+            <p>State · Event · Action</p>
+            <h2>三状态已经把游戏完整覆盖</h2>
+          </div>
+        </div>
+
+        <div class="state-flow" aria-label="三状态迁移图">
+          <div class="state-box">
+            <span>STATE 00</span>
+            <strong>IDLE</strong>
+            <p>等待键值 16，清零分数</p>
+          </div>
+          <div class="flow-arrow"><span>16 / START</span><svg><use href="#icon-arrow-right"></use></svg></div>
+          <div class="state-box">
+            <span>STATE 01</span>
+            <strong>START_GAME</strong>
+            <p>生成地鼠，复位等待令牌</p>
+          </div>
+          <div class="flow-arrow"><span>SPAWN</span><svg><use href="#icon-arrow-right"></use></svg></div>
+          <div class="state-box">
+            <span>STATE 02</span>
+            <strong>CHECK</strong>
+            <p>判断命中、错击、超时、退出</p>
+          </div>
+        </div>
+
+        <div class="definition-grid">
+          <div>
+            <span>状态 State</span>
+            <strong>系统现在停留在哪</strong>
+            <p>同一时刻只有一个当前状态；C 中用当前状态函数地址表示。</p>
+          </div>
+          <div>
+            <span>事件 Event</span>
+            <strong>刚刚发生了什么</strong>
+            <p><code>IS_GAME_SIG</code> 是业务信号，按键值和超时标志提供条件。</p>
+          </div>
+          <div>
+            <span>动作 Action</span>
+            <strong>处理事件时做什么</strong>
+            <p>计分、清鼠、蜂鸣、复位令牌，或切换到下一个状态。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sheet-section">
+        <div class="section-title compact-title">
+          <span>1.2</span>
+          <div><h2>一次业务事件的分支结果</h2></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>当前状态</th><th>条件</th><th>动作</th><th>下一状态</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>IDLE</code></td><td>键值 16</td><td>分数清零、允许下一轮</td><td><code>START_GAME</code></td></tr>
+              <tr><td><code>START_GAME</code></td><td><code>nextTurn != 0</code></td><td>随机选洞、置超时为 0、令牌清零</td><td><code>CHECK</code></td></tr>
+              <tr><td><code>CHECK</code></td><td>超时</td><td>失分、灭鼠、允许下一轮</td><td><code>START_GAME</code></td></tr>
+              <tr><td><code>CHECK</code></td><td>键值等于地鼠键值</td><td>加分、灭鼠、允许下一轮</td><td><code>START_GAME</code></td></tr>
+              <tr><td><code>CHECK</code></td><td>其他有效键值</td><td>失分、灭鼠、允许下一轮</td><td><code>START_GAME</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="sheet-callout">
+        <svg aria-hidden="true"><use href="#icon-file"></use></svg>
+        <p>行为基线来自原始 <code>project_main.c</code>。QM 文件中的 Blinky 五状态图是旧模板，不是本工程最终行为。</p>
+        <a href="/source/original-project-main.c">打开原 C</a>
+      </div>
+    </article>
+
+    <article class="lesson-sheet" id="page-2">
+      <header class="sheet-header compact-header">
+        <div>
+          <p class="eyebrow">PAGE 02 · C IMPLEMENTATION</p>
+          <h2>事件 + 函数指针 + 转移宏</h2>
+          <p class="sheet-lede">C 实现不保存状态编号，而是保存“当前状态处理函数”的地址。切换状态就是改写一个函数指针。</p>
+        </div>
+      </header>
+
+      <section class="two-column">
+        <div>
+          <div class="section-title compact-title">
+            <span>2.1</span>
+            <div><h2>最小类型协议</h2></div>
+          </div>
+          <div class="code-window">
+            <pre><code>typedef status_t (*State_Handler)(
+    FSM_t *this_p,
+    event_t const *evt
+);
+
+struct FSM_t {
+    State_Handler state_handler;
+};
+
+/* target() 返回 TRAN_STATUS 时，
+   派发器执行 EXIT → ENTRY */</code></pre>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-title compact-title">
+            <span>2.2</span>
+            <div><h2>三个指针分别指向谁</h2></div>
+          </div>
+          <div class="pointer-stack">
+            <div>
+              <code>FSM_t *this_p</code>
+              <strong>指向对象内存</strong>
+              <p><code>this_p-&gt;state_handler</code> 访问对象中的函数指针成员。</p>
+            </div>
+            <div>
+              <code>State_Handler</code>
+              <strong>指向函数代码</strong>
+              <p>保存 <code>Proj_Idle</code>、<code>Proj_StartGame</code>、<code>Proj_Check</code> 的入口地址。</p>
+            </div>
+            <div>
+              <code>event_t const *evt</code>
+              <strong>指向只读事件</strong>
+              <p>通过 <code>evt-&gt;signal</code> 读取信号，但状态函数不能改写原事件。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sheet-section">
+        <div class="section-title">
+          <span>2.3</span>
+          <div>
+            <p>Macro · Assignment · Comma operator</p>
+            <h2>转移宏先改函数指针，再返回 TRAN_STATUS</h2>
+          </div>
+        </div>
+
+        <div class="code-window macro-code">
+          <pre><code>#define SOL_FSM_Tran(this_p, target) \
+    (((FSM_t *)(this_p))-&gt;state_handler = \
+        (State_Handler)(target), TRAN_STATUS)
+
+/* 正确调用 */
+return SOL_FSM_Tran(this_p, Proj_Check);</code></pre>
+        </div>
+
+        <div class="macro-steps">
+          <div><span>01</span><code>(FSM_t *)(this_p)</code><p>地址不变，按 FSM 基类布局访问。</p></div>
+          <div><span>02</span><code>-&gt;state_handler</code><p>找到保存当前状态函数地址的成员。</p></div>
+          <div><span>03</span><code>state_handler = target</code><p>把目标状态函数地址写进去。</p></div>
+          <div><span>04</span><code>(assignment, TRAN_STATUS)</code><p>逗号取右值，整个表达式等于 TRAN_STATUS。</p></div>
+        </div>
+
+        <div class="comma-explainer">
+          <div>
+            <h3>逗号运算符是什么</h3>
+            <p><code>(left, right)</code> 先完整求值左边，丢弃左边结果，再求值右边；整个表达式的结果来自右边。</p>
+            <pre><code>int a = 0;
+int value = (a = 3, a + 2);
+/* a == 3, value == 5 */</code></pre>
+          </div>
+          <div>
+            <h3>放到宏里就是</h3>
+            <pre><code>return (
+    state_handler = Proj_Check,
+    TRAN_STATUS
+);</code></pre>
+            <p>左边完成状态切换，右边让派发器知道“发生了转移”。缺少 <code>return</code> 时指针会改，但 EXIT/ENTRY 不会执行。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sheet-section">
+        <div class="section-title compact-title">
+          <span>2.4</span>
+          <div><h2>派发器保存旧函数地址</h2></div>
+        </div>
+        <div class="dispatcher-strip">
+          <div><span>1</span><code>previous = state_handler</code><p>先保存旧状态函数地址。</p></div>
+          <div><span>2</span><code>result = previous(this, evt)</code><p>把当前事件交给旧状态。</p></div>
+          <div><span>3</span><code>previous(this, EXIT)</code><p>返回 TRAN 时先清理旧状态。</p></div>
+          <div><span>4</span><code>state_handler(this, ENTRY)</code><p>再进入已经写好的新状态。</p></div>
+        </div>
+        <div class="inline-warning">
+          <svg aria-hidden="true"><use href="#icon-warning"></use></svg>
+          <p>原工程把项目处理函数强转成基类函数指针。常见 ARM/Windows ABI 上可运行，但严格 C 标准下属于未定义行为；高可靠性代码应使用统一签名包装函数。</p>
+        </div>
+      </section>
+    </article>
+
+    <article class="lesson-sheet" id="page-3">
+      <header class="sheet-header compact-header">
+        <div>
+          <p class="eyebrow">PAGE 03 · STATE HANDLERS</p>
+          <h2>三个处理函数，一条固定模板</h2>
+          <p class="sheet-lede">每个状态都先处理 ENTRY/EXIT，再看业务信号。区别只在业务分支里的条件和动作。</p>
+        </div>
+      </header>
+
+      <div class="handler-template">
+        <pre><code>switch (evt-&gt;signal) {
+case ENTRY_SIG:  /* 进入动作 */ return HANDLED_STATUS;
+case EXIT_SIG:   /* 退出清理 */ return HANDLED_STATUS;
+case IS_GAME_SIG:/* 业务判断 */ break;
+default:         return IGNORED_STATUS;
+}</code></pre>
+      </div>
+
+      <section class="handler-list">
+        <div class="handler-row">
+          <div class="handler-name"><span>00</span><strong>IDLE</strong><small>等待</small></div>
+          <div class="handler-copy">
+            <p>收到键值 16 时清零分数，设置 <code>nextTurn = 1</code>，然后转移到 <code>START_GAME</code>。其他时间保持九宫盘无地鼠。</p>
+          </div>
+          <pre><code>if (mkey_val == 16) {
+    score = 0;
+    lost = 0;
+    nextTurn = 1;
+    return SOL_FSM_Tran(
+        this_p, Proj_StartGame);
+}</code></pre>
+        </div>
+
+        <div class="handler-row">
+          <div class="handler-name"><span>01</span><strong>START_GAME</strong><small>生成</small></div>
+          <div class="handler-copy">
+            <p><code>nextTurn</code> 为真时生成地鼠：随机 500–1900 ms 准备延时，随机洞位，清超时和等待令牌，再进入 <code>CHECK</code>。</p>
+            <p><code>nextTurn</code> 为假时只补循环，不生成新股，因此按 4/8 不重置当前地鼠。</p>
+          </div>
+          <pre><code>if (nextTurn) {
+    nextTurn = 0;
+    spawnDelay =
+        ((rand() % 15) + 5) * 100;
+    generate();
+    isTimeOut = 0;
+    waitToken = 0;
+}
+return SOL_FSM_Tran(
+    this_p, Proj_Check);</code></pre>
+        </div>
+
+        <div class="handler-row">
+          <div class="handler-name"><span>02</span><strong>CHECK</strong><small>判定</small></div>
+          <div class="handler-copy">
+            <p>判定顺序固定：退出 → 超时 → 命中 → 错击 → 忽略。超时必须排在命中前，防止已经过期的一轮再次加分。</p>
+            <div class="priority-line"><span>16</span><i>→</i><span>超时</span><i>→</i><span>命中</span><i>→</i><span>错击</span><i>→</i><span>4/8</span></div>
+          </div>
+          <pre><code>if (key == 16) quit();
+else if (isTimeOut) lost();
+else if (key == moleCode) hit();
+else if (key is valid) lost();
+return SOL_FSM_Tran(
+    this_p, Proj_StartGame);</code></pre>
+        </div>
+      </section>
+
+      <section class="timer-band">
+        <div class="timer-title">
+          <svg aria-hidden="true"><use href="#icon-clock"></use></svg>
+          <div><span>2.4 不是状态，是输入</span><h2>定时器与按键在边界层产生事实</h2></div>
+        </div>
+        <div class="timer-grid">
+          <div><span>TA1</span><strong>每 1 ms 增加等待令牌</strong><p>达到 500 后只置 <code>isTimeOut = 1</code>。</p></div>
+          <div><span>MKEY</span><strong>每 5 ms 扫描并去抖</strong><p>确认释放后写入 <code>mkey_val</code>。</p></div>
+          <div><span>主循环</span><strong>派发 <code>IS_GAME_SIG</code></strong><p>由 <code>CHECK</code> 统一解释超时和按键。</p></div>
+        </div>
+      </section>
+    </article>
+
+    <article class="lesson-sheet" id="page-4">
+      <header class="sheet-header compact-header">
+        <div>
+          <p class="eyebrow">PAGE 04 · PORT · TEST · LEARN</p>
+          <h2>从 Keil 工程带到可测试 C</h2>
+          <p class="sheet-lede">保留状态与规则，把 GPIO、定时器和随机源移到边界层，才能真正测试和回放。</p>
+        </div>
+      </header>
+
+      <section class="port-grid">
+        <div>
+          <span>STEP 1</span>
+          <strong>保留三状态</strong>
+          <p><code>IDLE → START_GAME → CHECK</code> 和原判定顺序不变。</p>
+        </div>
+        <div>
+          <span>STEP 2</span>
+          <strong>收拢业务数据</strong>
+          <p>键值、分数、地鼠、令牌和随机种子放进项目对象。</p>
+        </div>
+        <div>
+          <span>STEP 3</span>
+          <strong>替换随机源</strong>
+          <p>用固定 LCG 代替 <code>rand()</code>，相同 seed 得到相同结果。</p>
+        </div>
+        <div>
+          <span>STEP 4</span>
+          <strong>模拟 1 ms tick</strong>
+          <p>主机用 <code>WAM_AdvanceTime</code> 对应 TA1 中断。</p>
+        </div>
+        <div>
+          <span>STEP 5</span>
+          <strong>暴露快照</strong>
+          <p>网页只读取 C 快照与事件，不重新实现游戏状态机。</p>
+        </div>
+      </section>
+
+      <section class="two-column compact-sections">
+        <div>
+          <div class="section-title compact-title"><span>4.1</span><div><h2>验证覆盖</h2></div></div>
+          <ul class="check-list">
+            <li>开始键生成合法洞位和 500–1900 ms 延时</li>
+            <li>正确键加 1 分，错误键加 1 失分</li>
+            <li>第 500 个 tick 触发超时并进入下一轮</li>
+            <li>键值 4/8 不改变当前地鼠和分数</li>
+            <li>相同 seed 的洞位与延时完全一致</li>
+            <li>退出后回到 IDLE 并清除地鼠</li>
+          </ul>
+        </div>
+        <div>
+          <div class="section-title compact-title"><span>4.2</span><div><h2>三个易错点</h2></div></div>
+          <ul class="warning-list">
+            <li>转移宏没有 <code>return</code>，EXIT/ENTRY 永远不会执行。</li>
+            <li>把准备延时和 500 ms 反应窗混成一个计时器。</li>
+            <li>在 ISR 中直接执行蜂鸣、GPIO 和完整状态动作。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <div class="section-title">
+          <span>4.3</span>
+          <div><p>RECOMMENDED COURSE</p><h2>推荐视频：嵌入式系统中的状态机</h2></div>
+        </div>
+        <a class="video-card"
+           href="https://www.youtube.com/playlist?list=PLPW8O6W-1chwyTzI3BHwBLbGQoPFxPAPM"
+           target="_blank"
+           rel="noopener noreferrer">
+          <img src="assets/quantum-leaps-course.jpg"
+               alt="Modern Embedded Systems Programming Course 播放列表封面"
+               width="480"
+               height="360"
+               loading="lazy">
+          <div class="video-copy">
+            <span>YouTube Playlist · Quantum Leaps, LLC</span>
+            <h3>Modern Embedded Systems Programming Course</h3>
+            <p>从事件驱动、状态机到嵌入式 C 实现，适合配合本教案继续学习。</p>
+            <strong>打开播放列表 <svg aria-hidden="true"><use href="#icon-play"></use></svg></strong>
+          </div>
+        </a>
+      </section>
+
+      <footer class="lesson-resources">
+        <div>
+          <strong>对应源码</strong>
+          <a href="/source/sol_fsm.h">sol_fsm.h</a>
+          <a href="/source/sol_fsm.c">sol_fsm.c</a>
+          <a href="/source/whack_a_mole.c">whack_a_mole.c</a>
+        </div>
+        <a class="back-to-lab" href="index.html">回到实验台 <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span>FSM · 4-PAGE QUICK READ</span>
+    <span>MSP432P401R / Portable C</span>
+  </footer>
+</body>
+</html>

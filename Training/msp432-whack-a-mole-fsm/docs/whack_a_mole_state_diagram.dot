@@ -1,0 +1,153 @@
+digraph WhackAMoleFSM {
+    graph [
+        rankdir=LR,
+        bgcolor="#FFFFFF",
+        pad="0.35",
+        nodesep="0.65",
+        ranksep="1.35",
+        splines=true,
+        overlap=false,
+        labelloc="t",
+        label="MSP432 打地鼠状态转移图\n条件 / 动作",
+        labelfontname="Microsoft YaHei",
+        labelfontsize=22,
+        labelfontcolor="#1F2937",
+        fontname="Microsoft YaHei"
+    ];
+
+    node [
+        shape=box,
+        style="rounded,filled",
+        fontname="Microsoft YaHei",
+        fontsize=13,
+        margin="0.20,0.12",
+        penwidth=2.0,
+        color="#4B5563"
+    ];
+
+    edge [
+        fontname="Microsoft YaHei",
+        fontsize=11,
+        color="#4B5563",
+        fontcolor="#374151",
+        arrowsize=0.8,
+        penwidth=1.6
+    ];
+
+    initial [
+        shape=point,
+        width=0.22,
+        color="#111827",
+        fillColor="#111827"
+    ];
+
+    IDLE [
+        label="IDLE\n空闲等待",
+        fillcolor="#DBEAFE",
+        color="#2563EB"
+    ];
+
+    START_GAME [
+        label="START_GAME\n开始/生成一轮",
+        fillcolor="#FFEDD5",
+        color="#EA580C"
+    ];
+
+    CHECK [
+        label="CHECK\n游戏判定",
+        fillcolor="#DCFCE7",
+        color="#16A34A"
+    ];
+
+    timer_note [
+        shape=note,
+        label="TA1 每 1 ms 增加等待令牌\n累计 500 ms 后仅置 isTimeOut=1\n不会直接触发状态转移",
+        fillcolor="#FEF9C3",
+        color="#CA8A04",
+        fontsize=11
+    ];
+
+    dispatch_note [
+        shape=note,
+        label="发生转移时派发器执行\n旧状态 EXIT → 新状态 ENTRY\nSTART_GAME 是瞬时处理状态",
+        fillcolor="#F3E8FF",
+        color="#9333EA",
+        fontsize=11
+    ];
+
+    initial -> IDLE [
+        label="WAM_Reset\nENTRY_SIG",
+        color="#111827"
+    ];
+
+    IDLE -> START_GAME [
+        label="键值 16 / 清零分数、nextTurn=1",
+        color="#2563EB",
+        penwidth=2.2
+    ];
+
+    IDLE -> IDLE [
+        label="其他键值 / 清空地鼠",
+        color="#64748B",
+        style=dashed
+    ];
+
+    START_GAME -> IDLE [
+        label="键值 16 / 退出游戏",
+        color="#EA580C",
+        constraint=false
+    ];
+
+    START_GAME -> CHECK [
+        label="nextTurn=1 / 生成地鼠\n重置 500 ms 计时",
+        color="#EA580C",
+        penwidth=2.2
+    ];
+
+    START_GAME -> CHECK [
+        label="nextTurn=0 / 不生成新地鼠",
+        color="#64748B",
+        style=dashed
+    ];
+
+    CHECK -> IDLE [
+        label="键值 16 / 退出并清空地鼠",
+        color="#16A34A",
+        constraint=false
+    ];
+
+    CHECK -> START_GAME [
+        label="超时 / lost+1、清空地鼠、nextTurn=1",
+        color="#DC2626",
+        penwidth=2.2
+    ];
+
+    CHECK -> START_GAME [
+        label="key == mole_code / score+1\n清空地鼠、nextTurn=1",
+        color="#16A34A",
+        penwidth=2.2
+    ];
+
+    CHECK -> START_GAME [
+        label="其他有效键值 / lost+1\n清空地鼠、nextTurn=1",
+        color="#D97706"
+    ];
+
+    CHECK -> START_GAME [
+        label="键值 0、4、8 / 不计分",
+        color="#64748B",
+        style=dashed
+    ];
+
+    timer_note -> CHECK [
+        style=dotted,
+        arrowhead=none,
+        color="#CA8A04"
+    ];
+
+    dispatch_note -> START_GAME [
+        style=dotted,
+        arrowhead=none,
+        color="#9333EA"
+    ];
+}

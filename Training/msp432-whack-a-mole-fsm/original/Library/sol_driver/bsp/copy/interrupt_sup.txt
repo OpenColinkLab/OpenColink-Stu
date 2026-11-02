@@ -1,0 +1,328 @@
+/****************************************************************
+* @Name:interrupt_sup.txt
+* @Describe:432中断复制源文档
+* @Ver:v_alpha
+* @Update Date:2021-9-13 17:31:27
+* @Author:Chsier 1481154662@qq.com
+*****************************************************************/
+/*-------------------------------------------------------*\
+			      Interrupt function body
+\*-------------------------------------------------------*/
+/*
+* describe :中断处理函数区
+* input	   :/
+* output   :/
+* other_dis:
+中断使用方式：(一般情况)
+    1.	配置GPIO
+    2.	清除中断标志
+    3.	配置触发方式
+    4.	开启外部中断
+    5.	开启对应中断
+    6.	开启总中断
+    7.	中断处理
+        a)	确保清除中断标志位
+        b)	执行处理函数
+* platform :432sdk
+* tested   :N
+*/
+
+/*-------------------------*\
+		PSS_IRQHandler
+\*-------------------------*/
+
+void PSS_IRQHandler (void){
+/*---flag clear---*/
+//-------------------------------------------------------//
+}
+
+/*
+void CS_IRQHandler (void){}
+void PCM_IRQHandler (void){}
+void WDT_A_IRQHandler (void){}
+void FPU_IRQHandler (void){}
+void FLCTL_IRQHandler (void){}
+void COMP_E0_IRQHandler (void){}
+void COMP_E1_IRQHandler (void){}
+*/
+
+/*-------------------------*\
+TA0_0_IRQHandler(Token_Timer)
+\*-------------------------*/
+void TA0_0_IRQHandler (void){
+/*---flag clear---*/
+    //清除溢出标志位
+/*     MAP_Timer_A_clearInterruptFlag(TIMER_A0_BASE); */
+    //清除捕获比较中断标志位
+    MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A0_BASE,
+                                             TIMER_A_CAPTURECOMPARE_REGISTER_0);
+//-------------------------------------------------------//
+    
+    //token++
+    //if(token >= TOKEN_TIME)
+    //token = 0;
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In TA0_0_IRQHandler");//延时敏感型中断不要在其中使用串口打印调试,可以考虑rtt调试
+//GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
+#endif
+}
+
+/*-------------------------*\
+      TA0_0_IRQHandler(2)
+\*-------------------------*/
+void TA0_0_IRQHandler (void){
+/*---flag clear---*/
+    uint32_t int_cap_flag;
+    uint32_t int_ove_flag;
+    //获取中断标志
+    int_ove_flag = TA0CTL & 0x01;   //溢出标志 (&)
+    int_cap_flag = TA0CCTL4 & 0x01; //捕获标志 (&)
+
+    //清除溢出标志位
+    TA0CTL &= ~ 0x01;
+    //清除捕获比较中断标志位
+    TA0CCTL4 &= ~ 0x01;
+//-------------------------------------------------------//
+    
+
+#ifdef DBG_MOD_OFF
+    //USER_DBG("In TA0_0_IRQHandler"); //在这里串口打印非常影响延时特别是放在刚进中断的时候
+#endif
+}
+
+
+
+/*-------------------------*\
+       TA0_N_IRQHandler
+\*-------------------------*/
+void TA0_N_IRQHandler (void){
+/*---flag clear---*/
+    uint32_t int_cap_status;
+    int_cap_status = SOL_Timer_A_getTAxIV(TIMER_A0_BASE);
+    //清除溢出标志位
+/*     MAP_Timer_A_clearInterruptFlag(TIMER_A0_BASE); */
+    //清除捕获比较中断标志位
+/*     MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A0_BASE,
+                                             TIMER_A_CAPTURECOMPARE_REGISTER_x); */
+//-------------------------------------------------------//
+
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In TA0_N_IRQHandler");
+#endif
+}
+
+
+/*-------------------------*\
+      TA1_0_IRQHandler
+\*-------------------------*/
+void TA1_0_IRQHandler (void){
+/*---flag clear---*/
+    //清除溢出标志位
+/*     MAP_Timer_A_clearInterruptFlag(TIMER_A1_BASE); */
+    //清除捕获比较中断标志位
+    MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
+                                             TIMER_A_CAPTURECOMPARE_REGISTER_0);
+//-------------------------------------------------------//
+
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In TA1_0_IRQHandler");
+#endif
+}
+
+/*-------------------------*\
+	   TA1_N_IRQHandler
+\*-------------------------*/
+void TA1_N_IRQHandler (void){
+/*---flag clear---*/
+    uint32_t int_cap_status;
+    int_cap_status = SOL_Timer_A_getTAxIV(TIMER_A1_BASE);
+    //清除溢出标志位
+/*  MAP_Timer_A_clearInterruptFlag(TIMER_A1_BASE); */
+    //清除捕获比较中断标志位
+    MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
+                                             TIMER_A_CAPTURECOMPARE_REGISTER_4); 
+//-------------------------------------------------------//
+
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In TA1_N_IRQHandler");
+#endif
+}
+
+
+/*
+void TA2_0_IRQHandler (void){}
+*/
+
+/*-------------------------*\
+       TA2_N_IRQHandler
+\*-------------------------*/
+void TA2_N_IRQHandler (void){
+/*---flag clear---*/
+    uint32_t int_cap_status;
+    int_cap_status = SOL_Timer_A_getTAxIV(TIMER_A2_BASE);
+    //清除溢出标志位
+/*  MAP_Timer_A_clearInterruptFlag(TIMER_A0_BASE); */
+    //清除捕获比较中断标志位
+    MAP_Timer_A_clearCaptureCompareInterrupt(TIMER_A0_BASE,
+                                             TIMER_A_CAPTURECOMPARE_REGISTER_4);
+//-------------------------------------------------------//
+
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In TA2_N_IRQHandler");
+#endif
+}
+
+
+/*
+void TA3_0_IRQHandler (void){}
+void TA3_N_IRQHandler (void){}
+void EUSCIA0_IRQHandler (void){}
+void EUSCIA1_IRQHandler (void){}
+void EUSCIA2_IRQHandler (void){}
+void EUSCIA3_IRQHandler (void){}
+void EUSCIB0_IRQHandler (void){}
+void EUSCIB1_IRQHandler (void){}
+void EUSCIB2_IRQHandler (void){}
+void EUSCIB3_IRQHandler (void){}
+void ADC14_IRQHandler (void){}
+void T32_INT1_IRQHandler (void){}
+void T32_INT2_IRQHandler (void){}
+void T32_INTC_IRQHandler (void){}
+void AES256_IRQHandler (void){}
+void RTC_C_IRQHandler (void){}
+void DMA_ERR_IRQHandler (void){}
+void DMA_INT3_IRQHandler (void){}
+void DMA_INT2_IRQHandler (void){}
+void DMA_INT1_IRQHandler (void){}
+void DMA_INT0_IRQHandler (void){}
+*/
+
+/*-------------------------*\
+       PORT1_IRQHandler
+\*-------------------------*/
+void PORT1_IRQHandler (void)
+{
+/*---flag clear---*/
+    //清除标志位
+    uint16_t int_status = MAP_GPIO_getEnabledInterruptStatus(GPIO_PORT_P1);
+    MAP_GPIO_clearInterruptFlag(GPIO_PORT_P1,int_status);
+//-------------------------------------------------------//
+
+/*     if(int_status & GPIO_PIN1){
+        #ifdef DBG_MOD
+           USER_DBG("In interrupt key 1.1 \n");
+        #endif
+    }  */
+	
+/*     if(int_status & GPIO_PIN4){
+      #ifdef DBG_MOD
+          USER_DBG("In interrupt key 1.4 \n");
+      #endif
+    } */
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In PORT1_IRQHandler");
+#endif
+}
+
+/*-------------------------*\
+       PORT2_IRQHandler
+\*-------------------------*/
+void PORT2_IRQHandler (void)
+{
+/*---flag clear---*/
+    //清除标志位
+    uint16_t int_status = MAP_GPIO_getEnabledInterruptStatus(GPIO_PORT_P2);
+    MAP_GPIO_clearInterruptFlag(GPIO_PORT_P2,int_status);
+//-------------------------------------------------------//
+
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In PORT2_IRQHandler");
+#endif
+}
+
+
+/*-------------------------*\
+       PORT3_IRQHandler
+\*-------------------------*/
+void PORT3_IRQHandler (void)
+{
+/*---flag clear---*/
+    //清除标志位
+    uint16_t int_status = MAP_GPIO_getEnabledInterruptStatus(GPIO_PORT_P3);
+    MAP_GPIO_clearInterruptFlag(GPIO_PORT_P3,int_status);
+//-------------------------------------------------------//
+
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In PORT3_IRQHandler");
+#endif
+}
+
+/*-------------------------*\
+       PORT4_IRQHandler
+\*-------------------------*/
+void PORT4_IRQHandler (void)
+{
+/*---flag clear---*/
+    //清除标志位
+    uint16_t int_status = MAP_GPIO_getEnabledInterruptStatus(GPIO_PORT_P4);
+    MAP_GPIO_clearInterruptFlag(GPIO_PORT_P4,int_status);
+//-------------------------------------------------------//
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In PORT4_IRQHandler");
+#endif
+}
+
+/*-------------------------*\
+       PORT5_IRQHandler
+\*-------------------------*/
+void PORT5_IRQHandler (void)
+{
+/*---flag clear---*/
+    //清除标志位
+    uint16_t int_status = MAP_GPIO_getEnabledInterruptStatus(GPIO_PORT_P5);
+    MAP_GPIO_clearInterruptFlag(GPIO_PORT_P5,int_status);
+//-------------------------------------------------------//
+
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In PORT5_IRQHandler");
+#endif
+}
+
+/*-------------------------*\
+       PORT6_IRQHandler
+\*-------------------------*/
+void PORT6_IRQHandler (void)
+{
+/*---flag clear---*/
+    //清除标志位
+    uint16_t int_status = MAP_GPIO_getEnabledInterruptStatus(GPIO_PORT_P6);
+    MAP_GPIO_clearInterruptFlag(GPIO_PORT_P6,int_status);
+//-------------------------------------------------------//
+
+
+
+
+#ifdef DBG_MOD_OFF
+USER_DBG("In PORT6_IRQHandler");
+#endif
+}
+
+
+
+
+/*-------------------------*\
+      HardFault_Handler
+\*-------------------------*/
+void HardFault_Handler (void){
+	FOREVER();
+}
