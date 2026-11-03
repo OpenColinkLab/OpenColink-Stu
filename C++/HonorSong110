@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n;
+	int min,max;
+	scanf("%d",&n);
+	for(min=2;min<n;min++)
+	{
+		int a=1;
+		for(int i=2;i<=sqrt(min);i++)
+		{
+			if(min%i==0)
+			{
+				a=0;
+				break;
+			}
+		}
+		if(a==0)
+			continue;
+		max=n-min;
+		int b=1;
+		for(int i=2;i<=sqrt(max);i++)
+		{
+			if(max%i==0)
+			{
+				b=0;
+				break;
+			}
+		}
+		if(b==1)
+		{
+			printf("%d %d",min,max);
+			break;
+		}
+	}
+	return 0;
+}
