@@ -1,0 +1,21 @@
+/* ===========================================================================
+ *  lscript.ld 需要加的 6 行（letter-shell 命令表）
+ *
+ *  放哪儿：src/lscript.ld 的  .text : { ... }  里面，
+ *          紧跟在  *(.gnu.linkonce.armextab.*)  这一行之后，
+ *          也就是 .text 段的最后、'} > ps7_ddr_0' 之前。
+ *
+ *  为什么：SHELL_EXPORT_CMD() 把每条命令放进名为 shellCommand 的段；
+ *          链接器默认会把没人引用的段丢掉，必须 KEEP；
+ *          两个符号是给 shell.c 里 shellInit() 扫描范围用的。
+ *
+ *  改完怎么验证：见 README.md 第 6 步。
+ * =========================================================================*/
+
+   /* letter-shell 命令表：命令用 SHELL_EXPORT_CMD() 注册在 shellCommand 段 */
+   . = ALIGN(4);
+   _shell_command_start = .;
+   KEEP (*(SORT_BY_NAME(shellCommand)))
+   _shell_command_end   = .;
+
+/* 完整改好的例子见同目录 lscript.ld.example（第 54~66 行附近）。 */
