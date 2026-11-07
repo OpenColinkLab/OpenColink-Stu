@@ -144,3 +144,168 @@ h1 span { color: var(--gold); font-style: italic; }
   filter: blur(6px);
 }
 .card-stage.is-finale .finale-panel { display: grid; }
+
+/* Three-pile FSM variant */
+.memory-cards { display:flex; gap:8px; }
+.memory-card { position:relative; display:flex; flex:1; min-height:82px; flex-direction:column; align-items:center; justify-content:center; border:1px solid rgba(246,211,123,.27); border-radius:12px; background:linear-gradient(145deg,rgba(246,211,123,.13),rgba(246,211,123,.03)),#0c1714; box-shadow:inset 0 0 30px rgba(246,211,123,.05); }
+.memory-card>span { position:absolute; top:7px; left:8px; color:var(--muted); font-size:7px; letter-spacing:.1em; }
+.memory-card strong { color:var(--gold); font-family:Georgia,serif; font-size:30px; }
+.memory-card.is-red strong { color:#ff9a8e; }
+.memory-card.is-unknown strong { color:rgba(255,255,255,.18); }
+.choice-panel { display:grid; grid-template-columns:minmax(220px,1fr) minmax(300px,2fr) auto; gap:20px; align-items:center; margin:0 34px 18px; padding:18px 20px; border:1px solid rgba(119,242,192,.22); border-radius:16px; background:radial-gradient(circle at 0 0,rgba(119,242,192,.1),transparent 40%),rgba(6,19,15,.72); animation:fadeUp .35s ease both; }
+.choice-copy h3 { margin:4px 0 4px; font-family:Georgia,"Microsoft YaHei",serif; font-size:20px; font-weight:500; }
+.choice-copy p { margin:0; color:var(--muted); font-size:10px; line-height:1.5; }
+.number-picker { display:flex; flex-wrap:wrap; gap:5px; }
+.number-chip { width:32px; height:32px; border:1px solid rgba(255,255,255,.09); border-radius:8px; color:#9bb4aa; background:rgba(255,255,255,.025); cursor:pointer; font-family:"Cascadia Code",Consolas,monospace; font-size:10px; transition:.18s ease; }
+.number-chip:hover { border-color:rgba(119,242,192,.42); color:#dcfff2; transform:translateY(-1px); }
+.number-chip.is-selected { border-color:rgba(119,242,192,.7); color:#062019; background:var(--mint); box-shadow:0 0 18px rgba(119,242,192,.22); }
+.choice-confirm { white-space:nowrap; }
+.pile-status { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; padding:0 34px 18px; }
+.pile-item { display:flex; align-items:center; justify-content:space-between; padding:9px 12px; border:1px solid var(--line); border-radius:9px; color:var(--muted); background:rgba(255,255,255,.015); font-size:9px; }
+.pile-item strong { color:#738d83; font-weight:500; }
+.pile-item.is-done { border-color:rgba(119,242,192,.25); }
+.pile-item.is-done strong { color:var(--mint); }
+@media(max-width:900px){ .choice-panel{grid-template-columns:1fr;margin-left:18px;margin-right:18px}.pile-status{padding-left:18px;padding-right:18px} }
+@media(max-width:620px){ .memory-card{min-height:70px}.memory-card strong{font-size:24px}.number-chip{width:29px;height:29px}.pile-status{grid-template-columns:1fr} }
+
+/* Ensure HTML hidden state always wins over display rules. */
+.choice-panel[hidden],
+.finale-panel[hidden] {
+  display: none !important;
+}
+
+/* Cinematic state animations */
+.fx-ring { position:absolute; top:50%; left:50%; width:140px; height:140px; border:1px solid rgba(119,242,192,.45); border-radius:50%; opacity:0; pointer-events:none; transform:translate(-50%,-50%) scale(.2); z-index:8; }
+.fx-ring::before,.fx-ring::after { position:absolute; inset:-22px; content:""; border:1px solid rgba(246,211,123,.28); border-radius:50%; }
+.fx-ring::after { inset:-48px; border-style:dashed; border-color:rgba(119,242,192,.18); }
+.fx-ring.is-active { animation:ringBurst .82s cubic-bezier(.16,.82,.22,1) both; }
+.card-stage.is-shuffling::before { position:absolute; inset:0 10px; content:""; background:linear-gradient(105deg,transparent 30%,rgba(119,242,192,.1) 47%,rgba(246,211,123,.12) 50%,rgba(119,242,192,.08) 53%,transparent 70%); transform:translateX(-120%); animation:stageScan .9s ease-in-out; pointer-events:none; z-index:3; }
+.card-stage.is-shuffling .card-back { box-shadow:inset 0 0 0 4px #0a1d19,inset 0 0 0 5px rgba(119,242,192,.26),0 0 18px rgba(119,242,192,.1); }
+.card.is-memory-reveal .card-face { box-shadow:inset 0 0 0 2px rgba(246,211,123,.65),0 0 24px rgba(246,211,123,.3); }
+.card.is-pick-reveal .card-face { box-shadow:inset 0 0 0 2px rgba(119,242,192,.7),0 0 28px rgba(52,211,153,.34); }
+.memory-card.is-revealed { animation:memoryPop .68s cubic-bezier(.17,.84,.25,1) both; }
+.pile-item { transition:border-color .25s ease,background .25s ease,transform .25s ease; }
+.pile-item.is-animating { border-color:rgba(246,211,123,.55); background:rgba(246,211,123,.08); transform:translateY(-2px); box-shadow:0 8px 24px rgba(246,211,123,.1); }
+.card-stage.is-rearranging .card-grid { filter:brightness(1.16) saturate(1.15); }
+.card-stage.is-rearranging .fx-ring { opacity:1; transform:translate(-50%,-50%) scale(1.25); transition:.55s ease; }
+@keyframes ringBurst { 0%{opacity:0;transform:translate(-50%,-50%) scale(.2)} 28%{opacity:.9} 100%{opacity:0;transform:translate(-50%,-50%) scale(2.7)} }
+@keyframes stageScan { 0%{transform:translateX(-120%)} 100%{transform:translateX(120%)} }
+@keyframes memoryPop { 0%{transform:scale(.82);opacity:.3} 55%{transform:scale(1.12);opacity:1} 100%{transform:scale(1);opacity:1} }
+.card-back::before { position:absolute; inset:-60%; content:""; background:linear-gradient(115deg,transparent 44%,rgba(255,255,255,.07) 49%,rgba(255,255,255,.12) 50%,transparent 56%); transform:translateX(-45%); animation:backShimmer 5s linear infinite; }
+.card:nth-child(3n) .card-back::before { animation-delay:-1.7s; }
+.card:nth-child(3n+1) .card-back::before { animation-delay:-3.1s; }
+@keyframes backShimmer { 0%{transform:translateX(-55%) rotate(8deg)} 100%{transform:translateX(55%) rotate(8deg)} }
+
+/* Memorized cards stay face-down; only matching cards are revealed. */
+.card.is-memory-back .card-back {
+  border-color: rgba(246,211,123,.75);
+  box-shadow: inset 0 0 0 4px #0a1d19, inset 0 0 0 5px rgba(246,211,123,.28), 0 0 22px rgba(246,211,123,.2);
+}
+
+/* card_final reveal: full deck stays face-down until target cards flip */
+.finale-panel.final-reveal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch;
+  padding-top: 10px;
+}
+.final-reveal .finale-copy { text-align: center; }
+.final-reveal .finale-copy p { margin-left: auto; margin-right: auto; }
+.final-deck {
+  display: grid;
+  grid-template-columns: repeat(13, minmax(0, 1fr));
+  gap: 7px;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid rgba(119,242,192,.13);
+  border-radius: 16px;
+  background: rgba(4,14,11,.48);
+  perspective: 1200px;
+}
+.final-deck-card { aspect-ratio: .69; }
+.final-deck-card.is-target { z-index: 3; }
+.final-deck-card.is-target::after {
+  position: absolute;
+  inset: -4px;
+  content: "";
+  border: 2px solid rgba(246,211,123,.85);
+  border-radius: 11px;
+  box-shadow: 0 0 22px rgba(246,211,123,.25);
+  animation: targetPulse 1.15s ease-in-out infinite;
+}
+.final-deck-card.is-revealed::after { border-color: rgba(119,242,192,.9); animation: none; }
+.final-deck-card.is-revealed .card-face { box-shadow: inset 0 0 0 2px rgba(119,242,192,.7),0 0 28px rgba(52,211,153,.34); }
+.final-reveal .finale-cards { margin-top: 4px; }
+.final-reveal .finale-meta { text-align: center; }
+@keyframes targetPulse { 0%,100%{opacity:.45;transform:scale(1)} 50%{opacity:1;transform:scale(1.04)} }
+@media(max-width:900px){ .final-deck{grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;padding:10px} }
+@media(max-width:620px){ .final-deck{grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;padding:8px} }
+
+/* Final stage layout: no manual scrolling required */
+body.is-final-mode .hero { display: none; }
+body.is-final-mode .stage-toolbar { padding-top: 16px; }
+body.is-final-mode .pile-status { display: none; }
+body.is-final-mode .card-stage { min-height: auto; padding-top: 4px; }
+body.is-final-mode .finale-panel { scroll-margin-top: 12px; animation: fadeUp .45s ease both; }
+.finale-selection-label,.finale-deck-label { color: var(--mint); letter-spacing: .16em; font-size: 8px; font-weight: 700; text-align: center; }
+.finale-deck-label { margin-top: 2px; color: var(--muted); }
+.final-index {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  z-index: 5;
+  min-width: 15px;
+  padding: 1px 3px;
+  border-radius: 4px;
+  color: rgba(230,255,246,.65);
+  background: rgba(2,10,8,.72);
+  font-family: "Cascadia Code",Consolas,monospace;
+  font-size: 7px;
+  text-align: center;
+  pointer-events: none;
+}
+.final-deck-card.is-target .final-index {
+  color: #07110f;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(246,211,123,.45);
+}
+.final-deck-card.is-revealed .final-index { color: #062019; background: var(--mint); }
+
+/* Paired comparison: user's card first, then matching card_final position */
+.user-pick-card { position: relative; }
+.user-pick-index {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #526a61;
+  font-family: "Cascadia Code",Consolas,monospace;
+  font-size: 7px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.finale-card.is-comparing {
+  border-color: rgba(246,211,123,.95) !important;
+  box-shadow: 0 24px 58px rgba(246,211,123,.26), 0 0 0 3px rgba(246,211,123,.22) !important;
+  transform: translateY(-18px) scale(1.08) rotate(0deg) !important;
+  z-index: 5;
+  transition: .28s ease;
+}
+.finale-card.is-matched {
+  border-color: rgba(119,242,192,.9) !important;
+  box-shadow: 0 24px 58px rgba(52,211,153,.2), 0 0 0 3px rgba(119,242,192,.18) !important;
+}
+.finale-card.is-matched::after {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  content: "MATCH";
+  color: #062019;
+  background: var(--mint);
+  font-family: "Cascadia Code",Consolas,monospace;
+  font-size: 6px;
+  font-weight: 800;
+}
+.final-deck-card.is-matched::after { box-shadow: 0 0 30px rgba(119,242,192,.55); }
