@@ -1,0 +1,97 @@
+`timescale 1ns / 1ps
+//   mode = 2'b00 : 关闭 LED
+//   mode = 2'b01 : 1 秒周期闪烁
+//   mode = 2'b10 : 2 秒周期闪烁
+//   mode = 2'b11 : PWM 状态
+// enable = 0 时，LED关闭
+// -----------------------------------------------------------------------------
+module GPmission #(
+    parameter integer CLK_HZ = 100_000_000,
+    parameter integer PWM_HZ = 1_000
+)(
+    input  wire       clk,
+    input  wire       rst,      
+    output reg        led,
+    input [10:0]ctrl
+);
+    
+    wire       enable;
+    wire [1:0] mode;
+    wire [7:0] duty;
+    assign ctrl={duty[7:0],mode[1:0],enable};
+    localparam [1:0] MODE_OFF   = 2'd0;
+    localparam [1:0] MODE_1S    = 2'd1;
+    localparam [1:0] MODE_2S    = 2'd2;
+    localparam [1:0] MODE_PWM   = 2'd3;
+    localparam integer HALF_1S    = CLK_HZ / 2;
+    localparam integer HALF_2S    = CLK_HZ;
+    localparam integer PWM_PERIOD = CLK_HZ / PWM_HZ;
+    localparam [16:0] PWM_OFF    = 17'd0;
+    localparam [16:0] PWM_DARK   = PWM_PERIOD / 4;
+    localparam [16:0] PWM_MID    = PWM_PERIOD / 2;
+    localparam [16:0] PWM_BRIGHT = (PWM_PERIOD * 3) / 4;
+    reg [26:0] blink_count;       
+    reg [1:0]  mode_prev;         
+    reg [26:0] blink_limit;       
+    reg [16:0] pwm_count;         
+    wire [16:0] pwm_level;
+    assign pwm_level = (duty == 8'd1) ? PWM_DARK   :
+                       (duty == 8'd2) ? PWM_MID    :
+                       (duty == 8'd3) ? PWM_BRIGHT :
+                                        PWM_OFF;
+    always @(posedge clk or negedge rst)begin
+            if (!rst) begin//复位状态
+                led         <= 1'b0;
+                blink_count <= 27'd0;
+                mode_prev   <= MODE_OFF;
+                blink_limit <= 27'd0;
+                pwm_count   <= 17'd0;
+            end
+            else if (!enable || (mode == MODE_OFF)) begin//强制关灯
+                led         <= 1'b0;
+                blink_count <= 27'd0;
+                mode_prev   <= mode;
+                blink_limit <= 27'd0;
+                pwm_count   <= 17'd0;
+            end
+            else if (mode_prev != mode) begin//模式切换
+                led         <= 1'b0;
+                blink_count <= 27'd0;
+                pwm_count   <= 17'd0;
+                mode_prev   <= mode;
+            end
+            else begin
+                case (mode)
+                MODE_1S: begin
+                    blink_limit <= HALF_1S;
+                    if (blink_count >= blink_limit - 1) begin
+                        blink_count <= 27'd0;
+                        led<= ~led;
+                    end
+                    else begin
+                        blink_count <= blink_count + 1'b1;
+                    end
+                end
+                MODE_2S: begin
+                    blink_limit <= HALF_2S;
+                    if (blink_count >= blink_limit - 1) begin
+                        blink_count <= 27'd0;
+                        led         <= ~led;
+                    end
+                    else begin
+                        blink_count <= blink_count + 1'b1;
+                    end
+                end
+                MODE_PWM: begin
+                    if (pwm_count >= PWM_PERIOD - 1) begin
+                        pwm_count <= 17'd0;
+                    end
+                    else begin
+                        pwm_count <= pwm_count + 1'b1;
+                    end
+                    led <= ~(pwm_count < pwm_level);
+                end
+            endcase
+    end       
+end   
+endmodule
