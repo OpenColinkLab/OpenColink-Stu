@@ -1,0 +1,29 @@
+# Vivado 生成物 —— 可由 LED.xpr + design_1.bd + 源码重新生成
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.*
+
+# Block Design 输出产物（design_1.bd 本身保留）
+**/bd/design_1/ip/
+**/bd/design_1/ipshared/
+**/bd/design_1/synth/
+**/bd/design_1/sim/
+**/bd/design_1/hw_handoff/
+**/bd/design_1/ui/
+
+# 编译/实现产物
+*.bit
+*.dcp
+*.xci
+*.hdf
+*.xsa
+*.o
+*.d
+*.elf
