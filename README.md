@@ -79,6 +79,7 @@
 | ZardFan334 | [4.cpp](C++/ZardFan334/4.cpp) | C++ 练习程序 |
 | ZardFan334 | [最后结果.cpp](C++/ZardFan334/最后结果.cpp) | 实现加减乘除和取模的计算器程序 |
 | swh0918 | [ball.cpp](C++/swh0918/ball/ball.cpp) | 判断输入是否为三位数并求各位数字之和 |
+| huanhun213 | [`C语言练习`](C++/huanhun213/C语言练习/) | C 语言学习示例程序（43 个单文件，按 7 个知识点分类） |
 
 ### Python
 
