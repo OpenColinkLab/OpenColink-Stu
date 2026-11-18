@@ -44,6 +44,7 @@
 | wyh | [`led_shell`](Training/wyh/led_shell/) | PS+PL LED 控制、手写命令解析与仿真验证工程 |
 | chentc857 | [PG002-Day1](Training/chentc857/PG002-Day1/) | Zynq PS Hello World 串口输出作业 |
 | OpenColinkLab | [`msp432-whack-a-mole-fsm`](Training/msp432-whack-a-mole-fsm/) | MSP432 打地鼠 C 状态机、可视化实验台与教学文档 |
+| yyy080410 | [`yyy080410`](Training/yyy080410/) | 嵌入式规培 01–06：GPIO 点灯、Zynq ILA/VIO、PWM、串口、学生管理、Shell |
 
 共享培训资料位于：
 
