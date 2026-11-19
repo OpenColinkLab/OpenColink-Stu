@@ -1,0 +1,16 @@
+# Generated projects and caches
+/build/
+**/.Xil/
+**/*.cache/
+**/*.runs/
+**/*.sim/
+**/*.hw/
+**/*.ip_user_files/
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+__pycache__/
+Thumbs.db
+Desktop.ini
