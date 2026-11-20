@@ -1,0 +1,4 @@
+14:59:27 INFO  : FPGA configured successfully with bitstream "system_wrapper.bit"
+14:59:28 INFO  : 'ps7_init' command is executed.
+14:59:28 INFO  : 'ps7_post_config' command is executed.
+14:59:28 INFO  : The application 'cp4_axi_led_bsp_xgpio_example_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
