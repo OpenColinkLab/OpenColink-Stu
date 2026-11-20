@@ -1,0 +1,31 @@
+# ---- Vivado 构建产物（可重建，不入库）----
+AXI_1.runs/
+AXI_1.cache/
+AXI_1.hw/
+AXI_1.sim/
+AXI_1.ip_user_files/
+.Xil/
+*.jou
+*.log
+*.str
+vivado_*.backup.*
+*.backup.jou
+*.backup.log
+
+# ---- 生成物 ----
+*.bit
+*.elf
+*.hdf
+*.dcp
+*.ltx
+
+# ---- Xilinx SDK 工作区（由 build_sw.tcl 重新生成）----
+AXI_1.sdk/
+
+# ---- Vivado 工程缓存：如需提交完整工程再放开这两行 ----
+# AXI_1.xpr
+# AXI_1.srcs/
+
+# ---- 本地备份 ----
+.backup/
+*.bak

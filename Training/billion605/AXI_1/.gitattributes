@@ -1,0 +1,12 @@
+# 源码统一 LF，避免 Windows CRLF 污染 diff
+* text=auto
+
+*.c      text eol=lf
+*.h      text eol=lf
+*.v      text eol=lf
+*.sv     text eol=lf
+*.xdc    text eol=lf
+*.tcl    text eol=lf
+*.md     text eol=lf
+*.ld     text eol=lf
+*.gitignore text eol=lf
