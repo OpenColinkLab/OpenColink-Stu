@@ -1,0 +1,25 @@
+# ---- Keil MDK 编译产物（可由 .uvprojx + 源码重新生成）----
+Objects/
+Listings/
+MDK-ARM/aaaa/
+MDK-ARM/RTE/
+DebugConfig/
+*.uvguix.*
+*.dep
+*.crf
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.iex
+*.sct
+*.lnp
+*.htm
+*.build_log.htm
+
+# ---- 备份与临时文件 ----
+*.bak
+*.bak_*
+*.tmp
+~$*
