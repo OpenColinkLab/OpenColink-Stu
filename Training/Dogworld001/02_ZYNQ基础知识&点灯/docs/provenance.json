@@ -1,0 +1,98 @@
+{
+  "packaged_on_client_date": "2026-11-19",
+  "timezone": "Asia/Singapore",
+  "source_project": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl",
+  "original_source_level": 1,
+  "user_reported_board_results": {
+    "0": "LED on",
+    "1": "LED off"
+  },
+  "photos_present_at_packaging": true,
+  "vivado_rebuilt_during_packaging": false,
+  "hardware_retested_during_packaging": false,
+  "copied_files": [
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.xpr",
+      "packaged_path": "original_project/pl_led_level_rtl.xpr",
+      "sha256": "2cd0e7370c5242846bb0b75ee1e37725a02f25de92d5c81460bc2bded4e9dc7f",
+      "bytes": 9239
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.srcs\\sources_1\\new\\led_level.v",
+      "packaged_path": "original_project/pl_led_level_rtl.srcs/sources_1/new/led_level.v",
+      "sha256": "f61e3385bc1b0dd16bf738b98cbe481a6aeecd5a903658f2b78ceca87965b1a2",
+      "bytes": 582
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.srcs\\constrs_1\\new\\led_level.xdc",
+      "packaged_path": "original_project/pl_led_level_rtl.srcs/constrs_1/new/led_level.xdc",
+      "sha256": "cea46b86ff88d93567007171d3d48e4547ed4b1fd26d3370f468dce43f11039c",
+      "bytes": 102
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.srcs\\sources_1\\new\\led_level.v",
+      "packaged_path": "rtl/led_level.v",
+      "sha256": "f61e3385bc1b0dd16bf738b98cbe481a6aeecd5a903658f2b78ceca87965b1a2",
+      "bytes": 582
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.srcs\\constrs_1\\new\\led_level.xdc",
+      "packaged_path": "constraints/led_level.xdc",
+      "sha256": "cea46b86ff88d93567007171d3d48e4547ed4b1fd26d3370f468dce43f11039c",
+      "bytes": 102
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.srcs\\sources_1\\new\\led_level.v",
+      "packaged_path": "variants/level_1_off/led_level.v",
+      "sha256": "f61e3385bc1b0dd16bf738b98cbe481a6aeecd5a903658f2b78ceca87965b1a2",
+      "bytes": 582
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.runs\\impl_1\\led_level.bit",
+      "packaged_path": "artifacts/original_led_level.bit",
+      "sha256": "ac867031119e6e63ded908eca67e2a597e224b1f023d877ec02c9ba8d115db8c",
+      "bytes": 2083845
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.runs\\impl_1\\led_level_drc_routed.rpt",
+      "packaged_path": "evidence/reports/led_level_drc_routed.rpt",
+      "sha256": "0c80e7ca1ad2ed91b3d8e3c7439a1550fdfc7fb48227ae8d8aacc5dcf29cc7db",
+      "bytes": 1531
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.runs\\impl_1\\led_level_timing_summary_routed.rpt",
+      "packaged_path": "evidence/reports/led_level_timing_summary_routed.rpt",
+      "sha256": "c6d03c51a49f6426a34c2af986788f63ddb55b6a25444917fbe0bfc118dda11d",
+      "bytes": 7408
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.runs\\impl_1\\led_level_utilization_placed.rpt",
+      "packaged_path": "evidence/reports/led_level_utilization_placed.rpt",
+      "sha256": "e061c35ccdd4863f0161b3f1b0b5575c79d999361f5f5e36d9802917407ffa57",
+      "bytes": 7917
+    },
+    {
+      "source": "E:\\OpenColink\\Vivado_Workspace\\pl_led_level_rtl\\pl_led_level_rtl.runs\\impl_1\\runme.log",
+      "packaged_path": "evidence/reports/original_build_log.txt",
+      "sha256": "7a0bf75d9e87a2fb3dbdafbd12fb3ebcdc84b0c5813a74b69be588ff37a75fc7",
+      "bytes": 24391
+    }
+  ],
+  "photos": [
+    {
+      "original_filename": "IMG_3811.jpeg",
+      "packaged_path": "evidence/photos/01_level0_led_on.jpeg",
+      "output_level": 0,
+      "visible_red_led_state": "on",
+      "sha256": "e5158f04619ff79f8ac988c1926c23cb59f2e64ea329cef3510f2ec8afc9f1fb"
+    },
+    {
+      "original_filename": "IMG_3812.jpeg",
+      "packaged_path": "evidence/photos/02_level1_led_off.jpeg",
+      "output_level": 1,
+      "visible_red_led_state": "off",
+      "sha256": "30f853c09ddef3a3e6f08f5d5f4f3d174de4562eb5c6f014294c5cff6c15acea"
+    }
+  ],
+  "photo_output_levels_source": "User-reported board test results; photographs show the corresponding red LED states."
+}

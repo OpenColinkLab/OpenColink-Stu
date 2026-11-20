@@ -1,0 +1,6 @@
+EBAZ4205 板载红灯上板实拍
+
+01_level0_led_on.jpeg   原文件 IMG_3811.jpeg，板载红灯亮，对应实验输出 0。
+02_level1_led_off.jpeg  原文件 IMG_3812.jpeg，板载红灯灭，对应实验输出 1，画面中 Vivado 显示 Programmed。
+
+照片保留原始文件内容，输出电平依据实验记录标注。
